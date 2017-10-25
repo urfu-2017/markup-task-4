@@ -1,0 +1,335 @@
+html
+{
+    background-color: #fff;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #333;
+    cursor: default;
+}
+
+body
+{
+    margin: 0;
+}
+
+.market-navigation
+{
+    position: relative;
+    padding: 1rem 2rem;
+    background: #f0f0f0;
+}
+
+.market-navigation__icon
+{
+    margin-right: 1rem;
+}
+
+.market-navigation__market-name
+{
+    font-size: 1.25rem;
+}
+
+.red-text
+{
+    color: #a00;
+}
+
+.show-market
+{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+}
+
+.show-market__icon
+{
+    margin: 0 0 0 2rem;
+    width: 1rem;
+    cursor: pointer;
+}
+
+input[name='show-market']
+{
+    display: none;
+}
+
+input[id='show-market__as-list']:checked ~ .market-item
+{
+    width: calc(100% - 2rem);
+    height: auto;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: #eee;
+}
+
+input[id='show-market__as-list']:checked ~ .market-item .item-photo,
+input[id='show-market__as-list']:checked ~ .market-item .item-info,
+input[id='show-market__as-list']:checked ~ .market-item .item-description
+{
+    display: inline-block;
+    position: relative;
+    width: calc((100% - 2rem) / 3 - 1rem);
+    margin: 0;
+    vertical-align: top;
+}
+
+input[id='show-market__as-list']:checked ~ .market-item .item-photo
+{
+    height: auto;
+}
+
+input[id='show-market__as-list']:checked ~ .market-item .item-photo__source
+{
+    position: relative;
+    max-height: none;
+}
+
+input[id='show-market__as-list']:checked ~ .market-item .item-info
+{
+    margin: 0 1rem;
+}
+
+.market
+{
+    padding: 2rem;
+}
+
+.market-item
+{
+    display: inline-block;
+    width: 320px;
+    height: 470px;
+    margin: 1rem;
+    padding: 1rem;
+    background: #eee;
+    vertical-align: top;
+}
+
+.market-item:hover
+{
+    box-shadow: 0 0 5px rgba(0,0,0, .4);
+}
+
+.item-photo
+{
+    position: relative;
+    width: 100%;
+    height: 225px;
+    margin: 0;
+}
+
+.item-photo__source
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 225px;
+    margin: 0 auto;
+}
+
+.add-to-bucket
+{
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: .5rem 0;
+    background: rgba(0,0,0, .5);
+    text-align: center;
+    font-size: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.item-photo:hover > .add-to-bucket
+{
+    display: block;
+}
+
+.item-info,
+.item-description
+{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.item-info
+{
+    margin: 1rem 0;
+}
+
+.item-info__name
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-info__name a
+{
+    color: #a00;
+    text-decoration: none;
+}
+
+.item-info__name a:hover,
+.item-info__name a:active
+{
+    color: #d00;
+    text-decoration: none;
+}
+
+.item-info__category
+{
+    margin: 0;
+    padding: 0;
+    font-size: .75rem;
+}
+
+.link-on-category:hover
+{
+    color: #a00;
+    cursor: pointer;
+}
+
+.rating
+{
+    margin: 0;
+    padding: .5rem 0;
+    font-size: 0;
+}
+
+.muzzle
+{
+    display: inline-block;
+    width: .5rem;
+    height: 1rem;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+label[for^='set-1']:nth-of-type(2n+1) .muzzle,
+label[for^='set-2']:nth-of-type(2n+1) .muzzle,
+label[for^='set-3']:nth-of-type(2n+1) .muzzle,
+label[for^='set-4']:nth-of-type(2n+1) .muzzle,
+label[for^='set-5']:nth-of-type(2n+1) .muzzle,
+label[for^='set-6']:nth-of-type(2n+1) .muzzle,
+label[for^='set-7']:nth-of-type(2n+1) .muzzle,
+label[for^='set-8']:nth-of-type(2n+1) .muzzle,
+label[for^='set-9']:nth-of-type(2n+1) .muzzle,
+label[for^='set-10']:nth-of-type(2n+1) .muzzle,
+label[for^='set-11']:nth-of-type(2n+1) .muzzle,
+label[for^='set-12']:nth-of-type(2n+1) .muzzle,
+label[for^='set-13']:nth-of-type(2n+1) .muzzle
+{
+    background: url(images/left_icon__select.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+label[for^='set-1']:nth-of-type(2n) .muzzle,
+label[for^='set-2']:nth-of-type(2n) .muzzle,
+label[for^='set-3']:nth-of-type(2n) .muzzle,
+label[for^='set-4']:nth-of-type(2n) .muzzle,
+label[for^='set-5']:nth-of-type(2n) .muzzle,
+label[for^='set-6']:nth-of-type(2n) .muzzle,
+label[for^='set-7']:nth-of-type(2n) .muzzle,
+label[for^='set-8']:nth-of-type(2n) .muzzle,
+label[for^='set-9']:nth-of-type(2n) .muzzle,
+label[for^='set-10']:nth-of-type(2n) .muzzle,
+label[for^='set-11']:nth-of-type(2n) .muzzle,
+label[for^='set-12']:nth-of-type(2n) .muzzle,
+label[for^='set-13']:nth-of-type(2n) .muzzle
+{
+    margin-right: .3rem;
+    background: url(images/right_icon__select.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+input[name='set-1'],
+input[name='set-2'],
+input[name='set-3'],
+input[name='set-4'],
+input[name='set-5'],
+input[name='set-6'],
+input[name='set-7'],
+input[name='set-8'],
+input[name='set-9'],
+input[name='set-10'],
+input[name='set-11'],
+input[name='set-12'],
+input[name='set-13']
+{
+    display: none;
+}
+
+input[name='set-1']:checked ~ label[for^='set-1']:nth-of-type(2n+1) .muzzle,
+input[name='set-2']:checked ~ label[for^='set-2']:nth-of-type(2n+1) .muzzle,
+input[name='set-3']:checked ~ label[for^='set-3']:nth-of-type(2n+1) .muzzle,
+input[name='set-4']:checked ~ label[for^='set-4']:nth-of-type(2n+1) .muzzle,
+input[name='set-5']:checked ~ label[for^='set-5']:nth-of-type(2n+1) .muzzle,
+input[name='set-6']:checked ~ label[for^='set-6']:nth-of-type(2n+1) .muzzle,
+input[name='set-7']:checked ~ label[for^='set-7']:nth-of-type(2n+1) .muzzle,
+input[name='set-8']:checked ~ label[for^='set-8']:nth-of-type(2n+1) .muzzle,
+input[name='set-9']:checked ~ label[for^='set-9']:nth-of-type(2n+1) .muzzle,
+input[name='set-10']:checked ~ label[for^='set-10']:nth-of-type(2n+1) .muzzle,
+input[name='set-11']:checked ~ label[for^='set-11']:nth-of-type(2n+1) .muzzle,
+input[name='set-12']:checked ~ label[for^='set-12']:nth-of-type(2n+1) .muzzle,
+input[name='set-13']:checked ~ label[for^='set-13']:nth-of-type(2n+1) .muzzle
+{
+    background: url(images/left_icon.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+input[name='set-1']:checked ~ label[for^='set-1']:nth-of-type(2n) .muzzle,
+input[name='set-2']:checked ~ label[for^='set-2']:nth-of-type(2n) .muzzle,
+input[name='set-3']:checked ~ label[for^='set-3']:nth-of-type(2n) .muzzle,
+input[name='set-4']:checked ~ label[for^='set-4']:nth-of-type(2n) .muzzle,
+input[name='set-5']:checked ~ label[for^='set-5']:nth-of-type(2n) .muzzle,
+input[name='set-6']:checked ~ label[for^='set-6']:nth-of-type(2n) .muzzle,
+input[name='set-7']:checked ~ label[for^='set-7']:nth-of-type(2n) .muzzle,
+input[name='set-8']:checked ~ label[for^='set-8']:nth-of-type(2n) .muzzle,
+input[name='set-9']:checked ~ label[for^='set-9']:nth-of-type(2n) .muzzle,
+input[name='set-10']:checked ~ label[for^='set-10']:nth-of-type(2n) .muzzle,
+input[name='set-11']:checked ~ label[for^='set-11']:nth-of-type(2n) .muzzle,
+input[name='set-12']:checked ~ label[for^='set-12']:nth-of-type(2n) .muzzle,
+input[name='set-13']:checked ~ label[for^='set-13']:nth-of-type(2n) .muzzle
+{
+    background: url(images/right_icon.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.item-info__price
+{
+    margin: 0;
+    padding: 0;
+    color: #085;
+    font-size: 1.25rem;
+}
+
+.item-info__price--old
+{
+    color: #000;
+    font-size: .75rem;
+    text-decoration: line-through;
+}
+
+.item-description__header
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.item-description__text
+{
+    margin: 0;
+    padding: .5rem 0 0;
+}

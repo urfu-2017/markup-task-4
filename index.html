@@ -2,8 +2,1094 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Задача «Мяндекс.Муррркет»</title>
+    <link href="images/market_icon.png" rel="shortcut icon" type="image/x-icon">
+    <title>Мяндекс.Муррркет</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
+    <main>
+        <nav class="market-navigation">
+            <span class="market-navigation__market-name">
+                <span class="market-navigation__icon">=^･ｪ･^=</span> 
+                <span class="red-text">М</span>яндекс.<span class="red-text">М</span>уррркет
+            </span>
+            <div class="show-market">
+                <label for="show-market__as-tile">
+                    <img class="show-market__icon" src="images/show_as_tile.png" 
+                    alt="Иконка плитки" title="Плитка">
+                </label>
+                <label for="show-market__as-list">
+                    <img class="show-market__icon" src="images/show_as_list.png" 
+                    alt="Иконка списка" title="Список">
+                </label>
+            </div>
+        </nav>
+        <section class="market">
+            <input id="show-market__as-list" type="radio" name="show-market">
+            <input id="show-market__as-tile" type="radio" name="show-market" checked>
+
+            <h2 class="section-header">Замурррчательные котики</h2>
+
+            <article class="market-item">
+                <figure class="item-photo">
+                    <img class="item-photo__source" src="images/cat1.jpg" 
+                    alt="Фото котика" title="Фото котика">
+                    <figcaption class="add-to-bucket">Добавить в корзинку</figcaption>
+                </figure>
+                <section class="item-info">
+                    <h2 class="item-info__name">
+                        <a href="http://ya.ru" target="blank" title="Яндекс">
+                            Мурзииииииииииииииииииииииииииииииииииииииииииииик
+                        </a>
+                    </h2>
+                    <p class="item-info__category">
+                        Порода: 
+                        <span class="link-on-category">Русская дворовая</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-1__1">
+                            <span class="muzzle" title="Доброта 10%"></span>
+                        </label>
+                        <input type="radio" id="set-1__1" name="set-1">
+
+                        <label for="set-1__2">
+                            <span class="muzzle" title="Доброта 20%"></span>
+                        </label>
+                        <input type="radio" id="set-1__2" name="set-1">
+
+                        <label for="set-1__3">
+                            <span class="muzzle" title="Доброта 30%"></span>
+                        </label>
+                        <input type="radio" id="set-1__3" name="set-1">
+
+                        <label for="set-1__4">
+                            <span class="muzzle" title="Доброта 40%"></span>
+                        </label>
+                        <input type="radio" id="set-1__4" name="set-1" checked>
+
+                        <label for="set-1__5">
+                            <span class="muzzle" title="Доброта 50%"></span>
+                        </label>
+                        <input type="radio" id="set-1__5" name="set-1">
+
+                        <label for="set-1__6">
+                            <span class="muzzle" title="Доброта 60%"></span>
+                        </label>
+                        <input type="radio" id="set-1__6" name="set-1">
+
+                        <label for="set-1__7">
+                            <span class="muzzle" title="Доброта 70%"></span>
+                        </label>
+                        <input type="radio" id="set-1__7" name="set-1">
+
+                        <label for="set-1__8">
+                            <span class="muzzle" title="Доброта 80%"></span>
+                        </label>
+                        <input type="radio" id="set-1__8" name="set-1">
+
+                        <label for="set-1__9">
+                            <span class="muzzle" title="Доброта 90%"></span>
+                        </label>
+                        <input type="radio" id="set-1__9" name="set-1">
+
+                        <label for="set-1__10">
+                            <span class="muzzle" title="Доброта 100%"></span>
+                        </label>
+                        <input type="radio" id="set-1__10" name="set-1">
+                    </div>
+                    <p class="item-info__price">
+                        500 &#8381; <span class="item-info__price--old">1000 &#8381;</span>
+                    </p>
+                </section>
+                <section class="item-description">
+                    <h3 class="item-description__header">Краткое описание</h3>
+                    <p class="item-description__text">
+                        Ми&shy;лее и доб&shy;рее это&shy;го ко&shy;ти&shy;ка Вы 
+                        не най&shy;дё&shy;те. Ста&shy;нет для Вас на&shy;сто&shy;я&shy;щим 
+                        дру&shy;гом и спут&shy;ни&shy;ком по жиз&shy;ни.
+                    </p>
+                </section>
+            </article>
+
+            <article class="market-item">
+                <figure class="item-photo">
+                    <img class="item-photo__source" src="images/cat2.jpg" 
+                    alt="Фото котика" title="Фото котика">
+                    <figcaption class="add-to-bucket">Добавить в корзинку</figcaption>
+                </figure>
+                <section class="item-info">
+                    <h2 class="item-info__name">
+                        <a href="http://ya.ru" target="blank" title="Яндекс">
+                            Тимофей
+                        </a>
+                    </h2>
+                    <p class="item-info__category">
+                        Порода: 
+                        <span class="link-on-category">Персидская</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-2__1">
+                            <span class="muzzle" title="Доброта 10%"></span>
+                        </label>
+                        <input type="radio" id="set-2__1" name="set-2">
+
+                        <label for="set-2__2">
+                            <span class="muzzle" title="Доброта 20%"></span>
+                        </label>
+                        <input type="radio" id="set-2__2" name="set-2">
+
+                        <label for="set-2__3">
+                            <span class="muzzle" title="Доброта 30%"></span>
+                        </label>
+                        <input type="radio" id="set-2__3" name="set-2" checked>
+
+                        <label for="set-2__4">
+                            <span class="muzzle" title="Доброта 40%"></span>
+                        </label>
+                        <input type="radio" id="set-2__4" name="set-2">
+
+                        <label for="set-2__5">
+                            <span class="muzzle" title="Доброта 50%"></span>
+                        </label>
+                        <input type="radio" id="set-2__5" name="set-2">
+
+                        <label for="set-2__6">
+                            <span class="muzzle" title="Доброта 60%"></span>
+                        </label>
+                        <input type="radio" id="set-2__6" name="set-2">
+
+                        <label for="set-2__7">
+                            <span class="muzzle" title="Доброта 70%"></span>
+                        </label>
+                        <input type="radio" id="set-2__7" name="set-2">
+
+                        <label for="set-2__8">
+                            <span class="muzzle" title="Доброта 80%"></span>
+                        </label>
+                        <input type="radio" id="set-2__8" name="set-2">
+
+                        <label for="set-2__9">
+                            <span class="muzzle" title="Доброта 90%"></span>
+                        </label>
+                        <input type="radio" id="set-2__9" name="set-2">
+
+                        <label for="set-2__10">
+                            <span class="muzzle" title="Доброта 100%"></span>
+                        </label>
+                        <input type="radio" id="set-2__10" name="set-2">
+                    </div>
+                    <p class="item-info__price">
+                        1500 &#8381;
+                    </p>
+                </section>
+                <section class="item-description">
+                    <h3 class="item-description__header">Краткое описание</h3>
+                    <p class="item-description__text">
+                        Ми&shy;лый пу&shy;ши&shy;стый чер&shy;тё&shy;нок. Не бу&shy;дет 
+                        да&shy;вать Вам по&shy;коя как днём, так и но&shy;чью. Кор&shy;мить 5 раз 
+                        в день стро&shy;го по рас&shy;пи&shy;са&shy;нию, ина&shy;че бу&shy;дет 
+                        пре&shy;сле&shy;до&shy;вать Вас по всей квар&shy;ти&shy;ре, 
+                        вы&shy;пра&shy;ши&shy;вая что-ни&shy;будь вкус&shy;нень&shy;кое.
+                    </p>
+                </section>
+            </article>
+
+            <article class="market-item">
+                <figure class="item-photo">
+                    <img class="item-photo__source" src="images/cat3.jpg" 
+                    alt="Фото котика" title="Фото котика">
+                    <figcaption class="add-to-bucket">Добавить в корзинку</figcaption>
+                </figure>
+                <section class="item-info">
+                    <h2 class="item-info__name">
+                        <a href="http://ya.ru" target="blank" title="Яндекс">
+                            Друзьяшки Оушена
+                        </a>
+                    </h2>
+                    <p class="item-info__category">
+                        Порода: 
+                        <span class="link-on-category">Абиссинская</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-3__1">
+                            <span class="muzzle" title="Доброта 10%"></span>
+                        </label>
+                        <input type="radio" id="set-3__1" name="set-3">
+
+                        <label for="set-3__2">
+                            <span class="muzzle" title="Доброта 20%"></span>
+                        </label>
+                        <input type="radio" id="set-3__2" name="set-3">
+
+                        <label for="set-3__3">
+                            <span class="muzzle" title="Доброта 30%"></span>
+                        </label>
+                        <input type="radio" id="set-3__3" name="set-3">
+
+                        <label for="set-3__4">
+                            <span class="muzzle" title="Доброта 40%"></span>
+                        </label>
+                        <input type="radio" id="set-3__4" name="set-3">
+
+                        <label for="set-3__5">
+                            <span class="muzzle" title="Доброта 50%"></span>
+                        </label>
+                        <input type="radio" id="set-3__5" name="set-3">
+
+                        <label for="set-3__6">
+                            <span class="muzzle" title="Доброта 60%"></span>
+                        </label>
+                        <input type="radio" id="set-3__6" name="set-3">
+
+                        <label for="set-3__7">
+                            <span class="muzzle" title="Доброта 70%"></span>
+                        </label>
+                        <input type="radio" id="set-3__7" name="set-3">
+
+                        <label for="set-3__8">
+                            <span class="muzzle" title="Доброта 80%"></span>
+                        </label>
+                        <input type="radio" id="set-3__8" name="set-3" checked>
+
+                        <label for="set-3__9">
+                            <span class="muzzle" title="Доброта 90%"></span>
+                        </label>
+                        <input type="radio" id="set-3__9" name="set-3">
+
+                        <label for="set-3__10">
+                            <span class="muzzle" title="Доброта 100%"></span>
+                        </label>
+                        <input type="radio" id="set-3__10" name="set-3">
+                    </div>
+                    <p class="item-info__price">
+                        2500 &#8381;
+                    </p>
+                </section>
+                <section class="item-description">
+                    <h3 class="item-description__header">Краткое описание</h3>
+                    <p class="item-description__text">
+                        Про&shy;да&shy;ют&shy;ся толь&shy;ко всей шай&shy;кой сра&shy;зу.
+                    </p>
+                </section>
+            </article>
+
+            <article class="market-item">
+                <figure class="item-photo">
+                    <img class="item-photo__source" src="images/cat4.jpg" 
+                    alt="Фото котика" title="Фото котика">
+                    <figcaption class="add-to-bucket">Добавить в корзинку</figcaption>
+                </figure>
+                <section class="item-info">
+                    <h2 class="item-info__name">
+                        <a href="http://ya.ru" target="blank" title="Яндекс">
+                            Машка
+                        </a>
+                    </h2>
+                    <p class="item-info__category">
+                        Порода: 
+                        <span class="link-on-category">Бобтейл</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-4__1">
+                            <span class="muzzle" title="Доброта 10%"></span>
+                        </label>
+                        <input type="radio" id="set-4__1" name="set-4">
+
+                        <label for="set-4__2">
+                            <span class="muzzle" title="Доброта 20%"></span>
+                        </label>
+                        <input type="radio" id="set-4__2" name="set-4">
+
+                        <label for="set-4__3">
+                            <span class="muzzle" title="Доброта 30%"></span>
+                        </label>
+                        <input type="radio" id="set-4__3" name="set-4">
+
+                        <label for="set-4__4">
+                            <span class="muzzle" title="Доброта 40%"></span>
+                        </label>
+                        <input type="radio" id="set-4__4" name="set-4">
+
+                        <label for="set-4__5">
+                            <span class="muzzle" title="Доброта 50%"></span>
+                        </label>
+                        <input type="radio" id="set-4__5" name="set-4">
+
+                        <label for="set-4__6">
+                            <span class="muzzle" title="Доброта 60%"></span>
+                        </label>
+                        <input type="radio" id="set-4__6" name="set-4" checked>
+
+                        <label for="set-4__7">
+                            <span class="muzzle" title="Доброта 70%"></span>
+                        </label>
+                        <input type="radio" id="set-4__7" name="set-4">
+
+                        <label for="set-4__8">
+                            <span class="muzzle" title="Доброта 80%"></span>
+                        </label>
+                        <input type="radio" id="set-4__8" name="set-4">
+
+                        <label for="set-4__9">
+                            <span class="muzzle" title="Доброта 90%"></span>
+                        </label>
+                        <input type="radio" id="set-4__9" name="set-4">
+
+                        <label for="set-4__10">
+                            <span class="muzzle" title="Доброта 100%"></span>
+                        </label>
+                        <input type="radio" id="set-4__10" name="set-4">
+                    </div>
+                    <p class="item-info__price">750 &#8381;</p>
+                </section>
+                <section class="item-description">
+                    <h3 class="item-description__header">Краткое описание</h3>
+                    <p class="item-description__text">
+                        Ры&shy;жая бес&shy;тия. Толь&shy;ко с ви&shy;ду ка&shy;жет&shy;ся 
+                        ми&shy;лой и по&shy;кла&shy;ди&shy;стой. На са&shy;мом же де&shy;ле 
+                        в ней спит на&shy;сто&shy;я&shy;щий де&shy;мон. Осо&shy;бен&shy;но 
+                        в от&shy;но&shy;ше&shy;нии к ков&shy;рам и ди&shy;ва&shy;нам.
+                    </p>
+                </section>
+            </article>
+
+            <article class="market-item">
+                <figure class="item-photo">
+                    <img class="item-photo__source" src="images/cat5.jpg" 
+                    alt="Фото котика" title="Фото котика">
+                    <figcaption class="add-to-bucket">Добавить в корзинку</figcaption>
+                </figure>
+                <section class="item-info">
+                    <h2 class="item-info__name">
+                        <a href="http://ya.ru" target="blank" title="Яндекс">
+                            Мусяндра
+                        </a>
+                    </h2>
+                    <p class="item-info__category">
+                        Порода: 
+                        <span class="link-on-category">Сибирская</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-5__1">
+                            <span class="muzzle" title="Доброта 10%"></span>
+                        </label>
+                        <input type="radio" id="set-5__1" name="set-5" checked>
+
+                        <label for="set-5__2">
+                            <span class="muzzle" title="Доброта 20%"></span>
+                        </label>
+                        <input type="radio" id="set-5__2" name="set-5">
+
+                        <label for="set-5__3">
+                            <span class="muzzle" title="Доброта 30%"></span>
+                        </label>
+                        <input type="radio" id="set-5__3" name="set-5">
+
+                        <label for="set-5__4">
+                            <span class="muzzle" title="Доброта 40%"></span>
+                        </label>
+                        <input type="radio" id="set-5__4" name="set-5">
+
+                        <label for="set-5__5">
+                            <span class="muzzle" title="Доброта 50%"></span>
+                        </label>
+                        <input type="radio" id="set-5__5" name="set-5">
+
+                        <label for="set-5__6">
+                            <span class="muzzle" title="Доброта 60%"></span>
+                        </label>
+                        <input type="radio" id="set-5__6" name="set-5">
+
+                        <label for="set-5__7">
+                            <span class="muzzle" title="Доброта 70%"></span>
+                        </label>
+                        <input type="radio" id="set-5__7" name="set-5">
+
+                        <label for="set-5__8">
+                            <span class="muzzle" title="Доброта 80%"></span>
+                        </label>
+                        <input type="radio" id="set-5__8" name="set-5">
+
+                        <label for="set-5__9">
+                            <span class="muzzle" title="Доброта 90%"></span>
+                        </label>
+                        <input type="radio" id="set-5__9" name="set-5">
+
+                        <label for="set-5__10">
+                            <span class="muzzle" title="Доброта 100%"></span>
+                        </label>
+                        <input type="radio" id="set-5__10" name="set-5">
+                    </div>
+                    <p class="item-info__price">
+                        1500 &#8381; <span class="item-info__price--old">2000 &#8381;</span>
+                    </p>
+                </section>
+                <section class="item-description">
+                    <h3 class="item-description__header">Краткое описание</h3>
+                    <p class="item-description__text">
+                        Са&shy;мо спо&shy;кой&shy;ствие. Лю&shy;бит лас&shy;ку, неж&shy;ность 
+                        и корм Wiskas для ко&shy;тят. Мур&shy;лы&shy;чет по&shy;сто&shy;ян&shy;но, 
+                        тем са&shy;мым сни&shy;ма&shy;ет уста&shy;лость 
+                        и на&shy;пря&shy;же&shy;ние.
+                    </p>
+                </section>
+            </article>
+
+            <article class="market-item">
+                <figure class="item-photo">
+                    <img class="item-photo__source" src="images/cat6.jpg" 
+                    alt="Фото котика" title="Фото котика">
+                    <figcaption class="add-to-bucket">Добавить в корзинку</figcaption>
+                </figure>
+                <section class="item-info">
+                    <h2 class="item-info__name">
+                        <a href="http://ya.ru" target="blank" title="Яндекс">
+                            Рыжик
+                        </a>
+                    </h2>
+                    <p class="item-info__category">
+                        Порода: 
+                        <span class="link-on-category">Бурманская</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-6__1">
+                            <span class="muzzle" title="Доброта 10%"></span>
+                        </label>
+                        <input type="radio" id="set-6__1" name="set-6">
+
+                        <label for="set-6__2">
+                            <span class="muzzle" title="Доброта 20%"></span>
+                        </label>
+                        <input type="radio" id="set-6__2" name="set-6">
+
+                        <label for="set-6__3">
+                            <span class="muzzle" title="Доброта 30%"></span>
+                        </label>
+                        <input type="radio" id="set-6__3" name="set-6">
+
+                        <label for="set-6__4">
+                            <span class="muzzle" title="Доброта 40%"></span>
+                        </label>
+                        <input type="radio" id="set-6__4" name="set-6" checked>
+
+                        <label for="set-6__5">
+                            <span class="muzzle" title="Доброта 50%"></span>
+                        </label>
+                        <input type="radio" id="set-6__5" name="set-6">
+
+                        <label for="set-6__6">
+                            <span class="muzzle" title="Доброта 60%"></span>
+                        </label>
+                        <input type="radio" id="set-6__6" name="set-6">
+
+                        <label for="set-6__7">
+                            <span class="muzzle" title="Доброта 70%"></span>
+                        </label>
+                        <input type="radio" id="set-6__7" name="set-6">
+
+                        <label for="set-6__8">
+                            <span class="muzzle" title="Доброта 80%"></span>
+                        </label>
+                        <input type="radio" id="set-6__8" name="set-6">
+
+                        <label for="set-6__9">
+                            <span class="muzzle" title="Доброта 90%"></span>
+                        </label>
+                        <input type="radio" id="set-6__9" name="set-6">
+
+                        <label for="set-6__10">
+                            <span class="muzzle" title="Доброта 100%"></span>
+                        </label>
+                        <input type="radio" id="set-6__10" name="set-6">
+                    </div>
+                    <p class="item-info__price">
+                        5000 &#8381;
+                    </p>
+                </section>
+                <section class="item-description">
+                    <h3 class="item-description__header">Краткое описание</h3>
+                    <p class="item-description__text">
+                        На&shy;сто&shy;я&shy;щий Дон Жу&shy;ан сре&shy;ди ко&shy;тов. 
+                        Не лю&shy;бит квар&shy;тир&shy;ную жизнь, ему нуж&shy;на 
+                        сво&shy;бо&shy;да и кра&shy;си&shy;вые ко&shy;шеч&shy;ки. Кста&shy;ти, 
+                        ко&shy;тят он то&shy;же очень лю&shy;бит, по&shy;это&shy;му 
+                        го&shy;товь&shy;тесь к по&shy;сто&shy;ян&shy;но&shy;му 
+                        ко&shy;ша&shy;чье&shy;му де&shy;мо&shy;гра&shy;фи&shy;че&shy;ско&shy;му 
+                        при&shy;ро&shy;сту.
+                    </p>
+                </section>
+            </article>
+
+            <article class="market-item">
+                <figure class="item-photo">
+                    <img class="item-photo__source" src="images/cat7.jpg" 
+                    alt="Фото котика" title="Фото котика">
+                    <figcaption class="add-to-bucket">Добавить в корзинку</figcaption>
+                </figure>
+                <section class="item-info">
+                    <h2 class="item-info__name">
+                        <a href="http://ya.ru" target="blank" title="Яндекс">
+                            Чешир
+                        </a>
+                    </h2>
+                    <p class="item-info__category">
+                        Порода: 
+                        <span class="link-on-category">Русская дворовая</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-7__1">
+                            <span class="muzzle" title="Доброта 10%"></span>
+                        </label>
+                        <input type="radio" id="set-7__1" name="set-7">
+
+                        <label for="set-7__2">
+                            <span class="muzzle" title="Доброта 20%"></span>
+                        </label>
+                        <input type="radio" id="set-7__2" name="set-7">
+
+                        <label for="set-7__3">
+                            <span class="muzzle" title="Доброта 30%"></span>
+                        </label>
+                        <input type="radio" id="set-7__3" name="set-7">
+
+                        <label for="set-7__4">
+                            <span class="muzzle" title="Доброта 40%"></span>
+                        </label>
+                        <input type="radio" id="set-7__4" name="set-7">
+
+                        <label for="set-7__5">
+                            <span class="muzzle" title="Доброта 50%"></span>
+                        </label>
+                        <input type="radio" id="set-7__5" name="set-7">
+
+                        <label for="set-7__6">
+                            <span class="muzzle" title="Доброта 60%"></span>
+                        </label>
+                        <input type="radio" id="set-7__6" name="set-7">
+
+                        <label for="set-7__7">
+                            <span class="muzzle" title="Доброта 70%"></span>
+                        </label>
+                        <input type="radio" id="set-7__7" name="set-7">
+
+                        <label for="set-7__8">
+                            <span class="muzzle" title="Доброта 80%"></span>
+                        </label>
+                        <input type="radio" id="set-7__8" name="set-7">
+
+                        <label for="set-7__9">
+                            <span class="muzzle" title="Доброта 90%"></span>
+                        </label>
+                        <input type="radio" id="set-7__9" name="set-7">
+
+                        <label for="set-7__10">
+                            <span class="muzzle" title="Доброта 100%"></span>
+                        </label>
+                        <input type="radio" id="set-7__10" name="set-7" checked>
+                    </div>
+                    <p class="item-info__price">
+                        500 &#8381; <span class="item-info__price--old">1000 &#8381;</span>
+                    </p>
+                </section>
+                <section class="item-description">
+                    <h3 class="item-description__header">Краткое описание</h3>
+                    <p class="item-description__text">
+                        С пер&shy;во&shy;го взгля&shy;да ка&shy;жет&shy;ся, 
+                        что он разо&shy;ча&shy;ро&shy;ван в жиз&shy;ни. Но внеш&shy;ность 
+                        об&shy;ман&shy;чи&shy;ва. Он обо&shy;жа&shy;ет иг&shy;рать 
+                        с бу&shy;маж&shy;ка&shy;ми, фан&shy;ти&shy;ка&shy;ми 
+                        и Ва&shy;ши&shy;ми пят&shy;ка&shy;ми.
+                    </p>
+                </section>
+            </article>
+
+            <article class="market-item">
+                <figure class="item-photo">
+                    <img class="item-photo__source" src="images/cat8.jpg" 
+                    alt="Фото котика" title="Фото котика">
+                    <figcaption class="add-to-bucket">Добавить в корзинку</figcaption>
+                </figure>
+                <section class="item-info">
+                    <h2 class="item-info__name">
+                        <a href="http://ya.ru" target="blank" title="Яндекс">
+                            Вишенка
+                        </a>
+                    </h2>
+                    <p class="item-info__category">
+                        Порода: 
+                        <span class="link-on-category">Русская голубая</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-8__1">
+                            <span class="muzzle" title="Доброта 10%"></span>
+                        </label>
+                        <input type="radio" id="set-8__1" name="set-8">
+
+                        <label for="set-8__2">
+                            <span class="muzzle" title="Доброта 20%"></span>
+                        </label>
+                        <input type="radio" id="set-8__2" name="set-8" checked>
+
+                        <label for="set-8__3">
+                            <span class="muzzle" title="Доброта 30%"></span>
+                        </label>
+                        <input type="radio" id="set-8__3" name="set-8">
+
+                        <label for="set-8__4">
+                            <span class="muzzle" title="Доброта 40%"></span>
+                        </label>
+                        <input type="radio" id="set-8__4" name="set-8">
+
+                        <label for="set-8__5">
+                            <span class="muzzle" title="Доброта 50%"></span>
+                        </label>
+                        <input type="radio" id="set-8__5" name="set-8">
+
+                        <label for="set-8__6">
+                            <span class="muzzle" title="Доброта 60%"></span>
+                        </label>
+                        <input type="radio" id="set-8__6" name="set-8">
+
+                        <label for="set-8__7">
+                            <span class="muzzle" title="Доброта 70%"></span>
+                        </label>
+                        <input type="radio" id="set-8__7" name="set-8">
+
+                        <label for="set-8__8">
+                            <span class="muzzle" title="Доброта 80%"></span>
+                        </label>
+                        <input type="radio" id="set-8__8" name="set-8">
+
+                        <label for="set-8__9">
+                            <span class="muzzle" title="Доброта 90%"></span>
+                        </label>
+                        <input type="radio" id="set-8__9" name="set-8">
+
+                        <label for="set-8__10">
+                            <span class="muzzle" title="Доброта 100%"></span>
+                        </label>
+                        <input type="radio" id="set-8__10" name="set-8">
+                    </div>
+                    <p class="item-info__price">
+                        300 &#8381;
+                    </p>
+                </section>
+                <section class="item-description">
+                    <h3 class="item-description__header">Краткое описание</h3>
+                    <p class="item-description__text">
+                        Очень лю&shy;бит виш&shy;ню, че&shy;реш&shy;ню и лю&shy;бые 
+                        дру&shy;гие фрук&shy;ты.
+                    </p>
+                </section>
+            </article>
+
+            <article class="market-item">
+                <figure class="item-photo">
+                    <img class="item-photo__source" src="images/cat9.jpg" 
+                    alt="Фото котика" title="Фото котика">
+                    <figcaption class="add-to-bucket">Добавить в корзинку</figcaption>
+                </figure>
+                <section class="item-info">
+                    <h2 class="item-info__name">
+                        <a href="http://ya.ru" target="blank" title="Яндекс">
+                            Пьеро
+                        </a>
+                    </h2>
+                    <p class="item-info__category">
+                        Порода: 
+                        <span class="link-on-category">Русская голубая</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-9__1">
+                            <span class="muzzle" title="Доброта 10%"></span>
+                        </label>
+                        <input type="radio" id="set-9__1" name="set-9">
+
+                        <label for="set-9__2">
+                            <span class="muzzle" title="Доброта 20%"></span>
+                        </label>
+                        <input type="radio" id="set-9__2" name="set-9">
+
+                        <label for="set-9__3">
+                            <span class="muzzle" title="Доброта 30%"></span>
+                        </label>
+                        <input type="radio" id="set-9__3" name="set-9">
+
+                        <label for="set-9__4">
+                            <span class="muzzle" title="Доброта 40%"></span>
+                        </label>
+                        <input type="radio" id="set-9__4" name="set-9">
+
+                        <label for="set-9__5">
+                            <span class="muzzle" title="Доброта 50%"></span>
+                        </label>
+                        <input type="radio" id="set-9__5" name="set-9">
+
+                        <label for="set-9__6">
+                            <span class="muzzle" title="Доброта 60%"></span>
+                        </label>
+                        <input type="radio" id="set-9__6" name="set-9" checked>
+
+                        <label for="set-9__7">
+                            <span class="muzzle" title="Доброта 70%"></span>
+                        </label>
+                        <input type="radio" id="set-9__7" name="set-9">
+
+                        <label for="set-9__8">
+                            <span class="muzzle" title="Доброта 80%"></span>
+                        </label>
+                        <input type="radio" id="set-9__8" name="set-9">
+
+                        <label for="set-9__9">
+                            <span class="muzzle" title="Доброта 90%"></span>
+                        </label>
+                        <input type="radio" id="set-9__9" name="set-9">
+
+                        <label for="set-9__10">
+                            <span class="muzzle" title="Доброта 100%"></span>
+                        </label>
+                        <input type="radio" id="set-9__10" name="set-9">
+                    </div>
+                    <p class="item-info__price">
+                        Бесплатно
+                    </p>
+                </section>
+                <section class="item-description">
+                    <h3 class="item-description__header">Краткое описание</h3>
+                    <p class="item-description__text">
+                        Очень лю&shy;бит петь. Вот толь&shy;ко по&shy;ёт он не очень 
+                        хо&shy;ро&shy;шо. По&shy;жа&shy;луй&shy;ста, за&shy;бе&shy;ри&shy;те его!
+                    </p>
+                </section>
+            </article>
+
+            <article class="market-item">
+                <figure class="item-photo">
+                    <img class="item-photo__source" src="images/cat10.jpg" 
+                    alt="Фото котика" title="Фото котика">
+                    <figcaption class="add-to-bucket">Добавить в корзинку</figcaption>
+                </figure>
+                <section class="item-info">
+                    <h2 class="item-info__name">
+                        <a href="http://ya.ru" target="blank" title="Яндекс">
+                            Пушок
+                        </a>
+                    </h2>
+                    <p class="item-info__category">
+                        Порода: 
+                        <span class="link-on-category">Манкс</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-10__1">
+                            <span class="muzzle" title="Доброта 10%"></span>
+                        </label>
+                        <input type="radio" id="set-10__1" name="set-10">
+
+                        <label for="set-10__2">
+                            <span class="muzzle" title="Доброта 20%"></span>
+                        </label>
+                        <input type="radio" id="set-10__2" name="set-10">
+
+                        <label for="set-10__3">
+                            <span class="muzzle" title="Доброта 30%"></span>
+                        </label>
+                        <input type="radio" id="set-10__3" name="set-10">
+
+                        <label for="set-10__4">
+                            <span class="muzzle" title="Доброта 40%"></span>
+                        </label>
+                        <input type="radio" id="set-10__4" name="set-10">
+
+                        <label for="set-10__5">
+                            <span class="muzzle" title="Доброта 50%"></span>
+                        </label>
+                        <input type="radio" id="set-10__5" name="set-10">
+
+                        <label for="set-10__6">
+                            <span class="muzzle" title="Доброта 60%"></span>
+                        </label>
+                        <input type="radio" id="set-10__6" name="set-10">
+
+                        <label for="set-10__7">
+                            <span class="muzzle" title="Доброта 70%"></span>
+                        </label>
+                        <input type="radio" id="set-10__7" name="set-10">
+
+                        <label for="set-10__8">
+                            <span class="muzzle" title="Доброта 80%"></span>
+                        </label>
+                        <input type="radio" id="set-10__8" name="set-10">
+
+                        <label for="set-10__9">
+                            <span class="muzzle" title="Доброта 90%"></span>
+                        </label>
+                        <input type="radio" id="set-10__9" name="set-10" checked>
+
+                        <label for="set-10__10">
+                            <span class="muzzle" title="Доброта 100%"></span>
+                        </label>
+                        <input type="radio" id="set-10__10" name="set-10">
+                    </div>
+                    <p class="item-info__price">
+                        2000 &#8381;
+                    </p>
+                </section>
+                <section class="item-description">
+                    <h3 class="item-description__header">Краткое описание</h3>
+                    <p class="item-description__text">
+                        Доб&shy;ряш&shy;ка. Про&shy;фес&shy;си&shy;о&shy;наль&shy;ный охот&shy;ник 
+                        на мы&shy;шей. За каж&shy;дую мышь про&shy;сит про&shy;гла&shy;дить 
+                        и уго&shy;стить рыб&shy;кой.
+                    </p>
+                </section>
+            </article>
+
+            <article class="market-item">
+                <figure class="item-photo">
+                    <img class="item-photo__source" src="images/cat11.jpg" 
+                    alt="Фото котика" title="Фото котика">
+                    <figcaption class="add-to-bucket">Добавить в корзинку</figcaption>
+                </figure>
+                <section class="item-info">
+                    <h2 class="item-info__name">
+                        <a href="http://ya.ru" target="blank" title="Яндекс">
+                            Сонечка
+                        </a>
+                    </h2>
+                    <p class="item-info__category">
+                        Порода: 
+                        <span class="link-on-category">Русская дворовая</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-11__1">
+                            <span class="muzzle" title="Доброта 10%"></span>
+                        </label>
+                        <input type="radio" id="set-11__1" name="set-11">
+
+                        <label for="set-11__2">
+                            <span class="muzzle" title="Доброта 20%"></span>
+                        </label>
+                        <input type="radio" id="set-11__2" name="set-11">
+
+                        <label for="set-11__3">
+                            <span class="muzzle" title="Доброта 30%"></span>
+                        </label>
+                        <input type="radio" id="set-11__3" name="set-11" checked>
+
+                        <label for="set-11__4">
+                            <span class="muzzle" title="Доброта 40%"></span>
+                        </label>
+                        <input type="radio" id="set-11__4" name="set-11">
+
+                        <label for="set-11__5">
+                            <span class="muzzle" title="Доброта 50%"></span>
+                        </label>
+                        <input type="radio" id="set-11__5" name="set-11">
+
+                        <label for="set-11__6">
+                            <span class="muzzle" title="Доброта 60%"></span>
+                        </label>
+                        <input type="radio" id="set-11__6" name="set-11">
+
+                        <label for="set-11__7">
+                            <span class="muzzle" title="Доброта 70%"></span>
+                        </label>
+                        <input type="radio" id="set-11__7" name="set-11">
+
+                        <label for="set-11__8">
+                            <span class="muzzle" title="Доброта 80%"></span>
+                        </label>
+                        <input type="radio" id="set-11__8" name="set-11">
+
+                        <label for="set-11__9">
+                            <span class="muzzle" title="Доброта 90%"></span>
+                        </label>
+                        <input type="radio" id="set-11__9" name="set-11">
+
+                        <label for="set-11__10">
+                            <span class="muzzle" title="Доброта 100%"></span>
+                        </label>
+                        <input type="radio" id="set-11__10" name="set-11">
+                    </div>
+                    <p class="item-info__price">
+                        500 &#8381;
+                    </p>
+                </section>
+                <section class="item-description">
+                    <h3 class="item-description__header">Краткое описание</h3>
+                    <p class="item-description__text">
+                        Спит вез&shy;де и все&shy;гда. Осо&shy;бен&shy;но ря&shy;дом 
+                        с хо&shy;зя&shy;и&shy;ном. Осо&shy;бен&shy;но у не&shy;го 
+                        на ко&shy;ле&shy;нях или го&shy;ло&shy;ве.
+                    </p>
+                </section>
+            </article>
+
+            <article class="market-item">
+                <figure class="item-photo">
+                    <img class="item-photo__source" src="images/cat12.jpg" 
+                    alt="Фото котика" title="Фото котика">
+                    <figcaption class="add-to-bucket">Добавить в корзинку</figcaption>
+                </figure>
+                <section class="item-info">
+                    <h2 class="item-info__name">
+                        <a href="http://ya.ru" target="blank" title="Яндекс">
+                            Кракозябра
+                        </a>
+                    </h2>
+                    <p class="item-info__category">
+                        Порода: 
+                        <span class="link-on-category">Табби</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-12__1">
+                            <span class="muzzle" title="Доброта 10%"></span>
+                        </label>
+                        <input type="radio" id="set-12__1" name="set-12">
+
+                        <label for="set-12__2">
+                            <span class="muzzle" title="Доброта 20%"></span>
+                        </label>
+                        <input type="radio" id="set-12__2" name="set-12">
+
+                        <label for="set-12__3">
+                            <span class="muzzle" title="Доброта 30%"></span>
+                        </label>
+                        <input type="radio" id="set-12__3" name="set-12">
+
+                        <label for="set-12__4">
+                            <span class="muzzle" title="Доброта 40%"></span>
+                        </label>
+                        <input type="radio" id="set-12__4" name="set-12">
+
+                        <label for="set-12__5">
+                            <span class="muzzle" title="Доброта 50%"></span>
+                        </label>
+                        <input type="radio" id="set-12__5" name="set-12">
+
+                        <label for="set-12__6">
+                            <span class="muzzle" title="Доброта 60%"></span>
+                        </label>
+                        <input type="radio" id="set-12__6" name="set-12">
+
+                        <label for="set-12__7">
+                            <span class="muzzle" title="Доброта 70%"></span>
+                        </label>
+                        <input type="radio" id="set-12__7" name="set-12" checked>
+
+                        <label for="set-12__8">
+                            <span class="muzzle" title="Доброта 80%"></span>
+                        </label>
+                        <input type="radio" id="set-12__8" name="set-12">
+
+                        <label for="set-12__9">
+                            <span class="muzzle" title="Доброта 90%"></span>
+                        </label>
+                        <input type="radio" id="set-12__9" name="set-12">
+
+                        <label for="set-12__10">
+                            <span class="muzzle" title="Доброта 100%"></span>
+                        </label>
+                        <input type="radio" id="set-12__10" name="set-12">
+                    </div>
+                    <p class="item-info__price">
+                        400 &#8381; <span class="item-info__price--old">500 &#8381;</span>
+                    </p>
+                </section>
+                <section class="item-description">
+                    <h3 class="item-description__header">Краткое описание</h3>
+                    <p class="item-description__text">
+                        Обо&shy;жа&shy;ет шкод&shy;ни&shy;чать и бе&shy;гать с утра 
+                        по&shy;рань&shy;ше. А ещё очень лю&shy;бит де&shy;тей. Сме&shy;ло 
+                        бе&shy;ри&shy;те её к се&shy;бе в дом, скуч&shy;но не бу&shy;дет.
+                    </p>
+                </section>
+            </article>
+
+            <article class="market-item">
+                <figure class="item-photo">
+                    <img class="item-photo__source" src="images/cat13.jpg" 
+                    alt="Фото котика" title="Фото котика">
+                    <figcaption class="add-to-bucket">Добавить в корзинку</figcaption>
+                </figure>
+                <section class="item-info">
+                    <h2 class="item-info__name">
+                        <a href="http://ya.ru" target="blank" title="Яндекс">
+                            Барбос
+                        </a>
+                    </h2>
+                    <p class="item-info__category">
+                        Порода: 
+                        <span class="link-on-category">Другое</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-13__1">
+                            <span class="muzzle" title="Доброта 10%"></span>
+                        </label>
+                        <input type="radio" id="set-13__1" name="set-13">
+
+                        <label for="set-13__2">
+                            <span class="muzzle" title="Доброта 20%"></span>
+                        </label>
+                        <input type="radio" id="set-13__2" name="set-13">
+
+                        <label for="set-13__3">
+                            <span class="muzzle" title="Доброта 30%"></span>
+                        </label>
+                        <input type="radio" id="set-13__3" name="set-13">
+
+                        <label for="set-13__4">
+                            <span class="muzzle" title="Доброта 40%"></span>
+                        </label>
+                        <input type="radio" id="set-13__4" name="set-13" checked>
+
+                        <label for="set-13__5">
+                            <span class="muzzle" title="Доброта 50%"></span>
+                        </label>
+                        <input type="radio" id="set-13__5" name="set-13">
+
+                        <label for="set-13__6">
+                            <span class="muzzle" title="Доброта 60%"></span>
+                        </label>
+                        <input type="radio" id="set-13__6" name="set-13">
+
+                        <label for="set-13__7">
+                            <span class="muzzle" title="Доброта 70%"></span>
+                        </label>
+                        <input type="radio" id="set-13__7" name="set-13">
+
+                        <label for="set-13__8">
+                            <span class="muzzle" title="Доброта 80%"></span>
+                        </label>
+                        <input type="radio" id="set-13__8" name="set-13">
+
+                        <label for="set-13__9">
+                            <span class="muzzle" title="Доброта 90%"></span>
+                        </label>
+                        <input type="radio" id="set-13__9" name="set-13">
+
+                        <label for="set-13__10">
+                            <span class="muzzle" title="Доброта 100%"></span>
+                        </label>
+                        <input type="radio" id="set-13__10" name="set-13">
+                    </div>
+                    <p class="item-info__price">
+                        600 &#8381;
+                    </p>
+                </section>
+                <section class="item-description">
+                    <h3 class="item-description__header">Краткое описание</h3>
+                    <p class="item-description__text">
+                        Ред&shy;кий слу&shy;чай, ко&shy;гда пёс вы&shy;рос в ко&shy;ше&shy;чьем 
+                        об&shy;ще&shy;стве и те&shy;перь чув&shy;ству&shy;ет се&shy;бя 
+                        на&shy;сто&shy;я&shy;щим ко&shy;том. Про&shy;да&shy;ёт&shy;ся 
+                        в ком&shy;плек&shy;те с луч&shy;шим дру&shy;гом - ко&shy;том 
+                        Сте&shy;па&shy;ном.
+                    </p>
+                </section>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
