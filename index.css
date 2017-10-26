@@ -51,6 +51,7 @@ img:hover
 
 label.list
 {
+    display: inline-block;
     padding: 10px;
     content: url(list.png);
 }
@@ -95,6 +96,7 @@ input.list:checked ~ section > article > img
 
 label.gallery
 {
+    display: inline-block;
     padding: 10px;
     content: url(gallery.png);
 }
