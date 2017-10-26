@@ -8,27 +8,27 @@
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
+    <input id="show__list" type="radio" name="show" >
+    <input id="show__tile" type="radio" name="show" checked>
+
     <main>
         <nav class="market-navigation">
             <span class="market-navigation__market-name">
                 <span class="market-navigation__icon">=^･ｪ･^=</span> 
                 <span class="red-text">М</span>яндекс.<span class="red-text">М</span>уррркет
             </span>
-            <div class="show-market">
-                <label for="show-market__as-tile">
-                    <img class="show-market__icon" src="images/show_as_tile.png" 
+            <div class="show">
+                <label for="show__tile">
+                    <img class="show__icon" src="images/show_as_tile.png" 
                     alt="Иконка плитки" title="Плитка">
                 </label>
-                <label for="show-market__as-list">
-                    <img class="show-market__icon" src="images/show_as_list.png" 
+                <label for="show__list">
+                    <img class="show__icon" src="images/show_as_list.png" 
                     alt="Иконка списка" title="Список">
                 </label>
             </div>
         </nav>
         <section class="market">
-            <input id="show-market__as-list" type="radio" name="show-market">
-            <input id="show-market__as-tile" type="radio" name="show-market" checked>
-
             <h2 class="section-header">Замурррчательные котики</h2>
 
             <article class="market-item">
@@ -48,55 +48,35 @@
                         <span class="link-on-category">Русская дворовая</span>
                     </p>
                     <div class="rating">
-                        <label for="set-1__1">
-                            <span class="muzzle" title="Доброта 10%"></span>
-                        </label>
-                        <input type="radio" id="set-1__1" name="set-1">
+                        <label for="set-1__1" class="muzzle" title="Доброта 10%"></label>
+                        <input type="radio" id="set-1__1" name="set-1" >
 
-                        <label for="set-1__2">
-                            <span class="muzzle" title="Доброта 20%"></span>
-                        </label>
-                        <input type="radio" id="set-1__2" name="set-1">
+                        <label for="set-1__2" class="muzzle" title="Доброта 20%"></label>
+                        <input type="radio" id="set-1__2" name="set-1" >
 
-                        <label for="set-1__3">
-                            <span class="muzzle" title="Доброта 30%"></span>
-                        </label>
-                        <input type="radio" id="set-1__3" name="set-1">
+                        <label for="set-1__3" class="muzzle" title="Доброта 30%"></label>
+                        <input type="radio" id="set-1__3" name="set-1" >
 
-                        <label for="set-1__4">
-                            <span class="muzzle" title="Доброта 40%"></span>
-                        </label>
-                        <input type="radio" id="set-1__4" name="set-1" checked>
+                        <label for="set-1__4" class="muzzle" title="Доброта 40%"></label>
+                        <input type="radio" id="set-1__4" name="set-1" >
 
-                        <label for="set-1__5">
-                            <span class="muzzle" title="Доброта 50%"></span>
-                        </label>
-                        <input type="radio" id="set-1__5" name="set-1">
+                        <label for="set-1__5" class="muzzle" title="Доброта 50%"></label>
+                        <input type="radio" id="set-1__5" name="set-1" checked>
 
-                        <label for="set-1__6">
-                            <span class="muzzle" title="Доброта 60%"></span>
-                        </label>
-                        <input type="radio" id="set-1__6" name="set-1">
+                        <label for="set-1__6" class="muzzle" title="Доброта 60%"></label>
+                        <input type="radio" id="set-1__6" name="set-1" >
 
-                        <label for="set-1__7">
-                            <span class="muzzle" title="Доброта 70%"></span>
-                        </label>
-                        <input type="radio" id="set-1__7" name="set-1">
+                        <label for="set-1__7" class="muzzle" title="Доброта 70%"></label>
+                        <input type="radio" id="set-1__7" name="set-1" >
 
-                        <label for="set-1__8">
-                            <span class="muzzle" title="Доброта 80%"></span>
-                        </label>
-                        <input type="radio" id="set-1__8" name="set-1">
+                        <label for="set-1__8" class="muzzle" title="Доброта 80%"></label>
+                        <input type="radio" id="set-1__8" name="set-1" >
 
-                        <label for="set-1__9">
-                            <span class="muzzle" title="Доброта 90%"></span>
-                        </label>
-                        <input type="radio" id="set-1__9" name="set-1">
+                        <label for="set-1__9" class="muzzle" title="Доброта 90%"></label>
+                        <input type="radio" id="set-1__9" name="set-1" >
 
-                        <label for="set-1__10">
-                            <span class="muzzle" title="Доброта 100%"></span>
-                        </label>
-                        <input type="radio" id="set-1__10" name="set-1">
+                        <label for="set-1__10" class="muzzle" title="Доброта 100%"></label>
+                        <input type="radio" id="set-1__10" name="set-1" >
                     </div>
                     <p class="item-info__price">
                         500 &#8381; <span class="item-info__price--old">1000 &#8381;</span>
@@ -129,55 +109,35 @@
                         <span class="link-on-category">Персидская</span>
                     </p>
                     <div class="rating">
-                        <label for="set-2__1">
-                            <span class="muzzle" title="Доброта 10%"></span>
-                        </label>
-                        <input type="radio" id="set-2__1" name="set-2">
+                        <label for="set-2__1" class="muzzle" title="Доброта 10%"></label>
+                        <input type="radio" id="set-2__1" name="set-2" >
 
-                        <label for="set-2__2">
-                            <span class="muzzle" title="Доброта 20%"></span>
-                        </label>
-                        <input type="radio" id="set-2__2" name="set-2">
+                        <label for="set-2__2" class="muzzle" title="Доброта 20%"></label>
+                        <input type="radio" id="set-2__2" name="set-2" >
 
-                        <label for="set-2__3">
-                            <span class="muzzle" title="Доброта 30%"></span>
-                        </label>
+                        <label for="set-2__3" class="muzzle" title="Доброта 30%"></label>
                         <input type="radio" id="set-2__3" name="set-2" checked>
 
-                        <label for="set-2__4">
-                            <span class="muzzle" title="Доброта 40%"></span>
-                        </label>
-                        <input type="radio" id="set-2__4" name="set-2">
+                        <label for="set-2__4" class="muzzle" title="Доброта 40%"></label>
+                        <input type="radio" id="set-2__4" name="set-2" >
 
-                        <label for="set-2__5">
-                            <span class="muzzle" title="Доброта 50%"></span>
-                        </label>
-                        <input type="radio" id="set-2__5" name="set-2">
+                        <label for="set-2__5" class="muzzle" title="Доброта 50%"></label>
+                        <input type="radio" id="set-2__5" name="set-2" >
 
-                        <label for="set-2__6">
-                            <span class="muzzle" title="Доброта 60%"></span>
-                        </label>
-                        <input type="radio" id="set-2__6" name="set-2">
+                        <label for="set-2__6" class="muzzle" title="Доброта 60%"></label>
+                        <input type="radio" id="set-2__6" name="set-2" >
 
-                        <label for="set-2__7">
-                            <span class="muzzle" title="Доброта 70%"></span>
-                        </label>
-                        <input type="radio" id="set-2__7" name="set-2">
+                        <label for="set-2__7" class="muzzle" title="Доброта 70%"></label>
+                        <input type="radio" id="set-2__7" name="set-2" >
 
-                        <label for="set-2__8">
-                            <span class="muzzle" title="Доброта 80%"></span>
-                        </label>
-                        <input type="radio" id="set-2__8" name="set-2">
+                        <label for="set-2__8" class="muzzle" title="Доброта 80%"></label>
+                        <input type="radio" id="set-2__8" name="set-2" >
 
-                        <label for="set-2__9">
-                            <span class="muzzle" title="Доброта 90%"></span>
-                        </label>
-                        <input type="radio" id="set-2__9" name="set-2">
+                        <label for="set-2__9" class="muzzle" title="Доброта 90%"></label>
+                        <input type="radio" id="set-2__9" name="set-2" >
 
-                        <label for="set-2__10">
-                            <span class="muzzle" title="Доброта 100%"></span>
-                        </label>
-                        <input type="radio" id="set-2__10" name="set-2">
+                        <label for="set-2__10" class="muzzle" title="Доброта 100%"></label>
+                        <input type="radio" id="set-2__10" name="set-2" >
                     </div>
                     <p class="item-info__price">
                         1500 &#8381;
@@ -212,55 +172,35 @@
                         <span class="link-on-category">Абиссинская</span>
                     </p>
                     <div class="rating">
-                        <label for="set-3__1">
-                            <span class="muzzle" title="Доброта 10%"></span>
-                        </label>
-                        <input type="radio" id="set-3__1" name="set-3">
+                        <label for="set-3__1" class="muzzle" title="Доброта 10%"></label>
+                        <input type="radio" id="set-3__1" name="set-3" >
 
-                        <label for="set-3__2">
-                            <span class="muzzle" title="Доброта 20%"></span>
-                        </label>
-                        <input type="radio" id="set-3__2" name="set-3">
+                        <label for="set-3__2" class="muzzle" title="Доброта 20%"></label>
+                        <input type="radio" id="set-3__2" name="set-3" >
 
-                        <label for="set-3__3">
-                            <span class="muzzle" title="Доброта 30%"></span>
-                        </label>
-                        <input type="radio" id="set-3__3" name="set-3">
+                        <label for="set-3__3" class="muzzle" title="Доброта 30%"></label>
+                        <input type="radio" id="set-3__3" name="set-3" >
 
-                        <label for="set-3__4">
-                            <span class="muzzle" title="Доброта 40%"></span>
-                        </label>
-                        <input type="radio" id="set-3__4" name="set-3">
+                        <label for="set-3__4" class="muzzle" title="Доброта 40%"></label>
+                        <input type="radio" id="set-3__4" name="set-3" >
 
-                        <label for="set-3__5">
-                            <span class="muzzle" title="Доброта 50%"></span>
-                        </label>
-                        <input type="radio" id="set-3__5" name="set-3">
+                        <label for="set-3__5" class="muzzle" title="Доброта 50%"></label>
+                        <input type="radio" id="set-3__5" name="set-3" >
 
-                        <label for="set-3__6">
-                            <span class="muzzle" title="Доброта 60%"></span>
-                        </label>
-                        <input type="radio" id="set-3__6" name="set-3">
+                        <label for="set-3__6" class="muzzle" title="Доброта 60%"></label>
+                        <input type="radio" id="set-3__6" name="set-3" >
 
-                        <label for="set-3__7">
-                            <span class="muzzle" title="Доброта 70%"></span>
-                        </label>
-                        <input type="radio" id="set-3__7" name="set-3">
+                        <label for="set-3__7" class="muzzle" title="Доброта 70%"></label>
+                        <input type="radio" id="set-3__7" name="set-3" >
 
-                        <label for="set-3__8">
-                            <span class="muzzle" title="Доброта 80%"></span>
-                        </label>
+                        <label for="set-3__8" class="muzzle" title="Доброта 80%"></label>
                         <input type="radio" id="set-3__8" name="set-3" checked>
 
-                        <label for="set-3__9">
-                            <span class="muzzle" title="Доброта 90%"></span>
-                        </label>
-                        <input type="radio" id="set-3__9" name="set-3">
+                        <label for="set-3__9" class="muzzle" title="Доброта 90%"></label>
+                        <input type="radio" id="set-3__9" name="set-3" >
 
-                        <label for="set-3__10">
-                            <span class="muzzle" title="Доброта 100%"></span>
-                        </label>
-                        <input type="radio" id="set-3__10" name="set-3">
+                        <label for="set-3__10" class="muzzle" title="Доброта 100%"></label>
+                        <input type="radio" id="set-3__10" name="set-3" >
                     </div>
                     <p class="item-info__price">
                         2500 &#8381;
@@ -291,55 +231,35 @@
                         <span class="link-on-category">Бобтейл</span>
                     </p>
                     <div class="rating">
-                        <label for="set-4__1">
-                            <span class="muzzle" title="Доброта 10%"></span>
-                        </label>
-                        <input type="radio" id="set-4__1" name="set-4">
+                        <label for="set-4__1" class="muzzle" title="Доброта 10%"></label>
+                        <input type="radio" id="set-4__1" name="set-4" >
 
-                        <label for="set-4__2">
-                            <span class="muzzle" title="Доброта 20%"></span>
-                        </label>
-                        <input type="radio" id="set-4__2" name="set-4">
+                        <label for="set-4__2" class="muzzle" title="Доброта 20%"></label>
+                        <input type="radio" id="set-4__2" name="set-4" >
 
-                        <label for="set-4__3">
-                            <span class="muzzle" title="Доброта 30%"></span>
-                        </label>
-                        <input type="radio" id="set-4__3" name="set-4">
+                        <label for="set-4__3" class="muzzle" title="Доброта 30%"></label>
+                        <input type="radio" id="set-4__3" name="set-4" >
 
-                        <label for="set-4__4">
-                            <span class="muzzle" title="Доброта 40%"></span>
-                        </label>
-                        <input type="radio" id="set-4__4" name="set-4">
+                        <label for="set-4__4" class="muzzle" title="Доброта 40%"></label>
+                        <input type="radio" id="set-4__4" name="set-4" >
 
-                        <label for="set-4__5">
-                            <span class="muzzle" title="Доброта 50%"></span>
-                        </label>
-                        <input type="radio" id="set-4__5" name="set-4">
+                        <label for="set-4__5" class="muzzle" title="Доброта 50%"></label>
+                        <input type="radio" id="set-4__5" name="set-4" >
 
-                        <label for="set-4__6">
-                            <span class="muzzle" title="Доброта 60%"></span>
-                        </label>
+                        <label for="set-4__6" class="muzzle" title="Доброта 60%"></label>
                         <input type="radio" id="set-4__6" name="set-4" checked>
 
-                        <label for="set-4__7">
-                            <span class="muzzle" title="Доброта 70%"></span>
-                        </label>
-                        <input type="radio" id="set-4__7" name="set-4">
+                        <label for="set-4__7" class="muzzle" title="Доброта 70%"></label>
+                        <input type="radio" id="set-4__7" name="set-4" >
 
-                        <label for="set-4__8">
-                            <span class="muzzle" title="Доброта 80%"></span>
-                        </label>
-                        <input type="radio" id="set-4__8" name="set-4">
+                        <label for="set-4__8" class="muzzle" title="Доброта 80%"></label>
+                        <input type="radio" id="set-4__8" name="set-4" >
 
-                        <label for="set-4__9">
-                            <span class="muzzle" title="Доброта 90%"></span>
-                        </label>
-                        <input type="radio" id="set-4__9" name="set-4">
+                        <label for="set-4__9" class="muzzle" title="Доброта 90%"></label>
+                        <input type="radio" id="set-4__9" name="set-4" >
 
-                        <label for="set-4__10">
-                            <span class="muzzle" title="Доброта 100%"></span>
-                        </label>
-                        <input type="radio" id="set-4__10" name="set-4">
+                        <label for="set-4__10" class="muzzle" title="Доброта 100%"></label>
+                        <input type="radio" id="set-4__10" name="set-4" >
                     </div>
                     <p class="item-info__price">750 &#8381;</p>
                 </section>
@@ -371,55 +291,35 @@
                         <span class="link-on-category">Сибирская</span>
                     </p>
                     <div class="rating">
-                        <label for="set-5__1">
-                            <span class="muzzle" title="Доброта 10%"></span>
-                        </label>
-                        <input type="radio" id="set-5__1" name="set-5" checked>
+                        <label for="set-5__1" class="muzzle" title="Доброта 10%"></label>
+                        <input type="radio" id="set-5__1" name="set-5" >
 
-                        <label for="set-5__2">
-                            <span class="muzzle" title="Доброта 20%"></span>
-                        </label>
-                        <input type="radio" id="set-5__2" name="set-5">
+                        <label for="set-5__2" class="muzzle" title="Доброта 20%"></label>
+                        <input type="radio" id="set-5__2" name="set-5" >
 
-                        <label for="set-5__3">
-                            <span class="muzzle" title="Доброта 30%"></span>
-                        </label>
-                        <input type="radio" id="set-5__3" name="set-5">
+                        <label for="set-5__3" class="muzzle" title="Доброта 30%"></label>
+                        <input type="radio" id="set-5__3" name="set-5" checked>
 
-                        <label for="set-5__4">
-                            <span class="muzzle" title="Доброта 40%"></span>
-                        </label>
-                        <input type="radio" id="set-5__4" name="set-5">
+                        <label for="set-5__4" class="muzzle" title="Доброта 40%"></label>
+                        <input type="radio" id="set-5__4" name="set-5" >
 
-                        <label for="set-5__5">
-                            <span class="muzzle" title="Доброта 50%"></span>
-                        </label>
-                        <input type="radio" id="set-5__5" name="set-5">
+                        <label for="set-5__5" class="muzzle" title="Доброта 50%"></label>
+                        <input type="radio" id="set-5__5" name="set-5" >
 
-                        <label for="set-5__6">
-                            <span class="muzzle" title="Доброта 60%"></span>
-                        </label>
-                        <input type="radio" id="set-5__6" name="set-5">
+                        <label for="set-5__6" class="muzzle" title="Доброта 60%"></label>
+                        <input type="radio" id="set-5__6" name="set-5" >
 
-                        <label for="set-5__7">
-                            <span class="muzzle" title="Доброта 70%"></span>
-                        </label>
-                        <input type="radio" id="set-5__7" name="set-5">
+                        <label for="set-5__7" class="muzzle" title="Доброта 70%"></label>
+                        <input type="radio" id="set-5__7" name="set-5" >
 
-                        <label for="set-5__8">
-                            <span class="muzzle" title="Доброта 80%"></span>
-                        </label>
-                        <input type="radio" id="set-5__8" name="set-5">
+                        <label for="set-5__8" class="muzzle" title="Доброта 80%"></label>
+                        <input type="radio" id="set-5__8" name="set-5" >
 
-                        <label for="set-5__9">
-                            <span class="muzzle" title="Доброта 90%"></span>
-                        </label>
-                        <input type="radio" id="set-5__9" name="set-5">
+                        <label for="set-5__9" class="muzzle" title="Доброта 90%"></label>
+                        <input type="radio" id="set-5__9" name="set-5" >
 
-                        <label for="set-5__10">
-                            <span class="muzzle" title="Доброта 100%"></span>
-                        </label>
-                        <input type="radio" id="set-5__10" name="set-5">
+                        <label for="set-5__10" class="muzzle" title="Доброта 100%"></label>
+                        <input type="radio" id="set-5__10" name="set-5" >
                     </div>
                     <p class="item-info__price">
                         1500 &#8381; <span class="item-info__price--old">2000 &#8381;</span>
@@ -453,55 +353,35 @@
                         <span class="link-on-category">Бурманская</span>
                     </p>
                     <div class="rating">
-                        <label for="set-6__1">
-                            <span class="muzzle" title="Доброта 10%"></span>
-                        </label>
-                        <input type="radio" id="set-6__1" name="set-6">
+                        <label for="set-6__1" class="muzzle" title="Доброта 10%"></label>
+                        <input type="radio" id="set-6__1" name="set-6" >
 
-                        <label for="set-6__2">
-                            <span class="muzzle" title="Доброта 20%"></span>
-                        </label>
-                        <input type="radio" id="set-6__2" name="set-6">
+                        <label for="set-6__2" class="muzzle" title="Доброта 20%"></label>
+                        <input type="radio" id="set-6__2" name="set-6" checked>
 
-                        <label for="set-6__3">
-                            <span class="muzzle" title="Доброта 30%"></span>
-                        </label>
-                        <input type="radio" id="set-6__3" name="set-6">
+                        <label for="set-6__3" class="muzzle" title="Доброта 30%"></label>
+                        <input type="radio" id="set-6__3" name="set-6" >
 
-                        <label for="set-6__4">
-                            <span class="muzzle" title="Доброта 40%"></span>
-                        </label>
-                        <input type="radio" id="set-6__4" name="set-6" checked>
+                        <label for="set-6__4" class="muzzle" title="Доброта 40%"></label>
+                        <input type="radio" id="set-6__4" name="set-6" >
 
-                        <label for="set-6__5">
-                            <span class="muzzle" title="Доброта 50%"></span>
-                        </label>
-                        <input type="radio" id="set-6__5" name="set-6">
+                        <label for="set-6__5" class="muzzle" title="Доброта 50%"></label>
+                        <input type="radio" id="set-6__5" name="set-6" >
 
-                        <label for="set-6__6">
-                            <span class="muzzle" title="Доброта 60%"></span>
-                        </label>
-                        <input type="radio" id="set-6__6" name="set-6">
+                        <label for="set-6__6" class="muzzle" title="Доброта 60%"></label>
+                        <input type="radio" id="set-6__6" name="set-6" >
 
-                        <label for="set-6__7">
-                            <span class="muzzle" title="Доброта 70%"></span>
-                        </label>
-                        <input type="radio" id="set-6__7" name="set-6">
+                        <label for="set-6__7" class="muzzle" title="Доброта 70%"></label>
+                        <input type="radio" id="set-6__7" name="set-6" >
 
-                        <label for="set-6__8">
-                            <span class="muzzle" title="Доброта 80%"></span>
-                        </label>
-                        <input type="radio" id="set-6__8" name="set-6">
+                        <label for="set-6__8" class="muzzle" title="Доброта 80%"></label>
+                        <input type="radio" id="set-6__8" name="set-6" >
 
-                        <label for="set-6__9">
-                            <span class="muzzle" title="Доброта 90%"></span>
-                        </label>
-                        <input type="radio" id="set-6__9" name="set-6">
+                        <label for="set-6__9" class="muzzle" title="Доброта 90%"></label>
+                        <input type="radio" id="set-6__9" name="set-6" >
 
-                        <label for="set-6__10">
-                            <span class="muzzle" title="Доброта 100%"></span>
-                        </label>
-                        <input type="radio" id="set-6__10" name="set-6">
+                        <label for="set-6__10" class="muzzle" title="Доброта 100%"></label>
+                        <input type="radio" id="set-6__10" name="set-6" >
                     </div>
                     <p class="item-info__price">
                         5000 &#8381;
@@ -538,55 +418,35 @@
                         <span class="link-on-category">Русская дворовая</span>
                     </p>
                     <div class="rating">
-                        <label for="set-7__1">
-                            <span class="muzzle" title="Доброта 10%"></span>
-                        </label>
-                        <input type="radio" id="set-7__1" name="set-7">
+                        <label for="set-7__1" class="muzzle" title="Доброта 10%"></label>
+                        <input type="radio" id="set-7__1" name="set-7" >
 
-                        <label for="set-7__2">
-                            <span class="muzzle" title="Доброта 20%"></span>
-                        </label>
-                        <input type="radio" id="set-7__2" name="set-7">
+                        <label for="set-7__2" class="muzzle" title="Доброта 20%"></label>
+                        <input type="radio" id="set-7__2" name="set-7" >
 
-                        <label for="set-7__3">
-                            <span class="muzzle" title="Доброта 30%"></span>
-                        </label>
-                        <input type="radio" id="set-7__3" name="set-7">
+                        <label for="set-7__3" class="muzzle" title="Доброта 30%"></label>
+                        <input type="radio" id="set-7__3" name="set-7" >
 
-                        <label for="set-7__4">
-                            <span class="muzzle" title="Доброта 40%"></span>
-                        </label>
-                        <input type="radio" id="set-7__4" name="set-7">
+                        <label for="set-7__4" class="muzzle" title="Доброта 40%"></label>
+                        <input type="radio" id="set-7__4" name="set-7" >
 
-                        <label for="set-7__5">
-                            <span class="muzzle" title="Доброта 50%"></span>
-                        </label>
-                        <input type="radio" id="set-7__5" name="set-7">
+                        <label for="set-7__5" class="muzzle" title="Доброта 50%"></label>
+                        <input type="radio" id="set-7__5" name="set-7" >
 
-                        <label for="set-7__6">
-                            <span class="muzzle" title="Доброта 60%"></span>
-                        </label>
-                        <input type="radio" id="set-7__6" name="set-7">
+                        <label for="set-7__6" class="muzzle" title="Доброта 60%"></label>
+                        <input type="radio" id="set-7__6" name="set-7" checked>
 
-                        <label for="set-7__7">
-                            <span class="muzzle" title="Доброта 70%"></span>
-                        </label>
-                        <input type="radio" id="set-7__7" name="set-7">
+                        <label for="set-7__7" class="muzzle" title="Доброта 70%"></label>
+                        <input type="radio" id="set-7__7" name="set-7" >
 
-                        <label for="set-7__8">
-                            <span class="muzzle" title="Доброта 80%"></span>
-                        </label>
-                        <input type="radio" id="set-7__8" name="set-7">
+                        <label for="set-7__8" class="muzzle" title="Доброта 80%"></label>
+                        <input type="radio" id="set-7__8" name="set-7" >
 
-                        <label for="set-7__9">
-                            <span class="muzzle" title="Доброта 90%"></span>
-                        </label>
-                        <input type="radio" id="set-7__9" name="set-7">
+                        <label for="set-7__9" class="muzzle" title="Доброта 90%"></label>
+                        <input type="radio" id="set-7__9" name="set-7" >
 
-                        <label for="set-7__10">
-                            <span class="muzzle" title="Доброта 100%"></span>
-                        </label>
-                        <input type="radio" id="set-7__10" name="set-7" checked>
+                        <label for="set-7__10" class="muzzle" title="Доброта 100%"></label>
+                        <input type="radio" id="set-7__10" name="set-7" >
                     </div>
                     <p class="item-info__price">
                         500 &#8381; <span class="item-info__price--old">1000 &#8381;</span>
@@ -621,55 +481,35 @@
                         <span class="link-on-category">Русская голубая</span>
                     </p>
                     <div class="rating">
-                        <label for="set-8__1">
-                            <span class="muzzle" title="Доброта 10%"></span>
-                        </label>
-                        <input type="radio" id="set-8__1" name="set-8">
+                        <label for="set-8__1" class="muzzle" title="Доброта 10%"></label>
+                        <input type="radio" id="set-8__1" name="set-8" >
 
-                        <label for="set-8__2">
-                            <span class="muzzle" title="Доброта 20%"></span>
-                        </label>
-                        <input type="radio" id="set-8__2" name="set-8" checked>
+                        <label for="set-8__2" class="muzzle" title="Доброта 20%"></label>
+                        <input type="radio" id="set-8__2" name="set-8" >
 
-                        <label for="set-8__3">
-                            <span class="muzzle" title="Доброта 30%"></span>
-                        </label>
-                        <input type="radio" id="set-8__3" name="set-8">
+                        <label for="set-8__3" class="muzzle" title="Доброта 30%"></label>
+                        <input type="radio" id="set-8__3" name="set-8" >
 
-                        <label for="set-8__4">
-                            <span class="muzzle" title="Доброта 40%"></span>
-                        </label>
-                        <input type="radio" id="set-8__4" name="set-8">
+                        <label for="set-8__4" class="muzzle" title="Доброта 40%"></label>
+                        <input type="radio" id="set-8__4" name="set-8" >
 
-                        <label for="set-8__5">
-                            <span class="muzzle" title="Доброта 50%"></span>
-                        </label>
-                        <input type="radio" id="set-8__5" name="set-8">
+                        <label for="set-8__5" class="muzzle" title="Доброта 50%"></label>
+                        <input type="radio" id="set-8__5" name="set-8" >
 
-                        <label for="set-8__6">
-                            <span class="muzzle" title="Доброта 60%"></span>
-                        </label>
-                        <input type="radio" id="set-8__6" name="set-8">
+                        <label for="set-8__6" class="muzzle" title="Доброта 60%"></label>
+                        <input type="radio" id="set-8__6" name="set-8" >
 
-                        <label for="set-8__7">
-                            <span class="muzzle" title="Доброта 70%"></span>
-                        </label>
-                        <input type="radio" id="set-8__7" name="set-8">
+                        <label for="set-8__7" class="muzzle" title="Доброта 70%"></label>
+                        <input type="radio" id="set-8__7" name="set-8" >
 
-                        <label for="set-8__8">
-                            <span class="muzzle" title="Доброта 80%"></span>
-                        </label>
-                        <input type="radio" id="set-8__8" name="set-8">
+                        <label for="set-8__8" class="muzzle" title="Доброта 80%"></label>
+                        <input type="radio" id="set-8__8" name="set-8" >
 
-                        <label for="set-8__9">
-                            <span class="muzzle" title="Доброта 90%"></span>
-                        </label>
-                        <input type="radio" id="set-8__9" name="set-8">
+                        <label for="set-8__9" class="muzzle" title="Доброта 90%"></label>
+                        <input type="radio" id="set-8__9" name="set-8" checked>
 
-                        <label for="set-8__10">
-                            <span class="muzzle" title="Доброта 100%"></span>
-                        </label>
-                        <input type="radio" id="set-8__10" name="set-8">
+                        <label for="set-8__10" class="muzzle" title="Доброта 100%"></label>
+                        <input type="radio" id="set-8__10" name="set-8" >
                     </div>
                     <p class="item-info__price">
                         300 &#8381;
@@ -701,55 +541,35 @@
                         <span class="link-on-category">Русская голубая</span>
                     </p>
                     <div class="rating">
-                        <label for="set-9__1">
-                            <span class="muzzle" title="Доброта 10%"></span>
-                        </label>
-                        <input type="radio" id="set-9__1" name="set-9">
+                        <label for="set-9__1" class="muzzle" title="Доброта 10%"></label>
+                        <input type="radio" id="set-9__1" name="set-9" >
 
-                        <label for="set-9__2">
-                            <span class="muzzle" title="Доброта 20%"></span>
-                        </label>
-                        <input type="radio" id="set-9__2" name="set-9">
+                        <label for="set-9__2" class="muzzle" title="Доброта 20%"></label>
+                        <input type="radio" id="set-9__2" name="set-9" >
 
-                        <label for="set-9__3">
-                            <span class="muzzle" title="Доброта 30%"></span>
-                        </label>
-                        <input type="radio" id="set-9__3" name="set-9">
+                        <label for="set-9__3" class="muzzle" title="Доброта 30%"></label>
+                        <input type="radio" id="set-9__3" name="set-9" >
 
-                        <label for="set-9__4">
-                            <span class="muzzle" title="Доброта 40%"></span>
-                        </label>
-                        <input type="radio" id="set-9__4" name="set-9">
+                        <label for="set-9__4" class="muzzle" title="Доброта 40%"></label>
+                        <input type="radio" id="set-9__4" name="set-9" >
 
-                        <label for="set-9__5">
-                            <span class="muzzle" title="Доброта 50%"></span>
-                        </label>
-                        <input type="radio" id="set-9__5" name="set-9">
+                        <label for="set-9__5" class="muzzle" title="Доброта 50%"></label>
+                        <input type="radio" id="set-9__5" name="set-9" >
 
-                        <label for="set-9__6">
-                            <span class="muzzle" title="Доброта 60%"></span>
-                        </label>
-                        <input type="radio" id="set-9__6" name="set-9" checked>
+                        <label for="set-9__6" class="muzzle" title="Доброта 60%"></label>
+                        <input type="radio" id="set-9__6" name="set-9" >
 
-                        <label for="set-9__7">
-                            <span class="muzzle" title="Доброта 70%"></span>
-                        </label>
-                        <input type="radio" id="set-9__7" name="set-9">
+                        <label for="set-9__7" class="muzzle" title="Доброта 70%"></label>
+                        <input type="radio" id="set-9__7" name="set-9" >
 
-                        <label for="set-9__8">
-                            <span class="muzzle" title="Доброта 80%"></span>
-                        </label>
-                        <input type="radio" id="set-9__8" name="set-9">
+                        <label for="set-9__8" class="muzzle" title="Доброта 80%"></label>
+                        <input type="radio" id="set-9__8" name="set-9" >
 
-                        <label for="set-9__9">
-                            <span class="muzzle" title="Доброта 90%"></span>
-                        </label>
-                        <input type="radio" id="set-9__9" name="set-9">
+                        <label for="set-9__9" class="muzzle" title="Доброта 90%"></label>
+                        <input type="radio" id="set-9__9" name="set-9" >
 
-                        <label for="set-9__10">
-                            <span class="muzzle" title="Доброта 100%"></span>
-                        </label>
-                        <input type="radio" id="set-9__10" name="set-9">
+                        <label for="set-9__10" class="muzzle" title="Доброта 100%"></label>
+                        <input type="radio" id="set-9__10" name="set-9" checked>
                     </div>
                     <p class="item-info__price">
                         Бесплатно
@@ -781,55 +601,35 @@
                         <span class="link-on-category">Манкс</span>
                     </p>
                     <div class="rating">
-                        <label for="set-10__1">
-                            <span class="muzzle" title="Доброта 10%"></span>
-                        </label>
-                        <input type="radio" id="set-10__1" name="set-10">
+                        <label for="set-10__1" class="muzzle" title="Доброта 10%"></label>
+                        <input type="radio" id="set-10__1" name="set-10" >
 
-                        <label for="set-10__2">
-                            <span class="muzzle" title="Доброта 20%"></span>
-                        </label>
-                        <input type="radio" id="set-10__2" name="set-10">
+                        <label for="set-10__2" class="muzzle" title="Доброта 20%"></label>
+                        <input type="radio" id="set-10__2" name="set-10" >
 
-                        <label for="set-10__3">
-                            <span class="muzzle" title="Доброта 30%"></span>
-                        </label>
-                        <input type="radio" id="set-10__3" name="set-10">
+                        <label for="set-10__3" class="muzzle" title="Доброта 30%"></label>
+                        <input type="radio" id="set-10__3" name="set-10" >
 
-                        <label for="set-10__4">
-                            <span class="muzzle" title="Доброта 40%"></span>
-                        </label>
-                        <input type="radio" id="set-10__4" name="set-10">
+                        <label for="set-10__4" class="muzzle" title="Доброта 40%"></label>
+                        <input type="radio" id="set-10__4" name="set-10" checked>
 
-                        <label for="set-10__5">
-                            <span class="muzzle" title="Доброта 50%"></span>
-                        </label>
-                        <input type="radio" id="set-10__5" name="set-10">
+                        <label for="set-10__5" class="muzzle" title="Доброта 50%"></label>
+                        <input type="radio" id="set-10__5" name="set-10" >
 
-                        <label for="set-10__6">
-                            <span class="muzzle" title="Доброта 60%"></span>
-                        </label>
-                        <input type="radio" id="set-10__6" name="set-10">
+                        <label for="set-10__6" class="muzzle" title="Доброта 60%"></label>
+                        <input type="radio" id="set-10__6" name="set-10" >
 
-                        <label for="set-10__7">
-                            <span class="muzzle" title="Доброта 70%"></span>
-                        </label>
-                        <input type="radio" id="set-10__7" name="set-10">
+                        <label for="set-10__7" class="muzzle" title="Доброта 70%"></label>
+                        <input type="radio" id="set-10__7" name="set-10" >
 
-                        <label for="set-10__8">
-                            <span class="muzzle" title="Доброта 80%"></span>
-                        </label>
-                        <input type="radio" id="set-10__8" name="set-10">
+                        <label for="set-10__8" class="muzzle" title="Доброта 80%"></label>
+                        <input type="radio" id="set-10__8" name="set-10" >
 
-                        <label for="set-10__9">
-                            <span class="muzzle" title="Доброта 90%"></span>
-                        </label>
-                        <input type="radio" id="set-10__9" name="set-10" checked>
+                        <label for="set-10__9" class="muzzle" title="Доброта 90%"></label>
+                        <input type="radio" id="set-10__9" name="set-10" >
 
-                        <label for="set-10__10">
-                            <span class="muzzle" title="Доброта 100%"></span>
-                        </label>
-                        <input type="radio" id="set-10__10" name="set-10">
+                        <label for="set-10__10" class="muzzle" title="Доброта 100%"></label>
+                        <input type="radio" id="set-10__10" name="set-10" >
                     </div>
                     <p class="item-info__price">
                         2000 &#8381;
@@ -862,55 +662,35 @@
                         <span class="link-on-category">Русская дворовая</span>
                     </p>
                     <div class="rating">
-                        <label for="set-11__1">
-                            <span class="muzzle" title="Доброта 10%"></span>
-                        </label>
-                        <input type="radio" id="set-11__1" name="set-11">
+                        <label for="set-11__1" class="muzzle" title="Доброта 10%"></label>
+                        <input type="radio" id="set-11__1" name="set-11" >
 
-                        <label for="set-11__2">
-                            <span class="muzzle" title="Доброта 20%"></span>
-                        </label>
-                        <input type="radio" id="set-11__2" name="set-11">
+                        <label for="set-11__2" class="muzzle" title="Доброта 20%"></label>
+                        <input type="radio" id="set-11__2" name="set-11" >
 
-                        <label for="set-11__3">
-                            <span class="muzzle" title="Доброта 30%"></span>
-                        </label>
-                        <input type="radio" id="set-11__3" name="set-11" checked>
+                        <label for="set-11__3" class="muzzle" title="Доброта 30%"></label>
+                        <input type="radio" id="set-11__3" name="set-11" >
 
-                        <label for="set-11__4">
-                            <span class="muzzle" title="Доброта 40%"></span>
-                        </label>
-                        <input type="radio" id="set-11__4" name="set-11">
+                        <label for="set-11__4" class="muzzle" title="Доброта 40%"></label>
+                        <input type="radio" id="set-11__4" name="set-11" >
 
-                        <label for="set-11__5">
-                            <span class="muzzle" title="Доброта 50%"></span>
-                        </label>
-                        <input type="radio" id="set-11__5" name="set-11">
+                        <label for="set-11__5" class="muzzle" title="Доброта 50%"></label>
+                        <input type="radio" id="set-11__5" name="set-11" >
 
-                        <label for="set-11__6">
-                            <span class="muzzle" title="Доброта 60%"></span>
-                        </label>
-                        <input type="radio" id="set-11__6" name="set-11">
+                        <label for="set-11__6" class="muzzle" title="Доброта 60%"></label>
+                        <input type="radio" id="set-11__6" name="set-11" checked>
 
-                        <label for="set-11__7">
-                            <span class="muzzle" title="Доброта 70%"></span>
-                        </label>
-                        <input type="radio" id="set-11__7" name="set-11">
+                        <label for="set-11__7" class="muzzle" title="Доброта 70%"></label>
+                        <input type="radio" id="set-11__7" name="set-11" >
 
-                        <label for="set-11__8">
-                            <span class="muzzle" title="Доброта 80%"></span>
-                        </label>
-                        <input type="radio" id="set-11__8" name="set-11">
+                        <label for="set-11__8" class="muzzle" title="Доброта 80%"></label>
+                        <input type="radio" id="set-11__8" name="set-11" >
 
-                        <label for="set-11__9">
-                            <span class="muzzle" title="Доброта 90%"></span>
-                        </label>
-                        <input type="radio" id="set-11__9" name="set-11">
+                        <label for="set-11__9" class="muzzle" title="Доброта 90%"></label>
+                        <input type="radio" id="set-11__9" name="set-11" >
 
-                        <label for="set-11__10">
-                            <span class="muzzle" title="Доброта 100%"></span>
-                        </label>
-                        <input type="radio" id="set-11__10" name="set-11">
+                        <label for="set-11__10" class="muzzle" title="Доброта 100%"></label>
+                        <input type="radio" id="set-11__10" name="set-11" >
                     </div>
                     <p class="item-info__price">
                         500 &#8381;
@@ -943,55 +723,35 @@
                         <span class="link-on-category">Табби</span>
                     </p>
                     <div class="rating">
-                        <label for="set-12__1">
-                            <span class="muzzle" title="Доброта 10%"></span>
-                        </label>
-                        <input type="radio" id="set-12__1" name="set-12">
+                        <label for="set-12__1" class="muzzle" title="Доброта 10%"></label>
+                        <input type="radio" id="set-12__1" name="set-12" checked>
 
-                        <label for="set-12__2">
-                            <span class="muzzle" title="Доброта 20%"></span>
-                        </label>
-                        <input type="radio" id="set-12__2" name="set-12">
+                        <label for="set-12__2" class="muzzle" title="Доброта 20%"></label>
+                        <input type="radio" id="set-12__2" name="set-12" >
 
-                        <label for="set-12__3">
-                            <span class="muzzle" title="Доброта 30%"></span>
-                        </label>
-                        <input type="radio" id="set-12__3" name="set-12">
+                        <label for="set-12__3" class="muzzle" title="Доброта 30%"></label>
+                        <input type="radio" id="set-12__3" name="set-12" >
 
-                        <label for="set-12__4">
-                            <span class="muzzle" title="Доброта 40%"></span>
-                        </label>
-                        <input type="radio" id="set-12__4" name="set-12">
+                        <label for="set-12__4" class="muzzle" title="Доброта 40%"></label>
+                        <input type="radio" id="set-12__4" name="set-12" >
 
-                        <label for="set-12__5">
-                            <span class="muzzle" title="Доброта 50%"></span>
-                        </label>
-                        <input type="radio" id="set-12__5" name="set-12">
+                        <label for="set-12__5" class="muzzle" title="Доброта 50%"></label>
+                        <input type="radio" id="set-12__5" name="set-12" >
 
-                        <label for="set-12__6">
-                            <span class="muzzle" title="Доброта 60%"></span>
-                        </label>
-                        <input type="radio" id="set-12__6" name="set-12">
+                        <label for="set-12__6" class="muzzle" title="Доброта 60%"></label>
+                        <input type="radio" id="set-12__6" name="set-12" >
 
-                        <label for="set-12__7">
-                            <span class="muzzle" title="Доброта 70%"></span>
-                        </label>
-                        <input type="radio" id="set-12__7" name="set-12" checked>
+                        <label for="set-12__7" class="muzzle" title="Доброта 70%"></label>
+                        <input type="radio" id="set-12__7" name="set-12" >
 
-                        <label for="set-12__8">
-                            <span class="muzzle" title="Доброта 80%"></span>
-                        </label>
-                        <input type="radio" id="set-12__8" name="set-12">
+                        <label for="set-12__8" class="muzzle" title="Доброта 80%"></label>
+                        <input type="radio" id="set-12__8" name="set-12" >
 
-                        <label for="set-12__9">
-                            <span class="muzzle" title="Доброта 90%"></span>
-                        </label>
-                        <input type="radio" id="set-12__9" name="set-12">
+                        <label for="set-12__9" class="muzzle" title="Доброта 90%"></label>
+                        <input type="radio" id="set-12__9" name="set-12" >
 
-                        <label for="set-12__10">
-                            <span class="muzzle" title="Доброта 100%"></span>
-                        </label>
-                        <input type="radio" id="set-12__10" name="set-12">
+                        <label for="set-12__10" class="muzzle" title="Доброта 100%"></label>
+                        <input type="radio" id="set-12__10" name="set-12" >
                     </div>
                     <p class="item-info__price">
                         400 &#8381; <span class="item-info__price--old">500 &#8381;</span>
@@ -1024,55 +784,35 @@
                         <span class="link-on-category">Другое</span>
                     </p>
                     <div class="rating">
-                        <label for="set-13__1">
-                            <span class="muzzle" title="Доброта 10%"></span>
-                        </label>
-                        <input type="radio" id="set-13__1" name="set-13">
+                        <label for="set-13__1" class="muzzle" title="Доброта 10%"></label>
+                        <input type="radio" id="set-13__1" name="set-13" >
 
-                        <label for="set-13__2">
-                            <span class="muzzle" title="Доброта 20%"></span>
-                        </label>
-                        <input type="radio" id="set-13__2" name="set-13">
+                        <label for="set-13__2" class="muzzle" title="Доброта 20%"></label>
+                        <input type="radio" id="set-13__2" name="set-13" >
 
-                        <label for="set-13__3">
-                            <span class="muzzle" title="Доброта 30%"></span>
-                        </label>
-                        <input type="radio" id="set-13__3" name="set-13">
+                        <label for="set-13__3" class="muzzle" title="Доброта 30%"></label>
+                        <input type="radio" id="set-13__3" name="set-13" >
 
-                        <label for="set-13__4">
-                            <span class="muzzle" title="Доброта 40%"></span>
-                        </label>
-                        <input type="radio" id="set-13__4" name="set-13" checked>
+                        <label for="set-13__4" class="muzzle" title="Доброта 40%"></label>
+                        <input type="radio" id="set-13__4" name="set-13" >
 
-                        <label for="set-13__5">
-                            <span class="muzzle" title="Доброта 50%"></span>
-                        </label>
-                        <input type="radio" id="set-13__5" name="set-13">
+                        <label for="set-13__5" class="muzzle" title="Доброта 50%"></label>
+                        <input type="radio" id="set-13__5" name="set-13" >
 
-                        <label for="set-13__6">
-                            <span class="muzzle" title="Доброта 60%"></span>
-                        </label>
-                        <input type="radio" id="set-13__6" name="set-13">
+                        <label for="set-13__6" class="muzzle" title="Доброта 60%"></label>
+                        <input type="radio" id="set-13__6" name="set-13" checked>
 
-                        <label for="set-13__7">
-                            <span class="muzzle" title="Доброта 70%"></span>
-                        </label>
-                        <input type="radio" id="set-13__7" name="set-13">
+                        <label for="set-13__7" class="muzzle" title="Доброта 70%"></label>
+                        <input type="radio" id="set-13__7" name="set-13" >
 
-                        <label for="set-13__8">
-                            <span class="muzzle" title="Доброта 80%"></span>
-                        </label>
-                        <input type="radio" id="set-13__8" name="set-13">
+                        <label for="set-13__8" class="muzzle" title="Доброта 80%"></label>
+                        <input type="radio" id="set-13__8" name="set-13" >
 
-                        <label for="set-13__9">
-                            <span class="muzzle" title="Доброта 90%"></span>
-                        </label>
-                        <input type="radio" id="set-13__9" name="set-13">
+                        <label for="set-13__9" class="muzzle" title="Доброта 90%"></label>
+                        <input type="radio" id="set-13__9" name="set-13" >
 
-                        <label for="set-13__10">
-                            <span class="muzzle" title="Доброта 100%"></span>
-                        </label>
-                        <input type="radio" id="set-13__10" name="set-13">
+                        <label for="set-13__10" class="muzzle" title="Доброта 100%"></label>
+                        <input type="radio" id="set-13__10" name="set-13" >
                     </div>
                     <p class="item-info__price">
                         600 &#8381;

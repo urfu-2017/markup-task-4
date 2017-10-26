@@ -33,59 +33,79 @@ body
     color: #a00;
 }
 
-.show-market
+.show
 {
     position: absolute;
-    top: 1.5rem;
+    top: 1.4rem;
     right: 2rem;
 }
 
-.show-market__icon
+.show label
 {
-    margin: 0 0 0 2rem;
-    width: 1rem;
-    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 0;
 }
 
-input[name='show-market']
+.show__icon
+{
+    width: 1rem;
+    padding: .25rem;
+    cursor: pointer;
+    background: #f0f0f0;
+}
+
+.show__icon:hover
+{
+    background: #ddd;
+}
+
+input[name='show']
 {
     display: none;
 }
 
-input[id='show-market__as-list']:checked ~ .market-item
+input[id='show__list']:checked ~ main label[for='show__list'] .show__icon,
+input[id='show__tile']:checked ~ main label[for='show__tile'] .show__icon
 {
-    width: calc(100% - 2rem);
+    background: #fa0;
+}
+
+input[id='show__list']:checked ~ main .market-item
+{
+    width: 100%;
+    box-sizing: border-box;
     height: auto;
     margin: 1rem auto;
     padding: 1rem;
     background: #eee;
 }
 
-input[id='show-market__as-list']:checked ~ .market-item .item-photo,
-input[id='show-market__as-list']:checked ~ .market-item .item-info,
-input[id='show-market__as-list']:checked ~ .market-item .item-description
+input[id='show__list']:checked ~ main .market-item .item-photo,
+input[id='show__list']:checked ~ main .market-item .item-info,
+input[id='show__list']:checked ~ main .market-item .item-description
 {
     display: inline-block;
     position: relative;
-    width: calc((100% - 2rem) / 3 - 1rem);
+    width: 33%;
+    box-sizing: border-box;
     margin: 0;
     vertical-align: top;
 }
 
-input[id='show-market__as-list']:checked ~ .market-item .item-photo
+input[id='show__list']:checked ~ main .market-item .item-photo
 {
     height: auto;
 }
 
-input[id='show-market__as-list']:checked ~ .market-item .item-photo__source
+input[id='show__list']:checked ~ main .market-item .item-photo__source
 {
     position: relative;
     max-height: none;
 }
 
-input[id='show-market__as-list']:checked ~ .market-item .item-info
+input[id='show__list']:checked ~ main .market-item .item-info
 {
-    margin: 0 1rem;
+    padding: 0 1rem;
 }
 
 .market
@@ -199,111 +219,45 @@ input[id='show-market__as-list']:checked ~ .market-item .item-info
     cursor: pointer;
 }
 
-.rating
-{
-    margin: 0;
-    padding: .5rem 0;
-    font-size: 0;
-}
-
-.muzzle
-{
-    display: inline-block;
-    width: .5rem;
-    height: 1rem;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-}
-
-label[for^='set-1']:nth-of-type(2n+1) .muzzle,
-label[for^='set-2']:nth-of-type(2n+1) .muzzle,
-label[for^='set-3']:nth-of-type(2n+1) .muzzle,
-label[for^='set-4']:nth-of-type(2n+1) .muzzle,
-label[for^='set-5']:nth-of-type(2n+1) .muzzle,
-label[for^='set-6']:nth-of-type(2n+1) .muzzle,
-label[for^='set-7']:nth-of-type(2n+1) .muzzle,
-label[for^='set-8']:nth-of-type(2n+1) .muzzle,
-label[for^='set-9']:nth-of-type(2n+1) .muzzle,
-label[for^='set-10']:nth-of-type(2n+1) .muzzle,
-label[for^='set-11']:nth-of-type(2n+1) .muzzle,
-label[for^='set-12']:nth-of-type(2n+1) .muzzle,
-label[for^='set-13']:nth-of-type(2n+1) .muzzle
-{
-    background: url(images/left_icon__select.png) 0 0 no-repeat;
-    background-size: cover;
-}
-
-label[for^='set-1']:nth-of-type(2n) .muzzle,
-label[for^='set-2']:nth-of-type(2n) .muzzle,
-label[for^='set-3']:nth-of-type(2n) .muzzle,
-label[for^='set-4']:nth-of-type(2n) .muzzle,
-label[for^='set-5']:nth-of-type(2n) .muzzle,
-label[for^='set-6']:nth-of-type(2n) .muzzle,
-label[for^='set-7']:nth-of-type(2n) .muzzle,
-label[for^='set-8']:nth-of-type(2n) .muzzle,
-label[for^='set-9']:nth-of-type(2n) .muzzle,
-label[for^='set-10']:nth-of-type(2n) .muzzle,
-label[for^='set-11']:nth-of-type(2n) .muzzle,
-label[for^='set-12']:nth-of-type(2n) .muzzle,
-label[for^='set-13']:nth-of-type(2n) .muzzle
-{
-    margin-right: .3rem;
-    background: url(images/right_icon__select.png) 0 0 no-repeat;
-    background-size: cover;
-}
-
-input[name='set-1'],
-input[name='set-2'],
-input[name='set-3'],
-input[name='set-4'],
-input[name='set-5'],
-input[name='set-6'],
-input[name='set-7'],
-input[name='set-8'],
-input[name='set-9'],
-input[name='set-10'],
-input[name='set-11'],
-input[name='set-12'],
-input[name='set-13']
+input[name^='set-']
 {
     display: none;
 }
 
-input[name='set-1']:checked ~ label[for^='set-1']:nth-of-type(2n+1) .muzzle,
-input[name='set-2']:checked ~ label[for^='set-2']:nth-of-type(2n+1) .muzzle,
-input[name='set-3']:checked ~ label[for^='set-3']:nth-of-type(2n+1) .muzzle,
-input[name='set-4']:checked ~ label[for^='set-4']:nth-of-type(2n+1) .muzzle,
-input[name='set-5']:checked ~ label[for^='set-5']:nth-of-type(2n+1) .muzzle,
-input[name='set-6']:checked ~ label[for^='set-6']:nth-of-type(2n+1) .muzzle,
-input[name='set-7']:checked ~ label[for^='set-7']:nth-of-type(2n+1) .muzzle,
-input[name='set-8']:checked ~ label[for^='set-8']:nth-of-type(2n+1) .muzzle,
-input[name='set-9']:checked ~ label[for^='set-9']:nth-of-type(2n+1) .muzzle,
-input[name='set-10']:checked ~ label[for^='set-10']:nth-of-type(2n+1) .muzzle,
-input[name='set-11']:checked ~ label[for^='set-11']:nth-of-type(2n+1) .muzzle,
-input[name='set-12']:checked ~ label[for^='set-12']:nth-of-type(2n+1) .muzzle,
-input[name='set-13']:checked ~ label[for^='set-13']:nth-of-type(2n+1) .muzzle
+.rating
 {
-    background: url(images/left_icon.png) 0 0 no-repeat;
-    background-size: cover;
+    padding: .5rem 0;
+    font-size: 0;
 }
 
-input[name='set-1']:checked ~ label[for^='set-1']:nth-of-type(2n) .muzzle,
-input[name='set-2']:checked ~ label[for^='set-2']:nth-of-type(2n) .muzzle,
-input[name='set-3']:checked ~ label[for^='set-3']:nth-of-type(2n) .muzzle,
-input[name='set-4']:checked ~ label[for^='set-4']:nth-of-type(2n) .muzzle,
-input[name='set-5']:checked ~ label[for^='set-5']:nth-of-type(2n) .muzzle,
-input[name='set-6']:checked ~ label[for^='set-6']:nth-of-type(2n) .muzzle,
-input[name='set-7']:checked ~ label[for^='set-7']:nth-of-type(2n) .muzzle,
-input[name='set-8']:checked ~ label[for^='set-8']:nth-of-type(2n) .muzzle,
-input[name='set-9']:checked ~ label[for^='set-9']:nth-of-type(2n) .muzzle,
-input[name='set-10']:checked ~ label[for^='set-10']:nth-of-type(2n) .muzzle,
-input[name='set-11']:checked ~ label[for^='set-11']:nth-of-type(2n) .muzzle,
-input[name='set-12']:checked ~ label[for^='set-12']:nth-of-type(2n) .muzzle,
-input[name='set-13']:checked ~ label[for^='set-13']:nth-of-type(2n) .muzzle
+.rating .muzzle:nth-of-type(2n+1),
+.rating .muzzle:nth-of-type(2n)
 {
-    background: url(images/right_icon.png) 0 0 no-repeat;
-    background-size: cover;
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: url(images/left_icon__select.png) 0 0 no-repeat;
+    background-size: contain;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.rating .muzzle:nth-of-type(2n)
+{
+    padding-right: .25rem;
+    background: url(images/right_icon__select.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+.rating input:checked ~ .muzzle
+{
+    opacity: .5;
+}
+
+.rating input:checked ~ .muzzle:hover ~ .muzzle,
+.rating .muzzle:hover ~ .muzzle
+{
+    opacity: .3;
 }
 
 .item-info__price
