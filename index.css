@@ -10,6 +10,12 @@
     src: url(10100.otf);
 }
 
+html,
+body
+{
+    margin: 0;
+}
+
 .colorBg
 {
     background-color: #ef9a9a;
