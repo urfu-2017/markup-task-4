@@ -1,0 +1,105 @@
+html
+{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body
+{
+    margin: 0 auto;
+}
+
+.cards:checked ~ div > div
+{
+    width: 320px;
+}
+
+img
+{
+    width: 320px;
+    display: block;
+}
+
+img:hover
+{
+    opacity: .8;
+}
+
+.card
+{
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(22, 22, 22, .5);
+    margin: 8px;
+    display: inline-block;
+}
+
+.card:hover
+{
+    box-shadow: 0 0 30px rgba(0, 0, 0, .85);
+}
+
+.card > div
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mainInfo
+{
+    padding: 8px;
+    width: 304px;
+}
+
+.Name
+{
+    display: block;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Name:hover
+{
+    font-weight: 700;
+}
+
+.Categoria
+{
+    display: block;
+    color: rgb(182, 182, 182);
+    font-weight: 300;
+}
+
+.Categoria:hover
+{
+    font-weight: 400;
+    color: black;
+}
+
+.Rank
+{
+    display: block;
+}
+
+.PriceNew
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(61, 61, 61);
+}
+
+.PriceOld
+{
+    text-decoration: line-through;
+    color: rgb(182, 182, 182);
+    font-weight: 700;
+}
+
+.aboutInfo
+{
+    width: 304px;
+    padding: 8px;
+    text-align: justify;
+}
