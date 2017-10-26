@@ -75,6 +75,7 @@ input.list:checked ~ section > article > .mainInfo,
 
 input.list:checked ~ section > article > .description
 {
+    word-wrap: break-word;
     display: inline-block;
     max-width: 33%;
     padding: 0;
