@@ -10,14 +10,9 @@
     src: url(10100.otf);
 }
 
-body
+html
 {
     background-color: #ef9a9a;
-}
-
-section
-{
-    background-color: inherit;
 }
 
 input
@@ -75,11 +70,12 @@ input.list:checked ~ section > article > .mainInfo,
 
 input.list:checked ~ section > article > .description
 {
+    text-align: center;
     word-wrap: break-word;
     display: block;
     float: right;
     max-width: 33%;
-    padding: 0;
+    padding-top: 10px;
 }
 
 input.list:checked ~ section > article > .mainInfo
@@ -103,6 +99,8 @@ label.gallery
 
 input.gallery:checked ~ section > article
 {
+    box-shadow: 2px 2px 5px #888;
+    background-color: rgba(250, 125, 125, .8);
     vertical-align: top;
     height: inherit;
     position: relative;
