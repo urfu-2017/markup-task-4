@@ -10,9 +10,9 @@
     src: url(10100.otf);
 }
 
-body
+.colorBg
 {
-    background: #ef9a9a !important;
+    background-color: #ef9a9a;
 }
 
 input
