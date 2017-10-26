@@ -10,9 +10,9 @@
     src: url(10100.otf);
 }
 
-html
+body
 {
-    background: #ef9a9a;
+    background: #ef9a9a !important;
 }
 
 input
@@ -178,7 +178,6 @@ input.gallery:checked ~ section > article:hover
     border: 3px solid #ff0;
     box-shadow: 3px 3px #ffa000;
     text-shadow: 1px 1px 2px;
-    background-color: rgba(247, 120, 164, .6);
     transition-duration: .5s;
     transform: translate(0, -10%) scale(1.2);
 }
@@ -195,6 +194,7 @@ input.list:checked ~ section > article:hover
 
 article
 {
+    background-color: rgba(247, 120, 164, .6);
     border: 2px solid #5d4037;
     margin: 0;
     width: wrap-content;
