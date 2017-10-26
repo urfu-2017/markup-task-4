@@ -1,0 +1,229 @@
+@font-face
+{
+    font-family: customFont1;
+    src: url(10619.ttf);
+}
+
+@font-face
+{
+    font-family: customFont2;
+    src: url(10100.otf);
+}
+
+body
+{
+    background-color: #ef9a9a;
+}
+
+input
+{
+    display: none;
+}
+
+section
+{
+    padding: 15px;
+}
+
+.category
+{
+    font-family: customFont2, sans-serif;
+}
+
+img:hover
+{
+    animation-duration: .5s;
+    animation-name: animateCat;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animateCat
+{
+    50%
+    {
+        transform: skew(5deg);
+    }
+    to
+    {
+        transform: skew(-5deg);
+    }
+}
+
+label.list
+{
+    padding: 10px;
+    content: url(list.png);
+}
+
+input.list:checked ~ section > article
+{
+    width: 100%;
+    display: block;
+}
+
+input.list:checked ~ section > article > .mainInfo,
+.description
+{
+    display: inline-block;
+    padding: 0;
+}
+
+input.list:checked ~ section > article > .description
+{
+    float: right;
+    display: block;
+    width: wrap-content;
+    padding: 0;
+}
+
+input.list:checked ~ section > article > .mainInfo
+{
+    
+    float: top;
+    width: wrap-content;
+    padding: 0;
+}
+
+label.gallery
+{
+    padding: 10px;
+    content: url(gallery.png);
+}
+
+input.gallery:checked ~ section > article
+{
+    vertical-align: top;
+    height: inherit;
+    position: relative;
+    margin-right: 5px;
+    text-align: center;
+    width: 250px;
+    display: inline-block;
+}
+
+input.gallery:checked ~ section > article > img
+{
+    width: 100%;
+    display: block;
+}
+
+.rate
+{
+    display: inline-block;
+    border: 0;
+}
+
+input[value='10']:checked ~ label:before
+{
+
+    text-shadow: 0 0 20px #952;
+}
+
+.rate > label
+{
+    float: right;
+}
+
+.rate > label:before
+{
+    display: inline-block;
+    font-size: 24px;
+    padding: 5px;
+    margin: 0;
+    font-family: FontAwesome;
+    content: '\f005';
+}
+
+.rate .half:before
+{
+    content: '\f089';
+    position: absolute;
+    padding-right: 0;
+}
+
+input:checked ~ label,
+label:hover,
+label:hover ~ label
+{
+    color: #fe7;
+}
+
+header
+{
+    text-align: center;
+    font: 35px customFont1, sans-serif;
+    text-shadow: 1px 0 1px;
+}
+
+.description
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px;
+}
+
+input.gallery:checked ~ section > article:hover
+{
+    z-index: 500;
+    border: 3px solid #ff0;
+    box-shadow: 3px 3px #ffa000;
+    text-shadow: 1px 1px 2px;
+    background-color: rgba(247, 120, 164, .6);
+    transition-duration: .5s;
+    transform: translate(0, -10%) scale(1.2);
+}
+
+input.list:checked ~ section > article:hover
+{
+    border: 3px solid #ff0;
+    box-shadow: 0 0 5px 5px #ddd;
+    text-shadow: 1px 1px 2px;
+    background-color: #f48fb1;
+    transition-duration: .5s;
+    transform: translateY(15%);
+}
+
+article
+{
+    border: 2px solid #5d4037;
+    margin: 0;
+    width: wrap-content;
+    margin-bottom: 5px;
+}
+
+p
+{
+    padding: 0 10px;
+    text-overflow: ellipsis;
+}
+
+a
+{
+    font-size: 30px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.oldPrice
+{
+    font-size: 24px;
+    color: #757575;
+    text-decoration: line-through;
+}
+
+.price
+{
+    font-size: 36px;
+}
+
+img
+{
+    text-align: center;
+    height: 250px;
+}
+
+header::first-letter
+{
+    color: #f00;
+}
