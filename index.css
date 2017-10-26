@@ -75,18 +75,23 @@ input.list:checked ~ section > article > .mainInfo,
 
 input.list:checked ~ section > article > .description
 {
-    float: right;
-    display: block;
-    max-width: 20%;
+    display: inline-block;
+    max-width: 33%;
     padding: 0;
 }
 
 input.list:checked ~ section > article > .mainInfo
 {
-    
-    float: top;
+    display: inline-block;
+    max-width: 33%;
     width: wrap-content;
     padding: 0;
+}
+
+input.list:checked ~ section > article > img
+{
+    max-width: 33%;
+    display: inline-block;
 }
 
 label.gallery
