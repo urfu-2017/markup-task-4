@@ -1,0 +1,132 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+.item
+{
+    width: 500px;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.item:hover
+{
+    border: 3px double #000;
+    background: #f1f9e0;
+    margin: 12px;
+}
+
+.category:hover
+{
+    color: #96070a;
+    text-decoration: underline;
+}
+
+.photo
+{
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo img
+{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.photo img:hover
+{
+    opacity: .7;
+}
+
+.price
+{
+    font-size: 2em;
+    font-weight: bold;
+    color: #f00;
+}
+
+.oldprice
+{
+    text-decoration: line-through;
+}
+
+.price:after,
+.oldprice:after
+{
+    content: ' руб.';
+}
+
+.kindness
+{
+    display: inline-block;
+}
+
+.kindness input
+{
+    display: none;
+}
+
+.kindness label:before
+{
+    content: '\f005';
+}
+
+.kindness .halfstar:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.kindness label
+{
+    font-family: FontAwesome;
+    font-size: 3em;
+    color: #ccc;
+    float: right;
+}
+
+.kindness input:checked ~ label,
+.kindness label:hover,
+.kindness label:hover ~ label
+{
+    color: #ffb514;
+}
+
+input:checked ~ main .item
+{
+    width: 95%;
+    /*display: block;*/
+}
+
+input:checked ~ main .item .photo
+{
+    display: inline-block;
+    width: 25%;
+
+    min-height: 200px;
+}
+
+input:checked ~ main img
+{
+    position: initial;
+}
+
+input:checked ~ main .info
+{
+    display: inline-block;
+    width: 30%;
+    margin-left: 1em;
+    position: relative;
+    vertical-align: top;
+
+}
+
+input:checked ~ main .description
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+
+}
