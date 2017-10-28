@@ -3,7 +3,499 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Мяндекс.Муррркет»</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewset">
 </head>
 <body>
+
+<input type="radio" id="input-view-list" class="input-view-list" name="view-type" value="list" hidden checked>
+<input type="radio" id="input-view-tiles" class="input-view-tiles" name="view-type" value="tiles" hidden>
+
+<header>
+    <span class="header1 company-name">Мяндекс</span>&nbsp;<span class="header1">Муррркет</span>
+    <section class="settings">
+        <label class="settings__view list-icon" for="input-view-list"></label>
+        <label class="settings__view tiles-icon" for="input-view-tiles"></label>
+    </section>
+</header>
+
+<main>
+    <article class="cat">
+        <figure>
+            <img class="cat__photo" src="images/1.jpg" alt="Ушастый Хьюго" width="640" height="427">
+        </figure>
+        <section>
+            <a class="link cat__name" href="#">Хьюго</a>
+            <a class="cat__breed" href="#">Беспородные</a>
+            <div class="rating">
+                <input type="radio" class="rating__input" id="rating-input-1-50" name="cat-kindness-1">
+                <label for="rating-input-1-50" class="rating__half-star"></label>
+
+                <input type="radio" class="rating__input" id="rating-input-1-45" name="cat-kindness-1">
+                <label for="rating-input-1-45" class="rating__half-star"></label>
+
+                <input type="radio" class="rating__input" id="rating-input-1-40" name="cat-kindness-1">
+                <label for="rating-input-1-40" class="rating__half-star"></label>
+
+                <input type="radio" class="rating__input" id="rating-input-1-35" name="cat-kindness-1">
+                <label for="rating-input-1-35" class="rating__half-star"></label>
+
+                <input type="radio" class="rating__input" id="rating-input-1-30" name="cat-kindness-1">
+                <label for="rating-input-1-30" class="rating__half-star"></label>
+
+                <input type="radio" class="rating__input" id="rating-input-1-25" name="cat-kindness-1">
+                <label for="rating-input-1-25" class="rating__half-star"></label>
+
+                <input type="radio" class="rating__input" id="rating-input-1-20" name="cat-kindness-1">
+                <label for="rating-input-1-20" class="rating__half-star"></label>
+
+                <input type="radio" class="rating__input" id="rating-input-1-15" name="cat-kindness-1">
+                <label for="rating-input-1-15" class="rating__half-star"></label>
+
+                <input type="radio" class="rating__input" id="rating-input-1-10" name="cat-kindness-1">
+                <label for="rating-input-1-10" class="rating__half-star"></label>
+
+                <input type="radio" class="rating__input" id="rating-input-1-05" name="cat-kindness-1">
+                <label for="rating-input-1-05" class="rating__half-star"></label>
+            </div>
+            <p class="cat__price">10&#8381;</p>
+        </section>
+        <section>
+            <p class="cat__description">
+                Активный малыш, для компании и&nbsp;игр! Сообразительный, ловкий, очень ласковый и&nbsp;ручной.
+                Не&nbsp;смотрите, что он&nbsp;&laquo;обычной&raquo; внешности&nbsp;&mdash; в&nbsp;нем есть
+                все, чтобы стать самым классным и&nbsp;идеальным котом, которого невозможно не&nbsp;любить.
+            </p>
+        </section>
+    </article>
+
+    <article class="cat">
+        <figure>
+            <img class="cat__photo" src="images/2.jpg" alt="Ван Дамм спереди" width="320" height="480">
+            <figcaption><a class="link cat__name" href="#">Ван Дамм</a></figcaption>
+        </figure>
+
+        <a class="cat__breed" href="#">Беспородные</a>
+        <div class="rating">
+            <input type="radio" class="rating__input" id="rating-input-2-50" name="cat-kindness-2">
+            <label for="rating-input-2-50" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-2-45" name="cat-kindness-2">
+            <label for="rating-input-2-45" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-2-40" name="cat-kindness-2">
+            <label for="rating-input-2-40" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-2-35" name="cat-kindness-2">
+            <label for="rating-input-2-35" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-2-30" name="cat-kindness-2">
+            <label for="rating-input-2-30" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-2-25" name="cat-kindness-2">
+            <label for="rating-input-2-25" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-2-20" name="cat-kindness-2">
+            <label for="rating-input-2-20" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-2-15" name="cat-kindness-2">
+            <label for="rating-input-2-15" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-2-10" name="cat-kindness-2">
+            <label for="rating-input-2-10" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-2-05" name="cat-kindness-2">
+            <label for="rating-input-2-05" class="rating__half-star"></label>
+        </div>
+        <p class="cat__price">50&#8381;</p>
+        <p class="cat__description">
+            Обладатель нескончаемой харизмы и&nbsp;шарма, этот трехлапик пронзит ваше сердце!
+            Правой лапки не&nbsp;хватает по&nbsp;запястье&nbsp;&mdash; потерял, как и&nbsp;кончики ушей,
+            выживая на&nbsp;улице. Эта особенность придает ему изюминку, и&nbsp;ни&nbsp;в&nbsp;коем случае,
+            не&nbsp;недостаток. В&nbsp;меру любопытный, он&nbsp;знает свое место в&nbsp;доме.
+            Не&nbsp;лезет, куда не&nbsp;разрешено. Любит, когда ему чешут щечки&nbsp;&mdash; мурчит,
+            подставляя то&nbsp;один бок,то другой. К&nbsp;лапкам не&nbsp;любит прикосновения.
+            С&nbsp;другими животными дружен, сдать сдачи&nbsp;&mdash; не&nbsp;может.
+        </p>
+    </article>
+
+    <article class="cat">
+        <figure>
+            <img class="cat__photo" src="images/3.jpg" alt="Людвиг на ручках" width="640" height="480">
+            <figcaption><a class="link cat__name" href="#">Людвиг</a></figcaption>
+        </figure>
+        <a class="cat__breed" href="#">Шотландцы</a>
+        <div class="rating">
+            <input type="radio" class="rating__input" id="rating-input-3-50" name="cat-kindness-3">
+            <label for="rating-input-3-50" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-3-45" name="cat-kindness-3">
+            <label for="rating-input-3-45" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-3-40" name="cat-kindness-3">
+            <label for="rating-input-3-40" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-3-35" name="cat-kindness-3">
+            <label for="rating-input-3-35" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-3-30" name="cat-kindness-3">
+            <label for="rating-input-3-30" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-3-25" name="cat-kindness-3">
+            <label for="rating-input-3-25" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-3-20" name="cat-kindness-3">
+            <label for="rating-input-3-20" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-3-15" name="cat-kindness-3">
+            <label for="rating-input-3-15" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-3-10" name="cat-kindness-3">
+            <label for="rating-input-3-10" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-3-05" name="cat-kindness-3">
+            <label for="rating-input-3-05" class="rating__half-star"></label>
+        </div>
+        <p class="cat__price">15000&#8381;</p>
+        <p class="cat__old-price">17500&#8381;</p>
+        <p class="cat__description">
+            Мальчику 2&nbsp;мес. Проглистогонен, привит, чистоплотный, ходит только в&nbsp;лоток. Родители
+            клуб Грация. Документы готовы. Этот котёнок принесёт в&nbsp;дом невероятные эмоции.
+            Очень любит играть. И&nbsp;спать на&nbsp;кровати, считая себя хозяином дома)
+            Родители чистопородные кошки имеющие не&nbsp;один десяток титулов. Клубные обожашки. Видео
+            котёнка, кошек, и&nbsp;вязки по&nbsp;запросу.
+        </p>
+    </article>
+
+    <article class="cat">
+        <figure>
+            <img class="cat__photo" src="images/4.jpg" alt="Борис на голубом фоне" width="640" height="443">
+            <figcaption><a class="link cat__name" href="#">Борис</a></figcaption>
+        </figure>
+        <a class="cat__breed" href="#">Мейн-куны</a>
+        <div class="rating">
+            <input type="radio" class="rating__input" id="rating-input-4-50" name="cat-kindness-4">
+            <label for="rating-input-4-50" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-4-45" name="cat-kindness-4">
+            <label for="rating-input-4-45" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-4-40" name="cat-kindness-4">
+            <label for="rating-input-4-40" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-4-35" name="cat-kindness-4">
+            <label for="rating-input-4-35" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-4-30" name="cat-kindness-4">
+            <label for="rating-input-4-30" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-4-25" name="cat-kindness-4">
+            <label for="rating-input-4-25" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-4-20" name="cat-kindness-4">
+            <label for="rating-input-4-20" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-4-15" name="cat-kindness-4">
+            <label for="rating-input-4-15" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-4-10" name="cat-kindness-4">
+            <label for="rating-input-4-10" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-4-05" name="cat-kindness-4">
+            <label for="rating-input-4-05" class="rating__half-star"></label>
+        </div>
+        <p class="cat__price">22000&#8381;</p>
+        <p class="cat__old-price">24000&#8381;</p>
+        <p class="cat__description">
+            Окрас&nbsp;&mdash; яркий чёрный мрамор. Дата рождения 08.11.2016.
+            Дико красив и&nbsp;до&nbsp;очарования нежен. Имеет отличные оценки с&nbsp;выставки.
+            Пакет документов прилагается. Торг возможен. Рассмотрим варианты продажи в&nbsp;разведение
+            за&nbsp;пределы Свердловской области. Возможна доставка поездом.
+        </p>
+    </article>
+
+    <article class="cat">
+        <figure>
+            <img class="cat__photo" src="images/5.jpg" alt="Маленькая франческа" width="270" height="480">
+            <figcaption><a class="link cat__name" href="#">Франческа</a></figcaption>
+        </figure>
+        <a class="cat__breed" href="#">Британцы</a>
+        <div class="rating">
+            <input type="radio" class="rating__input" id="rating-input-5-50" name="cat-kindness-5">
+            <label for="rating-input-5-50" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-5-45" name="cat-kindness-5">
+            <label for="rating-input-5-45" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-5-40" name="cat-kindness-5">
+            <label for="rating-input-5-40" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-5-35" name="cat-kindness-5">
+            <label for="rating-input-5-35" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-5-30" name="cat-kindness-5">
+            <label for="rating-input-5-30" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-5-25" name="cat-kindness-5">
+            <label for="rating-input-5-25" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-5-20" name="cat-kindness-5">
+            <label for="rating-input-5-20" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-5-15" name="cat-kindness-5">
+            <label for="rating-input-5-15" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-5-10" name="cat-kindness-5">
+            <label for="rating-input-5-10" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-5-05" name="cat-kindness-5">
+            <label for="rating-input-5-05" class="rating__half-star"></label>
+        </div>
+        <p class="cat__price">7000&#8381;</p>
+        <p class="cat__description">
+            Предлаю британских котят редкого серебристого мраморного окраса. Котята с&nbsp;широкими щечками,
+            мордастые, мощнолапые, крупные, с&nbsp;плюшевой шубкой и&nbsp;умильными мордочками.
+            Ходят на&nbsp;горшок, все кушают, любят сидеть на&nbsp;руках и&nbsp;мурлыкать. Звонить можно
+            допоздна!
+        </p>
+    </article>
+
+    <article class="cat">
+        <figure>
+            <img class="cat__photo" src="images/6.jpg" alt="Селена" width="640" height="427">
+            <figcaption><a class="link cat__name" href="#">Селена</a></figcaption>
+        </figure>
+        <a class="cat__breed" href="#">Американские кёрлы</a>
+        <div class="rating">
+            <input type="radio" class="rating__input" id="rating-input-6-50" name="cat-kindness-6">
+            <label for="rating-input-6-50" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-6-45" name="cat-kindness-6">
+            <label for="rating-input-6-45" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-6-40" name="cat-kindness-6">
+            <label for="rating-input-6-40" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-6-35" name="cat-kindness-6">
+            <label for="rating-input-6-35" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-6-30" name="cat-kindness-6">
+            <label for="rating-input-6-30" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-6-25" name="cat-kindness-6">
+            <label for="rating-input-6-25" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-6-20" name="cat-kindness-6">
+            <label for="rating-input-6-20" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-6-15" name="cat-kindness-6">
+            <label for="rating-input-6-15" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-6-10" name="cat-kindness-6">
+            <label for="rating-input-6-10" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-6-05" name="cat-kindness-6">
+            <label for="rating-input-6-05" class="rating__half-star"></label>
+        </div>
+        <p class="cat__price">24000&#8381;</p>
+        <p class="cat__old-price">25000&#8381;</p>
+        <p class="cat__description">
+            Окрас голубой мраморный с&nbsp;белым, рождена 30.03.2017. Отец&nbsp;&mdash; лучший
+            представитель породы и многократный победитель выставок. Проставлен полный курс прививок.
+            Котенок социализирован, выращен в&nbsp;семье с&nbsp;детьми и другими кошками. Для выставок,
+            разведения и&nbsp;для души!
+        </p>
+    </article>
+
+    <article class="cat">
+        <figure>
+            <img class="cat__photo" src="images/7.jpg" alt="Вишенка" width="640" height="480">
+            <figcaption><a class="cat__name" href="#">Вишенка</a></figcaption>
+        </figure>
+        <a class="cat__breed" href="#">Бенгальские</a>
+        <div class="rating">
+            <input type="radio" class="rating__input" id="rating-input-7-50" name="cat-kindness-7">
+            <label for="rating-input-7-50" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-7-45" name="cat-kindness-7">
+            <label for="rating-input-7-45" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-7-40" name="cat-kindness-7">
+            <label for="rating-input-7-40" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-7-35" name="cat-kindness-7">
+            <label for="rating-input-7-35" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-7-30" name="cat-kindness-7">
+            <label for="rating-input-7-30" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-7-25" name="cat-kindness-7">
+            <label for="rating-input-7-25" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-7-20" name="cat-kindness-7">
+            <label for="rating-input-7-20" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-7-15" name="cat-kindness-7">
+            <label for="rating-input-7-15" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-7-10" name="cat-kindness-7">
+            <label for="rating-input-7-10" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-7-05" name="cat-kindness-7">
+            <label for="rating-input-7-05" class="rating__half-star"></label>
+        </div>
+        <p class="cat__price">17000&#8381;</p>
+        <p class="cat__description">
+            Бенгальская красавица ждёт своих новых мам и&nbsp;пап. Родилась&nbsp;28.08.17. К&nbsp;моменту
+            переезда будет иметь клубные документы и&nbsp;прививки по&nbsp;возрасту. Цена в&nbsp;разведение
+            по&nbsp;запросу.
+        </p>
+    </article>
+
+    <article class="cat">
+        <figure>
+            <img class="cat__photo" src="images/8.jpg" alt="Воланд" width="463" height="480">
+            <figcaption><a class="cat__name" href="#">Воланд</a></figcaption>
+        </figure>
+        <a class="cat__breed" href="#">Мейн-куны</a>
+        <div class="rating">
+            <input type="radio" class="rating__input" id="rating-input-8-50" name="cat-kindness-8">
+            <label for="rating-input-8-50" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-8-45" name="cat-kindness-8">
+            <label for="rating-input-8-45" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-8-40" name="cat-kindness-8">
+            <label for="rating-input-8-40" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-8-35" name="cat-kindness-8">
+            <label for="rating-input-8-35" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-8-30" name="cat-kindness-8">
+            <label for="rating-input-8-30" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-8-25" name="cat-kindness-8">
+            <label for="rating-input-8-25" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-8-20" name="cat-kindness-8">
+            <label for="rating-input-8-20" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-8-15" name="cat-kindness-8">
+            <label for="rating-input-8-15" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-8-10" name="cat-kindness-8">
+            <label for="rating-input-8-10" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-8-05" name="cat-kindness-8">
+            <label for="rating-input-8-05" class="rating__half-star"></label>
+        </div>
+        <p class="cat__price">15000&#8381;</p>
+        <p class="cat__old-price">17000&#8381;</p>
+        <p class="cat__description">
+            Зарегистрирован в&nbsp;системе WCF (Германия). Веселый, красивый, привязан к&nbsp;людям
+            и&nbsp;очень предан. Родители&nbsp;&mdash; активные участники шоу и&nbsp;выставок. Имеет
+            ветеринарный паспорт, все прививки, документы о&nbsp;происхождении и&nbsp;результатах экспертизы.
+        </p>
+    </article>
+
+    <article class="cat">
+        <figure>
+            <img class="cat__photo" src="images/9.jpg" alt="Черныш и цветы" width="640" height="425">
+            <figcaption><a class="cat__name" href="#">Черныш</a></figcaption>
+        </figure>
+        <a class="cat__breed" href="#">Беспородные</a>
+        <div class="rating">
+            <input type="radio" class="rating__input" id="rating-input-9-50" name="cat-kindness-9">
+            <label for="rating-input-9-50" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-9-45" name="cat-kindness-9">
+            <label for="rating-input-9-45" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-9-40" name="cat-kindness-9">
+            <label for="rating-input-9-40" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-9-35" name="cat-kindness-9">
+            <label for="rating-input-9-35" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-9-30" name="cat-kindness-9">
+            <label for="rating-input-9-30" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-9-25" name="cat-kindness-9">
+            <label for="rating-input-9-25" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-9-20" name="cat-kindness-9">
+            <label for="rating-input-9-20" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-9-15" name="cat-kindness-9">
+            <label for="rating-input-9-15" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-9-10" name="cat-kindness-9">
+            <label for="rating-input-9-10" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-9-05" name="cat-kindness-9">
+            <label for="rating-input-9-05" class="rating__half-star"></label>
+        </div>
+        <p class="cat__price">100&#8381;</p>
+        <p class="cat__description">
+            Ласковый и&nbsp;добрый, первое время будет труслив, но&nbsp;когда привыкнет к&nbsp;хозяину,
+            перестает бояться. Трогательный мальчишка. Кастрирован и&nbsp;обработан. Лоток знает
+            на&nbsp;отлично. Отдается под договор с&nbsp;фотоотчетом.
+        </p>
+    </article>
+
+    <article class="cat">
+        <figure>
+            <img class="cat__photo" src="images/10.jpg" alt="Принц Генри" width="640" height="427">
+            <figcaption>
+                <a class="cat__name" href="#">Генри Чарльз Альберт Дэвид Маунтбаттен-Виндзор</a>
+            </figcaption>
+        </figure>
+        <a class="cat__breed" href="#">Мейн-куны</a>
+        <div class="rating">
+            <input type="radio" class="rating__input" id="rating-input-10-50" name="cat-kindness-10">
+            <label for="rating-input-10-50" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-10-45" name="cat-kindness-10">
+            <label for="rating-input-10-45" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-10-40" name="cat-kindness-10">
+            <label for="rating-input-10-40" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-10-35" name="cat-kindness-10">
+            <label for="rating-input-10-35" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-10-30" name="cat-kindness-10">
+            <label for="rating-input-10-30" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-10-25" name="cat-kindness-10">
+            <label for="rating-input-10-25" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-10-20" name="cat-kindness-10">
+            <label for="rating-input-10-20" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-10-15" name="cat-kindness-10">
+            <label for="rating-input-10-15" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-10-10" name="cat-kindness-10">
+            <label for="rating-input-10-10" class="rating__half-star"></label>
+
+            <input type="radio" class="rating__input" id="rating-input-10-05" name="cat-kindness-10">
+            <label for="rating-input-10-05" class="rating__half-star"></label>
+        </div>
+        <p class="cat__price">30000&#8381;</p>
+        <p class="cat__description">
+            Рослый, воспитанный, аккуратный, ласковый кот королевских кровей ищет заботливые ручки.
+            Привит по возрасту. Есть ветеринарный паспорт.
+        </p>
+    </article>
+</main>
+
+<footer class="normal-text">
+    ©&nbsp;2017&nbsp;
+    <abbr>ООО</abbr>&nbsp;&laquo;<a class="copyright-link" href="#">Мяндекс.Муррркет</a>&raquo;
+</footer>
+
 </body>
 </html>
