@@ -19,14 +19,14 @@ article
     width: 300px;
     display: inline-block;
     vertical-align: top;
-    margin-left: 50px;
-    padding: 15px;
+    padding: 25px;
     background: url('steaker.png');
     background-size: 150% 140%;
     background-position-x: -60px;
     background-position-y: -180px;
     position: relative;
-    margin-top: 50px;
+    margin: 0 50px;
+    margin-top: 100px;
 }
 
 figure > img
@@ -48,19 +48,7 @@ figure
 p
 {
     margin: 10px 0;
-}
-
-.description::before
-{
-    content: 'Описание';
-    display: block;
-    margin: 15px 0;
-    font-size: 1.5em;
-}
-
-.type::before
-{
-    content: 'Типаж: ';
+    display: inline-block;
 }
 
 .kindness::before
@@ -69,30 +57,22 @@ p
     font-size: 1rem;
 }
 
-.kindness
-{
-    font-size: 0;
-}
-
-article label:nth-of-type(2n)
-{
-    background: url('heart_right.png');
-}
-
 .name a
 {
-    font-size: 2em;
     color: darkorchid;
     text-decoration: none;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    display: block;
+    display: inline-block;
+    max-width: 100%;
 }
 
-a:hover
+.description::before
 {
-    color: orange;
+    content: 'Описание';
+    display: block;
+    font-size: 2em;
 }
 
 body
@@ -101,59 +81,8 @@ body
     background-size: cover;
 }
 
-input[type='radio']:checked ~ label
+h2
 {
-    opacity: .25;
+    font-size: 2em;
+    margin: 5px 0;
 }
-
-article label
-{
-    opacity: 1;
-    width: 16px;
-    height: 32px;
-    display: inline-block;
-    background: url('heart_left.png');
-    cursor: pointer;
-}
-
-article input
-{
-    display: none;
-}
-
-input[id='lines']:checked ~ article
-{
-    width: 1200px;
-    margin: 25px auto;
-    display: block;
-    background-position-y: -940px;
-    background-position-x: -140px;
-    background-size: 110%;
-}
-
-input[id='lines']:checked ~ article > figure
-{
-    width: 35%;
-    display: inline-block;
-}
-
-input[id='lines']:checked ~ article > section
-{
-    width: 50%;
-    display: inline-block;
-    margin-left: 10%;
-    height: 300px;
-    vertical-align: top;
-}
-
-input[id='lines']:checked ~ article h1
-{
-    margin-top: 0;
-}
-
-main > label
-{
-    background-color: white;
-    padding: 10px;
-}
-

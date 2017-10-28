@@ -1,0 +1,44 @@
+.rarity::before
+{
+    content: 'Редкость: ';
+}
+
+.rarity > span:last-child
+{
+    display: none;
+}
+
+.rarity > span:last-child::before
+{
+    content: '(';
+}
+
+.rarity > span:last-child::after
+{
+    content: ')';
+}
+
+.common
+{
+    color: grey;
+}
+
+.uncommon
+{
+    color: green;
+}
+
+.rare
+{
+    color: blue;
+}
+
+.epic
+{
+    color: purple;
+}
+
+.legendary
+{
+    color: orange;
+}

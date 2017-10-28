@@ -1,0 +1,25 @@
+article label:nth-of-type(2n)
+{
+    background: url('heart_right.png');
+}
+
+input[type='radio']:checked ~ label
+{
+    opacity: .25;
+}
+
+article label
+{
+    opacity: 1;
+    width: 16px;
+    height: 32px;
+    display: inline-block;
+    background: url('heart_left.png');
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.kindness
+{
+    font-size: 0;
+}
