@@ -1,0 +1,112 @@
+.list-view:checked ~ .items-container .item
+{
+    display: block;
+    width: 90%;
+    height: auto;
+    min-height: 300px;
+    margin-top: 10px;
+}
+
+.list-view:checked ~ .items-container .item img
+{
+    float: left;
+    margin-right: 30px;
+    max-width: 160px;
+}
+
+.item
+{
+    width: 300px;
+    height: 850px;
+    display: inline-block;
+    margin: 20px;
+    vertical-align: bottom;
+}
+
+.item:hover .item-description
+{
+    font: 16px 'Bookman Old Style', serif;
+}
+
+.item-name
+{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+}
+
+.item-name:hover
+{
+    color: red;
+}
+
+.item-category:hover
+{
+    text-decoration: underline;
+}
+
+.item img
+{
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.item img:hover
+{
+    opacity: .7;
+}
+
+.item-description
+{
+    display: table;
+}
+
+.item-price
+{
+    color: #f00;
+}
+
+.item-old-price
+{
+    text-decoration: line-through;
+    color: #000;
+}
+
+.item-rating
+{
+    direction: rtl;
+    text-align: left;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.item-rating > input 
+{
+    display: none;
+}
+
+.item-rating > label 
+{
+    display: inline-block;
+    position: relative;
+}
+
+.item-rating > label:hover:before,
+.item-rating > label:hover ~ label:before,
+.item-rating > input:checked ~ label:before 
+{
+    content: '\2605';
+    color: rgb(255, 215, 0);
+    position: absolute;
+}
+
+h1,
+h2
+{
+    text-align: center;
+}
