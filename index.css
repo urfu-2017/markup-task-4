@@ -43,6 +43,7 @@
 .cat-category
 {
     font: 20px 'Marck Script', cursive;
+    color: grey;
     margin-top: 0;
     margin-bottom: 10px;
     text-align: center;
@@ -149,5 +150,5 @@
     display: inline-block;
     vertical-align: middle;
     width: 30%;
-        
+
 }
