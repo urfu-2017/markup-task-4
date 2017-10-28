@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script|Russo+One|Vollkorn');
+
+.market-header
+{
+    font: 20px 'Russo One', sans-serif;
+    text-align: center;
+}
+
+.cats-list
+{
+    padding: 15px 30px;
+}
+
+.cat-card
+{
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    padding: 10px;
+    margin: 5px 1%;
+    box-shadow: 0 0 5px grey;
+    vertical-align: top;
+}
+
+.cat-image
+{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.cat-name
+{
+    font: 30px 'Russo One', sans-serif;
+    margin-bottom: 0;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat-category
+{
+    font: 20px 'Marck Script', cursive;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cat-kindness-level
+{
+    text-align: center;
+}
+
+.cat-kindness-level::before
+{
+    font: 20px 'Marck Script', cursive;
+    width: 50%;
+    content: 'Уровень доброты: ';
+    vertical-align: top;
+}
+
+.cat-kindness-level-image
+{
+    display: inline-block;
+    max-width: 50%;
+}
+
+.price-info
+{
+    text-align: center;
+}
+
+.actual-price::before
+{
+    content: 'Цена: ';
+    font: 25px 'Marck Script', cursive;
+}
+
+.actual-price
+{
+    font: bold 25px 'Vollkorn', cursive;
+    margin: 0 auto;
+    display: inline;
+}
+
+.old-price
+{
+    font: bold 20px 'Vollkorn', cursive;
+    text-decoration: line-through;
+    color: grey;
+    display: inline;
+}
+
+.cat-desription
+{
+    font: 15px 'Vollkorn', serif;
+    margin: 20px;
+    text-align: justify;
+}
+
+.cat-card:hover
+{
+    border: 1px solid #000;
+    box-shadow: 0 0 70px grey;
+}
+
+.cat-name:hover
+{
+    font-size: 35px;
+}
+
+.cat-category:hover
+{
+    font-size: 25px;
+}
+
+.cat-image:hover
+{
+    border-radius: 5%;
+}
+
+.set-list:checked ~ .cats-list .cat-card
+{
+    display: block;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.set-list:checked ~ .cats-list .cat-card .cat-image
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    height: 100%;
+}
+
+.set-list:checked ~ .cats-list .cat-card .cat-info
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+}
+
+.set-list:checked ~ .cats-list .cat-card .cat-desription
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+        
+}
