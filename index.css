@@ -1,0 +1,186 @@
+@font-face
+{
+    font-family: 'FontAwesome';
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section
+{
+    padding: 20px;
+}
+
+.card
+{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 320px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.card:hover
+{
+    box-shadow: 3px 3px 50px grey;
+}
+
+.card-item
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    text-align-last: auto;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+.image
+{
+    display: inline-block;
+    text-align: center;
+    line-height: 240px;
+    padding: 5px;
+    height: 250px;
+    width: 300px;
+}
+
+img
+{
+    max-width: 95%;
+    max-height: 95%;
+    vertical-align: bottom;
+}
+
+img:hover
+{
+    max-width: 100%;
+    max-height: 100%;
+    transition: max-width .2s, max-height .2s;
+}
+
+.view-list:checked ~ section .card
+{
+    width: 100%;
+}
+
+.view-list:checked ~ section .card-item
+{
+    width: 30%;
+}
+
+.view-list:checked ~ section .info
+{
+    width: 39%;
+}
+
+.view-list:checked ~ section .text
+{
+    padding: 0 10px;
+}
+
+.view-list:checked ~ section img
+{
+    vertical-align: middle;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h2
+{
+    margin-top: .3em;
+    margin-bottom: .3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h5
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h5 > a
+{
+    color: rgba(171, 165, 112, .9);
+}
+
+a:hover
+{
+    color: red;
+}
+
+.price
+{
+    margin-top: .2em;
+}
+
+.current
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba(171,57,29,.9);
+}
+
+.old
+{
+    text-decoration: line-through;
+}
+
+p
+{
+    margin: .5em auto;
+}
+
+.stars
+{
+    margin-top: .2rem;
+    padding-bottom: .7rem;
+    letter-spacing: 1.7rem;
+}
+
+.stars input
+{
+    width: 0;
+    margin: 0;
+    color: gold;
+    font-family: FontAwesome;
+    font-size: 1.8em;
+    vertical-align: top;
+}
+
+.star-left:after
+{
+    display: inline-block;
+    width: calc(1ch - 1px);
+    content: '\f005';
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.star-right:before
+{
+    display: inline-block;
+    content: '\f005';
+    overflow: hidden;
+    transform: scale(-1, 1);
+}
+
+.stars input:hover ~ .star-right:before,
+.stars:not(:hover) input:checked ~ .star-right:before
+{
+    content: '\f006';
+}
+
+.stars input:hover ~ .star-left:after,
+.stars:not(:hover) input:checked ~ .star-left:after
+{
+    content: ' ';
+}
