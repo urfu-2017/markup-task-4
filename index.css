@@ -8,7 +8,7 @@ body main
     text-align: center;
 }
 
-input[name="grid"]
+input[name='grid']
 {
     display: none;
 }
@@ -16,7 +16,7 @@ input[name="grid"]
 .settings
 {
     height: 50px;
-    background-color: #D4D4D4;
+    background-color: #d4d4d4;
     padding-top: 10px;
 }
 
@@ -31,31 +31,30 @@ input[name="grid"]
     background-color: #888;
 }
 
-input[id="list"]:checked ~ main > .item
+input[id='list']:checked ~ main > .item
 {
     height: 400px;
     width: 100%;
 }
 
-input[id="list"]:checked ~ main .item_card
+input[id='list']:checked ~ main .item_card
 {
     vertical-align: top;
     width: 66%;
 }
 
-input[id="list"]:checked ~ main figure
+input[id='list']:checked ~ main figure
 {
     width: 33%;
 }
 
-
-input[id="list"]:checked ~ main > .item > figure > img
+input[id='list']:checked ~ main > .item > figure > img
 {
     max-height: 400px;
     max-width: 600px;
 }
 
-input[id="grid"]:checked ~ main .item_card
+input[id='grid']:checked ~ main .item_card
 {
     height: 400px;
     vertical-align: text-top;
@@ -68,7 +67,7 @@ input[id="grid"]:checked ~ main .item_card
     width: 380px;
     margin: 30px .5%;
     box-shadow: 0 0 5px #000;
-    background: #D8D7D7;
+    background: #d8d7d7;
 }
 
 .item figure
@@ -182,7 +181,7 @@ input:checked ~ label:nth-of-type(even)
 .price p.old_price
 {
     font-size: 18px;
-    color:#888;
+    color: #888;
     text-decoration: line-through;
 }
 
