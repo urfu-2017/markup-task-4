@@ -1,5 +1,3 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
-
 article
 {
     margin: 2%;
@@ -15,6 +13,12 @@ section
 {
     min-height: 310px;
     position: relative;
+}
+
+.description
+{
+    height: 90px;
+    overflow: hidden;
 }
 
 a > p
@@ -51,7 +55,7 @@ img
     text-decoration: line-through;
 }
 
-p > input
+p input
 {
     display: none;
 }
@@ -72,7 +76,7 @@ p > input
     display: inline-block;
 }
 
-.half:before
+.half-star:before
 {
     transform: scale(-1, 1);
 }
@@ -85,7 +89,7 @@ p > label:hover ~ label:before
 
 p > label:hover:before,
 p > label:hover ~ label:before,
-p > input:checked ~ label:before
+p input:checked ~ label:before
 {
     content: '\f005';
 }
