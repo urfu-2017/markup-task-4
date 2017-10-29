@@ -40,12 +40,11 @@ img
 
 .cat-name
 {
-    display: block;
-    text-align: center;
+    display: inline-block;
     font: 20px Arial, serif;
     color: gray;
     overflow: hidden;
-    margin: 10px;
+    max-width: 90%;
 }
 
 .cat-name:hover
@@ -56,8 +55,12 @@ img
 
 .cat-breed
 {
+    display: inline-block;
     text-align: center;
     font-weight: 100;
+    overflow: hidden;
+    max-width: 90%;
+    font-size: 18px;
 }
 
 .cat-breed:hover ~ .cat-price
@@ -99,7 +102,6 @@ img
     border: 5px solid black;
     text-align: center;
     z-index: -1;
-
 }
 
 .cat-window:hover
@@ -116,7 +118,7 @@ img
 
 .card-info
 {
-    padding: 5px;
+    padding: 10px;
 }
 /*=============================================================================*/
 
