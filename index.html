@@ -3,7 +3,482 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Мяндекс.Муррркет»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+    <input id="tile" type="radio" name="view" checked>
+    <input id="roster" type="radio" name="view">
+    <main>
+        <nav>
+            <header class="market"><span id="r1">М</span>яндекс.<span id="r2">М</span>уррркет</header>
+            <div>
+                <figure class="viewing">
+                    <img class="window" src="pictures/tile.png">
+                    <figcaption><label for="tile" class="tileview">Отобразить плиткой</label></figcaption>
+                </figure>
+                <figure class="viewing">
+                    <img class="window" src="pictures/roster.png">
+                    <figcaption><label for="roster" class="rosterview">Отобразить списком</label></figcaption>
+                </figure>
+            </div>
+        </nav>
+        <article class="cat_sales">
+            <section class="one_cat">
+                <figure class="cat_photo">
+                    <img src="pictures/c1.jpg" alt="Котик не подгрузился :(">
+                    <figcaption class="subscripton">Покупаю!</figcaption>
+                </figure>
+                <div class="cat_common">
+                    <p class="cat_name"><a href="http://webref.ru" target="blank">Тима</a></p>
+                    <p class="category up">Категория котика</p>
+                    <p class="category wtf">Множество</p>
+                    <div class="level">
+                        <label for="1_lvl_1"></label>
+                        <input id="1_lvl_1" type="radio" name="for_1">
+                        <label for="1_lvl_2"></label>
+                        <input id="1_lvl_2" type="radio" name="for_1">
+                        <label for="1_lvl_3"></label>
+                        <input id="1_lvl_3" type="radio" name="for_1">
+                        <label for="1_lvl_4"></label>
+                        <input id="1_lvl_4" type="radio" name="for_1" checked>
+                        <label for="1_lvl_5"></label>
+                        <input id="1_lvl_5" type="radio" name="for_1">
+                        <label for="1_lvl_6"></label>
+                        <input id="1_lvl_6" type="radio" name="for_1">
+                        <label for="1_lvl_7"></label>
+                        <input id="1_lvl_7" type="radio" name="for_1">
+                        <label for="1_lvl_8"></label>
+                        <input id="1_lvl_8" type="radio" name="for_1">
+                        <label for="1_lvl_9"></label>
+                        <input id="1_lvl_9" type="radio" name="for_1">
+                        <label for="1_lvl_10"></label>
+                        <input id="1_lvl_10" type="radio" name="for_1">
+                    </div>
+                    <p class="price">3000 <span class="oldprice">4000</span></p>
+                    <p class="description">Активный котик. Никогда не сидит на месте,
+                        любит бегать по дому и ронять самые хрупкие вещи.
+                        Мыши трепещут от одного его вида!</p>
+                </div>
+            </section>
+            <section class="one_cat">
+                <figure class="cat_photo">
+                    <img src="pictures/c2.jpg" alt="Котик не подгрузился :(">
+                    <figcaption class="subscripton">Покупаю!</figcaption>
+                </figure>
+                <div class="cat_common">
+                    <p class="cat_name"><a href="http://webref.ru" target="blank">Высоцкий</a></p>
+                    <p class="category up">Категория котика</p>
+                    <p class="category wtf">Компьютерная симуляция</p>
+                    <div class="level">
+                        <label for="2_lvl_1"></label>
+                        <input id="2_lvl_1" type="radio" name="for_2">
+                        <label for="2_lvl_2"></label>
+                        <input id="2_lvl_2" type="radio" name="for_2">
+                        <label for="2_lvl_3"></label>
+                        <input id="2_lvl_3" type="radio" name="for_2" checked>
+                        <label for="2_lvl_4"></label>
+                        <input id="2_lvl_4" type="radio" name="for_2">
+                        <label for="2_lvl_5"></label>
+                        <input id="2_lvl_5" type="radio" name="for_2">
+                        <label for="2_lvl_6"></label>
+                        <input id="2_lvl_6" type="radio" name="for_2">
+                        <label for="2_lvl_7"></label>
+                        <input id="2_lvl_7" type="radio" name="for_2">
+                        <label for="2_lvl_8"></label>
+                        <input id="2_lvl_8" type="radio" name="for_2">
+                        <label for="2_lvl_9"></label>
+                        <input id="2_lvl_9" type="radio" name="for_2">
+                        <label for="2_lvl_10"></label>
+                        <input id="2_lvl_10" type="radio" name="for_2">
+                    </div>
+                    <p class="price">1500</p>
+                    <p class="description">Злой кот. Вечно подранный уличный котяра,
+                        который портит жизнь всему дому. Это самое бесполезное и
+                        наглое существо. Мы стараемся не обращать на него
+                        внимания, хотя периодически приходится.</p>
+                </div>
+            </section>
+            <section class="one_cat">
+                <figure class="cat_photo">
+                    <img src="pictures/c3.jpg" alt="Котик не подгрузился :(">
+                    <figcaption class="subscripton">Покупаю!</figcaption>
+                </figure>
+                <div class="cat_common">
+                    <p class="cat_name"><a href="http://webref.ru" target="blank">Бегемот</a></p>
+                    <p class="category up">Категория котика</p>
+                    <p class="category wtf">Векторное пространство</p>
+                    <div class="level">
+                        <label for="3_lvl_1"></label>
+                        <input id="3_lvl_1" type="radio" name="for_3">
+                        <label for="3_lvl_2"></label>
+                        <input id="3_lvl_2" type="radio" name="for_3">
+                        <label for="3_lvl_3"></label>
+                        <input id="3_lvl_3" type="radio" name="for_3">
+                        <label for="3_lvl_4"></label>
+                        <input id="3_lvl_4" type="radio" name="for_3">
+                        <label for="3_lvl_5"></label>
+                        <input id="3_lvl_5" type="radio" name="for_3">
+                        <label for="3_lvl_6"></label>
+                        <input id="3_lvl_6" type="radio" name="for_3">
+                        <label for="3_lvl_7"></label>
+                        <input id="3_lvl_7" type="radio" name="for_3">
+                        <label for="3_lvl_8"></label>
+                        <input id="3_lvl_8" type="radio" name="for_3">
+                        <label for="3_lvl_9"></label>
+                        <input id="3_lvl_9" type="radio" name="for_3">
+                        <label for="3_lvl_10"></label>
+                        <input id="3_lvl_10" type="radio" name="for_3" checked>
+                    </div>
+                    <p class="price">5500 <span class="oldprice">6000</span></p>
+                    <p class="description">Неизвестно откуда взявшийся кот,
+                        громадный, как боров, черный, как сажа или грач, и
+                        с отчаянными кавалерийскими усами. Передвигается на
+                        задних лапах</p>
+                </div>
+            </section>
+            <section class="one_cat">
+                <figure class="cat_photo">
+                    <img src="pictures/c4.jpg" alt="Котик не подгрузился :(">
+                    <figcaption class="subscripton">Покупаю!</figcaption>
+                </figure>
+                <div class="cat_common">
+                    <p class="cat_name"><a href="http://webref.ru" target="blank">Биссектриса</a></p>
+                    <p class="category up">Категория котика</p>
+                    <p class="category wtf">Время</p>
+                    <div class="level">
+                        <label for="4_lvl_1"></label>
+                        <input id="4_lvl_1" type="radio" name="for_4">
+                        <label for="4_lvl_2"></label>
+                        <input id="4_lvl_2" type="radio" name="for_4">
+                        <label for="4_lvl_3"></label>
+                        <input id="4_lvl_3" type="radio" name="for_4">
+                        <label for="4_lvl_4"></label>
+                        <input id="4_lvl_4" type="radio" name="for_4">
+                        <label for="4_lvl_5"></label>
+                        <input id="4_lvl_5" type="radio" name="for_4">
+                        <label for="4_lvl_6"></label>
+                        <input id="4_lvl_6" type="radio" name="for_4">
+                        <label for="4_lvl_7"></label>
+                        <input id="4_lvl_7" type="radio" name="for_4" checked>
+                        <label for="4_lvl_8"></label>
+                        <input id="4_lvl_8" type="radio" name="for_4">
+                        <label for="4_lvl_9"></label>
+                        <input id="4_lvl_9" type="radio" name="for_4">
+                        <label for="4_lvl_10"></label>
+                        <input id="4_lvl_10" type="radio" name="for_4">
+                    </div>
+                    <p class="price">4000</p>
+                    <p class="description">Эта кошечка поможет Вам с матаном.
+                        Единственная, кто может рассказать тебе про интеграл
+                        Эйлера-Пуассона, хоть тебе это даже и не нужно. Она
+                        от души посмеется над анекдотом про математиков и бар
+                        и поможет тебе понять шутку про заряженный нейтрино.</p>
+                </div>
+            </section>
+            <section class="one_cat">
+                <figure class="cat_photo">
+                    <img src="pictures/c5.jpg" alt="Котик не подгрузился :(">
+                    <figcaption class="subscripton">Покупаю!</figcaption>
+                </figure>
+                <div class="cat_common">
+                    <p class="cat_name"><a href="http://webref.ru" target="blank">Бьёрн</a></p>
+                    <p class="category up">Категория котика</p>
+                    <p class="category wtf">Самосознание</p>
+                    <div class="level">
+                        <label for="5_lvl_1"></label>
+                        <input id="5_lvl_1" type="radio" name="for_5">
+                        <label for="5_lvl_2"></label>
+                        <input id="5_lvl_2" type="radio" name="for_5">
+                        <label for="5_lvl_3"></label>
+                        <input id="5_lvl_3" type="radio" name="for_5">
+                        <label for="5_lvl_4"></label>
+                        <input id="5_lvl_4" type="radio" name="for_5">
+                        <label for="5_lvl_5"></label>
+                        <input id="5_lvl_5" type="radio" name="for_5" checked>
+                        <label for="5_lvl_6"></label>
+                        <input id="5_lvl_6" type="radio" name="for_5">
+                        <label for="5_lvl_7"></label>
+                        <input id="5_lvl_7" type="radio" name="for_5">
+                        <label for="5_lvl_8"></label>
+                        <input id="5_lvl_8" type="radio" name="for_5">
+                        <label for="5_lvl_9"></label>
+                        <input id="5_lvl_9" type="radio" name="for_5">
+                        <label for="5_lvl_10"></label>
+                        <input id="5_lvl_10" type="radio" name="for_5">
+                    </div>
+                    <p class="price">4000</p>
+                    <p class="description">Умный котик. Обожает смотреть,
+                        как его хозяин кодит на JS, иногда и сам не прочь
+                        побегать по кливиатуре. Боится мышей и предпочитает
+                        только домашнюю еду.</p>
+                </div>
+            </section>
+            <section class="one_cat">
+                <figure class="cat_photo">
+                    <img src="pictures/c6.jpg" alt="Котик не подгрузился :(">
+                    <figcaption class="subscripton">Покупаю!</figcaption>
+                </figure>
+                <div class="cat_common">
+                    <p class="cat_name"><a href="http://webref.ru" target="blank">Казантип</a></p>
+                    <p class="category up">Категория котика</p>
+                    <p class="category wtf">Картофель</p>
+                    <div class="level">
+                        <label for="6_lvl_1"></label>
+                        <input id="6_lvl_1" type="radio" name="for_6">
+                        <label for="6_lvl_2"></label>
+                        <input id="6_lvl_2" type="radio" name="for_6">
+                        <label for="6_lvl_3"></label>
+                        <input id="6_lvl_3" type="radio" name="for_6">
+                        <label for="6_lvl_4"></label>
+                        <input id="6_lvl_4" type="radio" name="for_6">
+                        <label for="6_lvl_5"></label>
+                        <input id="6_lvl_5" type="radio" name="for_6">
+                        <label for="6_lvl_6"></label>
+                        <input id="6_lvl_6" type="radio" name="for_6">
+                        <label for="6_lvl_7"></label>
+                        <input id="6_lvl_7" type="radio" name="for_6">
+                        <label for="6_lvl_8"></label>
+                        <input id="6_lvl_8" type="radio" name="for_6">
+                        <label for="6_lvl_9"></label>
+                        <input id="6_lvl_9" type="radio" name="for_6" checked>
+                        <label for="6_lvl_10"></label>
+                        <input id="6_lvl_10" type="radio" name="for_6">
+                    </div>
+                    <p class="price">7000 <span class="oldprice">6000</span></p>
+                    <p class="description">Кот, который не против потусить,
+                        если вам вдруг стало внезапно скучно и не с кем сходить в бар.
+                        Может без особого труда познакомиться с кем угодно, обменяться
+                        контактами и после нескольких коктейлей все же довезти вас домой.</p>
+                </div>
+            </section>
+            <section class="one_cat">
+                <figure class="cat_photo">
+                    <img src="pictures/c7.jpg" alt="Котик не подгрузился :(">
+                    <figcaption class="subscripton">Покупаю!</figcaption>
+                </figure>
+                <div class="cat_common">
+                    <p class="cat_name"><a href="http://webref.ru" target="blank">Денис&#0160;Аликин</a></p>
+                    <p class="category up">Категория котика</p>
+                    <p class="category wtf">Непрерывное отображение</p>
+                    <div class="level">
+                        <label for="7_lvl_1"></label>
+                        <input id="7_lvl_1" type="radio" name="for_7">
+                        <label for="7_lvl_2"></label>
+                        <input id="7_lvl_2" type="radio" name="for_7">
+                        <label for="7_lvl_3"></label>
+                        <input id="7_lvl_3" type="radio" name="for_7">
+                        <label for="7_lvl_4"></label>
+                        <input id="7_lvl_4" type="radio" name="for_7">
+                        <label for="7_lvl_5"></label>
+                        <input id="7_lvl_5" type="radio" name="for_7">
+                        <label for="7_lvl_6"></label>
+                        <input id="7_lvl_6" type="radio" name="for_7">
+                        <label for="7_lvl_7"></label>
+                        <input id="7_lvl_7" type="radio" name="for_7">
+                        <label for="7_lvl_8"></label>
+                        <input id="7_lvl_8" type="radio" name="for_7" checked>
+                        <label for="7_lvl_9"></label>
+                        <input id="7_lvl_9" type="radio" name="for_7">
+                        <label for="7_lvl_10"></label>
+                        <input id="7_lvl_10" type="radio" name="for_7">
+                    </div>
+                    <p class="price">3500</p>
+                    <p class="description">Кот, который любит науку. Особенно
+                        экспериментальную физику. Особенно на себе. Акотемик РАН,
+                        докотор наук, выступал с докладами на международных
+                        котферециях, совершил суборбитальный космический полет.</p>
+                </div>
+            </section>
+            <section class="one_cat">
+                <figure class="cat_photo">
+                    <img src="pictures/c8.jpg" alt="Котик не подгрузился :(">
+                    <figcaption class="subscripton">Покупаю!</figcaption>
+                </figure>
+                <div class="cat_common">
+                    <p class="cat_name"><a href="http://webref.ru" target="blank">Батя</a></p>
+                    <p class="category up">Категория котика</p>
+                    <p class="category wtf">private</p>
+                    <div class="level">
+                        <label for="8_lvl_1"></label>
+                        <input id="8_lvl_1" type="radio" name="for_8">
+                        <label for="8_lvl_2"></label>
+                        <input id="8_lvl_2" type="radio" name="for_8" checked>
+                        <label for="8_lvl_3"></label>
+                        <input id="8_lvl_3" type="radio" name="for_8">
+                        <label for="8_lvl_4"></label>
+                        <input id="8_lvl_4" type="radio" name="for_8">
+                        <label for="8_lvl_5"></label>
+                        <input id="8_lvl_5" type="radio" name="for_8">
+                        <label for="8_lvl_6"></label>
+                        <input id="8_lvl_6" type="radio" name="for_8">
+                        <label for="8_lvl_7"></label>
+                        <input id="8_lvl_7" type="radio" name="for_8">
+                        <label for="8_lvl_8"></label>
+                        <input id="8_lvl_8" type="radio" name="for_8">
+                        <label for="8_lvl_9"></label>
+                        <input id="8_lvl_9" type="radio" name="for_8">
+                        <label for="8_lvl_10"></label>
+                        <input id="8_lvl_10" type="radio" name="for_8">
+                    </div>
+                    <p class="price">500</p>
+                    <p class="description">Кот-обжора. Все, что он делает в этой жизни -
+                        ест и спит, и ему это нравится. Зачем придумывать что-то еще,
+                        если хозяева все равно принесут любимый Whiskas?</p>
+                </div>
+            </section>
+            <section class="one_cat">
+                <figure class="cat_photo">
+                    <img src="pictures/c9.jpg" alt="Котик не подгрузился :(">
+                    <figcaption class="subscripton">Покупаю!</figcaption>
+                </figure>
+                <div class="cat_common">
+                    <p class="cat_name"><a href="http://webref.ru" target="blank">Молодой</a></p>
+                    <p class="category up">Категория котика</p>
+                    <p class="category wtf">protected</p>
+                    <div class="level">
+                        <label for="9_lvl_1"></label>
+                        <input id="9_lvl_1" type="radio" name="for_9">
+                        <label for="9_lvl_2"></label>
+                        <input id="9_lvl_2" type="radio" name="for_9">
+                        <label for="9_lvl_3"></label>
+                        <input id="9_lvl_3" type="radio" name="for_9">
+                        <label for="9_lvl_4"></label>
+                        <input id="9_lvl_4" type="radio" name="for_9">
+                        <label for="9_lvl_5"></label>
+                        <input id="9_lvl_5" type="radio" name="for_9">
+                        <label for="9_lvl_6"></label>
+                        <input id="9_lvl_6" type="radio" name="for_9" checked>
+                        <label for="9_lvl_7"></label>
+                        <input id="9_lvl_7" type="radio" name="for_9">
+                        <label for="9_lvl_8"></label>
+                        <input id="9_lvl_8" type="radio" name="for_9">
+                        <label for="9_lvl_9"></label>
+                        <input id="9_lvl_9" type="radio" name="for_9">
+                        <label for="9_lvl_10"></label>
+                        <input id="9_lvl_10" type="radio" name="for_9">
+                    </div>
+                    <p class="price">Даром</p>
+                    <p class="description">Свиду злобный уличный кот на
+                        самом деле очень любит ласку и тепло. Очень хочет,
+                        чтобы его кто-нибудь приютил и его белая шерстка
+                        не собирала грязь по улице</p>
+                </div>
+            </section>
+            <section class="one_cat">
+                <figure class="cat_photo">
+                    <img src="pictures/c10.jpg" alt="Котик не подгрузился :(">
+                    <figcaption class="subscripton">Покупаю!</figcaption>
+                </figure>
+                <div class="cat_common">
+                    <p class="cat_name"><a href="http://webref.ru" target="blank">Например</a></p>
+                    <p class="category up">Категория котика</p>
+                    <p class="category wtf">public</p>
+                    <div class="level">
+                        <label for="10_lvl_1"></label>
+                        <input id="10_lvl_1" type="radio" name="for_10" checked>
+                        <label for="10_lvl_2"></label>
+                        <input id="10_lvl_2" type="radio" name="for_10">
+                        <label for="10_lvl_3"></label>
+                        <input id="10_lvl_3" type="radio" name="for_10">
+                        <label for="10_lvl_4"></label>
+                        <input id="10_lvl_4" type="radio" name="for_10">
+                        <label for="10_lvl_5"></label>
+                        <input id="10_lvl_5" type="radio" name="for_10">
+                        <label for="10_lvl_6"></label>
+                        <input id="10_lvl_6" type="radio" name="for_10">
+                        <label for="10_lvl_7"></label>
+                        <input id="10_lvl_7" type="radio" name="for_10">
+                        <label for="10_lvl_8"></label>
+                        <input id="10_lvl_8" type="radio" name="for_10">
+                        <label for="10_lvl_9"></label>
+                        <input id="10_lvl_9" type="radio" name="for_10">
+                        <label for="10_lvl_10"></label>
+                        <input id="10_lvl_10" type="radio" name="for_10">
+                    </div>
+                    <p class="price">500</p>
+                    <p class="description">Недружелюбный. Этот кот - само безумие.
+                            Прыгает по мебели, рвет шторы и будит своих хозяев криком
+                            ранним воскресным утром. Но его все равно все любят.</p>
+                </div>
+            </section>
+            <section class="one_cat">
+                <figure class="cat_photo">
+                    <img src="pictures/c11.jpg" alt="Котик не подгрузился :(">
+                    <figcaption class="subscripton">Покупаю!</figcaption>
+                </figure>
+                <div class="cat_common">
+                    <p class="cat_name"><a href="http://webref.ru" target="blank">Альбус</a></p>
+                    <p class="category up">Категория котика</p>
+                    <p class="category wtf">КАДМ</p>
+                    <div class="level">
+                        <label for="11_lvl_1"></label>
+                        <input id="11_lvl_1" type="radio" name="for_11">
+                        <label for="11_lvl_2"></label>
+                        <input id="11_lvl_2" type="radio" name="for_11">
+                        <label for="11_lvl_3"></label>
+                        <input id="11_lvl_3" type="radio" name="for_11">
+                        <label for="11_lvl_4"></label>
+                        <input id="11_lvl_4" type="radio" name="for_11">
+                        <label for="11_lvl_5"></label>
+                        <input id="11_lvl_5" type="radio" name="for_11">
+                        <label for="11_lvl_6"></label>
+                        <input id="11_lvl_6" type="radio" name="for_11">
+                        <label for="11_lvl_7"></label>
+                        <input id="11_lvl_7" type="radio" name="for_11">
+                        <label for="11_lvl_8"></label>
+                        <input id="11_lvl_8" type="radio" name="for_11" checked>
+                        <label for="11_lvl_9"></label>
+                        <input id="11_lvl_9" type="radio" name="for_11">
+                        <label for="11_lvl_10"></label>
+                        <input id="11_lvl_10" type="radio" name="for_11">
+                    </div>
+                    <p class="price">4500 <span class="oldprice">5500</span></p>
+                    <p class="description">Очень пушистый трехцветный котик.
+                        Имеет хитрый, но добрый и пронзительный взгляд.
+                        Несмотря на свое котовье обличие, обладаем великодушием,
+                        человечностью и состраданием. Самый яркий и любимый
+                        из всех наших домашних питомцев. Даже продавать жалко.</p>
+                </div>
+            </section>
+            <section class="one_cat">
+                <figure class="cat_photo">
+                    <img src="pictures/c12.jpg" alt="Котик не подгрузился :(">
+                    <figcaption class="subscripton">Покупаю!</figcaption>
+                </figure>
+                <div class="cat_common">
+                    <p class="cat_name"><a href="http://webref.ru" target="blank">Анатолий</a></p>
+                    <p class="category up">Категория котика</p>
+                    <p class="category wtf">Энтропия</p>
+                    <div class="level">
+                        <label for="12_lvl_1"></label>
+                        <input id="12_lvl_1" type="radio" name="for_12">
+                        <label for="12_lvl_2"></label>
+                        <input id="12_lvl_2" type="radio" name="for_12">
+                        <label for="12_lvl_3"></label>
+                        <input id="12_lvl_3" type="radio" name="for_12" checked>
+                        <label for="12_lvl_4"></label>
+                        <input id="12_lvl_4" type="radio" name="for_12">
+                        <label for="12_lvl_5"></label>
+                        <input id="12_lvl_5" type="radio" name="for_12">
+                        <label for="12_lvl_6"></label>
+                        <input id="12_lvl_6" type="radio" name="for_12">
+                        <label for="12_lvl_7"></label>
+                        <input id="12_lvl_7" type="radio" name="for_12">
+                        <label for="12_lvl_8"></label>
+                        <input id="12_lvl_8" type="radio" name="for_12">
+                        <label for="12_lvl_9"></label>
+                        <input id="12_lvl_9" type="radio" name="for_12">
+                        <label for="12_lvl_10"></label>
+                        <input id="12_lvl_10" type="radio" name="for_12">
+                    </div>
+                    <p class="price">3500</p>
+                    <p class="description">У Анатолия светло-коричневая мордочка,
+                        темные ушки, лапки и длинный полосатый хвост; гибкое
+                        удлиненное тело, большая круглая голова, на мордочке
+                        щетинистые усы и темные глаза.</p>
+                </div>
+            </section>
+        </article>
+    </main>
 </body>
 </html>
