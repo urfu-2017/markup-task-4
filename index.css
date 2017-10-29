@@ -1,0 +1,111 @@
+#reviewStars label,
+#reviewStars label:hover,
+#reviewStars label:hover ~ label
+{
+    background: url('stars.png') no-repeat;
+}
+
+#reviewStars
+{
+    position: relative;
+    float: left;
+}
+
+#reviewStars input
+{
+    opacity: 0;
+    width: 43px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+}
+
+#reviewStars label
+{
+    background-position: 0 0;
+    height: 40px;
+    width: 43px;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+}
+
+#reviewStars label:hover,
+#reviewStars label:hover ~ label
+{
+    background-position: 0 -40px;
+    height: 40px;
+    width: 43px;
+}
+
+#reviewStars #star-0
+{
+    left: 0px;
+}
+
+#reviewStars #star-1
+{
+    left: 53px;
+}
+
+#reviewStars #star-2
+{
+    left: 106px;
+}
+
+#reviewStars #star-3
+{
+    left: 159px;
+}
+
+#reviewStars #star-4
+{
+    left: 212px;
+}
+
+#reviewStars #star-5
+{
+    left: 265px;
+}
+
+.container
+{
+    width: 100%;
+}
+
+.container > div
+{
+    vertical-align: middle;
+    display: inline-block;
+    width: 400px;
+    min-width: 33%;
+    text-align: center;
+}
+
+a
+{
+    font-family: Calibri;
+    font-size: 120%;
+}
+
+.price
+{
+    color: red;
+    font-width: bold;
+}
+
+.disc
+{
+    text-align: left;
+    font-family: Calibri;
+    font-size: 85%;
+}
+
+.switch:checked ~ .container > div
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
