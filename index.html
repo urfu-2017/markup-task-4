@@ -3,7 +3,456 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Мяндекс.Муррркет»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <header>
+        <h1>Мяндекс.Муррркет</h1>
+    </header>
+    <main>
+        <input type="radio" name="viewWindow" value="list" id="list">
+        <label for="list">Список</label>
+        <input type="radio" name="viewWindow" value="bar" id="bar" checked>
+        <label for="bar">Значки</label>
+        <ul>
+            <li>
+                <p class="imageCat"><img class="cats" src="images/Кузя.jpg" alt="Котенок Кузя"></p>
+                <div>
+                    <p class="name"><a href="images/Кузя.jpg" title="Кузя">Кузя</a></p>
+                    <p class="category"><a href="images/Кузя.jpg" 
+                        title="Категория: кошки, рыжие">Животные, кошки, рыжие</a></p>
+                    <p class="kindness">
+                        <input type="radio" name="star1" value="star5.5" id="star1_55">
+                        <label for="star1_55"><img class="stars" src="images/rightstar.png" 
+                            alt="star"></label>
+                        <input type="radio" name="star1" value="star5" id="star1_5">
+                        <label for="star1_5"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star1" value="star4.5" id="star1_45">
+                        <label for="star1_45"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star1" value="star4" id="star1_4">
+                        <label for="star1_4"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star1" value="star3.5" id="star1_35">
+                        <label for="star1_35"><img class="stars" src="images/rightstar.png" 
+                            alt="star"></label>
+                        <input type="radio" name="star1" value="star3" id="star1_3">
+                        <label for="star1_3"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star1" value="star2.5" id="star1_25">
+                        <label for="star1_25"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star1" value="star2" id="star1_2">
+                        <label for="star1_2"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star1" value="star1.5" id="star1_15">
+                        <label for="star1_15"><img class="stars" src="images/rightstar.png" 
+                            alt="star"></label>
+                        <input type="radio" name="star1" value="star1" id="star1_1">
+                        <label for="star1_1"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                    </p>
+                    <p class="description"><br>Ры&shy;жий ко&shy;те&shy;нок, маль&shy;чик, 
+                        4 ме&shy;ся&shy;ца</p>
+                    <p class="price">50 ₽</p>
+                </div>
+            </li>
+            <li>
+                <p class="imageCat"><img class="cats" src="images/Бени.jpg" alt="Кошечка Бени"></p>
+                <div>
+                    <p class="name"><a href="images/Бени.jpg" title="Бени">Бени</a></p>
+                    <p class="category"><a href="images/Бени.jpg" 
+                        title="Категория: кошки, мейн-куны">Животные, кошки, мейн-куны</a></p>
+                    <p class="kindness">
+                        <input type="radio" name="star2" value="star5.5" id="star2_55">
+                        <label for="star2_55"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star2" value="star5" id="star2_5">
+                        <label for="star2_5"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star2" value="star4.5" id="star2_45">
+                        <label for="star2_45"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star2" value="star4" id="star2_4">
+                        <label for="star2_4"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star2" value="star3.5" id="star2_35">
+                        <label for="star2_35"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star2" value="star3" id="star2_3">
+                        <label for="star2_3"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star2" value="star2.5" id="star2_25">
+                        <label for="star2_25"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star2" value="star2" id="star2_2">
+                        <label for="star2_2"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star2" value="star1.5" id="star2_15">
+                        <label for="star2_15"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star2" value="star1" id="star2_1">
+                        <label for="star2_1"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                    </p>
+                    <p class="description"><br>Се&shy;рая ко&shy;шеч&shy;ка, на ушах 
+                        ки&shy;сточ&shy;ки, де&shy;воч&shy;ка, 3 ме&shy;ся&shy;ца</p>
+                    <p class="price">75 ₽ <span>90 ₽</span></p>
+                </div>
+            </li>
+            <li>
+                <p class="imageCat"><img class="cats" src="images/Шустрик.jpg" alt="Котенок Шустрик"></p>
+                <div>
+                    <p class="name"><a href="images/Шустрик.jpg" title="Шустрик">Шустрик</a></p>
+                    <p class="category"><a href="images/Шустрик.jpg" 
+                        title="Категория: кошки, британцы">Животные, кошки, британцы</a></p>
+                    <p class="kindness">
+                        <input type="radio" name="star3" value="star5.5" id="star3_55">
+                        <label for="star3_55"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star3" value="star5" id="star3_5">
+                        <label for="star3_5"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star3" value="star4.5" id="star3_45">
+                        <label for="star3_45"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star3" value="star4" id="star3_4">
+                        <label for="star3_4"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star3" value="star3.5" id="star3_35">
+                        <label for="star3_35"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star3" value="star3" id="star3_3">
+                        <label for="star3_3"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star3" value="star2.5" id="star3_25">
+                        <label for="star3_25"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star3" value="star2" id="star3_2">
+                        <label for="star3_2"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star3" value="star1.5" id="star3_15">
+                        <label for="star3_15"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star3" value="star1" id="star3_1">
+                        <label for="star3_1"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                    </p>
+                    <p class="description"><br>Бри&shy;тан&shy;ская по&shy;ро&shy;да, 
+                        ко&shy;те&shy;нок дым&shy;ча&shy;то&shy;го цве&shy;та, маль&shy;чик, 
+                        4 ме&shy;ся&shy;ца</p>
+                    <p class="price">65 ₽</p>
+                </div>
+            </li>
+            <li>
+                <p class="imageCat"><img class="cats" src="images/Лили.jpg" alt="Кошечка Лили"></p>
+                <div>
+                    <p class="name"><a href="images/Лили.jpg" title="Лили">Лили</a></p>
+                    <p class="category"><a href="images/Лили.jpg" 
+                        title="Категория: кошки, трехцветные">Животные, кошки, трехцветные</a></p>
+                    <p class="kindness">
+                        <input type="radio" name="star4" value="star5.5" id="star4_55">
+                        <label for="star4_55"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star4" value="star5" id="star4_5">
+                        <label for="star4_5"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star4" value="star4.5" id="star4_45">
+                        <label for="star4_45"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star4" value="star4" id="star4_4">
+                        <label for="star4_4"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star4" value="star3.5" id="star4_35">
+                        <label for="star4_35"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star4" value="star3" id="star4_3">
+                        <label for="star4_3"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star4" value="star2.5" id="star4_25">
+                        <label for="star4_25"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star4" value="star2" id="star4_2">
+                        <label for="star4_2"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star4" value="star1.5" id="star4_15">
+                        <label for="star4_15"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star4" value="star1" id="star4_1">
+                        <label for="star4_1"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                    </p>
+                    <p class="description"><br>Трех&shy;цвет&shy;ная ко&shy;шеч&shy;ка с 
+                        бе&shy;лы&shy;ми пе&shy;ред&shy;ни&shy;ми лап&shy;ка&shy;ми, де&shy;воч&shy;ка, 
+                        2 ме&shy;ся&shy;ца</p>
+                    <p class="price">55 ₽</p>
+                </div>
+            </li>
+            <li>
+                <p class="imageCat"><img class="cats" src="images/Пух.jpeg" alt="Котенок Пух"></p>
+                <div>
+                    <p class="name"><a href="images/Пух.jpeg" title="Пух серый пушистый котенок, 
+                        мальчик">Пух серый пушистый котенок, мальчик</a></p>
+                    <p class="category"><a href="images/Пух.jpeg" 
+                        title="Категория: кошки, пушистые">Животные, кошки, пушистые</a></p>
+                    <p class="kindness">
+                        <input type="radio" name="star5" value="star5.5" id="star5_55">
+                        <label for="star5_55"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star5" value="star5" id="star5_5">
+                        <label for="star5_5"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star5" value="star4.5" id="star5_45">
+                        <label for="star5_45"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star5" value="star4" id="star5_4">
+                        <label for="star5_4"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star5" value="star3.5" id="star5_35">
+                        <label for="star5_35"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star5" value="star3" id="star5_3">
+                        <label for="star5_3"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star5" value="star2.5" id="star5_25">
+                        <label for="star5_25"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star5" value="star2" id="star5_2">
+                        <label for="star5_2"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star5" value="star1.5" id="star5_15">
+                        <label for="star5_15"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star5" value="star1" id="star5_1">
+                        <label for="star5_1"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                    </p>
+                    <p class="description"><br>Се&shy;рый пу&shy;ши&shy;стый ко&shy;те&shy;нок, 
+                        маль&shy;чик, 2 ме&shy;ся&shy;ца</p>
+                    <p class="price">50 ₽</p>
+                </div>
+            </li>
+            <li>
+                <p class="imageCat"><img class="cats" src="images/Буся.jpg" alt="Кошечка Буся"></p>
+                <div>
+                    <p class="name"><a href="images/Буся.jpg" title="Буся">Буся</a></p>
+                    <p class="category"><a href="images/Буся.jpg" 
+                        title="Категория: кошки, милые котята">Животные, кошки, милые котята</a></p>
+                    <p class="kindness">
+                        <input type="radio" name="star6" value="star5.5" id="star6_55">
+                        <label for="star6_55"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star6" value="star5" id="star6_5">
+                        <label for="star6_5"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star6" value="star4.5" id="star6_45">
+                        <label for="star6_45"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star6" value="star4" id="star6_4">
+                        <label for="star6_4"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star6" value="star3.5" id="star6_35">
+                        <label for="star6_35"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star6" value="star3" id="star6_3">
+                        <label for="star6_3"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star6" value="star2.5" id="star6_25">
+                        <label for="star6_25"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star6" value="star2" id="star6_2">
+                        <label for="star6_2"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star6" value="star1.5" id="star6_15">
+                        <label for="star6_15"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star6" value="star1" id="star6_1">
+                        <label for="star6_1"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                    </p>
+                    <p class="description"><br>Пу&shy;ши&shy;стая ко&shy;шеч&shy;ка 
+                        свет&shy;ло-се&shy;ро&shy;го окра&shy;са, де&shy;воч&shy;ка. 
+                        1,5 ме&shy;ся&shy;ца</p>
+                    <p class="price">60 ₽</p>
+                </div>
+            </li>
+            <li>
+                <p class="imageCat"><img class="cats" src="images/Мэйсон.jpg" alt="Котенок Мэйсон"></p>
+                <div>
+                    <p class="name"><a href="images/Мэйсон.jpg" title="Мэйсон">Мэйсон</a></p>
+                    <p class="category"><a href="images/Мэйсон.jpg" 
+                        title="Категория: кошки, персидские">Животные, кошки, персидские</a></p>
+                    <p class="kindness">
+                        <input type="radio" name="star7" value="star5.5" id="star7_55">
+                        <label for="star7_55"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star7" value="star5" id="star7_5">
+                        <label for="star7_5"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star7" value="star4.5" id="star7_45">
+                        <label for="star7_45"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star7" value="star4" id="star7_4">
+                        <label for="star7_4"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star7" value="star3.5" id="star7_35">
+                        <label for="star7_35"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star7" value="star3" id="star7_3">
+                        <label for="star7_3"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star7" value="star2.5" id="star7_25">
+                        <label for="star7_25"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star7" value="star2" id="star7_2">
+                        <label for="star7_2"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star7" value="star1.5" id="star7_15">
+                        <label for="star7_15"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star7" value="star1" id="star7_1">
+                        <label for="star7_1"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                    </p>
+                    <p class="description"><br>Свет&shy;ло-се&shy;рый пу&shy;ши&shy;стый 
+                        ко&shy;те&shy;нок, маль&shy;чик, 3 ме&shy;ся&shy;ца</p>
+                    <p class="price">60 ₽</p>
+                </div>
+            </li>
+            <li>
+                <p class="imageCat"><img class="cats" src="images/Пинта.jpg" alt="Кошечка Пинта"></p>
+                <div>
+                    <p class="name"><a href="images/Пинта.jpg" title="Пинта">Пинта</a></p>
+                    <p class="category"><a href="images/Пинта.jpg" 
+                        title="Категория: кошки, черепаховые">Животные, кошки, черепаховые</a></p>
+                    <p class="kindness">
+                        <input type="radio" name="star8" value="star5.5" id="star8_55">
+                        <label for="star8_55"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star8" value="star5" id="star8_5">
+                        <label for="star8_5"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star8" value="star4.5" id="star8_45">
+                        <label for="star8_45"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star8" value="star4" id="star8_4">
+                        <label for="star8_4"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star8" value="star3.5" id="star8_35">
+                        <label for="star8_35"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star8" value="star3" id="star8_3">
+                        <label for="star8_3"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star8" value="star2.5" id="star8_25">
+                        <label for="star8_25"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star8" value="star2" id="star8_2">
+                        <label for="star8_2"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star8" value="star1.5" id="star8_15">
+                        <label for="star8_15"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star8" value="star1" id="star8_1">
+                        <label for="star8_1"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                    </p>
+                    <p class="description"><br>Трех&shy;цвет&shy;ная ко&shy;шеч&shy;ка, 
+                        де&shy;воч&shy;ка, 4 ме&shy;ся&shy;ца</p>
+                    <p class="price">80 ₽</p>
+                </div>
+            </li>
+            <li>
+                <p class="imageCat"><img class="cats" src="images/Барсик.jpg" alt="Котенок Барсик"></p>
+                <div>
+                    <p class="name"><a href="images/Барсик.jpg" title="Барсик">Барсик</a></p>
+                    <p class="category"><a href="images/Барсик.jpg" 
+                        title="Категория: кошки, черные">Животные, кошки, черные</a></p>
+                    <p class="kindness">
+                        <input type="radio" name="star9" value="star5.5" id="star9_55">
+                        <label for="star9_55"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star9" value="star5" id="star9_5">
+                        <label for="star9_5"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star9" value="star4.5" id="star9_45">
+                        <label for="star9_45"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star9" value="star4" id="star9_4">
+                        <label for="star9_4"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star9" value="star3.5" id="star9_35">
+                        <label for="star9_35"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star9" value="star3" id="star9_3">
+                        <label for="star9_3"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star9" value="star2.5" id="star9_25">
+                        <label for="star9_25"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star9" value="star2" id="star9_2">
+                        <label for="star9_2"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star9" value="star1.5" id="star9_15">
+                        <label for="star9_15"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star9" value="star1" id="star9_1">
+                        <label for="star9_1"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                    </p>
+                    <p class="description"><br>Чер&shy;ный ко&shy;те&shy;нок с 
+                        бе&shy;лы&shy;ми уса&shy;ми, маль&shy;чик, 2 ме&shy;ся&shy;ца</p>
+                    <p class="price">60 ₽</p>
+                </div>
+            </li>
+            <li>
+                <p class="imageCat"><img class="cats" src="images/Лапка.jpg" alt="Кошечка Лапка"></p>
+                <div>
+                    <p class="name"><a href="images/Лапка.jpg" title="Лапка">Лапка</a></p>
+                    <p class="category"><a href="images/Лапка.jpg" 
+                        title="Категория: кошки, дымчатые">Животные, кошки, дымчатые</a></p>
+                    <p class="kindness">
+                        <input type="radio" name="star10" value="star5.5" id="star10_55">
+                        <label for="star10_55"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star10" value="star5" id="star10_5">
+                        <label for="star10_5"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star10" value="star4.5" id="star10_45">
+                        <label for="star10_45"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star10" value="star4" id="star10_4">
+                        <label for="star10_4"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star10" value="star3.5" id="star10_35">
+                        <label for="star10_35"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star10" value="star3" id="star10_3">
+                        <label for="star10_3"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star10" value="star2.5" id="star10_25">
+                        <label for="star10_25"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star10" value="star2" id="star10_2">
+                        <label for="star10_2"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star10" value="star1.5" id="star10_15">
+                        <label for="star10_15"><img class="stars" src="images/rightstar.png"
+                             alt="star"></label>
+                        <input type="radio" name="star10" value="star1" id="star10_1">
+                        <label for="star10_1"><img class="stars" src="images/leftstar.png"
+                             alt="star"></label>
+                    </p>
+                    <p class="description"><br>Бе&shy;ло-се&shy;рая ко&shy;шеч&shy;ка, 
+                        де&shy;воч&shy;ка, 3 ме&shy;ся&shy;ца</p>
+                    <p class="price">70 ₽</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        © 2017 «Мяндекс.Муррркет»
+    </footer>
 </body>
 </html>
