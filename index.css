@@ -1,13 +1,18 @@
-.rating {
+.rating
+{
     direction: rtl;
 }
-.rating > span {
+
+.rating > span
+{
     display: inline-block;
     position: relative;
     width: 20px;
 }
+
 .rating > span:hover:before,
-.rating > span:hover ~ span:before {
+.rating > span:hover ~ span:before
+{
     content: "\2605";
     position: absolute;
 }
@@ -34,8 +39,9 @@ a
 
 .price
 {
-    color: red;
-    font-width: bold;
+    color: green;
+    font-weight: bold;
+    font-family: "Arial Narrow";
 }
 
 .disc
