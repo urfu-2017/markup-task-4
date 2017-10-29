@@ -1,0 +1,127 @@
+.rows::after
+{
+    content: "\f00b";
+    font-size: 30px;
+}
+
+.project-name::first-letter
+{
+    color: #f30c0c;
+}
+
+.card
+{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 600px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cat-info
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    text-align-last: auto;
+    box-sizing: border-box;
+    width: 580px;
+}
+
+.cat-image
+{
+    display: inline-block;
+    margin: 0 auto;
+    height: 400px;
+    width: 580px;
+}
+
+.cat-name:link 
+{
+    color: #6698ff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.cat-name:visited 
+{
+    color: #98ff66;
+}
+
+.cat-name:hover 
+{
+    color: #ff6698;
+}
+
+.cat-category:link 
+{
+    color: #5b5c5e;
+    text-decoration: none;
+}
+
+.cat-category:visited 
+{
+    color: #b3b3b3;
+}
+
+.cat-category:hover 
+{
+    color: #ff6698;
+}
+
+.price
+{
+    font-size: 20px;
+    color: #ee1616;
+    font-weight: bold;
+}
+
+.cat-image img
+{
+    width: 90%;
+    height: 90%;
+}
+
+.cat-image:hover img
+{
+    width: 95%;
+    height: 95%;
+}
+
+.card:hover 
+{
+    margin: 10px auto;
+    padding: 1em;
+    box-shadow:
+     0 1px 4px rgba(161, 128, 128, 0.3),
+     -23px 0 20px -23px rgba(0, 0, 0, .8),
+     23px 0 20px -23px rgba(0, 0, 0, .8),
+     0 0 40px rgba(0, 0, 0, .1) inset;
+  }
+
+
+
+  .my-custom-label {
+    display:inline-block;
+    width: 256px;
+    height: 256px;
+    line-height: 256px;
+    background-image: url(http://pngimg.com/uploads/star/star_PNG1594.png);
+    text-align: center;
+}
+
+.my-custom-label > input[type=radio] {
+    display: none;
+}
+
+.img-star
+{
+    width: 40px;
+    height: 40px;
+}
+
+  .rig::after
+  {
+      content: "\f00b";
+      font-size: 30px;
+  }

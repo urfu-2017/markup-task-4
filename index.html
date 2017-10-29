@@ -1,9 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Мяндекс.Муррркет»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    <input type="radio" name="view" id="tile" checked>
+    <label for="tile">Плитками</label>
+    <input type="radio" name="view" id="list" class="view-list">
+    <label for="list">Списком</label>
+    <input class="rows" type="checkbox" id="view">
+    <main>
+        <header>
+            <h1 class="project-name">Яндекс.Муррркет</h1>
+        </header>
+        <section class="card">
+            <div class="cat-image">
+                <img src="https://i.ytimg.com/vi/VU7jXp26YN4/maxresdefault.jpg" alt="кот" title="кот Вася">
+            </div>
+            <div class="cat-info">
+                <p>
+                    <a class="cat-name" href="#">Вася</a>
+                </p>
+                <p>
+                    <a class="cat-category" href="#">Британская короткошерстная</a>
+                </p>
+                <div class="stars">
+                        <input id="left" type="radio" name="cat1" />
+                        <label for="left"><img class="img-star" src="http://pngimg.com/uploads/star/star_PNG1594.png"></label>
+                        <input id="right" type="radio" name="cat2" />
+                        <label for="right"><img class="img-star" src="http://pngimg.com/uploads/star/star_PNG1594.png"></label>
+
+                </div>
+                <p class="price">
+                    200$
+                </p>
+            </div>
+            <div class="cat-description">
+                Британская кошка — очаровательное плюшевое создание с круглой мордашкой и игривыми
+                золотыми глазками. Ее так и хочется утащить с собой под одеяло,
+                как любимую игрушку в детстве. Однако далеко не каждая британка
+                позволит сделать с собой нечто подобное. Слишком уж независимые
+                и гордые эти кошки в душе. Тут нужен особый подход. Конечно,
+                основанный на любви.
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
