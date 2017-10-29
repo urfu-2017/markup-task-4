@@ -127,11 +127,11 @@ main
 }
 
 .item-old-price ~ span
-{
+{.
     color: #67d238;
 }
 
-#card-layout-switch:checked ~ main .market-item
+.card-layout-switch:checked ~ main .market-item
 {
     display: block;
     width: 50%;
@@ -139,13 +139,13 @@ main
     margin: 30px auto;
 }
 
-#card-layout-switch:checked ~ main .item-picture,
-#card-layout-switch:checked ~ main .item-info
+.card-layout-switch:checked ~ main .item-picture,
+.card-layout-switch:checked ~ main .item-info
 {
     display: inline-block;
 }
 
-#card-layout-switch:checked ~ main .item-picture
+.card-layout-switch:checked ~ main .item-picture
 {
     width: 25%;
     margin-right: 20px;
@@ -156,7 +156,7 @@ main
     height: auto;
 }
 
-#card-layout-switch:checked ~ main .item-picture img
+.card-layout-switch:checked ~ main .item-picture img
 {
     vertical-align: middle;
     position: relative;
@@ -164,13 +164,13 @@ main
     max-width: 100%;
 }
 
-#card-layout-switch:checked ~ main .item-info
+.card-layout-switch:checked ~ main .item-info
 {
     height: auto;
     width: 60%;
 }
 
-#card-layout-switch:checked ~ main .item-info-price
+.card-layout-switch:checked ~ main .item-info-price
 {
     display: inline-block;
 }
