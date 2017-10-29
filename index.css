@@ -74,6 +74,12 @@ input[id='roster']:checked ~ main .cat_common
     padding: 0 27px;
 }
 
+h2
+{
+    font: bold 32px Bookman old style, serif;
+    color: rgb(245, 146, 164);
+}
+
 .one_cat
 {
     display: inline-block;
