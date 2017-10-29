@@ -59,7 +59,7 @@ footer
 
 input:checked ~ main section
 {
-    width: 100%;
+    width: 90%;
     overflow: hidden;
     margin: 20px 10px 20px 30px;
     padding-top: 10px;
@@ -68,7 +68,7 @@ input:checked ~ main section
 
 input:checked ~ main section:hover
 {
-    width: 1200px;
+    width: 90%;
     overflow: hidden;
     margin: 20px 10px 20px 30px;
     padding-top: 10px;
