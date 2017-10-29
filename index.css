@@ -19,6 +19,11 @@ html
     vertical-align: top;
 }
 
+.header
+{
+    font: bold 2rem 'Days One', sans-serif;
+}
+
 .el-photo
 {
     min-height: 250px;
@@ -144,9 +149,4 @@ input:checked ~ .market .market-el .el-desc
     width: 30%;
     margin: 0 0 0 1rem;
     vertical-align: top;
-}
-
-.header
-{
-    font: bold 2rem 'Days One', sans-serif;  
 }
