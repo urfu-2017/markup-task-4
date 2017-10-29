@@ -1,0 +1,192 @@
+body
+{
+    background: rgb(245,243,245);
+}
+
+label
+{
+    display: block;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    font: 20px Arial, sans-serif;
+}
+
+input
+{
+    display: none;
+}
+
+img
+{
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.card
+{
+    border: 1px solid gray;
+    font-size: 20px;
+    transition: all .5s;
+}
+
+.card:hover
+{
+    border: 5px solid black;
+    
+}
+
+.cat-name
+{
+    display: block;
+    text-align: center;
+    font: 20px Arial, serif;
+    color: gray;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.cat-name:hover
+{
+    color: black;
+    text-decoration: none;
+}
+
+.cat-breed
+{
+    text-align: center;
+    font-weight: 100;
+}
+
+.cat-breed:hover ~ .cat-price
+{
+    color: red;
+}
+
+.cat-assessment                              
+{
+    text-align: center;
+}
+
+.cat-price
+{
+    font: 18px Arial, sans-serif;
+}
+
+.old-price
+{
+    font-size: 16px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.star
+{
+    max-width: 30px;
+}
+
+.cat-window
+{
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 25%;
+    opacity: 0;
+    background: rgb(245,243,245);
+    border: 5px solid black;
+    text-align: center;
+    z-index: -1;
+
+}
+
+.cat-window:hover
+{
+    opacity: 1;
+    z-index: 1;
+}
+
+.card-image > img:hover + .cat-window
+{
+    opacity: 1;
+    z-index: 1;
+}
+
+.card-info
+{
+    padding: 5px;
+}
+/*=============================================================================*/
+
+input ~ .card
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 10px;
+}
+
+input ~ .card > .card-image
+{
+    width: 300px;
+    height: 300px;
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: center;
+}
+/*==========================================================================*/
+
+input:checked ~ .card
+{
+    display: block;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    margin: 20px 10px;
+}
+
+input:checked ~ .card > .card-image
+{
+    display: inline-block;
+    float: left;
+    width: 30%;
+    height: auto;
+}
+
+input:checked ~ .card > .card-info
+{
+    display: inline-block;
+    float: left;
+    width: 60%;
+    padding: 0;
+    margin: 0 5%;
+}
+
+input:checked ~ .card .cat-info
+{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin-top: 0;
+}
+
+input:checked ~ .card > .card-info .cat-name,
+input:checked ~ .card > .card-info .cat-breed,
+input:checked ~ .card > .card-info .cat-assessment,
+input:checked ~ .card > .card-info .cat-price
+
+{
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 0;
+}
+
+input:checked ~ .card .card-info > p
+{
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+}
