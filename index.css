@@ -5,11 +5,21 @@
 
 }
 
+section
+{
+    width: 350px;
+    overflow: hidden;
+}
+
 a
 {
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
-
+    display: inline-block;
+    width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 article:hover
@@ -25,7 +35,6 @@ article
     display: inline-block;
     border: 2px dashed #000;
     width: 350px;
-    max-height: 750;
     overflow: hidden;
 
 }
@@ -109,36 +118,61 @@ figcaption:hover
 
 }
 
-input[name='view']:checked + main > article > figure,
+input[name='view']:checked + main > article > section
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+input[name='view']:checked + main > article > section.info
+{
+    margin-left: 10%;
+}
+
+input[name='view']:checked + main > article > section.cat-info
+{
+    margin-top: 15px;
+}
+
 input[name='view']:checked + main > article > div,
 input[name='view']:checked + main > article > h2
 {
-    display: inline;
-
+    margin-left: 30%;
 }
 
 input[name='view']:checked + main
 {
     text-align: center;
+    display: block;
 
 }
 
-input[name='view']:checked + main > article > figure > figcaption
+input[name='view']:checked + main > article > figure > figcaption > a
 {
-    margin-left: 300;
-
+    margin-left: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 input[name='view']:checked + main > article
 {
-    column-count: 4;
     text-align: left;
     width: 1300px;
-
+    display: inline-block;
 }
 
 input[name='view']:checked + main > article > div
 {
     overflow: hidden;
+    display: inline-block;
 
+}
+
+input[name='view']:checked + main > article > div.info,
+input[name='view']:checked + main > article > h2
+{
+    overflow: hidden;
+    display: inline-block;
+  
 }
