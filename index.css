@@ -1,0 +1,126 @@
+.content
+{
+    width: 200px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+input[id='line']:checked ~ .container .content
+{
+    padding-top: 20px;
+    width: 100%;
+}
+
+input[id='line']:checked ~ .container .content .middle,
+input[id='line']:checked ~ .container .content .description
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    max-height: 100%;
+}
+
+input[id='line']:checked ~ .container .content .description
+{
+    overflow: hidden;
+    height: auto;
+}
+
+input[id='line']:checked ~ .container .content .soHigh
+{
+    width: auto;
+}
+
+input[id='line']:checked ~ .container .content .img
+{
+    display: inline-block;
+    width: 33%;
+    height: 100%;
+    max-height: auto;
+}
+
+img
+{
+    display: inline-block;
+    height: 200px;
+}
+
+.container
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.soHigh
+{
+    width: 100%;
+}
+
+header
+{
+    text-align: center;
+    color: #86f4;
+}
+
+.description
+{
+    max-height: 50px;
+    overflow: hidden;
+}
+
+body 
+{
+    background-image: url(https://www.motto.net.ua/pic/201209/2560x1440/motto.net.ua-21757.jpg);
+}
+
+.rating
+{
+    display: inline-block;
+}
+
+.rating:not(:checked) > input
+{
+    position: absolute;
+    top: -9999px;
+    clip: rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label
+{
+    float: right;
+    width: 1em;
+    padding: 0 .1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 100%;
+    line-height: 1.2;
+    color: #ddd;
+    text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before
+{
+    content: '★ ';
+}
+
+.rating > input:checked ~ label
+{
+    color: #f70;
+    text-shadow: 1px 1px #c60, 2px 2px #940, .1em .1em .2em #000;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label
+{
+    color: gold;
+    text-shadow: 1px 1px goldenrod, 2px 2px #b57340, .1em .1em .2em #000;
+}
+
+.rating > label:active 
+{
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
