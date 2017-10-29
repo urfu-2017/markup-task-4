@@ -1,0 +1,152 @@
+html
+{
+    font-family: 'PT Sans', serif;
+}
+
+.show_page-list,
+.show_page-tile
+{
+    float: right;
+}
+
+.show_page-list:checked ~ .cat
+{
+    width: 100%;
+    height: auto;
+    background: inherit;
+}
+
+.show_page-list:checked ~ .cat .photo,
+.show_page-list:checked ~ .cat .cat_info,
+.show_page-list:checked ~ .cat .description
+{
+    display: inline-block;
+    position: relative;
+    width: 33%;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.show_page-list:checked ~ .cat .photo
+{
+    width: 25%;
+    margin: 1rem;
+}
+
+.show_page-list:checked ~ .cat .description_cat
+{
+    font-size: 14px;
+}
+
+h1
+{
+    font: italic 35px 'Arial';
+    text-align: center;
+}
+
+.cat
+{
+    width: 270px;
+    height: 515px;
+    display: inline-block;
+    margin: .5rem;
+    padding: 1rem;
+    background: #eee;
+    vertical-align: top;
+}
+
+.cat:hover
+{
+    background: #f0d9d9;
+}
+
+p
+{
+    height: 30px;
+    margin-bottom: .1em;
+    hyphens: manual;
+}
+
+.photo
+{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.photo:hover
+{
+    border: 3px solid #b1a6ee;
+    border-radius: 10px;
+}
+
+.kindness
+{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+
+.kindness input
+{
+    display: none;
+}
+
+.rating
+{
+    width: 18px;
+
+}
+
+.kindness label
+{
+    opacity: .5;
+    float: right;
+}
+
+.kindness label:hover ~ label,
+.kindness input:checked ~ label
+{
+    opacity: 1;
+}
+
+.price .old_price
+{
+    text-decoration: line-through;
+    margin-left: 1em;
+}
+
+h4
+{
+    margin: .1em 0;
+}
+
+.description_cat
+{
+    font-size: 12px;
+}
+
+.name,
+.breed
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name a
+{
+    text-decoration: none;
+}
+
+.name:hover
+{
+    color: #af6767;
+    font-size: 1.5em;
+}
+
+.breed:hover
+{
+    text-decoration: underline;
+}
