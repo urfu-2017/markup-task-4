@@ -1,0 +1,144 @@
+@font-face 
+{
+    font-family: karton;
+    src: url(karton.woff);
+
+}
+
+a
+{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+article:hover
+{
+    border: 2px solid #000;
+
+}
+
+article
+{
+    padding: 0;
+    margin: 10px 30px;
+    display: inline-block;
+    border: 2px dashed #000;
+    width: 350px;
+    max-height: 750;
+    overflow: hidden;
+
+}
+
+span ~ span
+{
+    display: inline;
+    text-decoration: line-through;
+
+}
+
+figure
+{
+    margin: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+article label:nth-of-type(2n)
+{
+    background: url('star2.png');
+
+}
+
+input[type='radio']:checked ~ label
+{
+    opacity: .25;
+
+}
+
+article label
+{
+    opacity: 1;
+    width: 16px;
+    height: 32px;
+    display: inline-block;
+    background: url('star1.png');
+    cursor: pointer;
+    margin-left: 0;
+
+}
+
+.kind
+{
+    font-size: 0;
+
+}
+
+.kind::before
+{
+    content: 'Доброта: ';
+    font-size: 1rem;
+
+}
+
+article input
+{
+    display: none;
+
+}
+
+article label
+{
+    padding: 3px;
+
+}
+
+.price,
+.caption
+{
+    text-align: left;
+
+}
+
+.price:hover,
+.caption:hover,
+.info:hover,
+figcaption:hover
+{
+    font-style: italic;
+
+}
+
+input[name='view']:checked + main > article > figure,
+input[name='view']:checked + main > article > div,
+input[name='view']:checked + main > article > h2
+{
+    display: inline;
+
+}
+
+input[name='view']:checked + main
+{
+    text-align: center;
+
+}
+
+input[name='view']:checked + main > article > figure > figcaption
+{
+    margin-left: 300;
+
+}
+
+input[name='view']:checked + main > article
+{
+    column-count: 4;
+    text-align: left;
+    width: 1300px;
+
+}
+
+input[name='view']:checked + main > article > div
+{
+    overflow: hidden;
+
+}
