@@ -34,13 +34,14 @@ section
     overflow: hidden;
     margin: 20px 10px;
     transition: transform .7s;
+    transform: translate3D(0, 0, 0);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0
         rgba(0, 0, 0, .19);
 }
 
 section:hover
 {
-    transform: translate(0, -10px);
+    transform: translate3D(0, -10px, 0);
 }
 
 header
@@ -59,6 +60,7 @@ footer
 
 input:checked ~ main section
 {
+    display: block;
     width: 90%;
     overflow: hidden;
     margin: 20px 10px 20px 30px;
@@ -68,26 +70,18 @@ input:checked ~ main section
 
 input:checked ~ main section:hover
 {
-    width: 90%;
-    overflow: hidden;
     margin: 20px 10px 20px 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    transform: translate(10px, 0);
+    transform: translate3D(10px, 0, 0);
 }
 
-input:checked ~ main section article
+input:checked ~ main section article,
+input:checked ~ main section header
 {
     display: inline-block;
     vertical-align: top;
     width: 23%;
-}
-
-input:checked ~ main section header
-{
-    vertical-align: top;
-    width: 25%;
-    display: inline-block;
 }
 
 input:checked ~ main section footer
@@ -132,8 +126,7 @@ img
 
 img:hover
 {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    transform: scale3D(1.1, 1.1, 1.1);
 }
 
 p
@@ -148,26 +141,27 @@ p
 {
     text-align: left;
     width: 100%;
+}
+
+.current-price,
+.old-price
+{
+    margin: 0;
     display: inline-block;
+    font-weight: bold;
 }
 
 .current-price
 {
-    font-weight: bold;
-    display: inline-block;
     font-size: 150%;
     color: #e84a5f;
-    margin: 0;
 }
 
 .old-price
 {
     font-size: 120%;
-    display: inline-block;
     color: #88304e;
-    font-weight: bold;
     text-decoration: line-through;
-    margin: 0;
 }
 
 .name-container,
@@ -198,12 +192,6 @@ p
     white-space: nowrap;
 }
 
-a
-{
-    text-align: left;
-    width: inherit;
-}
-
 .category
 {
     font-size: 90%;
@@ -216,83 +204,56 @@ a
     color: #1fa2e1;
 }
 
-.cat-stars input :checked ~ label,
-.cat-stars label,
-.cat-stars label :hover,
-.cat-stars label :hover ~ label
-{
-    background: url('images/cat-star.png') no-repeat;
-}
-
 .cat-stars
 {
     overflow: hidden;
-    *zoom: 1;
-    position: static;
     float: left;
     padding-bottom: 15px;
 }
 
 .cat-stars input
 {
-    opacity: 0;
-    width: 19px;
-    height: 160px;
-    position: absolute;
-    z-index: 0;
+    display: none;
 }
 
-.cat-stars input:checked ~ label.left-star
+.cat-stars label
 {
-    background-position: 0 -40px;
+    background: url('images/cat-star.png') no-repeat;
     height: 37px;
     width: 19px;
+    float: right;
+    cursor: pointer;
 }
 
-.cat-stars input:checked ~ label.right-star
+.cat-stars .right-star,
+.cat-stars .left-star
 {
-    background-position: 0 -120px;
-    height: 37px;
-    width: 19px;
+    position: relative;
+    z-index: 1;
+    padding-top: 3px;
 }
 
 .cat-stars label.left-star
 {
     background-position: 0 0;
-    height: 37px;
-    width: 19px;
-    float: right;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    padding-top: 3px;
 }
 
 .cat-stars label.right-star
 {
     background-position: 0 -80px;
-    height: 37px;
-    width: 19px;
-    float: right;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    padding-top: 3px;
     padding-right: 5px;
 }
 
+.cat-stars input:checked ~ label.left-star,
 .cat-stars label.left-star:hover,
 .cat-stars label:hover ~ label.left-star
 {
     background-position: 0 -40px;
-    height: 37px;
-    width: 19px;
 }
 
+.cat-stars input:checked ~ label.right-star,
 .cat-stars label:hover,
 .cat-stars label:hover ~ label.right-star
 {
     background-position: 0 -120px;
-    height: 37px;
-    width: 19px;
 }
