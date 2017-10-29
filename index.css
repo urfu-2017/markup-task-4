@@ -148,7 +148,6 @@ input[id='roster']:checked ~ main .cat_common
 .cat_common
 {
     padding: 0 10px;
-    /* vertical-align: bottom; */
 }
 
 .cat_name
@@ -272,24 +271,12 @@ label[for*='lvl']:nth-of-type(2n+1)
     background-size: cover;
 }
 
-/* input[name*='for']:not(hover) + label:nth-of-type(2n)
-{
-    background: url(pictures/2of2good.png);
-    background-size: cover;
-}
-
-input[name*='for']:not(hover) + label:nth-of-type(2n+1)
-{
-    background: url(pictures/1of2good.png);
-    background-size: cover;
-} */
-
-input[id='roster']:checked ~ main > nav > div > .viewing > figcaption > .rosterview
+input[id='roster']:checked ~ main .rosterview
 {
     text-shadow: 1px 1px 7px;
 }
 
-input[id='tile']:checked ~ main > nav > div > .viewing > figcaption > .tileview
+input[id='tile']:checked ~ main .tileview
 {
     text-shadow: 1px 1px 7px;
 }
