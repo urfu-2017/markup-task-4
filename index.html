@@ -1,9 +1,446 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Мяндекс.Муррркет»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" 
+    href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
 </head>
+
 <body>
+    <input type="radio" id="bar" name="display_mode" checked>
+    <label for="bar">Плиткой</label>
+    <input type="radio" id="list" name="display_mode">
+    <label for="list">Списком</label>
+    <main>
+        <div class="card">
+            <figure class="image_holder">
+                <img src="images/cat1.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
+            <div class="info">
+                <a href="https://hruborg.herokuapp.com/javascript">
+                    Васька
+                </a>
+                <p class="category">смотрители в душу</p>
+                <div class="rating">
+                    <input type="radio" id="1_1" name="rating1" value="1">
+                    <label for="1_1" class="half" title="1/10"></label>
+                    <input type="radio" id="1_2" name="rating1" value="2">
+                    <label for="1_2" class="full" title="2/10"></label>
+                    <input type="radio" id="1_3" name="rating1" value="3">
+                    <label for="1_3" class="half" title="3/10"></label>
+                    <input type="radio" id="1_4" name="rating1" value="4">
+                    <label for="1_4" class="full" title="4/10"></label>
+                    <input type="radio" id="1_5" name="rating1" value="5" checked>
+                    <label for="1_5" class="half" title="5/10"></label>
+                    <input type="radio" id="1_6" name="rating1" value="6">
+                    <label for="1_6" class="full" title="6/10"></label>
+                    <input type="radio" id="1_7" name="rating1" value="7">
+                    <label for="1_7" class="half" title="7/10"></label>
+                    <input type="radio" id="1_8" name="rating1" value="8">
+                    <label for="1_8" class="full" title="8/10"></label>
+                    <input type="radio" id="1_9" name="rating1" value="9">
+                    <label for="1_9" class="half" title="9/10"></label>
+                    <input type="radio" id="1_10" name="rating1" value="10">
+                    <label for="1_10" class="full" title="10/10"></label>
+                </div>
+                <p class="price">Цена: 100 &#8381;
+                    <span class="oldPrice">150 &#8381;</span>
+                </p>
+            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Котей очень ласковый. Привязан к человеку. С удовольствием сидит
+                    на руках, коленях, шее и мурлыкает при этом.
+                    Будет ходить за вами по пятам.
+                </p>
+            </section>
+        </div>
+        <div class="card">
+            <figure class="image_holder">
+                <img src="images/cat2.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
+            <div class="info">
+                <a href="https://hruborg.herokuapp.com/javascript">
+                    Маришка
+                </a>
+                <p class="category">Милашки</p>
+                <div class="rating">
+                    <input type="radio" id="2_1" name="rating2" value="1">
+                    <label for="2_1" class="half" title="1/10"></label>
+                    <input type="radio" id="2_2" name="rating2" value="2">
+                    <label for="2_2" class="full" title="2/10"></label>
+                    <input type="radio" id="2_3" name="rating2" value="3">
+                    <label for="2_3" class="half" title="3/10"></label>
+                    <input type="radio" id="2_4" name="rating2" value="4">
+                    <label for="2_4" class="full" title="4/10"></label>
+                    <input type="radio" id="2_5" name="rating2" value="5">
+                    <label for="2_5" class="half" title="5/10"></label>
+                    <input type="radio" id="2_6" name="rating2" value="6" checked>
+                    <label for="2_6" class="full" title="6/10"></label>
+                    <input type="radio" id="2_7" name="rating2" value="7">
+                    <label for="2_7" class="half" title="7/10"></label>
+                    <input type="radio" id="2_8" name="rating2" value="8">
+                    <label for="2_8" class="full" title="8/10"></label>
+                    <input type="radio" id="2_9" name="rating2" value="9">
+                    <label for="2_9" class="half" title="9/10"></label>
+                    <input type="radio" id="2_10" name="rating2" value="10">
+                    <label for="2_10" class="full" title="10/10"></label>
+                </div>
+                <p class="price">Цена: 11 &#8381;</p>
+            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Плюшевая набивная шубка, кукольная мордочка. Характер нежный
+                    и ласковый. Вырастут настоящими красавицами
+                    и красавцами с большими глазами. Они ждут
+                    любящих и ласковых хозяев.
+                </p>
+            </section>
+        </div>
+        <div class="card">
+            <figure class="image_holder">
+                <img src="images/cat3.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
+            <div class="info">
+                <a href="https://github.com/sameoldmadness">
+                    Dimoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooon
+                </a>
+                <p class="category">JS за 4 лекции</p>
+                <div class="rating">
+                    <input type="radio" id="3_1" name="rating3" value="1">
+                    <label for="3_1" class="half" title="1/10"></label>
+                    <input type="radio" id="3_2" name="rating3" value="2">
+                    <label for="3_2" class="full" title="2/10"></label>
+                    <input type="radio" id="3_3" name="rating3" value="3">
+                    <label for="3_3" class="half" title="3/10"></label>
+                    <input type="radio" id="3_4" name="rating3" value="4">
+                    <label for="3_4" class="full" title="4/10"></label>
+                    <input type="radio" id="3_5" name="rating3" value="5">
+                    <label for="3_5" class="half" title="5/10"></label>
+                    <input type="radio" id="3_6" name="rating3" value="6">
+                    <label for="3_6" class="full" title="6/10"></label>
+                    <input type="radio" id="3_7" name="rating3" value="7">
+                    <label for="3_7" class="half" title="7/10"></label>
+                    <input type="radio" id="3_8" name="rating3" value="8">
+                    <label for="3_8" class="full" title="8/10"></label>
+                    <input type="radio" id="3_9" name="rating3" value="9">
+                    <label for="3_9" class="half" title="9/10"></label>
+                    <input type="radio" id="3_10" name="rating3" value="10" checked>
+                    <label for="3_10" class="full" title="10/10"></label>
+                </div>
+                <p class="price">Цена: 666 &#8381;</p>
+            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Просто &#x40;Grumpy
+                </p>
+            </section>
+        </div>
+        <div class="card">
+            <figure class="image_holder">
+                <img src="images/cat4.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
+            <div class="info">
+                <a href="https://hruborg.herokuapp.com/javascript">
+                    Кантик
+                </a>
+                <p class="category">милашки</p>
+                <div class="rating">
+                    <input type="radio" id="4_1" name="rating4" value="1">
+                    <label for="4_1" class="half" title="1/10"></label>
+                    <input type="radio" id="4_2" name="rating4" value="2">
+                    <label for="4_2" class="full" title="2/10"></label>
+                    <input type="radio" id="4_3" name="rating4" value="3">
+                    <label for="4_3" class="half" title="3/10"></label>
+                    <input type="radio" id="4_4" name="rating4" value="4" checked>
+                    <label for="4_4" class="full" title="4/10"></label>
+                    <input type="radio" id="4_5" name="rating4" value="5">
+                    <label for="4_5" class="half" title="5/10"></label>
+                    <input type="radio" id="4_6" name="rating4" value="6">
+                    <label for="4_6" class="full" title="6/10"></label>
+                    <input type="radio" id="4_7" name="rating4" value="7">
+                    <label for="4_7" class="half" title="7/10"></label>
+                    <input type="radio" id="4_8" name="rating4" value="8">
+                    <label for="4_8" class="full" title="8/10"></label>
+                    <input type="radio" id="4_9" name="rating4" value="9">
+                    <label for="4_9" class="half" title="9/10"></label>
+                    <input type="radio" id="4_10" name="rating4" value="10">
+                    <label for="4_10" class="full" title="10/10"></label>
+                </div>
+                <p class="price">Цена: 434 &#8381;
+                    <span class="oldPrice">676 &#8381;</span>
+                </p>
+            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Хорошая кошечка,прекрасно подойдет вашему ребенку,ласковая, все
+                    время лезет на руки,не царапается. Станет
+                    отличным другом семьи.
+                </p>
+            </section>
+        </div>
+        <div class="card">
+            <figure class="image_holder">
+                <img src="images/cat5.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
+            <div class="info">
+                <a href="https://hruborg.herokuapp.com/javascript">
+                    Мурка
+                </a>
+                <p class="category">смотрители в душу</p>
+                <div class="rating">
+                    <input type="radio" id="5_1" name="rating5" value="1">
+                    <label for="5_1" class="half" title="1/10"></label>
+                    <input type="radio" id="5_2" name="rating5" value="2">
+                    <label for="5_2" class="full" title="2/10"></label>
+                    <input type="radio" id="5_3" name="rating5" value="3">
+                    <label for="5_3" class="half" title="3/10"></label>
+                    <input type="radio" id="5_4" name="rating5" value="4">
+                    <label for="5_4" class="full" title="4/10"></label>
+                    <input type="radio" id="5_5" name="rating5" value="5">
+                    <label for="5_5" class="half" title="5/10"></label>
+                    <input type="radio" id="5_6" name="rating5" value="6">
+                    <label for="5_6" class="full" title="6/10"></label>
+                    <input type="radio" id="5_7" name="rating5" value="7">
+                    <label for="5_7" class="half" title="7/10"></label>
+                    <input type="radio" id="5_8" name="rating5" value="8" checked>
+                    <label for="5_8" class="full" title="8/10"></label>
+                    <input type="radio" id="5_9" name="rating5" value="9">
+                    <label for="5_9" class="half" title="9/10"></label>
+                    <input type="radio" id="5_10" name="rating5" value="10">
+                    <label for="5_10" class="full" title="10/10"></label>
+                </div>
+                <p class="price">Цена: 666 &#8381;</p>
+            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Мурка очень добрая,пушистая,станет для вас хорошим другом, к
+                    тому же она очень милая.
+                </p>
+            </section>
+        </div>
+        <div class="card">
+            <figure class="image_holder">
+                <img src="images/cat6.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
+            <div class="info">
+                <a href="https://hruborg.herokuapp.com/javascript">
+                    Марта
+                </a>
+                <p class="category">мурлыкающие</p>
+                <div class="rating">
+                    <input type="radio" id="6_1" name="rating6" value="1">
+                    <label for="6_1" class="half" title="1/10"></label>
+                    <input type="radio" id="6_2" name="rating6" value="2">
+                    <label for="6_2" class="full" title="2/10"></label>
+                    <input type="radio" id="6_3" name="rating6" value="3">
+                    <label for="6_3" class="half" title="3/10"></label>
+                    <input type="radio" id="6_4" name="rating6" value="4">
+                    <label for="6_4" class="full" title="4/10"></label>
+                    <input type="radio" id="6_5" name="rating6" value="5">
+                    <label for="6_5" class="half" title="5/10"></label>
+                    <input type="radio" id="6_6" name="rating6" value="6">
+                    <label for="6_6" class="full" title="6/10"></label>
+                    <input type="radio" id="6_7" name="rating6" value="7" checked>
+                    <label for="6_7" class="half" title="7/10"></label>
+                    <input type="radio" id="6_8" name="rating6" value="8">
+                    <label for="6_8" class="full" title="8/10"></label>
+                    <input type="radio" id="6_9" name="rating6" value="9">
+                    <label for="6_9" class="half" title="9/10"></label>
+                    <input type="radio" id="6_10" name="rating6" value="10">
+                    <label for="6_10" class="full" title="10/10"></label>
+                </div>
+                <p class="price">Цена: 9494 &#8381;</p>
+            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Марта не зря названа в честь месяца,в котором празднуется Международный
+                    женский день. Марта очень женственная.
+                </p>
+            </section>
+        </div>
+        <div class="card">
+            <figure class="image_holder">
+                <img src="images/cat7.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
+            <div class="info">
+                <a href="https://hruborg.herokuapp.com/javascript">
+                    Герман
+                </a>
+                <p class="category">любимчики</p>
+                <div class="rating">
+                    <input type="radio" id="7_1" name="rating7" value="1">
+                    <label for="7_1" class="half" title="1/10"></label>
+                    <input type="radio" id="7_2" name="rating7" value="2">
+                    <label for="7_2" class="full" title="2/10"></label>
+                    <input type="radio" id="7_3" name="rating7" value="3">
+                    <label for="7_3" class="half" title="3/10"></label>
+                    <input type="radio" id="7_4" name="rating7" value="4">
+                    <label for="7_4" class="full" title="4/10"></label>
+                    <input type="radio" id="7_5" name="rating7" value="5" checked>
+                    <label for="7_5" class="half" title="5/10"></label>
+                    <input type="radio" id="7_6" name="rating7" value="6">
+                    <label for="7_6" class="full" title="6/10"></label>
+                    <input type="radio" id="7_7" name="rating7" value="7">
+                    <label for="7_7" class="half" title="7/10"></label>
+                    <input type="radio" id="7_8" name="rating7" value="8">
+                    <label for="7_8" class="full" title="8/10"></label>
+                    <input type="radio" id="7_9" name="rating7" value="9">
+                    <label for="7_9" class="half" title="9/10"></label>
+                    <input type="radio" id="7_10" name="rating7" value="10">
+                    <label for="7_10" class="full" title="10/10"></label>
+                </div>
+                <p class="price">Цена: 463767 &#8381;</p>
+            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Герман очень классный и заводной. Не зря он стоит так дорого.
+                </p>
+            </section>
+        </div>
+        <div class="card">
+            <figure class="image_holder">
+                <img src="images/cat8.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
+            <div class="info">
+                <a href="https://hruborg.herokuapp.com/javascript">
+                    Мушенька
+                </a>
+                <p class="category">забавные</p>
+                <div class="rating">
+                    <input type="radio" id="8_1" name="rating8" value="1">
+                    <label for="8_1" class="half" title="1/10"></label>
+                    <input type="radio" id="8_2" name="rating8" value="2">
+                    <label for="8_2" class="full" title="2/10"></label>
+                    <input type="radio" id="8_3" name="rating8" value="3">
+                    <label for="8_3" class="half" title="3/10"></label>
+                    <input type="radio" id="8_4" name="rating8" value="4">
+                    <label for="8_4" class="full" title="4/10"></label>
+                    <input type="radio" id="8_5" name="rating8" value="5">
+                    <label for="8_5" class="half" title="5/10"></label>
+                    <input type="radio" id="8_6" name="rating8" value="6">
+                    <label for="8_6" class="full" title="6/10"></label>
+                    <input type="radio" id="8_7" name="rating8" value="7">
+                    <label for="8_7" class="half" title="7/10"></label>
+                    <input type="radio" id="8_8" name="rating8" value="8">
+                    <label for="8_8" class="full" title="8/10"></label>
+                    <input type="radio" id="8_9" name="rating8" value="9" checked>
+                    <label for="8_9" class="half" title="9/10"></label>
+                    <input type="radio" id="8_10" name="rating8" value="10">
+                    <label for="8_10" class="full" title="10/10"></label>
+                </div>
+                <p class="price">Цена: 5887 &#8381;</p>
+            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Красавица просто
+                </p>
+            </section>
+        </div>
+        <div class="card">
+            <figure class="image_holder">
+                <img src="images/cat9.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
+            <div class="info">
+                <a href="https://hruborg.herokuapp.com/javascript">
+                    Иннокентий
+                </a>
+                <p class="category">за 543</p>
+                <div class="rating">
+                    <input type="radio" id="9_1" name="rating9" value="1">
+                    <label for="9_1" class="half" title="1/10"></label>
+                    <input type="radio" id="9_2" name="rating9" value="2">
+                    <label for="9_2" class="full" title="2/10"></label>
+                    <input type="radio" id="9_3" name="rating9" value="3">
+                    <label for="9_3" class="half" title="3/10"></label>
+                    <input type="radio" id="9_4" name="rating9" value="4">
+                    <label for="9_4" class="full" title="4/10"></label>
+                    <input type="radio" id="9_5" name="rating9" value="5">
+                    <label for="9_5" class="half" title="5/10"></label>
+                    <input type="radio" id="9_6" name="rating9" value="6" checked>
+                    <label for="9_6" class="full" title="6/10"></label>
+                    <input type="radio" id="9_7" name="rating9" value="7">
+                    <label for="9_7" class="half" title="7/10"></label>
+                    <input type="radio" id="9_8" name="rating9" value="8">
+                    <label for="9_8" class="full" title="8/10"></label>
+                    <input type="radio" id="9_9" name="rating9" value="9">
+                    <label for="9_9" class="half" title="9/10"></label>
+                    <input type="radio" id="9_10" name="rating9" value="10">
+                    <label for="9_10" class="full" title="10/10"></label>
+                </div>
+                <p class="price">Цена: 543 &#8381;
+                    <span class="oldPrice">700 &#8381;</span>
+                </p>
+            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Красивый умный смелый мощный
+                </p>
+            </section>
+        </div>
+        <div class="card">
+            <figure class="image_holder">
+                <img src="images/cat10.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
+            <div class="info">
+                <a href="https://hruborg.herokuapp.com/javascript">
+                    Хвостатики
+                </a>
+                <p class="category">за 543</p>
+                <div class="rating">
+                    <input type="radio" id="10_1" name="rating10" value="1">
+                    <label for="10_1" class="half" title="1/10"></label>
+                    <input type="radio" id="10_2" name="rating10" value="2">
+                    <label for="10_2" class="full" title="2/10"></label>
+                    <input type="radio" id="10_3" name="rating10" value="3">
+                    <label for="10_3" class="half" title="3/10"></label>
+                    <input type="radio" id="10_4" name="rating10" value="4">
+                    <label for="10_4" class="full" title="4/10"></label>
+                    <input type="radio" id="10_5" name="rating10" value="5">
+                    <label for="10_5" class="half" title="5/10"></label>
+                    <input type="radio" id="10_6" name="rating10" value="6">
+                    <label for="10_6" class="full" title="6/10"></label>
+                    <input type="radio" id="10_7" name="rating10" value="7" checked>
+                    <label for="10_7" class="half" title="7/10"></label>
+                    <input type="radio" id="10_8" name="rating10" value="8">
+                    <label for="10_8" class="full" title="8/10"></label>
+                    <input type="radio" id="10_9" name="rating10" value="9">
+                    <label for="10_9" class="half" title="9/10"></label>
+                    <input type="radio" id="10_10" name="rating10" value="10">
+                    <label for="10_10" class="full" title="10/10"></label>
+                </div>
+                <p class="price">Цена: 543 &#8381;</p>
+            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Это просто два шалуна,которые не дадут вам покоя
+                </p>
+            </section>
+        </div>
+    </main>
 </body>
+
 </html>
