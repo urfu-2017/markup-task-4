@@ -7,6 +7,30 @@
     font-style: normal;
 }
 
+body
+{
+    padding-top: 5px;
+}
+
+input.view
+{
+    display: none;
+}
+
+label.view
+{
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    padding: 5px;
+    border: rgba(128, 128, 128, .21) solid 1px;
+}
+
+input.view:checked + label
+{
+    border: rgba(128, 128, 128, .56) solid 1px;
+    background-color: rgba(128, 128, 128, .2);
+}
+
 section
 {
     padding: 20px;
@@ -94,19 +118,21 @@ a
 h2
 {
     margin-top: .3em;
-    margin-bottom: .3em;
+    margin-bottom: .2em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-h5
+.category
 {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: .4em;
+    font-size: .8em;
+    font-weight: bold;
 }
 
-h5 > a
+.category > a
 {
     color: rgba(171, 165, 112, .9);
 }
@@ -140,14 +166,15 @@ p
 
 .stars
 {
-    margin-top: .2rem;
-    padding-bottom: .7rem;
-    letter-spacing: 1.7rem;
+    margin-top: .3em;
+    padding-bottom: 1em;
+    letter-spacing: 1.7em;
 }
 
 .stars input
 {
     width: 0;
+    visibility: hidden;
     margin: 0;
     color: gold;
     font-family: FontAwesome;
@@ -163,6 +190,7 @@ p
     overflow: hidden;
     position: relative;
     z-index: 1;
+    visibility: visible;
 }
 
 .star-right:before
@@ -171,6 +199,7 @@ p
     content: '\f005';
     overflow: hidden;
     transform: scale(-1, 1);
+    visibility: visible;
 }
 
 .stars input:hover ~ .star-right:before,
