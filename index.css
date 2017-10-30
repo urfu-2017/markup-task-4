@@ -1,0 +1,118 @@
+@font-face
+{
+    font-family: 'FontAwesome';
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.card
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content
+{
+    width: 320px;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.content:hover
+{
+    box-shadow: 2px 2px 20px grey;
+}
+
+.image
+{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+img
+{
+    max-width: 95%;
+    max-height: 95%;
+}
+
+img:hover
+{
+    max-width: 98%;
+    max-height: 98%;
+    transition: max-width .2s, max-height .2s;
+}
+
+.current-price
+{
+    font-weight: bold;
+    color: #f00;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+}
+
+.rating > input
+{
+    display: none;
+}
+
+.rating > label
+{
+    float: right;
+}
+
+.rating > label:before
+{
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: .3rem .2rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: '\f005';
+}
+
+.rating .half:before
+{
+    content: '\f089';
+    position: absolute;
+    padding-right: 0;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating:not(:hover) input:checked ~ label
+{
+    color: gold;
+}
+
+label.view
+{
+    font-family: FontAwesome;
+}
+
+.view[value='list']:checked ~ main section
+{
+    width: 90%;
+}
+
+.view[value='list']:checked ~ main section > .image
+{
+    width: 330px;
+    height: 330px;
+}
+
+.view[value='list']:checked ~ main section > .information
+{
+    width: 20%;
+}
+
+.view[value='list']:checked ~ main section > .description
+{
+    width: 45%;
+}
