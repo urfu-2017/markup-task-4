@@ -1,0 +1,124 @@
+img.cat_picture
+{
+    width: 350px;
+}
+
+img.cat_picture:not(:hover)
+{
+    opacity: .9;
+}
+
+img.cat_picture:hover
+{
+    opacity: 1;
+}
+
+img[src^='full'],
+img[src^='empty']
+{
+    width: 20px;
+}
+
+.category span,
+.category:before
+{
+    opacity: .5;
+}
+
+.name
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 350px;
+    font-size: 30px;
+}
+
+.name a:hover
+{
+    color: #00008b;
+}
+
+.price
+{
+    color: #8b0000;
+}
+
+.previous_price
+{
+    color: rgba(128, 128, 128, .7);
+    text-decoration: line-through;
+}
+
+.category:before
+{
+    content: 'Категория: ';
+}
+
+.category span:hover
+{
+    opacity: .8;
+}
+
+.category
+{
+    font-size: 15px;
+}
+
+article:hover
+{
+    background-color: rgba(139, 69, 19, .1);
+}
+
+section
+{
+    padding: 10px;
+}
+
+input:not(:checked) ~ article
+{
+    display: inline-block;
+}
+
+input:checked ~ article section
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+article
+{
+    vertical-align: top;
+}
+
+input:checked ~ article
+{
+    display: block;
+}
+
+input:checked ~ article section.information
+{
+    width: 300px;
+}
+
+article section.description
+{
+    width: 350px;
+}
+
+section.description:before
+{
+    content: 'Краткое описание:';
+}
+
+section.description
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p.description
+{
+    font-weight: normal;
+    font-size: 17px;
+}
