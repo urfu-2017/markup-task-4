@@ -74,6 +74,7 @@ img:hover
     text-overflow: ellipsis;
     color: blue;
 }
+
 .cat_type:hover
 {
     transform: scale(-1, -1);
@@ -101,7 +102,7 @@ img:hover
     height: auto;
     width: 380px;
     -webkit-transition: -webkit-transform 3s ease-in-out;
-    transition:         transform 3s ease-in-out;
+    transition: transform 3s ease-in-out;
     
 }
 
