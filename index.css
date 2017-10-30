@@ -1,0 +1,248 @@
+body,
+html
+{
+    width: 100%;
+    margin: 0;
+}
+
+section h2
+{
+    display: none;
+}
+
+input[name='view']
+{
+    display: none;
+}
+
+label
+{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+}
+
+label[for='view-list'] 
+{
+    background: url('img/ui/list-unchecked.svg') no-repeat;
+}
+
+input[value='list']:checked ~ .control label[for='view-list']
+{
+    background: url('img/ui/list-checked.svg');
+}
+
+label[for='view-block'] 
+{
+    background: url('img/ui/block-unchecked.svg') no-repeat;
+}
+
+input[value='block']:checked ~ .control label[for='view-block']
+{
+    background: url('img/ui/block-checked.svg');
+}
+
+.control 
+{
+    padding: 5px;
+    background-color: #eee;
+    margin-bottom: 15px;
+}
+
+.goods-section
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 25px;
+}
+
+img 
+{
+    width: 100%;
+}
+
+.goods 
+{
+    border: 1px #aaa solid;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.goods > div
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+input[value='block']:checked ~ .goods-section .goods
+{
+    display: inline-block;
+    width: 300px;
+}
+
+.info
+{
+    text-align: center;
+}
+
+.description,
+.info
+{
+    padding: 15px;
+}
+
+.info
+{
+    min-height: 130px;
+    width: calc(300px - 30px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+input[value='list']:checked ~ .goods-section .image 
+{
+    width: 300px;
+}
+
+input[value='list']:checked ~ .goods-section .description
+{
+    width: calc(100% - 640px);
+}
+
+input[value='block']:checked ~ .goods-section .description
+{
+    border-top: 1px #999 solid;
+    width: calc(100% - 30px);
+}
+
+.star 
+{
+    width: 50px;
+    height: 48px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.mark 
+{
+    background: url('img/ui/mark.png');
+}
+
+.halfmark 
+{
+    background: url('img/ui/halfmark.png');
+}
+
+.nomark 
+{
+    background: url('img/ui/nomark.png');
+}
+
+.price,
+.old-price
+{
+    line-height: 18px;
+}
+
+.price
+{
+    font-size: 24px;
+    color: #f00;
+}
+
+.old-price
+{
+    font-size: 18px;
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+.price::after
+{
+    content: ' руб.';
+}
+
+.old-price::after
+{
+    content: ' руб.';
+}
+
+.breed::before
+{
+    content: 'Порода: ';
+    color: #aaa;
+}
+
+.goods:hover
+{
+    box-shadow: 0 0 10px 0 #777;
+}
+
+.image img
+{
+    display: block;
+}
+
+.image img:hover
+{
+    opacity: .7;
+}
+
+.name:hover
+{
+    color: #fa0;
+    font-weight: 900;
+}
+
+.breed:hover::before
+{
+    color: #000;
+    font-weight: 400;
+}
+
+.breed:hover
+{
+    font-weight: 900;
+}
+
+.rating
+{
+    height: 48px;
+    font-size: 0;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.rating input
+{
+    display: none;
+}
+
+.rating label
+{
+    height: 48px;
+    width: 25px;
+}
+
+.rating label:nth-of-type(2n+1)
+{
+    background: url('img/ui/mark.png');
+}
+
+.rating label:nth-of-type(2n)
+{
+    background: url('img/ui/mark.png') right;
+}
+
+.rating:not(:hover) input:checked ~ label:nth-of-type(2n+1),
+.rating label:hover ~ label:nth-of-type(2n+1)
+{
+    background: url('img/ui/nomark.png');
+}
+
+.rating:not(:hover) input:checked ~ label:nth-of-type(2n),
+.rating label:hover ~ label:nth-of-type(2n)
+{
+    background: url('img/ui/nomark.png') right;
+}
