@@ -1,0 +1,206 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+h1
+{
+    text-align: center;
+    font: 48px Times New Roman Times serif;
+    font-weight: 900;
+}
+
+h1::first-letter
+{
+    color: #f00;
+    font: 64px Comic Sans cursive;
+}
+
+.description
+{
+    margin: 0 100px 50px;
+    font: 30px Times New Roman Times serif;
+}
+
+body
+{
+    margin: 0;
+    min-width: 560px;
+}
+
+section
+{
+    margin: 0;
+    padding: 100px 0;
+    background: #f5f5f5;
+    width: 100%;
+}
+
+h2
+{
+    text-align: center;
+    font: 48px Comic Sans cursive;
+    font-weight: 700;
+}
+
+.product
+{
+    display: inline-block;
+    width: 300px;
+    margin: 30px;
+    background: #fff;
+    padding: 50px 20px 20px;
+    border: 5px solid #000;
+}
+
+.product-picture
+{
+    text-align: center;
+}
+
+.product-info
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.product-picture img
+{
+    border: 2px solid black;
+    width: 80%;
+}
+
+.cat-name
+{
+    font: 24px bold Comic Sans cursive;
+    max-width: 10ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cat-property
+{
+    font: 30px bold Comic Sans cursive;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.simple-text
+{
+    font-size: 16px;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+}
+
+/* НАВЕДЕНИЕ */
+
+.cat-name:hover > a
+{
+    color: #f00;
+    font-weight: 900;
+}
+
+.cat-name:hover
+{
+    max-width: none;
+    overflow: visible;
+    white-space: normal;
+}
+
+.cat-category
+{
+    font: 24px bold Comic Sans cursive;
+}
+
+.cat-category:hover
+{
+    color: #ffa500;
+    font-weight: 900;
+}
+
+.product-picture img:hover
+{
+    width: 95%;
+    border: 10px solid #9932cc;
+}
+
+.product:hover
+{
+    border: 10px double #008000;
+}
+
+/* СПИСОК */
+
+input[value='list']:checked ~ section .product
+{
+    display: inline-block;
+    width: 92%;
+}
+
+input[value='list']:checked ~ section .product-picture
+{
+    display: inline-block;
+    width: 30%;
+}
+
+input[value='list']:checked ~ section .product-info
+{
+    width: 65%;
+    display: inline-block;
+}
+
+input[value='list']:checked ~ section .product-info div
+{
+    text-align: left;
+}
+
+/* ЗВЁЗДОЧКИ */
+
+.rating
+{
+    border: none;
+    float: left;
+}
+
+.rating input
+{
+    display: none;
+}
+
+.rating label:before
+{
+    margin: 5px;
+    font-size: 40px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f005';
+}
+
+.rating .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.rating label
+{
+    color: #ddd;
+    float: right;
+}
+
+.rating input:checked ~ label,
+.rating:not(:checked) label:hover,
+.rating:not(:checked) label:hover ~ label
+{
+    color: #ffd700;
+}
+
+.rating input:checked + label:hover,
+.rating input:checked ~ label:hover,
+.rating label:hover ~ input:checked ~ label,
+.rating input:checked ~ label:hover ~ label
+{
+    color: #ffed85;
+}
