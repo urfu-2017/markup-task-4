@@ -6,6 +6,31 @@
     margin-top: 20px;
 }
 
+[href*='yandex']
+{
+    color: #eb736b;
+}
+
+.name
+{
+
+    font-size: 20px;
+    overflow: hidden;
+    max-height: 20px;
+}
+
+.type
+{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.price
+{
+    font-size: 25px;
+    color: #ffd700;
+}
+
 input[id='line']:checked ~ .container .content
 {
     padding-top: 20px;
@@ -46,6 +71,13 @@ img
     height: 200px;
 }
 
+.img img:hover
+{
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    -o-transform: scale(1.8);
+}
+
 .container
 {
     margin-left: 50px;
@@ -57,21 +89,33 @@ img
     width: 100%;
 }
 
-header
+.centr
 {
+    font-size: 30px;
     text-align: center;
     color: #86f4;
 }
 
+.olderPrice
+{
+    color: #f00;
+    text-decoration: line-through;
+}
+
 .description
 {
-    max-height: 50px;
+    text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em #00000080;
+    color: #f8ec3e;
+    max-height: 57px;
     overflow: hidden;
 }
 
-body 
+body
 {
-    background-image: url(https://www.motto.net.ua/pic/201209/2560x1440/motto.net.ua-21757.jpg);
+    background: linear-gradient(45deg, #b7deed 0%,#3764bd 28%,
+    #a848f2 60%,#b7deed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed',
+    endColorstr='#b7deed',GradientType=1 );
 }
 
 .rating
@@ -97,7 +141,7 @@ body
     font-size: 100%;
     line-height: 1.2;
     color: #ddd;
-    text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+    text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em #00000080;
 }
 
 .rating:not(:checked) > label:before
