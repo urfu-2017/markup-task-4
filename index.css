@@ -1,0 +1,182 @@
+.settings
+{
+    display: table;
+    background: gray;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+input
+{
+    display: none;
+}
+
+.settings label:hover 
+{
+    background: white;
+    border: 2px solid;
+}
+
+.show_table:checked ~ .settings label[for='set_table'],
+.show_list:checked ~ .settings label[for='set_list']
+{
+    background: orange;
+}
+
+.settings label
+{
+    display: table-cell;
+    padding: 5px;
+    text-align: center;
+    background: rgb(216, 216, 216);
+    border: 1px solid;
+}
+
+main > .cat
+{
+    margin-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+    margin-bottom: 40px;
+    width: 400px;
+    height: auto;
+
+}
+
+.cat:hover
+{
+    border: 1px solid;
+    background: rgb(231, 231, 231);
+}
+
+.cat .price
+{
+    color: rgb(200, 0, 0);
+    font-size: 20px;
+}
+
+.cat > .cat_info > .name > a,
+.cat > .cat_info > .name
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: blue;
+}
+
+.cat figure 
+{
+    position: relative;
+    margin: 10px;
+    height: 400px;
+    width: 380px;
+}
+
+.cat_info
+{
+    margin: 10px;
+    vertical-align: top;
+}
+
+.cat > figure > img
+{
+    position: absolute;
+    bottom: 0;
+    max-height: 400px;
+    height: auto;
+    width: 380px;
+    
+}
+
+main
+{
+    column-count: auto;
+    vertical-align: top;
+    margin-bottom: 40px;
+}
+
+.rating .star
+{
+    display: inline-block;
+    width: 14px;
+    height: 28px;
+    background-size: contain;
+
+}
+
+.rating input
+{
+    display: none;
+}
+
+.rating .star:nth-of-type(2n)
+{
+    margin-left: -5px;
+    background: url(superstar-right.png);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.rating .star:nth-of-type(2n+1)
+{
+    background: url(superstar-left.png);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.rating input:checked ~ .star
+{
+    opacity: .5;
+}
+
+.rating input:checked ~ .star:hover ~ .star,
+.rating .star:hover ~ .star 
+{
+    opacity: .25;
+}
+
+.show_list:checked ~ main > .cat
+{
+    display: block;
+    height: 500px;
+    width: 1500px;
+    white-space: nowrap;
+}
+
+.show_list:checked ~ main > .cat > figure > img
+{
+    position: relative;
+    margin: 0;
+    height: 480px;
+    width: auto;
+    max-width: 720px;
+}
+
+.show_list:checked ~ main > .cat > figure
+{
+    height: 500px;
+    width: 740px;
+    display: inline-block;
+}
+
+.show_list:checked ~ main > .cat > .cat_info
+{
+    white-space: normal;
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    width: auto;
+}
+
+.show_list:checked ~ main > .cat > .cat_info > .name > a,
+.show_list:checked ~ main > .cat > .cat_info > .name
+{
+    width: 720px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: blue;
+}
+
+.show_list:checked ~ main > .cat > .cat_info > .description
+{
+    width: 720px;
+}
