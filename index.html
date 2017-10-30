@@ -5,20 +5,21 @@
     <meta charset="utf-8">
     <title>Задача «Мяндекс.Муррркет»</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css"
+    <link rel="stylesheet" type="text/css" 
     href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
 </head>
 
 <body>
-    <input type="radio" id="bar" name="displayMode" checked>
+    <input type="radio" id="bar" name="display_mode" checked>
     <label for="bar">Плиткой</label>
-    <input type="radio" id="list" name="displayMode">
+    <input type="radio" id="list" name="display_mode">
     <label for="list">Списком</label>
     <main>
         <div class="card">
-            <div class="imageHolder">
-                <img src="images/cat1.jpg" alt="anothercat" class="image">
-            </div>
+            <figure class="image_holder">
+                <img src="images/cat1.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
             <div class="info">
                 <a href="https://hruborg.herokuapp.com/javascript">
                     Васька
@@ -50,16 +51,20 @@
                     <span class="oldPrice">150 &#8381;</span>
                 </p>
             </div>
-            <div class="description">
-                Котей очень ласковый. Привязан к человеку. С удовольствием сидит
-                на руках, коленях, шее и мурлыкает при этом.
-                Будет ходить за вами по пятам.
-            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Котей очень ласковый. Привязан к человеку. С удовольствием сидит
+                    на руках, коленях, шее и мурлыкает при этом.
+                    Будет ходить за вами по пятам.
+                </p>
+            </section>
         </div>
         <div class="card">
-            <div class="imageHolder">
-                <img src="images/cat2.jpg" alt="anothercat" class="image">
-            </div>
+            <figure class="image_holder">
+                <img src="images/cat2.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
             <div class="info">
                 <a href="https://hruborg.herokuapp.com/javascript">
                     Маришка
@@ -89,17 +94,21 @@
                 </div>
                 <p class="price">Цена: 11 &#8381;</p>
             </div>
-            <div class="description">
-                Плюшевая набивная шубка, кукольная мордочка. Характер нежный
-                и ласковый. Вырастут настоящими красавицами и
-                красавцами с большими глазами. Они ждут любящих
-                и ласковых хозяев.
-            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Плюшевая набивная шубка, кукольная мордочка. Характер нежный
+                    и ласковый. Вырастут настоящими красавицами
+                    и красавцами с большими глазами. Они ждут
+                    любящих и ласковых хозяев.
+                </p>
+            </section>
         </div>
         <div class="card">
-            <div class="imageHolder">
-                <img src="images/cat3.jpg" alt="anothercat" class="image">
-            </div>
+            <figure class="image_holder">
+                <img src="images/cat3.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
             <div class="info">
                 <a href="https://github.com/sameoldmadness">
                     Dimoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooon
@@ -129,14 +138,18 @@
                 </div>
                 <p class="price">Цена: 666 &#8381;</p>
             </div>
-            <div class="description">
-                Просто &#x40;Grumpy
-            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Просто &#x40;Grumpy
+                </p>
+            </section>
         </div>
         <div class="card">
-            <div class="imageHolder">
-                <img src="images/cat4.jpg" alt="anothercat" class="image">
-            </div>
+            <figure class="image_holder">
+                <img src="images/cat4.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
             <div class="info">
                 <a href="https://hruborg.herokuapp.com/javascript">
                     Кантик
@@ -168,18 +181,20 @@
                     <span class="oldPrice">676 &#8381;</span>
                 </p>
             </div>
-            <div class="description">
-                Is someone reading this??? Long text Long text 
-                Long text Long
-                text Long text Long text Long text Long text
-                Long text Long text Long text Long text Long
-                text Long textLong textLong textLong text
-            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Хорошая кошечка,прекрасно подойдет вашему ребенку,ласковая, все
+                    время лезет на руки,не царапается. Станет
+                    отличным другом семьи.
+                </p>
+            </section>
         </div>
         <div class="card">
-            <div class="imageHolder">
-                <img src="images/cat5.jpg" alt="anothercat" class="image">
-            </div>
+            <figure class="image_holder">
+                <img src="images/cat5.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
             <div class="info">
                 <a href="https://hruborg.herokuapp.com/javascript">
                     Мурка
@@ -209,14 +224,19 @@
                 </div>
                 <p class="price">Цена: 666 &#8381;</p>
             </div>
-            <div class="description">
-                Text is just a necessity
-            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Мурка очень добрая,пушистая,станет для вас хорошим другом, к
+                    тому же она очень милая.
+                </p>
+            </section>
         </div>
         <div class="card">
-            <div class="imageHolder">
-                <img src="images/cat6.jpg" alt="anothercat" class="image">
-            </div>
+            <figure class="image_holder">
+                <img src="images/cat6.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
             <div class="info">
                 <a href="https://hruborg.herokuapp.com/javascript">
                     Марта
@@ -246,14 +266,19 @@
                 </div>
                 <p class="price">Цена: 9494 &#8381;</p>
             </div>
-            <div class="description">
-                Ohhhhh,I see you reading this)
-            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Марта не зря названа в честь месяца,в котором празднуется Международный
+                    женский день. Марта очень женственная.
+                </p>
+            </section>
         </div>
         <div class="card">
-            <div class="imageHolder">
-                <img src="images/cat7.jpg" alt="anothercat" class="image">
-            </div>
+            <figure class="image_holder">
+                <img src="images/cat7.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
             <div class="info">
                 <a href="https://hruborg.herokuapp.com/javascript">
                     Герман
@@ -283,19 +308,18 @@
                 </div>
                 <p class="price">Цена: 463767 &#8381;</p>
             </div>
-            <div class="description">
-                Just random description text Long textLong textLong
-                textLong text Long textLong textLong textLong
-                textLong text Long textLong textLong textLong
-                textLong text Long textLong textLong textLong
-                text Long textLong textLong textLong textLong
-                textLong textLong textLong text
-            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Герман очень классный и заводной. Не зря он стоит так дорого.
+                </p>
+            </section>
         </div>
         <div class="card">
-            <div class="imageHolder">
-                <img src="images/cat8.jpg" alt="anothercat" class="image">
-            </div>
+            <figure class="image_holder">
+                <img src="images/cat8.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
             <div class="info">
                 <a href="https://hruborg.herokuapp.com/javascript">
                     Мушенька
@@ -325,14 +349,18 @@
                 </div>
                 <p class="price">Цена: 5887 &#8381;</p>
             </div>
-            <div class="description">
-                Красавица просто
-            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Красавица просто
+                </p>
+            </section>
         </div>
         <div class="card">
-            <div class="imageHolder">
-                <img src="images/cat9.jpg" alt="anothercat" class="image">
-            </div>
+            <figure class="image_holder">
+                <img src="images/cat9.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
             <div class="info">
                 <a href="https://hruborg.herokuapp.com/javascript">
                     Иннокентий
@@ -364,14 +392,18 @@
                     <span class="oldPrice">700 &#8381;</span>
                 </p>
             </div>
-            <div class="description">
-                Красивый умный смелый мощный
-            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Красивый умный смелый мощный
+                </p>
+            </section>
         </div>
         <div class="card">
-            <div class="imageHolder">
-                <img src="images/cat10.jpg" alt="anothercat" class="image">
-            </div>
+            <figure class="image_holder">
+                <img src="images/cat10.jpg" alt="another_cat" class="image">
+                <figcaption>Магазин "Ветна"</figcaption>
+            </figure>
             <div class="info">
                 <a href="https://hruborg.herokuapp.com/javascript">
                     Хвостатики
@@ -401,9 +433,12 @@
                 </div>
                 <p class="price">Цена: 543 &#8381;</p>
             </div>
-            <div class="description">
-                Это просто два шалуна,которые не дадут вам покоя
-            </div>
+            <section class="description">
+                <h2>Описание</h2>
+                <p>
+                    Это просто два шалуна,которые не дадут вам покоя
+                </p>
+            </section>
         </div>
     </main>
 </body>

@@ -33,6 +33,11 @@
     color: white;
 }
 
+.rating label:hover
+{
+    cursor: pointer;
+}
+
 .card
 {
     border: 2px solid black;
@@ -45,41 +50,45 @@ input[id='bar']:checked ~ main .card
 {
     display: inline-block;
     width: 350px;
+    height: 530px;
+    vertical-align: top;
 }
 
-input[id='bar']:checked ~ main .card .imageHolder
+input[id='bar']:checked ~ main .card .image_holder img
 {
-    display: inline-block;
-    width: 350px;
-    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 250px;
 }
 
+input[id='bar']:checked ~ main .card .image_holder
+{
+    height: 250px;
+}
+
+input[id='bar']:checked ~ main .card .image_holder,
+input[id='bar']:checked ~ main .card .info,
 input[id='bar']:checked ~ main .card .description
 {
-    display: inline-block;
+    display: block;
     width: 350px;
-    vertical-align: top;
+    position: relative;
 }
 
 input[id='list']:checked ~ main .card
 {
     display: block;
-    height: 350px;
 }
 
-img
+input[id='list']:checked ~ main .card .image_holder img
 {
     width: 100%;
-    max-height: 250px;
+    height: 100%;
+    max-height: none;
 }
 
-input[id='list']:checked ~ main .card .imageHolder img
-{
-    max-height: 350px;
-    height: 350px;
-}
-
-input[id='list']:checked ~ main .card .imageHolder,
+input[id='list']:checked ~ main .card .image_holder,
 input[id='list']:checked ~ main .card .info,
 input[id='list']:checked ~ main .card .description
 {
@@ -117,11 +126,13 @@ a:hover
 
 img:hover
 {
+    cursor: pointer;
     opacity: .5;
 }
 
 .category:hover
 {
+    cursor: pointer;
     text-decoration: underline;
 }
 
@@ -133,4 +144,26 @@ img:hover
 .category::before
 {
     content: 'Категория: ';
+}
+
+figcaption
+{
+    text-align: center;
+    font-size: .5em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+h2
+{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+figure
+{
+    margin: 0;
+    padding: 0;
 }
