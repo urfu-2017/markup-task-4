@@ -1,0 +1,157 @@
+html
+{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+input[type='checkbox']:checked ~ .cat
+{
+    display: block;
+    width: auto;
+}
+
+input[type='checkbox']:checked ~ .cat img,
+input[type='checkbox']:checked ~ .cat .data,
+input[type='checkbox']:checked ~ .cat .description
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+input[type='checkbox']:checked ~ .cat .data
+{
+    width: 400px;
+}
+
+input[type='checkbox']:checked ~ .cat .description
+{
+    height: auto;
+}
+
+input[type='checkbox']:checked ~ .cat .description p
+{
+    margin: 0;
+}
+
+.cat
+{
+    display: inline-block;
+    margin: 30px 10px;
+    width: 400px;
+}
+
+.cat:hover
+{
+    border: 1px dashed black;
+}
+
+.name
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+img
+{
+    display: block;
+    width: 400px;
+    max-height: 270px;
+}
+
+img:hover
+{
+    animation-name: rotation;
+    animation-duration: 5s;
+}
+@keyframes rotation
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+a
+{
+    color: blue;
+    font-size: 24px;
+}
+
+a:hover
+{
+    text-decoration: none;
+    outline: 2px ridge red;
+    color: white;
+    background-color: black;
+}
+
+.category
+{
+    font-size: 10px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.category:hover
+{
+    font-size: 15px;
+}
+
+.rating
+{
+    display: inline-block;
+}
+
+input[type='radio']
+{
+    float: right;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    margin: 0 0 0 -30px;
+    position: relative;
+    z-index: 100;
+
+}
+
+.star 
+{
+    position: relative;
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: url(strr.jpg) -9px -175px;
+    
+}
+
+.star:hover,
+.star:hover ~ .star,
+input[type='radio']:checked ~ .star
+{
+    background-position: -9px -13px;
+}
+
+.price
+{
+    color: red;
+    font-size: 18px;
+    margin: 10px 0;
+
+}
+
+.oldprice
+{
+    color: grey;
+    text-decoration: line-through;
+}
+
+.description
+{
+    width: 400px;
+    overflow: auto;
+    height: 120px;
+}
