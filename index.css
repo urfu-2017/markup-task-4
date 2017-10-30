@@ -15,12 +15,6 @@ section
     position: relative;
 }
 
-.description
-{
-    height: 90px;
-    overflow: hidden;
-}
-
 a > p
 {
     position: absolute;
@@ -136,6 +130,7 @@ a[href^='http://www.zoopicture.ru']:hover p
 
 .line-mode:checked ~ main a p
 {
+    max-height: 40px;
     top: 0;
     left: 0;
     margin-top: 0;
