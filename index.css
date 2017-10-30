@@ -1,0 +1,198 @@
+body
+{
+    font-family: Arial, sans-serif;
+}
+
+main
+{
+    padding: 30px;
+    display: inline-block;
+}
+
+.titleSite
+{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.viewList
+{
+    margin-left: 30px;
+}
+
+input:checked ~ main section
+{
+    width: 90%;
+    display: inline-block;
+}
+
+input:checked ~ main section header,
+input:checked ~ main section .info,
+input:checked ~ main section .description
+{
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 30px;
+    height: auto;
+}
+
+input:checked ~ main section header img
+{
+    position: relative;
+}
+
+section
+{
+    width: 280px;
+    display: inline-block;
+    box-shadow: 2px 2px 4px 0 #ccc;
+    vertical-align: top;
+    padding: 10px;
+    margin: 0 6px 20px;
+    height: auto;
+}
+
+section:hover
+{
+    box-shadow: 7px 7px 7px 5px #53ea93;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+}
+
+section header
+{
+    width: 100%;
+    height: 280px;
+    position: relative;
+}
+
+img
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+img:hover
+{
+    border-radius: 70%;
+}
+
+.name
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name a
+{
+    text-decoration: none;
+    color: #359cc6;
+    font-size: x-large;
+}
+
+.name a:hover:after
+{
+    transition: all .25s;
+    opacity: 1;
+    margin-left: 10px;
+    content: '\2764';
+    display: inline-block;
+}
+
+.category
+{
+    font-size: medium;
+    color: #a9a9a9;
+    opacity: .7;
+}
+
+.category:hover
+{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.price
+{
+    font-size: larger;
+    font-weight: bold;
+    color: #f00;
+    display: inline-block;
+    width: 100%;
+}
+
+.price span:after
+{
+    content: '\20BD';
+}
+
+.price span:nth-of-type(2)
+{
+    text-decoration: line-through;
+    color: #808080;
+}
+
+label
+{
+    width: 20px;
+    height: 40px;
+}
+
+.stars
+{
+    height: 50px;
+    width: auto;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+
+.stars input
+{
+    display: none;
+}
+
+.stars label
+{
+    background: url(image/cat-icon.png) no-repeat;
+    cursor: pointer;
+    float: right;
+    position: relative;
+}
+
+.stars label:nth-of-type(2n)
+{
+    background-position: 0 0;
+
+}
+
+.stars label:nth-of-type(2n+1)
+{
+    background-position: -20px 0;
+}
+
+.stars label:hover ~ label:nth-of-type(2n+1),
+.stars label:nth-of-type(2n+1):hover
+{
+    background-position: -20px -40px;
+}
+
+.stars label:hover ~ label:nth-of-type(2n),
+.stars label:nth-of-type(2n):hover
+{
+    background-position: 0 -40px;
+}
+
+.stars input:checked ~ label:nth-of-type(2n+1)
+{
+    background-position: -20px -40px;
+}
+
+.stars input:checked ~ label:nth-of-type(2n)
+{
+    background-position: 0 -40px;
+}
