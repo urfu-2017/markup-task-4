@@ -56,11 +56,6 @@ input[value='block']:checked ~ .control label[for='view-block']
     padding: 0 25px;
 }
 
-img 
-{
-    width: 100%;
-}
-
 .goods 
 {
     border: 1px #aaa solid;
@@ -68,7 +63,9 @@ img
     margin-bottom: 15px;
 }
 
-.goods > div
+.goods > .image,
+.goods > .info,
+.goods > .description
 {
     display: inline-block;
     vertical-align: top;
@@ -94,7 +91,7 @@ input[value='block']:checked ~ .goods-section .goods
 .info
 {
     min-height: 130px;
-    width: calc(300px - 30px);
+    width: 270px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -158,19 +155,14 @@ input[value='block']:checked ~ .goods-section .description
     text-decoration: line-through;
 }
 
-.price::after
-{
-    content: ' руб.';
-}
-
+.price::after,
 .old-price::after
 {
     content: ' руб.';
 }
 
-.breed::before
+.breed > span
 {
-    content: 'Порода: ';
     color: #aaa;
 }
 
@@ -179,12 +171,13 @@ input[value='block']:checked ~ .goods-section .description
     box-shadow: 0 0 10px 0 #777;
 }
 
-.image img
+.image > .full-width
 {
+    width: 100%;
     display: block;
 }
 
-.image img:hover
+.image > .full-width:hover
 {
     opacity: .7;
 }
@@ -195,7 +188,7 @@ input[value='block']:checked ~ .goods-section .description
     font-weight: 900;
 }
 
-.breed:hover::before
+.breed:hover > span
 {
     color: #000;
     font-weight: 400;
