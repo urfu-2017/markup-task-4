@@ -43,6 +43,18 @@ main > .cat
 
 }
 
+img:hover
+{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.name:hover a
+{
+    font-size: 150%;
+    color: purple !important;
+}
+
 .cat:hover
 {
     border: 1px solid;
@@ -61,6 +73,10 @@ main > .cat
     overflow: hidden;
     text-overflow: ellipsis;
     color: blue;
+}
+.cat_type:hover
+{
+    transform: scale(-1, -1);
 }
 
 .cat figure 
@@ -84,6 +100,8 @@ main > .cat
     max-height: 400px;
     height: auto;
     width: 380px;
+    -webkit-transition: -webkit-transform 3s ease-in-out;
+    transition:         transform 3s ease-in-out;
     
 }
 
