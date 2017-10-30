@@ -37,13 +37,12 @@ li
 .imageCat
 {
     position: relative;
-    min-height: 220px;
+    min-height: 240px;
 }
 
 .cats
 {
     width: 320px;
-    height: 220px;
     display: block;
     position: absolute;
     bottom: 0;
@@ -51,7 +50,7 @@ li
 
 p
 {
-    margin: 0 auto;
+    margin: 0;
 }
 
 .name
@@ -147,7 +146,7 @@ input[value='list']:checked ~ ul li
 }
 
 input[value='list']:checked ~ ul .imageCat,
-input[value='list']:checked ~ ul div
+input[value='list']:checked ~ ul .information
 {
     width: 320px;
     display: inline-block;
