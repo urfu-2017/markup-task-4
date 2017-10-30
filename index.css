@@ -3,7 +3,7 @@
 
 html
 {
-    font-family: "Exo 2", sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-size: 16px;
 }
 
@@ -21,7 +21,7 @@ main
 header
 {
     padding: 15px 30px;
-    margin: 0 0 25px 0;
+    margin: 0 0 25px;
     height: 40px;
     font-size: 2rem;
     width: 100vw;
@@ -92,7 +92,7 @@ img:hover
     font-size: 2.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-family: "OzHandicraft WGL4 BT Roman", sans-serif;
+    font-family: 'OzHandicraft WGL4 BT Roman', sans-serif;
     white-space: nowrap;
     width: 300px;
 }
@@ -106,7 +106,6 @@ img:hover
 {
     width: 300px;
 }
-
 
 .poroda,
 .price1
@@ -162,12 +161,12 @@ header div
 {
     font-size: 2em;
     font-family: FontAwesome;
-    content: "\f005";
+    content: '\f005';
 }
 
 .star > .half:before
 {
-    content: "\f089";
+    content: '\f089';
     position: absolute;
 }
 
