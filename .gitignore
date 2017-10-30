@@ -4,5 +4,8 @@
 
 *.log
 *.swp
+*.py
+*.txt
+.vs_code/
 
 node_modules
