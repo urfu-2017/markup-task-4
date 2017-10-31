@@ -5,9 +5,11 @@
     margin: 10px;
 }
 
-.div2
+.image
 {
-    width: 20%;
+    width: 20px;
+    margin: -20px 0 0 15px;
+    display: block;
 }
 
 ..div-in-line
