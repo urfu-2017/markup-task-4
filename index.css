@@ -99,6 +99,13 @@ h1::first-letter
     color: red;
 }
 
+input[id='list']:checked ~ nav label[for='list'],
+input[id='tile']:checked ~ nav label[for='tile']
+{
+    box-shadow: 0 2px 5px black;
+    color: darkorange;
+}
+
 input[id='list']:checked ~ article section
 {
     width: 90%;
