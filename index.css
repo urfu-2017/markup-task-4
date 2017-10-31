@@ -1,0 +1,149 @@
+
+
+body {
+    background: #DAC3FE;
+    font-family: 'Roboto', sans-serif;
+    color: #474747;
+    font-size: 14px;
+}
+
+.cats {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.products {
+    list-style: none;
+    margin: 0 -20px 150px 0;
+}
+
+@media only screen and (min-width: 450px) {
+	.product-cats {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.product-cats {
+		width: 33.333%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.product-cats {
+		width: 25%;
+	}
+}
+
+.product {
+    display: block;
+    border: 5px solid #163266;
+    border-radius: 3px;
+    background: #fff;
+    margin: 0 10px 20px 0;
+    text-decoration: none;
+    color: #474747;
+
+}
+/*
+.product {
+	display: block;
+	border: 1px solid #b5e9a7;
+	border-radius: 3px;
+	position: relative;
+	background: #fff;
+	margin: 0 20px 20px 0;
+	text-decoration: none;
+	color: #474747;
+	z-index: 0;
+	height: 300px;
+}*/
+
+.product-photo img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.product-text {
+    padding: 20px;
+}
+
+.product h2 {
+    font-size: 2.4em;
+    color: #9E1E5E;
+    margin: 0 0 .7em;
+}
+
+.product p {
+    position: relative;
+    margin: 0;
+    font-size: 2em;
+    line-height: 1.4em;
+    height: 5.6em;
+    overflow: hidden;
+}
+
+.product-details-wrap {
+    padding: 0 20px 20px;
+}
+
+.product-availability {
+    color: #277E16;
+    font-size: .9em;
+    margin-bottom: 1.5em;
+}
+
+.product-availability span {
+    margin-right: .3em;
+}
+
+.product-price-old {
+    font-size: 1em;
+    text-decoration: line-through;
+    margin-right: .5em;
+    color: #ff3535;
+}
+
+.product-price 
+{
+    font-size: 1.3em;
+}
+
+.product h2:hover
+{
+    font-size: 3.4em;
+    color: #9E1E5E;
+    margin: 0 0 .7em;
+}
+
+.product-cats:hover
+{
+    background: #DAC3FE;
+}
+
+.product-photo > img:hover
+{
+    opacity: .2;
+}
+
+.product p:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 4.2em;
+	height: 1.6em;
+	background: linear-gradient(to left top, #fff, rgba(255, 255, 255, 0));
+}
+
+input[type='checkbox']:checked ~ .product-cats
+{
+    width: 310px;
+    height: 700px;
+    float:left; 
+    margin-left:15px; 
+    text-align:center;
+}
