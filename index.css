@@ -12,11 +12,6 @@
     display: block;
 }
 
-..div-in-line
-{
-    display: block;
-}
-
 .img
 {
     width: 100%;
@@ -81,9 +76,4 @@ input[type='checkbox']:checked ~ .div
 {
     display: block;
     width: 20%;
-}
-
-input[type='checkbox']:checked ~ .div-in-line
-{
-    display: inline-block;
 }
