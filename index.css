@@ -1,0 +1,26 @@
+div.description::before
+{
+    content: 'Описание товара: ';
+}
+
+div.kindness::before
+{
+    content: 'Доброта: ';
+}
+
+body
+{
+    display: table;
+}
+
+section.card
+{
+    display: table-cell;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    font-size: 20px;
+}
+
