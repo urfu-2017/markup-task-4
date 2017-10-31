@@ -68,18 +68,18 @@
 
 .cat-stars label:nth-last-of-type(2n)
 {
-    background-image: url("./images/left-full.png");
+    background-image: url('./images/left-full.png');
 }
 
 .cat-stars label:nth-last-of-type(2n + 1)
 {
-    background-image: url("./images/right-full.png");
+    background-image: url('./images/right-full.png');
 }
 
 .cat-stars:not(:hover) input:checked + label ~ label,
 label:hover ~ label
 {
-    opacity: 0.5;
+    opacity: .5;
 }
 
 .cat-name
@@ -92,7 +92,7 @@ label:hover ~ label
 
 .cat-category
 {
-    font-size: 0.75em;
+    font-size: .75em;
     color: gray;
 }
 
