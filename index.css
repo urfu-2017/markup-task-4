@@ -1,0 +1,91 @@
+body
+{
+    background: rgb(255, 238, 238);
+}
+
+input
+{
+    display: none;
+}
+
+.show_image
+{
+    width: 50px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.show_image:hover
+{
+    transform: scale(1.15);
+}
+
+.item
+{
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 0 4px 0 #aa9797;
+    padding: 10px;
+}
+
+.item:hover
+{
+    transform: scale(1.05);
+    box-shadow: 2 2 10px 0 #bdabab;
+}
+
+.cat_img
+{
+    width: 250px;
+    display: block;
+}
+
+.name
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.itemPart
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.itemPart1
+{
+    position: relative;
+}
+
+.price
+{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.old_price
+{
+    color: #947187;
+    text-decoration: line-through;
+}
+
+.paw
+{
+    width: 12px;
+}
+
+.paw_label
+{
+    display: table-cell;
+    opacity: 1;
+}
+
+.rating input:hover ~ .paw_label
+{
+    opacity: .2;
+}
