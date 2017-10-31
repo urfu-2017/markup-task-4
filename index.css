@@ -83,56 +83,6 @@ header > div:first-letter
     top: 50px;
 }
 
-.note.note-0-5:hover ~ .stars-4-5
-{
-    left: -200px;
-}
-
-.note.note-1-0:hover ~ .stars-5-0
-{
-    left: -200px;
-}
-
-.note.note-1-5:hover ~ .stars-4-5
-{
-    left: -150px;
-}
-
-.note.note-2-0:hover ~ .stars-5-0
-{
-    left: -150px;
-}
-
-.note.note-2-5:hover ~ .stars-4-5
-{
-    left: -100px;
-}
-
-.note.note-3-0:hover ~ .stars-5-0
-{
-    left: -100px;
-}
-
-.note.note-3-5:hover ~ .stars-4-5
-{
-    left: -50px;
-}
-
-.note.note-4-0:hover ~ .stars-5-0
-{
-    left: -50px;
-}
-
-.note.note-4-5:hover ~ .stars-4-5
-{
-    left: 0;
-}
-
-.note.note-5-0:hover ~ .stars-5-0
-{
-    left: 0;
-}
-
 /** --- **/
 
 .item-note-0-5:checked ~ .stars-4-5
@@ -183,6 +133,74 @@ header > div:first-letter
 .item-note-5-0:checked ~ .stars-5-0
 {
     left: 0;
+}
+
+.note.note-0-5:hover ~ .stars-4-5
+{
+    left: -200px;
+}
+
+.note.note-1-0:hover ~ .stars-5-0
+{
+    left: -200px;
+}
+
+.note.note-1-5:hover ~ .stars-4-5
+{
+    left: -150px;
+}
+
+.note.note-2-0:hover ~ .stars-5-0
+{
+    left: -150px;
+}
+
+.note.note-2-5:hover ~ .stars-4-5
+{
+    left: -100px;
+}
+
+.note.note-3-0:hover ~ .stars-5-0
+{
+    left: -100px;
+}
+
+.note.note-3-5:hover ~ .stars-4-5
+{
+    left: -50px;
+}
+
+.note.note-4-0:hover ~ .stars-5-0
+{
+    left: -50px;
+}
+
+.note.note-4-5:hover ~ .stars-4-5
+{
+    left: 0;
+}
+
+.note.note-5-0:hover ~ .stars-5-0
+{
+    left: 0;
+}
+
+.note.note-4-5:hover ~ .stars-5-0,
+.note.note-3-5:hover ~ .stars-5-0,
+.note.note-2-5:hover ~ .stars-5-0,
+.note.note-1-5:hover ~ .stars-5-0,
+.note.note-0-5:hover ~ .stars-5-0
+{
+    left: -250px;
+}
+
+.note.note-5-0:hover ~ .stars-4-5,
+.note.note-4-0:hover ~ .stars-4-5,
+.note.note-3-0:hover ~ .stars-4-5,
+.note.note-2-0:hover ~ .stars-4-5,
+.note.note-1-0:hover ~ .stars-4-5
+{
+    left: -250px;
 }
 
 /** --END Note-- **/
