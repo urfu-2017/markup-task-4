@@ -1,0 +1,173 @@
+body
+{
+    background: #fffff0;
+    margin: 0 30px;
+}
+
+h1
+{
+    border-bottom: 1px solid #000;
+    text-align: center;
+    letter-spacing: 3px;
+    font: 600 40px 'comic sans ms', serif;
+}
+
+h1::first-letter
+{
+    color: #f00;
+}
+
+.view
+{
+    width: 20px;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+li
+{
+    display: inline-block;
+    width: 320px;
+    margin: 5px;
+    border: 1px solid #000;
+    padding: 5px;
+    vertical-align: top;
+    font: 14px technic, serif;
+}
+
+.imageCat
+{
+    position: relative;
+    min-height: 240px;
+}
+
+.cats
+{
+    width: 320px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+p
+{
+    margin: 0;
+}
+
+.name
+{
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font: 25px technic, serif;
+}
+
+a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.kindness
+{
+    padding-right: 90px;
+    margin-bottom: 20px;
+}
+
+input
+{
+    display: none;
+}
+
+.kindness label
+{
+    opacity: .5;
+    float: right;
+}
+
+.stars
+{
+    width: 14px;
+}
+
+.price
+{
+    font-size: 25px;
+    text-align: center;
+}
+
+span
+{
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+.description
+{
+    font-size: 16px;
+}
+
+footer
+{
+    border-top: 1px solid #000;
+    text-align: right;
+}
+
+li:hover
+{
+    box-shadow: 1px 1px 10px;
+}
+
+.name:hover
+{
+    text-shadow: 0 0 30px;
+}
+
+img:hover
+{
+    transform: scale(1.2);
+}
+
+.kindness label:hover ~ label
+{
+    opacity: 1;
+}
+
+.kindness input:checked ~ label
+{
+    opacity: 1;
+}
+
+input[value='list']:checked ~ ul li
+{
+    display: block;
+    width: 100%;
+    min-width: 340px;
+}
+
+input[value='list']:checked ~ ul .imageCat,
+input[value='list']:checked ~ ul .information
+{
+    width: 320px;
+    display: inline-block;
+    margin: 0 2px;
+    vertical-align: top;
+}
+
+input[value='list']:checked ~ ul .price,
+input[value='list']:checked ~ ul .name
+{
+    text-align: left;
+}
+
+main > input:checked + label
+{
+    background: #f00;
+    width: 20px;
+    display: inline-block;
+}
