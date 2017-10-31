@@ -164,3 +164,10 @@ input[value='list']:checked ~ ul .name
 {
     text-align: left;
 }
+
+main > input:checked + label
+{
+    background: #f00;
+    width: 20px;
+    display: inline-block;
+}
