@@ -1,13 +1,15 @@
 
 
+
 body {
-    background: #DAC3FE;
+    background: #dac3fe;
     font-family: 'Roboto', sans-serif;
     color: #474747;
     font-size: 14px;
 }
 
-.cats {
+.cats
+{
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -18,25 +20,32 @@ body {
     margin: 0 -20px 150px 0;
 }
 
-@media only screen and (min-width: 450px) {
-	.product-cats {
+@media only screen and (min-width: 450px)
+{
+    .product-cats
+    {
 		width: 50%;
 	}
 }
 
-@media only screen and (min-width: 768px) {
-	.product-cats {
+@media only screen and (min-width: 768px)
+{
+    .product-cats
+    {
 		width: 33.333%;
 	}
 }
 
-@media only screen and (min-width: 1000px) {
-	.product-cats {
+@media only screen and (min-width: 1000px)
+{
+    .product-cats
+    {
 		width: 25%;
 	}
 }
 
-.product {
+.product
+{
     display: block;
     border: 5px solid #163266;
     border-radius: 3px;
@@ -46,27 +55,16 @@ body {
     color: #474747;
 
 }
-/*
-.product {
-	display: block;
-	border: 1px solid #b5e9a7;
-	border-radius: 3px;
-	position: relative;
-	background: #fff;
-	margin: 0 20px 20px 0;
-	text-decoration: none;
-	color: #474747;
-	z-index: 0;
-	height: 300px;
-}*/
 
-.product-photo img {
+.product-photo img
+{
     max-width: 100%;
     max-height: 100%;
     margin: auto;
 }
 
-.product-text {
+.product-text
+{
     padding: 20px;
 }
 
@@ -76,7 +74,8 @@ body {
     margin: 0 0 .7em;
 }
 
-.product p {
+.product p
+{
     position: relative;
     margin: 0;
     font-size: 2em;
@@ -85,28 +84,32 @@ body {
     overflow: hidden;
 }
 
-.product-details-wrap {
+.product-details-wrap
+{
     padding: 0 20px 20px;
 }
 
-.product-availability {
+.product-availability
+{
     color: #277E16;
     font-size: .9em;
     margin-bottom: 1.5em;
 }
 
-.product-availability span {
+.product-availability span
+{
     margin-right: .3em;
 }
 
-.product-price-old {
+.product-price-old
+{
     font-size: 1em;
     text-decoration: line-through;
     margin-right: .5em;
     color: #ff3535;
 }
 
-.product-price 
+.product-price
 {
     font-size: 1.3em;
 }
@@ -128,7 +131,8 @@ body {
     opacity: .2;
 }
 
-.product p:after {
+.product p:after
+{
 	content: '';
 	display: inline-block;
 	position: absolute;
