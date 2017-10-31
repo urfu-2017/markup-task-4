@@ -1,0 +1,87 @@
+.div
+{
+    display: inline-block;
+    width: 23%;
+    margin: 10px;
+}
+
+.div2
+{
+    width: 20%;
+}
+
+..div-in-line
+{
+    display: block;
+}
+
+.img
+{
+    width: 100%;
+}
+
+a:hover
+{
+    color: #7b68ee;
+}
+
+.category:hover
+{
+    color: #228b22;
+}
+
+div img
+{
+    width: 6%;
+}
+
+.price
+{
+    color: #f00;
+    font-size: 30px;
+}
+
+.old-priсe
+{
+    text-decoration: line-through;
+}
+
+.long-name
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.morph
+{
+    transition: all .5s ease;
+}
+
+.morph:hover
+{
+    border-radius: 50%;
+}
+
+.name:hover::after
+{
+    content: attr(data-title);
+    position: absolute;
+    z-index: 1;
+    background: rgba(255, 255, 230, .9);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+}
+
+input[type='checkbox']:checked ~ .div
+{
+    display: block;
+    width: 20%;
+}
+
+input[type='checkbox']:checked ~ .div-in-line
+{
+    display: inline-block;
+}
