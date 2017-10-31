@@ -1,9 +1,315 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/pages/index.css">
+    <link rel="stylesheet" href="css/blocks/card.css">
+    <link rel="stylesheet" href="css/blocks/card-list.css">
+    <link rel="stylesheet" href="css/blocks/settings.css">
+    <link rel="stylesheet" href="css/blocks/button.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
     <meta charset="utf-8">
     <title>Задача «Мяндекс.Муррркет»</title>
 </head>
 <body>
+<input type="radio" id="layout-grid" name="layout" hidden>
+<input type="radio" id="layout-list" name="layout" hidden checked>
+<div class="settings">
+    <div class="settings__group">
+        <label for="layout-grid" class="btn btn-primary btn-lg">Плитками</label>
+        <label for="layout-list" class="btn btn-primary btn-lg">Списком</label>
+    </div>
+</div>
+<main class="cards-container">
+    <div class="card">
+        <img alt="" class="card__image"
+             src="https://cs4.pikabu.ru/post_img/2016/07/03/9/1467557423892895.jpg">
+        <a class="card__title"
+        href="https://yandex.ru/images/search?text=cats">
+        Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок</a>
+        <div class="card__category">
+            <span class="card__category-item">Котики</span> -
+            <span class="card__category-item">Рыженькие</span>
+        </div>
+        <div class="card__rating stars">
+            <label><input type="radio" name="rating" value="10"></label>
+            <label><input type="radio" name="rating" value="9"></label>
+            <label><input type="radio" name="rating" value="8"></label>
+            <label><input type="radio" name="rating" value="7"></label>
+            <label><input type="radio" name="rating" value="6"></label>
+            <label><input type="radio" name="rating" value="5"></label>
+            <label><input type="radio" name="rating" value="4"></label>
+            <label><input type="radio" name="rating" value="3"></label>
+            <label><input type="radio" name="rating" value="2"></label>
+            <label><input type="radio" name="rating" value="1"></label>
+        </div>
+        <div class="card__price">$40.99<span class="card__price_old">$50.99</span></div>
+        <div class="card__description">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+            Lorem Ipsum является стандартной
+            "рыбой" для текстов на латинице с начала XVI века.
+        </div>
+    </div>
+    <div class="card">
+        <img alt="" class="card__image"
+         src="http://www.like-a.ru/wp-content/uploads/2014/11/GhmFRpycjIfafgHmHEwU3A-article1-600x446.jpg">
+        <a class="card__title"
+        href="https://yandex.ru/images/search?text=cats">
+        Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок</a>
+        <div class="card__category">
+            <span class="card__category-item">Котики</span>
+            - <span class="card__category-item">Рыженькие</span>
+        </div>
+        <div class="card__rating stars">
+            <label><input type="radio" name="rating" value="10"></label>
+            <label><input type="radio" name="rating" value="9"></label>
+            <label><input type="radio" name="rating" value="8"></label>
+            <label><input type="radio" name="rating" value="7"></label>
+            <label><input type="radio" name="rating" value="6"></label>
+            <label><input type="radio" name="rating" value="5"></label>
+            <label><input type="radio" name="rating" value="4"></label>
+            <label><input type="radio" name="rating" value="3"></label>
+            <label><input type="radio" name="rating" value="2"></label>
+            <label><input type="radio" name="rating" value="1"></label>
+        </div>
+        <div class="card__price">$40.99<span class="card__price_old">$50.99</span></div>
+        <div class="card__description">
+            Lorem Ipsum - это текст-"рыба", часто используемый в
+            печати и вэб-дизайне. Lorem Ipsum является стандартной
+            "рыбой" для текстов на латинице с начала XVI века.
+        </div>
+    </div>
+    <div class="card">
+        <img alt="" class="card__image"
+             src="http://funkot.ru/wp-content/uploads/2014/01/johnny-catsvill-original.jpg"><a
+        class="card__title"
+        href="https://yandex.ru/images/search?text=cats">
+        Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок</a>
+        <div class="card__category">
+            <span class="card__category-item">
+                Котики</span> - <span class="card__category-item">Рыженькие</span>
+        </div>
+        <div class="card__rating stars">
+            <label><input type="radio" name="rating" value="10"></label>
+            <label><input type="radio" name="rating" value="9"></label>
+            <label><input type="radio" name="rating" value="8"></label>
+            <label><input type="radio" name="rating" value="7"></label>
+            <label><input type="radio" name="rating" value="6"></label>
+            <label><input type="radio" name="rating" value="5"></label>
+            <label><input type="radio" name="rating" value="4"></label>
+            <label><input type="radio" name="rating" value="3"></label>
+            <label><input type="radio" name="rating" value="2"></label>
+            <label><input type="radio" name="rating" value="1"></label>
+        </div>
+        <div class="card__price">$40.99<span class="card__price_old">$50.99</span></div>
+        <div class="card__description">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+            Lorem Ipsum является стандартной
+            "рыбой" для текстов на латинице с начала XVI века.
+        </div>
+    </div>
+    <div class="card">
+        <img alt="" class="card__image" src="http://catscountry.ru/wp-content/uploads/2015/10/1.jpg"><a
+        class="card__title"
+        href="https://yandex.ru/images/search?text=cats">
+        Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок</a>
+        <div class="card__category">
+            <span class="card__category-item">Котики</span>
+            - <span class="card__category-item">Рыженькие</span>
+        </div>
+        <div class="card__rating stars">
+            <label><input type="radio" name="rating" value="10"></label>
+            <label><input type="radio" name="rating" value="9"></label>
+            <label><input type="radio" name="rating" value="8"></label>
+            <label><input type="radio" name="rating" value="7"></label>
+            <label><input type="radio" name="rating" value="6"></label>
+            <label><input type="radio" name="rating" value="5"></label>
+            <label><input type="radio" name="rating" value="4"></label>
+            <label><input type="radio" name="rating" value="3"></label>
+            <label><input type="radio" name="rating" value="2"></label>
+            <label><input type="radio" name="rating" value="1"></label>
+        </div>
+        <div class="card__price">$40.99<span class="card__price_old">$50.99</span></div>
+        <div class="card__description">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+            Lorem Ipsum является стандартной
+            "рыбой" для текстов на латинице с начала XVI века.
+        </div>
+    </div>
+    <div class="card">
+        <img alt="" class="card__image" src="http://memok.net/uploads/2014/07/26/53d3a2525fff8.jpg"><a
+        class="card__title"
+        href="https://yandex.ru/images/search?text=cats">
+        Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок</a>
+        <div class="card__category">
+            <span class="card__category-item">
+                Котики</span> - <span class="card__category-item">Рыженькие</span>
+        </div>
+        <div class="card__rating stars">
+            <label><input type="radio" name="rating" value="10"></label>
+            <label><input type="radio" name="rating" value="9"></label>
+            <label><input type="radio" name="rating" value="8"></label>
+            <label><input type="radio" name="rating" value="7"></label>
+            <label><input type="radio" name="rating" value="6"></label>
+            <label><input type="radio" name="rating" value="5"></label>
+            <label><input type="radio" name="rating" value="4"></label>
+            <label><input type="radio" name="rating" value="3"></label>
+            <label><input type="radio" name="rating" value="2"></label>
+            <label><input type="radio" name="rating" value="1"></label>
+        </div>
+        <div class="card__price">$40.99<span class="card__price_old">$50.99</span></div>
+        <div class="card__description">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+            Lorem Ipsum является стандартной
+            "рыбой" для текстов на латинице с начала XVI века.
+        </div>
+    </div>
+    <div class="card">
+        <img alt="" class="card__image"
+             src="http://alittlebit.ru/upload/iblock/b45/b1f4b7a3bf8481316eab0ef4d60f842e.jpeg"><a
+        class="card__title"
+        href="https://yandex.ru/images/search?text=cats">
+        Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок</a>
+        <div class="card__category">
+            <span class="card__category-item">
+                Котики</span> - <span class="card__category-item">Рыженькие</span>
+        </div>
+        <div class="card__rating stars">
+            <label><input type="radio" name="rating" value="10"></label>
+            <label><input type="radio" name="rating" value="9"></label>
+            <label><input type="radio" name="rating" value="8"></label>
+            <label><input type="radio" name="rating" value="7"></label>
+            <label><input type="radio" name="rating" value="6"></label>
+            <label><input type="radio" name="rating" value="5"></label>
+            <label><input type="radio" name="rating" value="4"></label>
+            <label><input type="radio" name="rating" value="3"></label>
+            <label><input type="radio" name="rating" value="2"></label>
+            <label><input type="radio" name="rating" value="1"></label>
+        </div>
+        <div class="card__price">$40.99<span class="card__price_old">$50.99</span></div>
+        <div class="card__description">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+            Lorem Ipsum является стандартной
+            "рыбой" для текстов на латинице с начала XVI века.
+        </div>
+    </div>
+    <div class="card">
+        <img alt="" class="card__image"
+             src="http://alittlebit.ru/upload/iblock/ca3/7fea3e5c2df10a3257fc6ee55df14e8f.jpeg"><a
+        class="card__title"
+        href="https://yandex.ru/images/search?text=cats">
+        Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок</a>
+        <div class="card__category">
+            <span class="card__category-item">
+                Котики</span> - <span class="card__category-item">Рыженькие</span>
+        </div>
+        <div class="card__rating stars">
+            <label><input type="radio" name="rating" value="10"></label>
+            <label><input type="radio" name="rating" value="9"></label>
+            <label><input type="radio" name="rating" value="8"></label>
+            <label><input type="radio" name="rating" value="7"></label>
+            <label><input type="radio" name="rating" value="6"></label>
+            <label><input type="radio" name="rating" value="5"></label>
+            <label><input type="radio" name="rating" value="4"></label>
+            <label><input type="radio" name="rating" value="3"></label>
+            <label><input type="radio" name="rating" value="2"></label>
+            <label><input type="radio" name="rating" value="1"></label>
+        </div>
+        <div class="card__price">$40.99<span class="card__price_old">$50.99</span></div>
+        <div class="card__description">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати
+            и вэб-дизайне. Lorem Ipsum является стандартной
+            "рыбой" для текстов на латинице с начала XVI века.
+        </div>
+    </div>
+    <div class="card">
+        <img alt="" class="card__image"
+    src="http://www.like-a.ru/wp-content/uploads/2014/11/most-popular-cats-colonel-meow-3__605-600x600.jpg">
+        <a class="card__title"
+        href="https://yandex.ru/images/search?text=cats">
+        Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок</a>
+        <div class="card__category">
+            <span class="card__category-item">
+                Котики</span> - <span class="card__category-item">Рыженькие</span>
+        </div>
+        <div class="card__rating stars">
+            <label><input type="radio" name="rating" value="10"></label>
+            <label><input type="radio" name="rating" value="9"></label>
+            <label><input type="radio" name="rating" value="8"></label>
+            <label><input type="radio" name="rating" value="7"></label>
+            <label><input type="radio" name="rating" value="6"></label>
+            <label><input type="radio" name="rating" value="5"></label>
+            <label><input type="radio" name="rating" value="4"></label>
+            <label><input type="radio" name="rating" value="3"></label>
+            <label><input type="radio" name="rating" value="2"></label>
+            <label><input type="radio" name="rating" value="1"></label>
+        </div>
+        <div class="card__price">$40.99<span class="card__price_old">$50.99</span></div>
+        <div class="card__description">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+            Lorem Ipsum является стандартной
+            "рыбой" для текстов на латинице с начала XVI века.
+        </div>
+    </div>
+    <div class="card">
+        <img alt="" class="card__image"
+ src="https://icdn.lenta.ru/images/2016/12/08/11/20161208115753834/pic_004abb4351078dbd8c612450c7912e4d.jpg">
+        <a class="card__title"
+        href="https://yandex.ru/images/search?text=cats">Заголовок
+            Заголовок Заголовок Заголовок Заголовок Заголовок</a>
+        <div class="card__category">
+            <span class="card__category-item">
+                Котики</span> - <span class="card__category-item">Рыженькие</span>
+        </div>
+        <div class="card__rating stars">
+            <label><input type="radio" name="rating" value="10"></label>
+            <label><input type="radio" name="rating" value="9"></label>
+            <label><input type="radio" name="rating" value="8"></label>
+            <label><input type="radio" name="rating" value="7"></label>
+            <label><input type="radio" name="rating" value="6"></label>
+            <label><input type="radio" name="rating" value="5"></label>
+            <label><input type="radio" name="rating" value="4"></label>
+            <label><input type="radio" name="rating" value="3"></label>
+            <label><input type="radio" name="rating" value="2"></label>
+            <label><input type="radio" name="rating" value="1"></label>
+        </div>
+        <div class="card__price">$40.99<span class="card__price_old">$50.99</span></div>
+        <div class="card__description">
+            Lorem Ipsum - это текст-"рыба", часто используемый в
+            печати и вэб-дизайне. Lorem Ipsum является стандартной
+            "рыбой" для текстов на латинице с начала XVI века.
+        </div>
+    </div>
+    <div class="card">
+        <img alt="" class="card__image"
+             src="https://cs5.pikabu.ru/images/big_size_comm/2015-10_2/1444424349186193867.jpg">
+        <a class="card__title"
+        href="https://yandex.ru/images/search?text=cats">Заголовок Заголовок
+            Заголовок Заголовок Заголовок Заголовок</a>
+        <div class="card__category">
+            <span class="card__category-item">Котики</span>
+            - <span class="card__category-item">Рыженькие</span>
+        </div>
+        <div class="card__rating stars">
+            <label><input type="radio" name="rating" value="10"></label>
+            <label><input type="radio" name="rating" value="9"></label>
+            <label><input type="radio" name="rating" value="8"></label>
+            <label><input type="radio" name="rating" value="7"></label>
+            <label><input type="radio" name="rating" value="6"></label>
+            <label><input type="radio" name="rating" value="5"></label>
+            <label><input type="radio" name="rating" value="4"></label>
+            <label><input type="radio" name="rating" value="3"></label>
+            <label><input type="radio" name="rating" value="2"></label>
+            <label><input type="radio" name="rating" value="1"></label>
+        </div>
+        <div class="card__price">$40.99<span class="card__price_old">$50.99</span></div>
+        <div class="card__description">
+            Lorem Ipsum - это текст-"рыба", часто используемый в
+            печати и вэб-дизайне. Lorem Ipsum является стандартной
+            "рыбой" для текстов на латинице с начала XVI века.
+        </div>
+    </div>
+</main>
 </body>
 </html>

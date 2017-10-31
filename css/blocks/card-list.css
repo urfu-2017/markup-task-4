@@ -1,0 +1,27 @@
+input[id='layout-list']:checked ~ .cards-container
+{
+    margin: 1rem 7rem;
+}
+
+input[id='layout-list']:checked ~ .cards-container .card
+{
+    display: inline-block;
+    width: 100%;
+}
+
+input[id='layout-list']:checked ~ .cards-container .card__image
+{
+    width: 20%;
+    float: left;
+    display: block;
+    margin-right: 10%;
+    height: 300px;
+}
+
+input[id='layout-list']:checked ~ .cards-container .card__description
+{
+    float: right;
+    width: 25%;
+    margin-top: -100px;
+}
+
