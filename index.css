@@ -156,6 +156,11 @@ input[value='list']:checked ~ section .product-info div
     text-align: left;
 }
 
+input[value='list']:checked ~ section .cat-property
+{
+    text-align: left;
+}
+
 /* ЗВЁЗДОЧКИ */
 
 .rating
@@ -171,7 +176,6 @@ input[value='list']:checked ~ section .product-info div
 
 .rating label:before
 {
-    margin: 5px;
     font-size: 40px;
     font-family: FontAwesome;
     display: inline-block;
