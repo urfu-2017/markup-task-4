@@ -19,6 +19,12 @@
     max-height: 20px;
 }
 
+input[id='line']:checked ~ .container .content .middle .name
+{
+    max-height: 100%;
+    max-width: 90%;
+}
+
 .type
 {
     font-size: 20px;
@@ -42,8 +48,9 @@ input[id='line']:checked ~ .container .content .description
 {
     display: inline-block;
     vertical-align: top;
-    width: 33%;
+    width: 32%;
     max-height: 100%;
+
 }
 
 input[id='line']:checked ~ .container .content .description
@@ -54,7 +61,7 @@ input[id='line']:checked ~ .container .content .description
 
 input[id='line']:checked ~ .container .content .soHigh
 {
-    width: auto;
+    width: 90%;
 }
 
 input[id='line']:checked ~ .container .content .img
