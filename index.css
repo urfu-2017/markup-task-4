@@ -220,3 +220,13 @@
     color: #550;
     text-decoration: unset;
 }
+
+.image
+{
+    filter: grayscale(100%);
+}
+
+.image:hover
+{
+    filter: grayscale(0%);
+}
