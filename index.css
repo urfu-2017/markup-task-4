@@ -1,0 +1,180 @@
+@font-face 
+{
+    font-family: fontAwesome;
+    src: url(fonts/fontawesome-webfont.ttf);
+}
+
+main
+{
+    font: Arial sans-serif;
+    color: #3a3a3c;
+}
+
+.display-label
+{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.card
+{
+    display: inline-block;
+    width: 300px;
+    max-height: 750px;
+    padding: 25px;
+}
+
+.card:hover
+{
+    box-shadow: 2px 4px 10px 2px #201132;
+}
+
+.photo
+{
+    position: relative;
+    height: 350px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+img
+{
+    position: absolute;
+    max-height: 350px;
+    max-width: 300px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+img:hover
+{
+    box-shadow: 0 0 20px #201132;
+}
+
+.name
+{
+    display: block;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1.5em;
+}
+
+.name:hover
+{
+    color: #000;
+}
+
+.price
+{
+    display: inline-block;
+}
+
+.current-price
+{
+    font-size: 24px;
+    font-weight: 900;
+    color: #96070a;
+    margin-right: 10px;
+}
+
+.old-price
+{
+    font-size: 18px;
+    font-weight: 100;
+    text-decoration: line-through;
+}
+
+.features
+{
+    height: 250px;
+    font-size: 18px;
+    overflow: auto;
+}
+
+.category,
+.species
+{
+    color: #3a3a3c;
+}
+
+.category::before
+{
+    content: ' - ';
+}
+
+#list:checked + section .card
+{
+    display: inline-block;
+    width: 90%;
+    height: auto;
+}
+
+#list:checked + section .card .photo
+{
+    max-height: 350px;
+}
+
+#list:checked + section .photo img
+{
+    top: 0;
+    max-height: 350px;
+}
+
+#list:checked + section .info,
+#list:checked + section .features,
+#list:checked + section .card .photo
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+}
+
+#list:checked + section .features
+{
+    margin: 0;
+}
+
+.rating 
+{
+    width: 123px;
+    height: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.rating-input
+{
+    display: none;
+}
+
+.rating-star:before 
+{
+    margin: 3px;
+    font-size: 20px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.rating-star
+{
+    color: #ddd;
+    float: right;
+}
+
+.rating > .rating-input:checked ~ .rating-star,
+.rating:not(:checked) > .rating-star:hover,
+.rating:not(:checked) > .rating-star:hover ~ .rating-star
+{
+    color: #ffc613;
+}
