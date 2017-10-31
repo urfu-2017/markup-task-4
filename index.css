@@ -1,4 +1,4 @@
-nav label
+.displaySettings
 {
     font: bold 30px serif;
     color: white;
@@ -9,7 +9,7 @@ nav label
     border-radius: 25px;
 }
 
-nav label:hover
+.displaySettings:hover
 {
     cursor: pointer;
 }
@@ -122,24 +122,12 @@ article label:nth-of-type(2n)::before
     content: url('SecondHalfStar.png');
 }
 
-article input:checked ~ label:nth-of-type(2n+1)::before
+article input:checked ~ label::before
 {
-    content: url('FirstHalfStarLight.png');
+    opacity: .3;
 }
 
-article input:checked ~ label:nth-of-type(2n)::before
+article label:hover ~ label::before
 {
-    margin: 0 -5px;
-    content: url('SecondHalfStarLight.png');
-}
-
-article label:hover ~ label:nth-of-type(2n+1)::before
-{
-    content: url('FirstHalfStarEmpty.png');
-}
-
-article label:hover ~ label:nth-of-type(2n)::before
-{
-    margin: 0 -5px;
-    content: url('SecondHalfStarEmpty.png');
+    opacity: .1;
 }
