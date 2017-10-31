@@ -1,0 +1,14 @@
+img
+{
+    width: 100%;
+    bottom: 0;
+}
+
+section
+{
+    padding: 30px;
+    width: 250px;
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: hidden;
+}
