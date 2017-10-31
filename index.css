@@ -1,0 +1,232 @@
+h1
+{
+    text-align: center;
+    color: #00005c;
+}
+
+main
+{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.tile + label,
+.list + label
+{
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.tile + label
+{
+    background: url(images/tile.png) no-repeat;
+    right: 30px;
+}
+
+.list + label
+{
+    background: url(images/list.png) no-repeat;
+}
+
+.list:checked + label,
+.tile:checked + label
+{
+    border: 1px solid blue;
+}
+
+.list,
+.tile
+{
+    display: none;
+}
+
+.tile:checked ~ section
+{
+    display: inline-table;
+    width: 240px;
+}
+
+.list:checked ~ section
+{
+    width: 100%;
+}
+
+.list:checked ~ section > img,
+.list:checked ~ section > div
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.list:checked ~ section .photo + div + div
+{
+    width: 40%;
+}
+
+.photo + div
+{
+    width: 240px;
+}
+
+section:hover
+{
+    background: #f8f4ff;
+}
+
+section > div > label,
+section > div > a,
+{
+    display: block;
+}
+
+.photo
+{
+    max-width: 240px;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.photo:hover
+{
+    border: 3px inset #0000b3;
+}
+
+.name
+{
+    display: block;
+    max-width: 240px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 150%;
+    font-weight: bold;
+    color: #0000b3;
+}
+
+.name:visited
+{
+    color: #00004d;
+}
+
+.name:hover
+{
+    white-space: normal;
+    color: #93c;
+}
+
+.category
+{
+    width: 100%;
+    color: #aaa;
+    float: left;
+}
+
+.category:visited
+{
+    color: #555;
+}
+
+.category:hover
+{
+    color: black;
+}
+
+.category:active,
+.name:active
+{
+    color: red;
+}
+
+.price
+{
+    width: 100%;
+    float: left;
+    padding: 4px;
+    padding-top: 12px;
+}
+
+.current_price
+{
+    font-size: 125%;
+    font-weight: bold;
+    color: #92000a;
+}
+
+.old_price
+{
+    font-size: 90%;
+    text-decoration: line-through;
+    color: #555;
+}
+
+.rating input
+{
+    display: none;
+}
+
+.rating
+{
+    border: 0;
+    padding: 0;
+    height: 1em;
+    font-size: 200%;
+    float: left;
+}
+
+.rating label
+{
+    float: right;
+    width: 1em;
+    padding: .1em;
+    padding-right: 0;
+    white-space: nowrap;
+    /*font-size: 200%;*/
+    color: #ddd;
+}
+
+.rating label:nth-of-type(2n)
+{
+    width: .45em;
+    overflow: hidden;
+    margin-right: -.55em;
+}
+
+.rating label:before
+{
+    content: '★ ';
+}
+
+.rating input:checked ~ label
+{
+    color: gold;
+}
+
+.rating:hover input:checked ~ label
+{
+    color: #ffc;
+}
+
+.rating:hover input:checked ~ label:hover,
+.rating input:checked ~ label:hover ~ label,
+.rating label:hover ~ input:checked ~ label
+{
+    color: #92000a;
+}
+
+.rating:hover label:hover,
+.rating label:hover ~ label
+{
+    color: red;
+}
+
+.tile:checked ~ section div + div
+{
+    width: 100%;
+    float: left;
+}
