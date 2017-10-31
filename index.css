@@ -1,0 +1,148 @@
+@font-face 
+{
+    font-family: 'FontAwesome';
+    src: url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.woff');
+}
+
+.card
+{
+    font: 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 10px;
+}
+
+.card:hover
+{
+    background-color: #eee;
+}
+
+.card-image
+{
+    height: 300px;
+    text-align: center;
+}
+
+.card-image::before
+{
+    content: ' ';
+    display: inline-block;
+    height: 100%;
+}
+
+.card-image > img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-name
+{
+    font-size: 1.3em;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price
+{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.price::after,
+.price-old::after
+{
+    content: '$';
+}
+
+.price-old
+{
+    font-size: .8em;
+    text-decoration: line-through;
+    color: #777;
+}
+
+.list-view:checked ~ .card
+{
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.list-view:checked ~ .card > .card-image,
+.list-view:checked ~ .card > .card-info,
+.list-view:checked ~ .card > .card-description
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.list-view:checked ~ .card > .card-image::before
+{
+    content: none;
+}
+
+.list-view:checked ~ .card > .card-image
+{
+    width: 300px;
+}
+
+.list-view:checked ~ .card > .card-info
+{
+    width: calc((98% - 300px)*2/3);
+}
+
+.list-view:checked ~ .card > .card-description
+{
+    width: calc((98% - 300px)/3);
+}
+
+.rate
+{
+    border: none;
+    font-family: FontAwesome;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.rate > input
+{
+    display: none;
+}
+
+.rate > label
+{
+    float: right;
+}
+
+.rate > label:before
+{
+    display: inline-block;
+    font-size: 30px;
+    content: '\f005';
+}
+
+.rate > .half:before
+{
+    content: '\f089';
+    position: absolute;
+    padding-right: 0;
+}
+
+.rate > input:checked ~ label,
+.rate > label:hover,
+.rate > label:hover ~ label 
+{
+    color: #ee0;
+}
+
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label
+{
+    color: #990;
+}
