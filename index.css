@@ -17,6 +17,11 @@ h1::first-letter
     color: #f00;
 }
 
+.view
+{
+    width: 20px;
+}
+
 ul
 {
     list-style: none;
@@ -74,7 +79,7 @@ a
     margin-bottom: 20px;
 }
 
-.kindness input
+input
 {
     display: none;
 }
