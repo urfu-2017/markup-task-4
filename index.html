@@ -2,8 +2,285 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «Мяндекс.Муррркет»</title>
 </head>
 <body>
+<main>
+    <input type="radio" id="tile" name="display" checked>
+    <input type="radio" id="list" name="display">
+    <nav>
+        <label for="tile" class="displaySettings">Tile</label>
+        <label for="list" class="displaySettings">List</label>
+    </nav>
+    <article>
+        <h1>Мяндекс Муррркет</h1>
+        <section>
+            <img src="SpearCat.png" alt="Кот-воин" class="catImg">
+            <div class="catInformation">
+                <h2 class="catName"><a href="">Рагнар</a></h2>
+                <p class="catCategory">Кот-воин</p>
+                <div class="rating">
+                    <label for="star0.5for1"></label><input type="radio" id="star0.5for1" name="ratingFor1">
+                    <label for="star1for1"></label><input type="radio" id="star1for1" name="ratingFor1">
+                    <label for="star1.5for1"></label><input type="radio" id="star1.5for1" name="ratingFor1">
+                    <label for="star2for1"></label><input type="radio" id="star2for1" name="ratingFor1">
+                    <label for="star2.5for1"></label><input type="radio" id="star2.5for1" name="ratingFor1">
+                    <label for="star3for1"></label><input type="radio" id="star3for1" name="ratingFor1"
+                                                          checked>
+                    <label for="star3.5for1"></label><input type="radio" id="star3.5for1" name="ratingFor1">
+                    <label for="star4for1"></label><input type="radio" id="star4for1" name="ratingFor1">
+                    <label for="star4.5for1"></label><input type="radio" id="star4.5for1" name="ratingFor1">
+                    <label for="star5for1"></label><input type="radio" id="star5for1" name="ratingFor1">
+                </div>
+                <div class="catPrice">2376 р.</div>
+                <p class="catDescription">
+                    Это&shy;му ко&shy;ту вы&shy;па&shy;ла не&shy;лёг&shy;кая судь&shy;ба. Из-за это&shy;го он
+                    не очень добр к окру&shy;жа&shy;ю&shy;щим.
+                </p>
+            </div>
+        </section>
+        <section>
+            <img src="TwoHandedSwordCat.png" alt="Кот-воин" class="catImg">
+            <div class="catInformation">
+                <h2 class="catName"><a href="">Балдер</a></h2>
+                <p class="catCategory">Кот-воин</p>
+                <div class="rating">
+                    <label for="star0.5for2"></label><input type="radio" id="star0.5for2" name="ratingFor2">
+                    <label for="star1for2"></label><input type="radio" id="star1for2" name="ratingFor2"
+                                                          checked>
+                    <label for="star1.5for2"></label><input type="radio" id="star1.5for2" name="ratingFor2">
+                    <label for="star2for2"></label><input type="radio" id="star2for2" name="ratingFor2">
+                    <label for="star2.5for2"></label><input type="radio" id="star2.5for2" name="ratingFor2">
+                    <label for="star3for2"></label><input type="radio" id="star3for2" name="ratingFor2">
+                    <label for="star3.5for2"></label><input type="radio" id="star3.5for2" name="ratingFor2">
+                    <label for="star4for2"></label><input type="radio" id="star4for2" name="ratingFor2">
+                    <label for="star4.5for2"></label><input type="radio" id="star4.5for2" name="ratingFor2">
+                    <label for="star5for2"></label><input type="radio" id="star5for2" name="ratingFor2">
+                </div>
+                <div class="catPrice">7152 р.</div>
+                <p class="catDescription">
+                    Са&shy;мый силь&shy;ный в ми&shy;ре кот.
+                </p>
+            </div>
+        </section>
+        <section>
+            <img src="DaggerCat.png" alt="Кот-воин" class="catImg">
+            <div class="catInformation">
+                <h2 class="catName"><a href="">Вилмар</a></h2>
+                <p class="catCategory">Кот-разбойник</p>
+                <div class="rating">
+                    <label for="star0.5for3"></label><input type="radio" id="star0.5for3" name="ratingFor3"
+                                                            checked>
+                    <label for="star1for3"></label><input type="radio" id="star1for3" name="ratingFor3">
+                    <label for="star1.5for3"></label><input type="radio" id="star1.5for3" name="ratingFor3">
+                    <label for="star2for3"></label><input type="radio" id="star2for3" name="ratingFor3">
+                    <label for="star2.5for3"></label><input type="radio" id="star2.5for3" name="ratingFor3">
+                    <label for="star3for3"></label><input type="radio" id="star3for3" name="ratingFor3">
+                    <label for="star3.5for3"></label><input type="radio" id="star3.5for3" name="ratingFor3">
+                    <label for="star4for3"></label><input type="radio" id="star4for3" name="ratingFor3">
+                    <label for="star4.5for3"></label><input type="radio" id="star4.5for3" name="ratingFor3">
+                    <label for="star5for3"></label><input type="radio" id="star5for3" name="ratingFor3">
+                </div>
+                <div class="catPrice">589 р. <span class="catOldPrice">1078 р.</span></div>
+                <p class="catDescription">
+                    Очень злой кот. Ни&shy;ко&shy;го не лю&shy;бит, ни к ко&shy;му не хо&shy;чет.
+                </p>
+            </div>
+        </section>
+        <section>
+            <img src="StaffCat.png" alt="Кот-воин" class="catImg">
+            <div class="catInformation">
+                <h2 class="catName"><a href="">Аделина</a></h2>
+                <p class="catCategory">Кот-волшебник</p>
+                <div class="rating">
+                    <label for="star0.5for4"></label><input type="radio" id="star0.5for4" name="ratingFor4">
+                    <label for="star1for4"></label><input type="radio" id="star1for4" name="ratingFor4">
+                    <label for="star1.5for4"></label><input type="radio" id="star1.5for4" name="ratingFor4">
+                    <label for="star2for4"></label><input type="radio" id="star2for4" name="ratingFor4">
+                    <label for="star2.5for4"></label><input type="radio" id="star2.5for4" name="ratingFor4">
+                    <label for="star3for4"></label><input type="radio" id="star3for4" name="ratingFor4">
+                    <label for="star3.5for4"></label><input type="radio" id="star3.5for4" name="ratingFor4">
+                    <label for="star4for4"></label><input type="radio" id="star4for4" name="ratingFor4">
+                    <label for="star4.5for4"></label><input type="radio" id="star4.5for4" name="ratingFor4"
+                                                            checked>
+                    <label for="star5for4"></label><input type="radio" id="star5for4" name="ratingFor4">
+                </div>
+                <div class="catPrice">299 р.</div>
+                <p class="catDescription">
+                    Очень доб&shy;рая кош&shy;ка. Все&shy;гда го&shy;то&shy;ва по&shy;мочь
+                    окру&shy;жа&shy;ю&shy;щим.
+                </p>
+            </div>
+        </section>
+        <section>
+            <img src="BowCat.png" alt="Кот-воин" class="catImg">
+            <div class="catInformation">
+                <h2 class="catName"><a href="">Дагфинн</a></h2>
+                <p class="catCategory">Кот-лучник</p>
+                <div class="rating">
+                    <label for="star0.5for5"></label><input type="radio" id="star0.5for5" name="ratingFor5">
+                    <label for="star1for5"></label><input type="radio" id="star1for5" name="ratingFor5">
+                    <label for="star1.5for5"></label><input type="radio" id="star1.5for5" name="ratingFor5">
+                    <label for="star2for5"></label><input type="radio" id="star2for5" name="ratingFor5">
+                    <label for="star2.5for5"></label><input type="radio" id="star2.5for5" name="ratingFor5">
+                    <label for="star3for5"></label><input type="radio" id="star3for5" name="ratingFor5"
+                                                          checked>
+                    <label for="star3.5for5"></label><input type="radio" id="star3.5for5" name="ratingFor5">
+                    <label for="star4for5"></label><input type="radio" id="star4for5" name="ratingFor5">
+                    <label for="star4.5for5"></label><input type="radio" id="star4.5for5" name="ratingFor5">
+                    <label for="star5for5"></label><input type="radio" id="star5for5" name="ratingFor5">
+                </div>
+                <div class="catPrice">322 р. <span class="catOldPrice">796 р.</span></div>
+                <p class="catDescription">
+                    Не&shy;ве&shy;ро&shy;ят&shy;но мет&shy;кий кот. Са&shy;мый мет&shy;кий
+                    (един&shy;ствен&shy;ный) кот-луч&shy;ник.
+                </p>
+            </div>
+        </section>
+        <section>
+            <img src="LuteCat.png" alt="Кот-воин" class="catImg">
+            <div class="catInformation">
+                <h2 class="catName"><a href="">Хакан</a></h2>
+                <p class="catCategory">Кот-бард</p>
+                <div class="rating">
+                    <label for="star0.5for6"></label><input type="radio" id="star0.5for6" name="ratingFor6">
+                    <label for="star1for6"></label><input type="radio" id="star1for6" name="ratingFor6">
+                    <label for="star1.5for6"></label><input type="radio" id="star1.5for6" name="ratingFor6">
+                    <label for="star2for6"></label><input type="radio" id="star2for6" name="ratingFor6"
+                                                          checked>
+                    <label for="star2.5for6"></label><input type="radio" id="star2.5for6" name="ratingFor6">
+                    <label for="star3for6"></label><input type="radio" id="star3for6" name="ratingFor6">
+                    <label for="star3.5for6"></label><input type="radio" id="star3.5for6" name="ratingFor6">
+                    <label for="star4for6"></label><input type="radio" id="star4for6" name="ratingFor6">
+                    <label for="star4.5for6"></label><input type="radio" id="star4.5for6" name="ratingFor6">
+                    <label for="star5for6"></label><input type="radio" id="star5for6" name="ratingFor6">
+                </div>
+                <div class="catPrice">1576 р.</div>
+                <p class="catDescription">
+                    Кот, об&shy;ла&shy;да&shy;ю&shy;щий боль&shy;шим та&shy;лан&shy;том. По&shy;ёт луч&shy;шие
+                    ко&shy;ша&shy;чьи пес&shy;ни, ис&shy;поль&shy;зуя толь&shy;ко од&shy;но сло&shy;во
+                    &quot;Мяу&quot;.
+                </p>
+            </div>
+        </section>
+        <section>
+            <img src="FeatherCat.png" alt="Кот-воин" class="catImg">
+            <div class="catInformation">
+                <h2 class="catName"><a href="">Эгилл</a></h2>
+                <p class="catCategory">Кот-разбойник</p>
+                <div class="rating">
+                    <label for="star0.5for7"></label><input type="radio" id="star0.5for7" name="ratingFor7">
+                    <label for="star1for7"></label><input type="radio" id="star1for7" name="ratingFor7">
+                    <label for="star1.5for7"></label><input type="radio" id="star1.5for7" name="ratingFor7">
+                    <label for="star2for7"></label><input type="radio" id="star2for7" name="ratingFor7">
+                    <label for="star2.5for7"></label><input type="radio" id="star2.5for7" name="ratingFor7">
+                    <label for="star3for7"></label><input type="radio" id="star3for7" name="ratingFor7"
+                                                          checked>
+                    <label for="star3.5for7"></label><input type="radio" id="star3.5for7" name="ratingFor7">
+                    <label for="star4for7"></label><input type="radio" id="star4for7" name="ratingFor7">
+                    <label for="star4.5for7"></label><input type="radio" id="star4.5for7" name="ratingFor7">
+                    <label for="star5for7"></label><input type="radio" id="star5for7" name="ratingFor7">
+                </div>
+                <div class="catPrice">2309 р. <span class="catOldPrice">4587 р.</span></div>
+                <p class="catDescription">
+                    Са&shy;мый про&shy;вор&shy;ный и шуст&shy;рый кот.
+                </p>
+            </div>
+        </section>
+        <section>
+            <img src="ShieldCat.png" alt="Кот-воин" class="catImg">
+            <div class="catInformation">
+                <h2 class="catName"><a href="">Вилфред</a></h2>
+                <p class="catCategory">Кот-воин</p>
+                <div class="rating">
+                    <label for="star0.5for8"></label><input type="radio" id="star0.5for8" name="ratingFor8">
+                    <label for="star1for8"></label><input type="radio" id="star1for8" name="ratingFor8">
+                    <label for="star1.5for8"></label><input type="radio" id="star1.5for8" name="ratingFor8">
+                    <label for="star2for8"></label><input type="radio" id="star2for8" name="ratingFor8">
+                    <label for="star2.5for8"></label><input type="radio" id="star2.5for8" name="ratingFor8"
+                                                            checked>
+                    <label for="star3for8"></label><input type="radio" id="star3for8" name="ratingFor8">
+                    <label for="star3.5for8"></label><input type="radio" id="star3.5for8" name="ratingFor8">
+                    <label for="star4for8"></label><input type="radio" id="star4for8" name="ratingFor8">
+                    <label for="star4.5for8"></label><input type="radio" id="star4.5for8" name="ratingFor8">
+                    <label for="star5for8"></label><input type="radio" id="star5for8" name="ratingFor8">
+                </div>
+                <div class="catPrice">4111 р.</div>
+                <p class="catDescription">
+                    Бла&shy;го&shy;род&shy;ней&shy;ший из ко&shy;тов. Все&shy;гда вста&shy;ёт на
+                    за&shy;щи&shy;ту сла&shy;бых.
+                </p>
+            </div>
+        </section>
+        <section>
+            <img src="OldStaffCat.png" alt="Кот-воин" class="catImg">
+            <div class="catInformation">
+                <h2 class="catName"><a href="" title="Рагнвальд, мудрейший из котов">Рагнвальд, мудрейший из
+                    котов</a></h2>
+                <p class="catCategory">Кот-волшебник</p>
+                <div class="rating">
+                    <label for="star0.5for9"></label><input type="radio" id="star0.5for9" name="ratingFor9">
+                    <label for="star1for9"></label><input type="radio" id="star1for9" name="ratingFor9">
+                    <label for="star1.5for9"></label><input type="radio" id="star1.5for9" name="ratingFor9">
+                    <label for="star2for9"></label><input type="radio" id="star2for9" name="ratingFor9">
+                    <label for="star2.5for9"></label><input type="radio" id="star2.5for9" name="ratingFor9">
+                    <label for="star3for9"></label><input type="radio" id="star3for9" name="ratingFor9">
+                    <label for="star3.5for9"></label><input type="radio" id="star3.5for9" name="ratingFor9">
+                    <label for="star4for9"></label><input type="radio" id="star4for9" name="ratingFor9">
+                    <label for="star4.5for9"></label><input type="radio" id="star4.5for9" name="ratingFor9">
+                    <label for="star5for9"></label><input type="radio" id="star5for9" name="ratingFor9"
+                                                          checked>
+                </div>
+                <div class="catPrice">3242 р.</div>
+                <p class="catDescription">
+                    Об&shy;ла&shy;да&shy;ю&shy;щий огром&shy;ным ба&shy;га&shy;жом зна&shy;ний и не ме&shy;нее
+                    вну&shy;ши&shy;тель&shy;ным жиз&shy;нен&shy;ным опы&shy;том этот кот
+                    по&shy;сто&shy;ян&shy;но всех учит и рас&shy;ска&shy;зы&shy;ва&shy;ет прит&shy;чи. Вот
+                    од&shy;на из них: Как-то раз Ход&shy;жа На&shy;сред&shy;дин
+                    го&shy;во&shy;рит сво&shy;ей же&shy;не: Пой&shy;ди и при&shy;не&shy;си не&shy;мно&shy;го
+                    сы&shy;ра. Он укреп&shy;ля&shy;ет же&shy;лу&shy;док и воз&shy;буж&shy;да&shy;ет
+                    ап&shy;пе&shy;тит. У нас до&shy;ма нет сы&shy;ра, – от&shy;ве&shy;ти&shy;ла же&shy;на. Вот
+                    и хо&shy;ро&shy;шо, сыр рас&shy;стра&shy;и&shy;ва&shy;ет же&shy;лу&shy;док
+                    и рас&shy;слаб&shy;ля&shy;ет дёс&shy;ны, – ска&shy;зал На&shy;сред&shy;дин. Же&shy;на с
+                    удив&shy;ле&shy;ни&shy;ем спро&shy;си&shy;ла: Ка&shy;кое же из этих
+                    двух про&shy;ти&shy;во&shy;по&shy;лож&shy;ных суж&shy;де&shy;ний – пра&shy;виль&shy;ное?
+                    Ес&shy;ли в до&shy;ме есть сыр – то пер&shy;вое, ес&shy;ли нет –
+                    вто&shy;рое, – от&shy;ве&shy;тил Ход&shy;жа.
+                </p>
+            </div>
+        </section>
+        <section>
+            <img src="RavelCat.png" alt="Кот-воин" class="catImg">
+            <div class="catInformation">
+                <h2 class="catName"><a href="">Густав</a></h2>
+                <p class="catCategory">Кот-волшебник</p>
+                <div class="rating">
+                    <label for="star0.5for10"></label><input type="radio" id="star0.5for10"
+                                                             name="ratingFor10">
+                    <label for="star1for10"></label><input type="radio" id="star1for10" name="ratingFor10">
+                    <label for="star1.5for10"></label><input type="radio" id="star1.5for10"
+                                                             name="ratingFor10">
+                    <label for="star2for10"></label><input type="radio" id="star2for10" name="ratingFor10">
+                    <label for="star2.5for10"></label><input type="radio" id="star2.5for10"
+                                                             name="ratingFor10">
+                    <label for="star3for10"></label><input type="radio" id="star3for10" name="ratingFor10">
+                    <label for="star3.5for10"></label><input type="radio" id="star3.5for10"
+                                                             name="ratingFor10">
+                    <label for="star4for10"></label><input type="radio" id="star4for10" name="ratingFor10"
+                                                           checked>
+                    <label for="star4.5for10"></label><input type="radio" id="star4.5for10"
+                                                             name="ratingFor10">
+                    <label for="star5for10"></label><input type="radio" id="star5for10" name="ratingFor10">
+                </div>
+                <div class="catPrice">2222 р.</div>
+                <p class="catDescription">
+                    Ве&shy;ли&shy;чай&shy;ший вол&shy;шеб&shy;ник сре&shy;ди ко&shy;тов. По&shy;чти всё
+                    вре&shy;мя про&shy;во&shy;дит в ме&shy;ди&shy;та&shy;ции.
+                </p>
+            </div>
+        </section>
+    </article>
+</main>
 </body>
 </html>
