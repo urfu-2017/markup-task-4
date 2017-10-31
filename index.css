@@ -1,0 +1,187 @@
+@font-face 
+{
+    font-family: 'FontAwesome';
+    src: url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.woff');
+}
+
+body
+{
+    font: 18px 'Import';
+    background-color: grey;
+}
+
+article
+{
+    display: inline-block;
+}
+
+main
+{
+    padding: 50px;
+    display: inline-block;
+}
+
+section
+{
+    width: 280px;
+    height: 550px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    transition: .2s;
+    background-color: rgb(243, 205, 227);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .56);
+}
+
+.star
+{
+    font-family: FontAwesome;
+    display: inline-block;
+}
+
+.star > input
+{
+    display: none;
+}
+
+.star > label
+{
+    float: right;
+    color: rgb(245, 139, 10);
+}
+
+.star > label:before
+{
+    margin: 4px;
+    display: inline-block;
+    font-size: 40px;
+    content: '\f005';
+}
+
+.star > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.star input:checked ~ label,
+.star label:hover ~ label 
+{
+    color: rgb(255, 255, 9);
+}
+
+section:hover
+{
+    transform: scale(1.07);
+}
+
+.information
+{
+    border: 2px;
+    padding: 015px;
+    text-align: left;
+    color: rgb(19, 18, 18);
+    display: inline-block;
+}
+
+img
+{
+    width: 280px;
+    height: 170px;
+    transition: all .2s ease-in-out;
+    opacity: .8;
+}
+
+figure
+{
+    position: relative;
+    margin: 0;
+}
+
+img:hover
+{
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.current-price
+{
+    padding: 0 15px;
+    font-weight: bold;
+    color: red;
+}
+
+.old-price
+{
+    color: #996b06;
+    text-decoration: line-through;
+    text-align: right;
+}
+
+.current-price,
+.old-price
+{
+    padding: 0 15px;
+    float: left;
+}
+
+figcaption
+{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .5s;
+    
+}
+
+figcaption a
+{
+    text-decoration: none;
+    transition: .5s;
+    color: #b30f0f;
+}
+
+figcaption:hover,
+figcaption a:hover
+{
+    color: #fcd527;
+}
+
+.category
+{
+    padding: 0 15px;
+    transition: .5s;
+    color: rgb(37, 37, 37);
+}
+
+.category:hover
+{
+    color: #fbff00;
+}
+
+input:checked ~ main section
+{
+    display: table;
+    width: 1000px;
+    height: 230px;
+}
+
+input:checked ~ section:hover
+{
+    transform: scale(1.07);
+}
+
+input:checked ~ main section article,
+input:checked ~ main section figure
+{
+    display: table-cell;
+    vertical-align: top;
+    width: 500px;
+}
+
+input:checked ~ main section .information
+{
+    font-size: 100%;
+    color: #000;
+}
+
