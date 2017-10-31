@@ -137,12 +137,29 @@ li:before
 
 /* Настройка */
 
+input[type='radio']
+{
+    display: none;
+}
+
+   
+
 input[value='list']:checked ~ .market article
 {
     display: block;
     margin: 0;
     width: 100%;
     height: 50%;
+}
+
+.selector
+{
+    width: 3%;
+}
+
+label
+{
+    cursor: pointer;
 }
 
 input[value='list']:checked ~ .market article div
@@ -275,5 +292,5 @@ input[value='list']:checked ~ .market article .stars,
 .stars > label:hover ~ input:checked ~ label,
 .stars > input:checked ~ label:hover ~ label
 {
-    color: #ef14ff;
+    color: #85c6ff;
 }
