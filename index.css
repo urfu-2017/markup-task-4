@@ -11,9 +11,7 @@ body
 
 main
 {
-    width: 96%;
     padding-top: 1em;
-    margin: auto;
 }
 
 .dr2:checked ~ main
@@ -41,6 +39,11 @@ main
     text-align: center;
 }
 
+.dr2:checked ~ main .product .picture img
+{
+    position: static;
+}
+
 .dr2:checked ~ main .product .info
 {
     width: 20%;
@@ -54,10 +57,11 @@ main
 .product
 {
     width: 27em;
-    margin-right: 2%;
+    margin-left: 2%;
     margin-bottom: 80px;
     display: inline-block;
     vertical-align: top;
+    border: 1px solid white;
 }
 
 .product:hover
@@ -65,7 +69,7 @@ main
     border: 1px solid black;
 }
 
-.product div
+.product-item
 {
     margin-bottom: 5px;
 }
@@ -75,6 +79,7 @@ main
     width: 27em;
     height: 22em;
     position: relative;
+    border: 1px dashed white;
 }
 
 .picture img
@@ -120,11 +125,6 @@ main
     font-size: 1.8em;
     font-weight: bold;
     color: darkred;
-}
-
-.price:hover
-{
-    color: gold;
 }
 
 .rating
