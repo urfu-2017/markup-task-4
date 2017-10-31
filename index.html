@@ -1,9 +1,252 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Мяндекс.Муррркет»</title>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Задача «Мяндекс.Муррркет»</title>
+        <link href="index.css" type="text/css" rel="stylesheet" media="only screen and (min-width:480px)">
+    </head>
+    <body>
+    <header class="header">
+        <h1 class="header-name">Лучшие котики на Мурмаркете</h1>
+    </header>
+    <main class="main">
+        <input class="radio-button" type="radio" value="list" name="display" id="list">
+        <label class="radio-button__icon radio-button__icon_inline" for="list"></label>
+        <input class="radio-button" type="radio" value="block" name="display" id="block" checked>
+        <label class="radio-button__icon radio-button__icon_block" for="block"></label>
+        <section class="cat-card">
+            <img src="images/red_cat.jpeg" alt="рыжий кот" class="cat-card__image">
+            <div class="cat-card__cell">
+                <span class="cat-card__name">Рыжий кот</span>
+                <span class="cat-card__category">Pets - Домышние питомцы</span>
+                <div class="cat-card__raiting">
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_empty"></span>
+                </div>
+                <span class="cat-card__price">500 р.</span>
+                <span class="cat-card__old-price">800 р.</span>
+            </div>
+            <div class="cat-card__cell">
+                <span class="cat-card__title-description">Про кота:</span>
+                <span class="cat-card__description">
+                    Иногда мне кажется, что истинное предназначение котов
+                    в природе – это не ловить мышей, а тереться и путаться
+                    под ногами!
+                </span>
+            </div>
+        </section>
+        <section class="cat-card">
+            <img src="images/black_cat.jpeg" alt="чёрный кот" class="cat-card__image">
+            <div class="cat-card__cell">
+                <span class="cat-card__name">Чёрный кот</span>
+                <span class="cat-card__category">Pets - Домышние питомцы</span>
+                <div class="cat-card__raiting">
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_half"></span>
+                    <span class="cat-card__icon cat-card__icon_empty"></span>
+                </div>
+                <span class="cat-card__price">1000 р.</span>
+            </div>
+            <div class="cat-card__cell">
+                <span class="cat-card__title-description">Про кота:</span>
+                <span class="cat-card__description">
+                    Если бы мы опали в мир наоборот, то сомневаюсь,
+                    что там бы нашелся кот, который собрал в доме 27 старушек!!!
+                </span>
+            </div>
+        </section>
+        <section class="cat-card">
+            <img src="images/white_cat.jpeg" alt="белый кот" class="cat-card__image">
+                <div class="cat-card__cell">
+                    <span class="cat-card__name">Белый кот</span>
+                    <span class="cat-card__category">Pets - Домышние питомцы</span>
+                    <div class="cat-card__raiting">
+                        <span class="cat-card__icon cat-card__icon_full"></span>
+                        <span class="cat-card__icon cat-card__icon_full"></span>
+                        <span class="cat-card__icon cat-card__icon_full"></span>
+                        <span class="cat-card__icon cat-card__icon_empty"></span>
+                        <span class="cat-card__icon cat-card__icon_empty"></span>
+                    </div>
+                    <span class="cat-card__price">700 р.</span>
+                </div>
+                <div class="cat-card__cell">
+                    <span class="cat-card__title-description">Про кота:</span>
+                    <span class="cat-card__description">
+                        По-моему мой кот Кефир стал подозревать что его зовут
+                        совсем не Кефир, а либо “Отвянь” либо “Чтотынатворил”...
+                    </span>
+                </div>
+        </section>
+        <section class="cat-card">
+            <img src="images/smoky_cat.jpeg" alt="дымчатый кот" class="cat-card__image">
+            <div class="cat-card__cell">
+                <span class="cat-card__name">Дымчатый кот</span>
+                <span class="cat-card__category">Pets - Домышние питомцы</span>
+                <div class="cat-card__raiting">
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_half"></span>
+                </div>
+                <span class="cat-card__price">800 р.</span>
+            </div>
+            <div class="cat-card__cell">
+                <span class="cat-card__title-description">Про кота:</span>
+                <span class="cat-card__description">
+                    Если вам плохо — крепко обнимите и сожмите кота.
+                    Вот и всё. Теперь плохо не только Вам, но и Вашему коту!!!
+                </span>
+            </div>
+        </section>
+        <section class="cat-card">
+            <img src="images/three-color_cat.jpeg" alt="трёхцветный кот" class="cat-card__image">
+            <div class="cat-card__cell">
+                <span class="cat-card__name">Разноцветный кот</span>
+                <span class="cat-card__category">Pets - Домышние питомцы</span>
+                <div class="cat-card__raiting">
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_half"></span>
+                </div>
+                <span class="cat-card__price">500 р.</span>
+                <span class="cat-card__old-price">800 р.</span>
+            </div>
+            <div class="cat-card__cell">
+                <span class="cat-card__title-description">Про кота:</span>
+                <span class="cat-card__description">
+                    Хорошо, что моя кошка не умеет разговаривать – она слишком много знает!
+                </span>
+            </div>
+        </section>
+        <section class="cat-card">
+            <img src="images/striped_cat.jpeg" alt="полосатый кот" class="cat-card__image">
+            <div class="cat-card__cell">
+                <span class="cat-card__name">Полосатый кот</span>
+                <span class="cat-card__category">Pets - Домышние питомцы</span>
+                <div class="cat-card__raiting">
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_half"></span>
+                    <span class="cat-card__icon cat-card__icon_empty"></span>
+                </div>
+                <span class="cat-card__price">500 р.</span>
+            </div>
+            <div class="cat-card__cell">
+                <span class="cat-card__title-description">Про кота:</span>
+                <span class="cat-card__description">
+                    Попробовала прикинуться мертвой перед своей кошкой,
+                    а эта зараза даже не пошевелилась, а я думала, что мы друзья!!!
+                </span>
+            </div>
+        </section>
+        <section class="cat-card">
+            <img src="images/grey_cat.jpeg" alt="серый кот" class="cat-card__image">
+            <div class="cat-card__cell">
+                <span class="cat-card__name">Серый кот</span>
+                <span class="cat-card__category">Pets - Домышние питомцы</span>
+                <div class="cat-card__raiting">
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_half"></span>
+                </div>
+                <span class="cat-card__price">300 р.</span>
+                <span class="cat-card__old-price">700 р.</span>
+            </div>
+            <div class="cat-card__cell">
+                <span class="cat-card__title-description">Про кота:</span>
+                <span class="cat-card__description">
+                    Никак не могу набраться храбрости и рассказать
+                    моему коту, что это он у меня живет, а не я у него!!!
+                </span>
+            </div>
+        </section>
+        <section class="cat-card">
+            <img src="images/twins_cats.jpeg" alt="котята-близнецы" class="cat-card__image">
+            <div class="cat-card__cell">
+                <span class="cat-card__name">Котята-близнецы</span>
+                <span class="cat-card__category">Pets - Домышние питомцы</span>
+                <div class="cat-card__raiting">
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                </div>
+                <span class="cat-card__price">1500 р.</span>
+            </div>
+            <div class="cat-card__cell">
+                <span class="cat-card__title-description">Про кота:</span>
+                <span class="cat-card__description">
+                    Надеюсь, что однажды я стану тем, кем меня считает моя кошка…
+                </span>
+            </div>
+        </section>
+        <section class="cat-card">
+            <img src="images/black-white_cat.jpeg" alt="чёрно-белый кот" class="cat-card__image">
+            <div class="cat-card__cell">
+                <span class="cat-card__name">Чёрно-белый кот</span>
+                <span class="cat-card__category">Pets - Домышние питомцы</span>
+                <div class="cat-card__raiting">
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_empty"></span>
+                    <span class="cat-card__icon cat-card__icon_empty"></span>
+                </div>
+                <span class="cat-card__price">400 р.</span>
+            </div>
+            <div class="cat-card__cell">
+                <span class="cat-card__title-description">Про кота:</span>
+                <span class="cat-card__description">
+                    Кошка не ищет друзей – с ней и так все хотят дружить!
+                </span>
+            </div>
+        </section>
+        <section class="cat-card">
+            <img src="images/different-eyes_cat.jpeg" alt="необычный кот" class="cat-card__image">
+            <div class="cat-card__cell">
+                <span class="cat-card__name">Разноглазый кот</span>
+                <span class="cat-card__category">Pets - Домышние питомцы</span>
+                <div class="cat-card__raiting">
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                    <span class="cat-card__icon cat-card__icon_full"></span>
+                </div>
+                <span class="cat-card__price">1000 р.</span>
+                <span class="cat-card__old-price">1200 р.</span>
+            </div>
+            <div class="cat-card__cell">
+                <span class="cat-card__title-description">Про кота:</span>
+                <span class="cat-card__description">
+                    Есть одна вещь, в которой мы сходимся с моим котом –
+                    никто из нас не хочет,чтобы я шел на работу!
+                </span>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="icon-source">
+            Icons made by
+            <a href="http://www.freepik.com" title="Freepik">Freepik</a>
+            from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            is licensed by
+            <a href="http://creativecommons.org/licenses/by/3.0/"
+            title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+        </div>
+    </footer>
 </body>
 </html>
