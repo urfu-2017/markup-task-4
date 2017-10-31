@@ -1,0 +1,278 @@
+
+@font-face
+{
+    font-family: RobotoCondensed;
+    src: url(RobotoCondensed.ttf);
+}
+
+@font-face
+{
+    font-family: fontawesome;
+    src: url(fontawesome.ttf);
+}
+
+body
+{
+    font-family: RobotoCondensed, Arial, sans-serif;
+    min-width: 800px;
+    margin: auto;
+    width: 80%;
+}
+
+.marketname
+{
+    position: absolute;
+    top: 5px;
+    right: 150px;
+}
+
+.marketname::first-letter
+{
+    color: #f00;
+}
+
+.other:hover
+{
+    color: #ff1414;
+}
+
+.fluffy:hover
+{
+    color: #64f557;
+}
+
+.peculiar:hover
+{
+    color: #1489ff;
+}
+
+.calm:hover
+{
+    color: #14ffb5;
+}
+
+.market article
+{
+    width: 250px;
+    height: 720px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 12px 10px;
+    padding: 10px;
+}
+
+.market article:hover
+{
+    box-shadow: 0 0 10px #ff1493;
+    cursor: pointer;
+}
+
+.type
+{
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.type:hover 
+{
+    white-space: normal;
+    overflow: visible;
+}
+
+img
+{
+    width: 100%;
+}
+
+.info
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.image
+{
+    filter: grayscale(100%);
+}
+
+.image:hover
+{
+    filter: none;
+    transition: all 2s;
+}
+
+.features
+{
+    text-align: justify;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+li:before 
+{
+    content: '\1F420';
+}
+
+.newprice
+{
+    width: 50%;
+    color: #ff1493;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.oldprice
+{
+    width: 50%;
+    text-decoration: line-through;
+    display: inline-block;
+}
+
+/* Настройка */
+
+input[value='list']:checked ~ .market article
+{
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+}
+
+input[value='list']:checked ~ .market article div
+{
+    display: inline-block;
+    padding: 0 40px;
+    vertical-align: top;
+}
+
+input[value='list']:checked ~ .market article .info
+{
+    width: 68%;
+    padding: 0;
+}
+
+input[value='list']:checked ~ .market article .oldprice,
+input[value='list']:checked ~ .market article .newprice
+{
+    width: 105px;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+input[value='list']:checked ~ .market article .image
+{
+    width: 28%;
+    padding: 0;
+}
+
+input[value='list']:checked ~ .market article .cathegory,
+input[value='list']:checked ~ .market article .newprice,
+input[value='list']:checked ~ .market article .oldprice,
+input[value='list']:checked ~ .market article .price,
+input[value='list']:checked ~ .market article .type,
+input[value='list']:checked ~ .market article .stars
+{
+    padding: 0;
+    text-align: left;
+}
+
+input[value='list']:checked ~ .market article .minifeatures,
+input[value='list']:checked ~ .market article .features
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    width: 40%;
+    padding-left: 10px;
+}
+
+input[value='list']:checked ~ .market article .type h4
+{
+    margin: 0;
+    width: 210px;
+}
+
+input[value='list']:checked ~ .market article .type a h4
+{
+    max-width: 95%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+input[value='list']:checked ~ .market article .type a h4:hover 
+{
+    white-space: normal;
+    overflow: visible;
+}
+
+/* Звездочки */
+
+div .stars
+{
+    white-space: nowrap;
+}
+
+input[value='list']:checked ~ .market article .stars,
+.stars
+{
+    width: 16px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left:before,
+.right:before
+{
+    font-size: 30px;
+    width: 14px;
+    overflow: hidden;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f005';
+}
+
+.right:before 
+{
+    transform: scale(-1, 1);
+}
+
+.stars
+{
+    margin-left: 120px;
+    direction: rtl;
+}
+
+.stars > label
+{
+    cursor: pointer;
+    color: #ffed85;
+}
+
+.stars > input
+{
+    display: none;
+}
+
+.stars > input:checked ~ label,
+.stars:not(:checked) > label:hover,
+.stars:not(:checked) > label:hover ~ label
+{
+    color: #ff1493;
+}
+
+.stars > input:checked + label:hover,
+.stars > input:checked ~ label:hover,
+.stars > label:hover ~ input:checked ~ label,
+.stars > input:checked ~ label:hover ~ label
+{
+    color: #ef14ff;
+}
