@@ -1,5 +1,10 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
+html
+{
+    max-width: 1880px;
+}
+
 .item
 {
     width: 500px;
@@ -15,10 +20,10 @@
     margin: 12px;
 }
 
-.category:hover
+.item:hover .category
 {
     color: #96070a;
-    text-decoration: underline;
+    font-size: 1.5em;
 }
 
 .photo
@@ -55,7 +60,7 @@
 .price:after,
 .oldprice:after
 {
-    content: ' руб.';
+    content: ' ₽';
 }
 
 .kindness
