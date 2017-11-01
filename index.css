@@ -1,0 +1,156 @@
+.lot
+{
+    display: inline-block;
+    width: 21%;
+    padding: 15px;
+    opacity: .8;
+}
+
+.lot-block
+{
+    width: 100%;
+}
+
+h2
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main-info
+{
+    font-family: 'Play', 'Ubuntu', 'Tahomma', Arial, sans-serif;
+}
+
+.lot > div
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.list-view:checked ~ main .lot
+{
+    width: 90%;
+}
+
+main
+{
+    padding: 20px;
+}
+
+.lot:hover
+{
+    background-color: #e5f1ac;
+    opacity: 1;
+}
+
+img
+{
+    max-width: 95%;
+    max-height: 95%;
+    vertical-align: bottom;
+    border-radius: 2px;
+}
+
+.lot-image
+{
+    text-align: center;
+}
+
+.list-view:checked ~ main img
+{
+    vertical-align: middle;
+}
+
+.current-cost
+{
+    color: #530909;
+    font-size: 26.5px;
+    font-weight: bold;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.list-view:checked ~ main .lot-block
+{
+    display: inline-block;
+    width: 33%;
+}
+
+.lot-description
+{
+    font-family: 'Comfortaa', 'Ubuntu', Arial, Helvetica, cursive;
+}
+
+a:hover
+{
+    color: rgb(255, 0, 0);
+}
+
+.old-cost
+{
+    text-decoration: line-through;
+    opacity: .7;
+}
+
+.category
+{
+    margin-bottom: 5px;
+}
+
+.stars > input
+{
+    display: none;
+
+}
+
+.stars label
+{
+    width: 22px;
+    height: 40px;
+    display: inline-block;
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+.stars label:nth-of-type(2n + 1)
+{
+    background: url(images/star_left.png);
+}
+
+.stars label:nth-of-type(2n)
+{
+    background: url(images/star_right.png);
+}
+
+.stars
+{
+    margin-top: 10px;
+    font-size: 0;
+}
+
+.stars label:hover ~ label:nth-of-type(2n)
+{
+    background: url(images/unstar_right.png);
+}
+
+.stars label:hover ~ label:nth-of-type(2n + 1)
+{
+    background: url(images/unstar_left.png);
+}
+
+.stars:not(:hover) input:checked ~ label:nth-of-type(2n + 1)
+{
+    background: url(images/unstar_left.png);
+}
+
+.stars:not(:hover) input:checked ~ label:nth-of-type(2n)
+{
+    background: url(images/unstar_right.png);
+}
