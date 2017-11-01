@@ -10,14 +10,14 @@ body
 
 .rating input
 {
-	display: none;
+    display: none;
 }
 
 .rating label
 {
-	display: inline-block;
-	width: 10px;
-	height: 20px;
+    display: inline-block;
+    width: 10px;
+    height: 20px;
 }
 
 .rating label:nth-of-type(2n)
@@ -53,7 +53,7 @@ body
 {
     display: inline-block;
     width: 235px;
-	padding: 20px 0;
+    padding: 20px 0;
     text-align: center;
     border: solid 3px #000;
     margin: 10px;
@@ -153,8 +153,8 @@ body
     display: inline-block;
     width: 30%;
     height: 100%;
-	text-align: center;
-	vertical-align: middle;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .list:checked ~ .content .item .main-information
