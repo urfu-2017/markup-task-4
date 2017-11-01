@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'FoundrySterling';
+    src: local('FoundrySterling')
+        , url('fonts/FoundrySterling-Medium.woff2') format('woff2')
+        , url('fonts/FoundrySterling-Medium.woff2') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    max-width: 1280px;
+    min-width: 990px;
+    margin: 0 auto;
+}
+
+.box {
+    width: 305px;
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.box:hover a {
+    color: red;
+    box-shadow: none;
+}
+
+.box .image {
+    position: relative;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+.box .image img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: all 1s ease-out;
+}
+
+.box .image img:hover {
+    transform: scale(1.1);
+}
+
+.box .name {
+    margin: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.box .name a {
+    color: blue;
+    font-family: 'Arial, Helvetica, sans-serif';
+    font-size: 40px;
+    text-decoration: none;
+    box-shadow: inset 0 -3px 0 0 #fff, inset 0 -5px 0 0 blue;
+}
+
+.box .category {
+    color: rgb(60, 61, 60);
+    margin: 5px;
+}
+
+.box .category span {
+    text-decoration: underline;
+}
+
+.block {
+    text-align: left;
+}
+
+.reviews {
+    display: inline-block;
+    height: 32px;
+    overflow: hidden;
+}
+
+.reviews input {
+    display: none;
+}
+
+.reviews label {
+    float: right;
+}
+
+.reviews label:nth-of-type(2n),
+.reviews label:nth-of-type(2n+1) {
+    width: 16px;
+    height: 32px;
+    cursor: pointer;
+    background-image: url(img/stars.png);
+}
+
+.reviews label:nth-of-type(2n) {
+    background-position: 0 -33px;
+}
+
+.reviews label:nth-of-type(2n+1) {
+    background-position: -16px -33px;
+}
+
+.reviews label:nth-of-type(2n+1):hover ~ label:nth-of-type(2n),
+.reviews label:nth-of-type(2n):hover ~ label:nth-of-type(2n),
+.reviews label:nth-of-type(2n):hover,
+.reviews input:nth-of-type(2n):checked ~ label:nth-of-type(2n),
+.reviews input:nth-of-type(2n+1):checked ~ label:nth-of-type(2n) {
+    background-position: 0 0;
+}
+
+.reviews label:nth-of-type(2n):hover ~ label:nth-of-type(2n+1),
+.reviews label:nth-of-type(2n+1):hover ~ label:nth-of-type(2n+1),
+.reviews label:nth-of-type(2n+1):hover,
+.reviews input:nth-of-type(2n):checked ~ label:nth-of-type(2n+1),
+.reviews input:nth-of-type(2n+1):checked ~ label:nth-of-type(2n+1) {
+    background-position: -16px 0;
+}
+
+.box .price {
+    margin: 5px;
+}
+
+.box .price .curent-price {
+    color: rgb(150, 25, 25);
+    font: bold 30px Arial;
+}
+
+.box .price .old-price {
+    color: rgb(36, 35, 35);
+    font-size: 20px;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.box .price .curent-price::before,
+.box .price .old-price::before {
+    content: '₽';
+}
+
+.box .description {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 5px;
+    font-weight: bold;
+}
+
+.box .description p {
+    font-weight: normal;
+}
+
+.check-info {
+    font-size: 30px;
+    position: absolute;
+    z-index: 10;
+}
+
+label[for='showList'] {
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 110px;
+    width: 32px;
+    height: 32px;
+    background: url('img/uncheck.svg') no-repeat;
+    z-index: 10;
+}
+
+#showList:checked ~ label[for='showList'] {
+    background: url('img/check.svg') no-repeat;
+    background-size: 32px;
+}
+
+#showList {
+    display: none;
+}
+
+#showList:checked ~ main {
+    width: 980px;
+}
+
+#showList:checked ~ main .box:first-child {
+    margin-top: 50px;
+}
+
+#showList:checked ~ main .box {
+    width: 100%;
+}
+
+#showList:checked ~ main .box .image {
+    width: 300px;
+}
+
+#showList:checked ~ main .box .image img{
+    width: 70%;
+    position: static;
+}
+
+#showList:checked ~ main .box .block {
+    width: 380px;
+}
+
+#showList:checked ~ main .box,
+#showList:checked ~ main .box .image,
+#showList:checked ~ main .box .block {
+    float: left;
+}
+
+#showList:checked ~ main .box .description {
+    float: right;
+    width: 250px;
+}
