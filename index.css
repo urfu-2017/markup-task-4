@@ -5,12 +5,12 @@ html
     background-color: #f0f;
 }
 
-section
+.cats
 {
     margin-left: 20px;
 }
 
-article
+.transforming
 {
     background-color: bisque;
     border: 2px solid saddlebrown;
@@ -18,7 +18,7 @@ article
     height: 600px;
 }
 
-figure
+.cat-image
 {
     display: block;
 }
@@ -76,8 +76,8 @@ figcaption
     display: none;
 }
 
-input[type='checkbox']:checked ~ section > .element,
-input[type='checkbox']:checked ~ section > .element > article
+input[type='checkbox']:checked ~ section .element,
+input[type='checkbox']:checked ~ section article
 {
     margin-left: 30px;
     display: block;
@@ -85,23 +85,18 @@ input[type='checkbox']:checked ~ section > .element > article
     width: 1000px;
 }
 
-input[type='checkbox']:checked ~ section > .element > article > .info > .rating
-{
-    right: 40%;
-}
-
-input[type='checkbox']:checked ~ section > .element > article > .info
+input[type='checkbox']:checked ~ section .info
 {
     display: inline-block;
     width: 30%;
 }
 
-input[type='checkbox']:checked ~ section > .element > article > figure
+input[type='checkbox']:checked ~ section figure
 {
     display: inline-block;
 }
 
-input[type='checkbox']:checked ~ section > .element > article > .description
+input[type='checkbox']:checked ~ section .description
 {
     width: 40%;
     display: inline-block;
@@ -109,9 +104,7 @@ input[type='checkbox']:checked ~ section > .element > article > .description
 
 h2
 {
-
     text-align: center;
-    /*width: 90em;*/
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -133,14 +126,16 @@ h2
     text-align: center;
 }
 
-img
+img[alt='cat']
 {
     align-content: center;
     max-height: 15em;
     max-width: 10em;
 }
 
-p
+.type,
+.description,
+.price
 {
     font-size: 18px;
     color: saddlebrown;
@@ -175,7 +170,7 @@ p
     margin: 10px;
 }
 
-article:hover
+.transforming:hover
 {
     animation-name: changeColor;
     animation-duration: 5s;
