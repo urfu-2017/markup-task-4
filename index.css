@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2);
+
+@font-face
+{
+    font-family: 'OzHandicraft WGL4 BT Roman';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//allfont.ru/cache/fonts/ozhandicraft-wgl4-bt-roman_d4869c46f33d21d06ef97a351d058dda.woff) format('woff'),
+        url(//allfont.ru/cache/fonts/ozhandicraft-wgl4-bt-roman_d4869c46f33d21d06ef97a351d058dda.ttf) format('truetype');
+}
+
+html
+{
+    font: 16px 'Exo 2', sans-serif;
+}
+
+h3
+{
+    font-family: 'OzHandicraft WGL4 BT Roman', sans-serif;
+}
+
+body,
+h3,
+.name,
+.star
+{
+    margin: 0;
+}
+
+main
+{
+    width: 55vw;
+    margin: 0 auto;
+}
+
+header
+{
+    padding: 15px 30px;
+    margin: 0 0 25px;
+    height: 40px;
+    font-size: 2rem;
+    width: 100vw;
+    background-color: #fff5f0;
+    box-shadow: 0 2px 5px 1px #d9cbb1;
+}
+
+header span,
+header label:hover,
+.name,
+.price
+{
+    color: #f00;
+}
+
+header div:first-child
+{
+    text-align: left;
+    margin-left: 30px;
+    width: 30vw;
+}
+
+header div:last-child
+{
+    text-align: right;
+    width: 45vw;
+}
+
+article
+{
+    margin: 15px;
+    box-shadow: 0 0 5px 2px #d9cbb1;
+    background-color: #fff5f0;
+    width: 900px;
+}
+
+article > div
+{
+    vertical-align: top;
+}
+
+article:hover
+{
+    box-shadow: 0 0 8px 5px #d9cbb1;
+}
+
+.info
+{
+    padding: 10px;
+}
+
+img
+{
+    width: 350px;
+    opacity: .85;
+}
+
+img:hover
+{
+    opacity: 1;
+}
+
+.name
+{
+    padding-left: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 300px;
+}
+
+.name:hover
+{
+    transform: scaleY(1.5);
+}
+
+.description
+{
+    width: 300px;
+}
+
+.poroda,
+.price1
+{
+    font-size: .9rem;
+    color: #949597;
+}
+
+.poroda:hover
+{
+    text-decoration: underline;
+}
+
+.price
+{
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.price::before,
+.price1::before
+{
+    font-family: FontAwesome;
+    content: '\f155';
+}
+
+.price1
+{
+    text-decoration: line-through;
+}
+
+input
+{
+    display: none;
+}
+
+.poroda,
+.price1,
+.name,
+img
+{
+    display: block;
+}
+
+.star,
+.star > label:before,
+article,
+article > div,
+header div
+{
+    display: inline-block;
+}
+
+.star > label:before
+{
+    font: 2rem FontAwesome;
+    content: '\f005';
+}
+
+.star > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.star > label
+{
+    color: #949597;
+    float: right;
+}
+
+.star > input:checked ~ label,
+.star:not(:checked) > label:hover,
+.star:not(:checked) > label:hover ~ label
+{
+    color: #ffd700;
+}
+
+.cards:checked ~ main > article
+{
+    max-width: 350px;
+}
+
+.cards:checked ~ header
+{
+    min-width: 350px;
+}
+
+.cards:checked ~ main
+{
+    width: 84vw;
+}
+
+.table::before
+{
+    font-family: FontAwesome;
+    content: '\f00a';
+}
+
+.spisok::before
+{
+    font-family: FontAwesome;
+    content: '\f03a';
+}
+
+@media screen and (max-width: 400px)
+{
+    header h3
+    {
+        display: none;
+    }
+}
