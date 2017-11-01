@@ -1,23 +1,26 @@
 @font-face {
     font-family: 'FoundrySterling';
-    src: url('fonts/FoundrySterling-Medium.woff2') format('woff2');
+    src: local('FoundrySterling')
+        , url('fonts/FoundrySterling-Medium.woff2') format('woff2')
+        , url('fonts/FoundrySterling-Medium.woff2') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 main {
-    width: 1300px;
-    margin: auto;
+    max-width: 1280px;
+    min-width: 990px;
+    margin: 0 auto;
 }
 
-main .box {
+.box {
     width: 305px;
     margin: 0 5px;
     display: inline-block;
     vertical-align: top;
 }
 
-main .box:hover .name a {
+.box:hover a {
     color: red;
     box-shadow: none;
 }
@@ -81,40 +84,36 @@ main .box:hover .name a {
     float: right;
 }
 
-.reviews label:nth-of-type(2n) {
-    background: url(img/stars.png) 0 -33px no-repeat;
+.reviews label:nth-of-type(2n),
+.reviews label:nth-of-type(2n+1) {
     width: 16px;
     height: 32px;
     cursor: pointer;
+    background-image: url(img/stars.png);
+}
+
+.reviews label:nth-of-type(2n) {
+    background-position: 0 -33px;
 }
 
 .reviews label:nth-of-type(2n+1) {
-    background: url(img/stars.png) -16px -33px no-repeat;
-    width: 16px;
-    height: 32px;
-    cursor: pointer;
+    background-position: -16px -33px;
 }
 
 .reviews label:nth-of-type(2n+1):hover ~ label:nth-of-type(2n),
 .reviews label:nth-of-type(2n):hover ~ label:nth-of-type(2n),
-.reviews label:nth-of-type(2n):hover {
-    background: url(img/stars.png) 0 0 no-repeat;
+.reviews label:nth-of-type(2n):hover,
+.reviews input:nth-of-type(2n):checked ~ label:nth-of-type(2n),
+.reviews input:nth-of-type(2n+1):checked ~ label:nth-of-type(2n) {
+    background-position: 0 0;
 }
 
 .reviews label:nth-of-type(2n):hover ~ label:nth-of-type(2n+1),
 .reviews label:nth-of-type(2n+1):hover ~ label:nth-of-type(2n+1),
-.reviews label:nth-of-type(2n+1):hover {
-    background: url(img/stars.png) -16px 0 no-repeat;
-}
-
-.reviews input:nth-of-type(2n):checked ~ label:nth-of-type(2n),
-.reviews input:nth-of-type(2n+1):checked ~ label:nth-of-type(2n) {
-    background: url(img/stars.png) 0 0 no-repeat;
-}
-
+.reviews label:nth-of-type(2n+1):hover,
 .reviews input:nth-of-type(2n):checked ~ label:nth-of-type(2n+1),
 .reviews input:nth-of-type(2n+1):checked ~ label:nth-of-type(2n+1) {
-    background: url(img/stars.png) -16px 0 no-repeat;
+    background-position: -16px 0;
 }
 
 .box .price {
@@ -123,8 +122,7 @@ main .box:hover .name a {
 
 .box .price .curent-price {
     color: rgb(150, 25, 25);
-    font-size: 30px;
-    font-weight: bold;
+    font: bold 30px Arial;
 }
 
 .box .price .old-price {
@@ -151,15 +149,15 @@ main .box:hover .name a {
 
 .check-info {
     font-size: 30px;
-    position: fixed;
+    position: absolute;
     z-index: 10;
 }
 
 label[for='showList'] {
     display: inline-block;
-    position: fixed;
+    position: absolute;
     top: 12px;
-    left: 425px;
+    left: 110px;
     width: 32px;
     height: 32px;
     background: url('img/uncheck.svg') no-repeat;
@@ -179,14 +177,16 @@ label[for='showList'] {
     width: 980px;
 }
 
+#showList:checked ~ main .box:first-child {
+    margin-top: 50px;
+}
+
 #showList:checked ~ main .box {
     width: 100%;
-    float: left;
 }
 
 #showList:checked ~ main .box .image {
     width: 300px;
-    float: left;
 }
 
 #showList:checked ~ main .box .image img{
@@ -195,23 +195,16 @@ label[for='showList'] {
 }
 
 #showList:checked ~ main .box .block {
-    float: left;
     width: 380px;
+}
+
+#showList:checked ~ main .box,
+#showList:checked ~ main .box .image,
+#showList:checked ~ main .box .block {
+    float: left;
 }
 
 #showList:checked ~ main .box .description {
     float: right;
     width: 250px;
-}
-
-@media screen and (max-width: 1350px) {
-    main {
-        width: 1300px;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    main {
-        width: 980px;
-    }
 }
