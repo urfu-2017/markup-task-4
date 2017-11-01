@@ -1,45 +1,83 @@
-body
+body,
+.market_title
 {
     margin: 0;
     padding: 0;
-    background: url('fon.jpg') no-repeat;
-    background-size: cover;
 }
 
-.list
+.market_title
 {
-    display: inline-block;
-    vertical-align: top;
+    padding: 20px 0;
+    text-align: center;
 }
 
-label.list
-{
-    width: 80%;
-}
-
-.cat
-{
-    font: 16px Arial serif;
-    display: inline-block;
-    width: 22.5%;
-    border: .1em solid #946b54;
-    margin: 1%;
-    vertical-align: top;
-}
-
-.photo img
+main
 {
     width: 100%;
+    color: #613c28;
 }
 
-.photo img:hover
+.market_card
+{
+    width: 250px;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    font: 16px Arial serif;
+
+    margin: 10px 0 0 15px;
+}
+
+.market_card a
+{
+    color: #613c28;
+    text-decoration: none;
+}
+
+.market_card:hover
+{
+    box-shadow: 0 0 10px;
+}
+
+.market_photo_card
+{
+    height: 230px;
+}
+
+.market_card_img
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.market_card_img:hover
 {
     filter: opacity(85%);
     -webkit-filter: opacity(85%);
 }
 
-.cat-name,
-.cat-breed
+.market_photo_card,
+.market_information_card,
+.market_description_card
+{
+    position: relative;
+}
+
+.cat_name
+{
+    padding: 5px 10px;
+    font: bold 25px serif;
+}
+
+.cat_breed
+{
+    font: italic 15px serif;
+    padding: 0 0 3px 10px;
+}
+
+.cat_name,
+.cat_breed
 {
     display: block;
     white-space: nowrap;
@@ -47,65 +85,47 @@ label.list
     text-overflow: ellipsis;
 }
 
-.cat-name a,
-.cat-breed a
+.price
 {
-    text-decoration: none;
-    color: #36170c;
+    font-size: 20px;
+    padding-left: 10px;
 }
 
-.cat-name a
+.old_price
 {
-    font-size: 2em;
-    margin-left: 1em;
-}
-
-.cat-breed a
-{
-    font-size: 1em;
-    font-style: italic;
-    margin-left: 2em;
-}
-
-a:hover
-{
-    color: #8b4513;
+    font-size: 14px;
 }
 
 .rating
 {
     border: none;
-    margin-left: 1em;
 }
 
-.rating > input
+.rating_input
 {
     display: none;
 }
 
-.rating > label:before
+.rating_label:before
 {
-    margin: .1em;
-    font-size: 2.2em;
+    font-size: 24px;
     font-family: FontAwesome;
-    content: '\2605';
+    content: '\f005';
 }
 
-.rating > .half:before
+.half_star:before
 {
-    content: '\2605';
+    content: '\f089';
     position: absolute;
-    padding: 0;
-    margin: 0;
-    left: .2em;
+    left: 4px;
 }
 
-.rating > .half:last-child
+.half_star:last-child
 {
-    left: -.2em;
+    left: -4px;
 }
 
-.rating > label
+.rating_label
 {
     color: #ccc;
     unicode-bidi: embed;
@@ -113,103 +133,43 @@ a:hover
     position: relative;
 }
 
-.rating > input:checked ~ label,
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label
+.rating_input:checked ~ .rating_label,
+.rating:not(:checked) .rating_label:hover,
+.rating:not(:checked) .rating_label:hover ~ .rating_label
 {
-    color: #fff700;
+    color: #946b54;
 }
 
-.price
+.market_description_card
 {
-    font-size: 1.3em;
-    margin: .1em 0 0 1.7em;
+    padding: 10px;
 }
 
-.current-price,
-.old-price
+.list:checked ~ .market_card
 {
-    color: #f80000;
-}
-
-.description
-{
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.description p
-{
-    font-size: 1.1em;
-    margin: 0 1em;
-}
-
-.list:checked ~ .cat
-{
-    width: 98%;
-    border: none;
     display: block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 300px;
 }
 
-.list:checked ~ .cat.rating
+.list:checked ~ .market_card .market_photo_card,
+.list:checked ~ .market_card .market_information_card,
+.list:checked ~ .market_card .market_description_card
 {
-    font-size: .5em;
-}
-
-.list:checked ~ .cat .photo,
-.list:checked ~ .cat .information,
-.list:checked ~ .cat .description
-{
-    vertical-align: top;
+    width: 300px;
+    margin-left: 40px;
     display: inline-block;
+    vertical-align: top;
 }
 
-.list:checked ~ .cat
+.list:checked ~ .market_card .market_information_card,
+.list:checked ~ .market_card .market_description_card,
+.list:checked ~ .market_card .market_photo_card,
+.list:checked ~ .market_card .market_card_img
 {
-    min-width: 715px;
-}
-
-.list:checked ~ .cat .photo,
-.list:checked ~ .cat .information
-{
-    width: 29%;
-}
-
-.list:checked ~ .cat .photo img
-{
-    margin: .1em;
-}
-
-.list:checked ~ .cat .description
-{
-    width: 35%;
-}
-
-@media screen and (max-width: 1200px)
-{
-    .cat
-    {
-        width: 30%;
-        margin-left: 1.6%;
-        font-size: .8em;
-    }
-}
-
-@media screen and (max-width: 800px)
-{
-    .cat
-    {
-        width: 46%;
-        margin-left: 1.5%;
-        font-size: .6em;
-    }
-}
-
-@media screen and (max-width: 400px)
-{
-    .cat
-    {
-        width: 98%;
-        font-size: .5em;
-    }
+    top: 50%;
+    width: 290px;
+    position: relative;
+    transform: translateY(-50%);
 }
