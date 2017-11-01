@@ -5,19 +5,35 @@ body
 
 .rating
 {
-    font-size: 40px;
+    font-size: 0;
 }
 
-.rating .yellow-star
+.rating input
 {
-    color: #ffd805;
-    display: inline-block;
+	display: none;
 }
 
-.rating .black-star
+.rating label
 {
-    display: inline-block;
-    color: #000;
+	display: inline-block;
+	width: 10px;
+	height: 20px;
+}
+
+.rating label:nth-of-type(2n)
+{
+    background: url("images/right-gold-star.png");
+}
+
+.rating label:nth-of-type(2n + 1)
+{
+    background: url("images/left-gold-star.png");
+}
+
+.rating input:checked + label ~ label,
+.rating label:hover ~ label
+{
+    opacity: .2;
 }
 
 .content
@@ -26,17 +42,19 @@ body
     min-width: 1100px;
 }
 
-.item
+.container
 {
-    height: 600px;
+    height: 240px;
+    position: relative;
+    width: 100%;
 }
 
-.content .item
+.item
 {
     display: inline-block;
     width: 235px;
+	padding: 20px 0;
     text-align: center;
-    padding: 20px 0;
     border: solid 3px #000;
     margin: 10px;
     vertical-align: top;
@@ -61,11 +79,6 @@ body
     text-overflow: ellipsis;
 }
 
-.name:hover
-{
-    color: #00f;
-}
-
 .price
 {
     color: #f00;
@@ -85,7 +98,7 @@ body
 }
 
 .description,
-.section
+.category
 {
     margin: 2%;
 }
@@ -105,6 +118,11 @@ body
 .image
 {
     width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .image:hover
@@ -125,9 +143,18 @@ body
 
 .list:checked ~ .content .image
 {
-    vertical-align: middle;
+    position: static;
+    margin: auto 0;
+    height: 100%;
+}
+
+.list:checked ~ .content .container
+{
+    display: inline-block;
     width: 30%;
-    margin-left: 2%;
+    height: 100%;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .list:checked ~ .content .item .main-information
