@@ -92,7 +92,7 @@ input[id='roster']:checked ~ main .cat_common
 
 h2
 {
-    font: bold 32px 'Bookman old style', Century, 'Courier new', serif;
+    font: bold 32px Bookman old style, serif;
     color: rgb(245, 146, 164);
 }
 
@@ -141,7 +141,7 @@ h2
     left: 0;
     cursor: pointer;
     text-align: center;
-    font: bold 14px 'Bookman old style', Century, 'Courier new', serif;
+    font: bold 14px Bookman old style, serif;
     color: #ddd;
     width: 100%;
     padding: 10px 0;
@@ -189,7 +189,7 @@ h2
 
 .cat_name > a
 {
-    font: bold 25px 'Bookman old style', Century, 'Courier new', serif;
+    font: bold 25px Bookman old style, serif;
     text-decoration: none;
     color: orangered;
 }
