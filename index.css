@@ -20,7 +20,7 @@ h2
 
 .main-info
 {
-    font-family: 'Play', sans-serif;
+    font-family: 'Play', 'Ubuntu', 'Tahomma', Arial, sans-serif;
 }
 
 .lot > div
@@ -84,7 +84,7 @@ a
 
 .lot-description
 {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', 'Ubuntu', Arial, Helvetica, cursive;
 }
 
 a:hover
