@@ -22,12 +22,12 @@ body
 
 .rating label:nth-of-type(2n)
 {
-    background: url("images/right-gold-star.png");
+    background: url('images/right-gold-star.png');
 }
 
 .rating label:nth-of-type(2n + 1)
 {
-    background: url("images/left-gold-star.png");
+    background: url('images/left-gold-star.png');
 }
 
 .rating input:checked + label ~ label,
