@@ -1,18 +1,28 @@
-@import url(http://allfont.ru/allfont.css?fonts=ozhandicraft-wgl4-bt-roman);
 @import url(https://fonts.googleapis.com/css?family=Exo+2);
+
+@font-face
+{
+    font-family: 'OzHandicraft WGL4 BT Roman';
+    font-style: normal;
+    font-weight: 400;
+    src: url(http://allfont.ru/cache/fonts/ozhandicraft-wgl4-bt-roman_d4869c46f33d21d06ef97a351d058dda.woff) format('woff'),
+        url(http://allfont.ru/cache/fonts/ozhandicraft-wgl4-bt-roman_d4869c46f33d21d06ef97a351d058dda.ttf) format('truetype');
+}
 
 html
 {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 16px;
+    font: 16px 'Exo 2', sans-serif;
 }
 
 h3
 {
-    margin: 0;
+    font-family: 'OzHandicraft WGL4 BT Roman', sans-serif;
 }
 
-body
+body,
+h3,
+.name,
+.star
 {
     margin: 0;
 }
@@ -30,7 +40,7 @@ header
     height: 40px;
     font-size: 2rem;
     width: 100vw;
-    background: #fff5f0;
+    background-color: #fff5f0;
     box-shadow: 0 2px 5px 1px #d9cbb1;
 }
 
@@ -46,20 +56,20 @@ header div:first-child
 {
     text-align: left;
     margin-left: 30px;
-    width: 30%;
+    width: 30vw;
 }
 
 header div:last-child
 {
     text-align: right;
-    width: 60%;
+    width: 45vw;
 }
 
 article
 {
     margin: 15px;
     box-shadow: 0 0 5px 2px #d9cbb1;
-    background: #fff5f0;
+    background-color: #fff5f0;
     width: 900px;
 }
 
@@ -93,11 +103,9 @@ img:hover
 {
     padding-left: 10px;
     text-align: center;
-    margin: 0;
     font-size: 2.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-family: 'OzHandicraft WGL4 BT Roman', sans-serif;
     white-space: nowrap;
     width: 300px;
 }
@@ -164,15 +172,9 @@ header div
     display: inline-block;
 }
 
-.star
-{
-    margin: 0;
-}
-
 .star > label:before
 {
-    font-size: 2em;
-    font-family: FontAwesome;
+    font: 2rem FontAwesome;
     content: '\f005';
 }
 
@@ -200,19 +202,32 @@ header div
     max-width: 350px;
 }
 
+.cards:checked ~ header
+{
+    min-width: 350px;
+}
+
 .cards:checked ~ main
 {
     width: 84vw;
 }
 
-header .cards::before
+.table::before
 {
     font-family: FontAwesome;
     content: '\f00a';
 }
 
-header .list
+.spisok::before
 {
     font-family: FontAwesome;
     content: '\f03a';
+}
+
+@media screen and (max-width: 400px)
+{
+    header h3
+    {
+        display: none;
+    }
 }
