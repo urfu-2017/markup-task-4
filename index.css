@@ -1,8 +1,7 @@
 main
 {
     position: relative;
-    left: 15%;
-    width: 80%;
+    margin: 0 auto;
 }
 
 .switch-list,
@@ -55,9 +54,9 @@ main
 
 .tabled .card-image:hover
 {
-    -ms-transform: scale(1.2, 1.2);
-    -webkit-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .switch-list:checked ~ .tabled .card
@@ -109,24 +108,26 @@ main
 {
     margin: 0;
     height: 20%;
+    list-style: none;
 }
 
-.card-category
+.card-categories > li
 {
     padding: 2px;
+    display: inline-block;
 }
 
-.card-category:after
+.card-categories > li:after
 {
     content: ', ';
 }
 
-.card-category:last-child:after
+.card-categories > li:last-child:after
 {
     content: '';
 }
 
-.card-category:hover
+.card-categories > li:hover
 {
     padding: 1px;
     border: 1px solid black;
