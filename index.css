@@ -18,11 +18,6 @@ html
     height: 600px;
 }
 
-.cat-image
-{
-    display: block;
-}
-
 .rating
 {
     border: none;
@@ -91,7 +86,7 @@ input[type='checkbox']:checked ~ section .info
     width: 30%;
 }
 
-input[type='checkbox']:checked ~ section figure
+input[type='checkbox']:checked ~ section .image-container
 {
     display: inline-block;
 }
@@ -126,10 +121,17 @@ h2
     text-align: center;
 }
 
+.image-container
+{
+    width: 16em;
+    height: 17em;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
 img[alt='cat']
 {
-    align-content: center;
-    max-height: 15em;
+    min-width: 10em;
     max-width: 10em;
 }
 
@@ -176,8 +178,6 @@ img[alt='cat']
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    width: 300px;
-    height: 600px;
     transform: scale(1.1);
     border: 3px solid gold;
     box-shadow: gold;
