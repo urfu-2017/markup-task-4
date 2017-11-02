@@ -14,9 +14,10 @@ html,
 body
 {
     margin: 0;
+    background-color: #ef9a9a;
 }
 
-.colorBg
+.content
 {
     background-color: #ef9a9a;
 }
@@ -55,20 +56,21 @@ img:hover
     }
 }
 
-label.list
+label.list::before
 {
     display: inline-block;
     padding: 10px;
     content: url(list.png);
 }
 
-input.list:checked ~ section > article
+input.list:checked ~ section article
 {
+    margin-top: 40px;
     width: 100%;
     display: block;
 }
 
-input.list:checked ~ section > article > .mainInfo,
+input.list:checked ~ section .mainInfo,
 .description
 {
     height: inherit;
@@ -77,50 +79,54 @@ input.list:checked ~ section > article > .mainInfo,
     padding: 0;
 }
 
-input.list:checked ~ section > article > .description
+input.list:checked ~ section .description
 {
-    text-align: center;
+    height: 260px;
+    line-height: 200px;
     word-wrap: break-word;
-    display: block;
-    float: right;
     max-width: 33%;
+    float: right;
     padding-top: 10px;
 }
 
-input.list:checked ~ section > article > .mainInfo
+input.list:checked ~ section p
+{
+    line-height: normal;
+    display: block;
+}
+
+input.list:checked ~ section .mainInfo
 {
     max-width: 33%;
-    width: wrap-content;
     padding: 0;
 }
 
-input.list:checked ~ section > article > img
+input.list:checked ~ section img
 {
     max-width: 33%;
     display: inline-block;
 }
 
-label.gallery
+label.gallery::before
 {
     display: inline-block;
     padding: 10px;
     content: url(gallery.png);
 }
 
-input.gallery:checked ~ section > article
+input.gallery:checked ~ section article
 {
     box-shadow: 2px 2px 5px #888;
     background-color: rgba(250, 125, 125, .8);
     vertical-align: top;
     height: inherit;
     position: relative;
-    margin-right: 5px;
     text-align: center;
     width: 250px;
     display: inline-block;
 }
 
-input.gallery:checked ~ section > article > img
+input.gallery:checked ~ section img
 {
     width: 100%;
     display: block;
@@ -138,12 +144,12 @@ input[value='10']:checked ~ label:before
     text-shadow: 0 0 20px #952;
 }
 
-.rate > label
+.rate label
 {
     float: right;
 }
 
-.rate > label:before
+.rate label:before
 {
     display: inline-block;
     font-size: 24px;
@@ -174,54 +180,66 @@ header
     text-shadow: 1px 0 1px;
 }
 
+a,
+.description p
+{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .description
 {
     font-family: 'Comfortaa', cursive;
-    font-size: 24px;
+    font-size: 16px;
 }
 
-input.gallery:checked ~ section > article:hover
+input.gallery:checked ~ section article:hover
 {
-    z-index: 500;
+    z-index: 1;
     border: 3px solid #ff0;
     box-shadow: 3px 3px #ffa000;
     text-shadow: 1px 1px 2px;
     transition-duration: .5s;
-    transform: translate(0, -10%) scale(1.2);
+    transform: translateY(-10%) scale(1.2);
 }
 
-input.list:checked ~ section > article:hover
+input.list:checked ~ section article:hover
 {
     border: 3px solid #ff0;
     box-shadow: 0 0 5px 5px #ddd;
     text-shadow: 1px 1px 2px;
     background-color: #f48fb1;
     transition-duration: .5s;
-    transform: translateY(15%);
+    transform: translateY(30px);
+    padding-bottom: 30px;
+}
+
+input.list:checked ~ section .pseudo
+{
+    transform: translateY(-50px);
+    height: 50px;
 }
 
 article
 {
     background-color: rgba(247, 120, 164, .6);
     border: 2px solid #5d4037;
-    margin: 0;
-    width: wrap-content;
     margin-bottom: 5px;
 }
 
-p
+input.gallery:checked ~ section .cat
 {
-    padding: 0 10px;
-    text-overflow: ellipsis;
+    display: inline-block;
+    width: 260px;
+    height: 675px;
+    margin: 10px;
 }
 
-a
+input.list:checked ~ section .cat
 {
-    font-size: 30px;
     display: block;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    height: 350px;
 }
 
 .oldPrice
