@@ -1,14 +1,10 @@
-img.cat_picture
+.cat-picture
 {
     width: 350px;
-}
-
-img.cat_picture:not(:hover)
-{
     opacity: .9;
 }
 
-img.cat_picture:hover
+.cat-picture:hover
 {
     opacity: 1;
 }
@@ -44,7 +40,7 @@ img[src^='empty']
     color: #8b0000;
 }
 
-.previous_price
+.previous-price
 {
     color: rgba(128, 128, 128, .7);
     text-decoration: line-through;
@@ -96,28 +92,28 @@ input:checked ~ article
     display: block;
 }
 
-input:checked ~ article section.information
+input:checked ~ article .information
 {
     width: 300px;
 }
 
-article section.description
+article .description
 {
     width: 350px;
 }
 
-section.description:before
+.description:before
 {
     content: 'Краткое описание:';
 }
 
-section.description
+.description
 {
     font-weight: bold;
     font-size: 20px;
 }
 
-p.description
+.description-text
 {
     font-weight: normal;
     font-size: 17px;
