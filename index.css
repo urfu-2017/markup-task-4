@@ -1,0 +1,266 @@
+@font-face
+{
+    font-family: customFont1;
+    src: url(10619.ttf);
+}
+
+@font-face
+{
+    font-family: customFont2;
+    src: url(10100.otf);
+}
+
+html,
+body
+{
+    margin: 0;
+    background-color: #ef9a9a;
+}
+
+.content
+{
+    background-color: #ef9a9a;
+}
+
+input
+{
+    display: none;
+}
+
+section
+{
+    padding: 15px;
+}
+
+.category
+{
+    font-family: customFont2, sans-serif;
+}
+
+img:hover
+{
+    animation-duration: .5s;
+    animation-name: animateCat;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animateCat
+{
+    50%
+    {
+        transform: skew(5deg);
+    }
+    to
+    {
+        transform: skew(-5deg);
+    }
+}
+
+label.list::before
+{
+    display: inline-block;
+    padding: 10px;
+    content: url(list.png);
+}
+
+input.list:checked ~ section article
+{
+    margin-top: 40px;
+    width: 100%;
+    display: block;
+}
+
+input.list:checked ~ section .mainInfo,
+.description
+{
+    height: inherit;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+}
+
+input.list:checked ~ section .description
+{
+    height: 260px;
+    line-height: 200px;
+    word-wrap: break-word;
+    max-width: 33%;
+    float: right;
+    padding-top: 10px;
+}
+
+input.list:checked ~ section p
+{
+    line-height: normal;
+    display: block;
+}
+
+input.list:checked ~ section .mainInfo
+{
+    max-width: 33%;
+    padding: 0;
+}
+
+input.list:checked ~ section img
+{
+    max-width: 33%;
+    display: inline-block;
+}
+
+label.gallery::before
+{
+    display: inline-block;
+    padding: 10px;
+    content: url(gallery.png);
+}
+
+input.gallery:checked ~ section article
+{
+    box-shadow: 2px 2px 5px #888;
+    background-color: rgba(250, 125, 125, .8);
+    vertical-align: top;
+    height: inherit;
+    position: relative;
+    text-align: center;
+    width: 250px;
+    display: inline-block;
+}
+
+input.gallery:checked ~ section img
+{
+    width: 100%;
+    display: block;
+}
+
+.rate
+{
+    display: inline-block;
+    border: 0;
+}
+
+input[value='10']:checked ~ label:before
+{
+
+    text-shadow: 0 0 20px #952;
+}
+
+.rate label
+{
+    float: right;
+}
+
+.rate label:before
+{
+    display: inline-block;
+    font-size: 24px;
+    padding: 5px;
+    margin: 0;
+    font-family: FontAwesome;
+    content: '\f005';
+}
+
+.rate .half:before
+{
+    content: '\f089';
+    position: absolute;
+    padding-right: 0;
+}
+
+input:checked ~ label,
+label:hover,
+label:hover ~ label
+{
+    color: #fe7;
+}
+
+header
+{
+    text-align: center;
+    font: 35px customFont1, sans-serif;
+    text-shadow: 1px 0 1px;
+}
+
+a,
+.description p
+{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+}
+
+input.gallery:checked ~ section article:hover
+{
+    z-index: 1;
+    border: 3px solid #ff0;
+    box-shadow: 3px 3px #ffa000;
+    text-shadow: 1px 1px 2px;
+    transition-duration: .5s;
+    transform: translateY(-10%) scale(1.2);
+}
+
+input.list:checked ~ section article:hover
+{
+    border: 3px solid #ff0;
+    box-shadow: 0 0 5px 5px #ddd;
+    text-shadow: 1px 1px 2px;
+    background-color: #f48fb1;
+    transition-duration: .5s;
+    transform: translateY(30px);
+    padding-bottom: 30px;
+}
+
+input.list:checked ~ section .pseudo
+{
+    transform: translateY(-50px);
+    height: 50px;
+}
+
+article
+{
+    background-color: rgba(247, 120, 164, .6);
+    border: 2px solid #5d4037;
+    margin-bottom: 5px;
+}
+
+input.gallery:checked ~ section .cat
+{
+    display: inline-block;
+    width: 260px;
+    height: 675px;
+    margin: 10px;
+}
+
+input.list:checked ~ section .cat
+{
+    display: block;
+    height: 350px;
+}
+
+.oldPrice
+{
+    font-size: 24px;
+    color: #757575;
+    text-decoration: line-through;
+}
+
+.price
+{
+    font-size: 36px;
+}
+
+img
+{
+    text-align: center;
+    height: 250px;
+}
+
+header::first-letter
+{
+    color: #f00;
+}
