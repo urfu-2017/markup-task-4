@@ -92,6 +92,12 @@ body
     text-decoration: none;
 }
 
+.breadcrumb:hover,
+.breadcrumb-main:hover
+{
+    text-decoration: underline;
+}
+
 .breadcrumb
 {
     position: relative;
@@ -105,12 +111,6 @@ body
     left: -10px;
 
     pointer-events: none;
-}
-
-.breadcrumb:hover,
-.breadcrumb-main:hover
-{
-    text-decoration: underline;
 }
 
 .cat__current-price
@@ -150,14 +150,12 @@ body
 
 .cat__star_half
 {
-    background: url('images/rating/half-star.svg') center no-repeat;
-    background-size: 20px 20px;
+    background-image: url('images/rating/half-star.svg');
 }
 
 .cat__star_empty
 {
-    background: url('images/rating/blank-star.svg') center no-repeat;
-    background-size: 20px 20px;
+    background-image: url('images/rating/blank-star.svg');
 }
 
 .cat__star:hover ~ .cat__star
@@ -172,20 +170,17 @@ body
 
 .cat__rating-check:checked ~ .cat__star
 {
-    background: url('images/rating/blank-star.svg') center no-repeat;
-    background-size: 20px 20px;
+    background-image: url('images/rating/blank-star.svg');
 }
 
 .cat__rating-check:checked + .cat__star
 {
-    background: url('images/rating/star.svg') center no-repeat;
-    background-size: 20px 20px;
+    background-image: url('images/rating/star.svg');
 }
 
 .cat__rating:hover > .cat__star
 {
-    background: url('images/rating/star.svg') center no-repeat;
-    background-size: 20px 20px;
+    background-image: url('images/rating/star.svg');
 
     cursor: pointer;
 }
@@ -195,3 +190,4 @@ body
 {
     font-size: 1rem;
 }
+
