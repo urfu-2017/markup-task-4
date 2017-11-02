@@ -16,14 +16,23 @@ body
     font-family: RobotoCondensed, Arial, sans-serif;
     min-width: 800px;
     margin: auto;
-    width: 80%;
+}
+
+.content
+{
+    margin-top: 640px;
 }
 
 .marketname
 {
-    position: absolute;
-    top: 5px;
-    right: 150px;
+    margin-top: -640px;
+    margin-left: 1100px;
+}
+
+.nose img
+{
+    background: url(nose.jpg) no-repeat;
+    background-size: cover;
 }
 
 .marketname::first-letter
@@ -54,11 +63,12 @@ body
 .market article
 {
     width: 250px;
-    height: 720px;
+    height: 850px;
     display: inline-block;
     box-sizing: border-box;
     margin: 0 12px 10px;
     padding: 10px;
+    margin-top: 10px;
 }
 
 .market article:hover
@@ -67,19 +77,18 @@ body
     cursor: pointer;
 }
 
-.type
+.type h4
 {
     font-size: 20px;
-    text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    max-width: 95%;
+    padding: 5px;
+    text-overflow: ellipsis;
 }
 
-.type:hover 
+h4
 {
-    white-space: normal;
-    overflow: visible;
+    width: 230px;
 }
 
 img
@@ -91,11 +100,21 @@ img
 {
     display: inline-block;
     vertical-align: top;
+    height: 300px;
 }
 
 .image
 {
+    height: 250px;
+    position: relative;
     filter: grayscale(100%);
+}
+
+.image img
+{
+    bottom: 0;
+    position: absolute;
+    display: block;
 }
 
 .image:hover
@@ -115,9 +134,14 @@ ul
     padding: 0;
 }
 
+li
+{
+    padding: 10px;
+}
+
 li:before 
 {
-    content: '\1F420';
+    content: '\1F420  ';
 }
 
 .newprice
@@ -141,8 +165,6 @@ input[type='radio']
 {
     display: none;
 }
-
-   
 
 input[value='list']:checked ~ .market article
 {
@@ -190,7 +212,18 @@ input[value='list']:checked ~ .market article .image
     padding: 0;
 }
 
-input[value='list']:checked ~ .market article .cathegory,
+input[value='list']:checked ~ .market article .image img
+{
+    position: relative;
+    width: 250px;
+}
+
+input
+{
+    width: 100%;
+}
+
+input[value='list']:checked ~ .market article .category,
 input[value='list']:checked ~ .market article .newprice,
 input[value='list']:checked ~ .market article .oldprice,
 input[value='list']:checked ~ .market article .price,
