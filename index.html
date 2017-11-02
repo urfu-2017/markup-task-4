@@ -6,15 +6,17 @@
     <title>Задача «Мяндекс.Муррркет»</title>
 </head>
 <body>
+<input id="tile-layout-switch" class="tile-layout-switch" type="radio" name="switch" checked>
+<input id="card-layout-switch" class="card-layout-switch" type="radio" name="switch">
 <header class="main-header">
     <h1>
         Catdex.Market
     </h1>
+    <div class="layout-switches">
+        <label for="card-layout-switch">Карточки</label>
+        <label for="tile-layout-switch">Плитки</label>
+    </div>
 </header>
-<input id="tile-layout-switch" class="tile-layout-switch" type="radio" name="switch" checked>
-<label for="tile-layout-switch">Плитки</label>
-<input id="card-layout-switch" class="card-layout-switch" type="radio" name="switch">
-<label for="card-layout-switch">Карточки</label>
 <main>
     <article class="market-item">
         <div class="item-picture">
@@ -26,6 +28,9 @@
             </a></h2>
             <p class="item-info-price">
                 $100000000000000000000000000000000000000
+            </p>
+            <p class="item-cat-egory">
+                <em>Category:</em> <a href="real" title="See category">Real cats</a>
             </p>
             <p class="item-info-descr">
                 Longcat is one of the most recognized cats on the Internet. He is known for his epic
@@ -67,11 +72,14 @@
                 <span class="item-old-price">$25.13</span>
                 <span>$25.12</span>
             </p>
+            <p class="item-cat-egory">
+                <em>Category:</em> <a href="real" title="See category">Real cats</a>
+            </p>
             <p class="item-info-descr">
                 Serious Cat is a popular image macro featuring a picture of a white cat …looking
                 srsly serious. The image is typically accompanied by a caption that reads:
             </p>
-                <blockquote><q>I Are Serious Cat. This is Serious Thread.</q></blockquote>
+            <blockquote><q>I Are Serious Cat. This is Serious Thread.</q></blockquote>
             <fieldset class="rating">
                 <input type="radio" id="rate-2-10" name="rate-2" value="10">
                 <label for="rate-2-10"></label>
@@ -107,6 +115,9 @@
             </a></h2>
             <p class="item-info-price">
                 $????
+            </p>
+            <p class="item-cat-egory">
+                <em>Category:</em> <a href="sceince" title="See category">Science cats</a>
             </p>
             <p class="item-info-descr">
                 Schrödinger's cat is a thought experiment, sometimes described as a paradox, devised
@@ -151,6 +162,9 @@
             <p class="item-info-price">
                 $1488
             </p>
+            <p class="item-cat-egory">
+                <em>Category:</em> <a href="evil" title="See category">Evil cats</a>
+            </p>
             <p class="item-info-descr">
                 Does your cat look like Adolf Hitler? Do you wake up in a cold sweat every night
                 wondering if he's going to up and invade Poland? Does he keep putting his right paw
@@ -191,6 +205,9 @@
             <p class="item-info-price">
                 $2/ride
             </p>
+            <p class="item-cat-egory">
+                <em>Category:</em> <a href="transport" title="See category">Transport cats</a>
+            </p>
             <p class="item-info-descr">
                 One of the earliest pictures of monorail cat found is from the website catmas.com’s
                 blog section, dated from November 2, 2006. The picture is of a cat flopped over a
@@ -230,6 +247,9 @@
             </a></h2>
             <p class="item-info-price">
                 $8
+            </p>
+            <p class="item-cat-egory">
+                <em>Category:</em> <a href="unreal" title="See category">Unreal cats</a>
             </p>
             <p class="item-info-descr">
                 Nyan Cat, also known as Pop Tart Cat, is an 8-bit animation depicting a cat with the
@@ -274,6 +294,9 @@
             <p class="item-info-price">
                 $299
             </p>
+            <p class="item-cat-egory">
+                <em>Category:</em> <a href="transport" title="See category">Transport cats</a>
+            </p>
             <p class="item-info-descr">
                 ...is exploring the Universe.
             </p>
@@ -311,6 +334,9 @@
             </a></h2>
             <p class="item-info-price">
                 $10
+            </p>
+            <p class="item-cat-egory">
+                <em>Category:</em> <a href="evil" title="See category">Evil cats</a>
             </p>
             <p class="item-info-descr">
                 Grumpy Cat is the nickname given to Tardar Sauce, a snowshoe cat that rose to online
@@ -352,6 +378,9 @@
             <p class="item-info-price">
                 $e<sup>x</sup>
             </p>
+            <p class="item-cat-egory">
+                <em>Category:</em> <a href="science" title="See category">Science cats</a>
+            </p>
             <p class="item-info-descr">
                 Even a kitten can be taught differentiation.
             </p>
@@ -377,7 +406,6 @@
                 <input type="radio" id="rate-9-1" name="rate-9" value="1">
                 <label for="rate-9-1"></label>
             </fieldset>
-
         </section>
     </article>
     <article class="market-item">
@@ -390,6 +418,9 @@
             </a></h2>
             <p class="item-info-price">
                 $15
+            </p>
+            <p class="item-cat-egory">
+                <em>Category:</em> <a href="not_amused" title="See category">Not-amused cats</a>
             </p>
             <p class="item-info-descr">
                 Trashcat is not amused is a LOLcat image macro series based on pictures of cats and
@@ -432,6 +463,9 @@
             </a></h2>
             <p class="item-info-price">
                 $80
+            </p>
+            <p class="item-cat-egory">
+                <em>Category:</em> <a href="not_amused" title="See category">Not-amused cats</a>
             </p>
             <p class="item-info-descr">
                 Limecat is the nickname given to an image of a scowling cat wearing what appears to

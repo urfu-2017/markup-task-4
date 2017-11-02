@@ -33,7 +33,6 @@ main
 {
     height: 50px;
     background: #dbdbdb;
-    width: 100%;
     padding: 10px 30px;
 }
 
@@ -44,7 +43,47 @@ main
 
 .main-header h1:first-letter
 {
-    color: #d9942b;
+    color: #ff8d0f;
+}
+
+.layout-switches
+{
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    text-align: center;
+}
+
+.layout-switches label
+{
+    display: block;
+    border: solid 1px;
+    border-radius: 2px;
+    padding: 3px;
+    margin: 5px 0;
+    background: #e9e9e9;
+    cursor: pointer;
+}
+
+.layout-switches label:hover
+{
+    box-shadow: 0 0 3px 0 #555;
+}
+
+.layout-switches label:active
+{
+    background: #81b3c9;
+    box-shadow: 0 0 1px 0 #555;
+}
+
+.tile-layout-switch:checked ~ header label[for='tile-layout-switch']
+{
+    background: #c9f6ff;
+}
+
+.card-layout-switch:checked ~ header label[for='card-layout-switch']
+{
+    background: #c9f6ff;
 }
 
 .market-item:hover
@@ -57,6 +96,7 @@ main
     transition: all .15s ease;
     display: inline-block;
     width: 300px;
+    height: 550px;
     padding: 30px;
     background: #fff;
     border: solid 1px #999;
@@ -129,10 +169,20 @@ main
     color: #67d238;
 }
 
+.item-cat-egory
+{
+    font-size: .8em;
+}
+
+.item-cat-egory a
+{
+    color: #48aab9;
+}
+
 .card-layout-switch:checked ~ main .market-item
 {
     display: block;
-    width: 50%;
+    width: 60%;
     height: auto;
     margin: 30px auto;
 }
@@ -141,22 +191,22 @@ main
 .card-layout-switch:checked ~ main .item-info
 {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .card-layout-switch:checked ~ main .item-picture
 {
     width: 25%;
-    margin-right: 20px;
+    margin: 0 40px;
+    max-height: 100%;
     text-align: right;
-    padding: 0 10px;
-    border-right: solid 1px;
-    vertical-align: top;
+    padding-right: 30px;
+    border-right: solid 1px #aaa;
     height: auto;
 }
 
 .card-layout-switch:checked ~ main .item-picture img
 {
-    vertical-align: middle;
     position: relative;
     height: auto;
     max-width: 100%;
@@ -165,7 +215,7 @@ main
 .card-layout-switch:checked ~ main .item-info
 {
     height: auto;
-    width: 60%;
+    width: 45%;
 }
 
 .card-layout-switch:checked ~ main .item-info-price
@@ -184,6 +234,7 @@ main
     right: 0;
 }
 
+input[name='switch'],
 .rating input
 {
     display: none;
@@ -219,6 +270,7 @@ main
 }
 
 .rating input:checked + label:hover,
+.rating input:checked ~ label:hover,
 .rating input:checked ~ label:hover ~ label,
 .rating label:hover ~ input:checked ~ label
 {
