@@ -1,0 +1,186 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+html
+{
+    background-color: #f0f;
+}
+
+.cats
+{
+    margin-left: 20px;
+}
+
+.transforming
+{
+    background-color: bisque;
+    border: 2px solid saddlebrown;
+    width: 300px;
+    height: 600px;
+}
+
+.rating
+{
+    border: none;
+    position: relative;
+    right: 20%;
+}
+
+.rating > input
+{
+    display: none;
+}
+
+.rating > label:before
+{
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.rating > label
+{
+    color: #ddd;
+    float: right;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label
+{
+    color: #ffd700;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label
+{
+    color: #ffed85;
+}
+
+figcaption
+{
+    display: none;
+}
+
+input[type='checkbox']:checked ~ section .element,
+input[type='checkbox']:checked ~ section article
+{
+    margin-left: 30px;
+    display: block;
+    height: 350px;
+    width: 1000px;
+}
+
+input[type='checkbox']:checked ~ section .info
+{
+    display: inline-block;
+    width: 30%;
+}
+
+input[type='checkbox']:checked ~ section .image-container
+{
+    display: inline-block;
+}
+
+input[type='checkbox']:checked ~ section .description
+{
+    width: 40%;
+    display: inline-block;
+}
+
+h2
+{
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 10px;
+}
+
+.description
+{
+    margin: 10px;
+}
+
+.type
+{
+    margin: 10px;
+}
+
+.price
+{
+    text-align: center;
+}
+
+.image-container
+{
+    width: 16em;
+    height: 17em;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+img[alt='cat']
+{
+    min-width: 10em;
+    max-width: 10em;
+}
+
+.type,
+.description,
+.price
+{
+    font-size: 18px;
+    color: saddlebrown;
+}
+
+@keyframes changeColor
+{
+    0%
+    {
+        background-color: red;
+    }
+    25%
+    {
+        background-color: yellow;
+    }
+    50%
+    {
+        background-color: blue;
+    }
+    75%
+    {
+        background-color: magenta;
+    }
+}
+
+.element
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    margin: 10px;
+}
+
+.transforming:hover
+{
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: scale(1.1);
+    border: 3px solid gold;
+    box-shadow: gold;
+    background-color: rgba(255, 252, 137, 1);
+    position: absolute;
+}
