@@ -1,0 +1,180 @@
+body
+{
+    background: #feece3;
+}
+
+.rating
+{
+    font-size: 0;
+}
+
+.rating input
+{
+    display: none;
+}
+
+.rating label
+{
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+}
+
+.rating label:nth-of-type(2n)
+{
+    background: url('images/right-gold-star.png');
+}
+
+.rating label:nth-of-type(2n + 1)
+{
+    background: url('images/left-gold-star.png');
+}
+
+.rating input:checked + label ~ label,
+.rating label:hover ~ label
+{
+    opacity: .2;
+}
+
+main
+{
+    text-align: center;
+    min-width: 1100px;
+    max-width: 1400px;
+}
+
+.container
+{
+    height: 240px;
+    position: relative;
+    width: 100%;
+}
+
+.item
+{
+    display: inline-block;
+    width: 235px;
+    padding: 20px 0;
+    text-align: center;
+    border: solid 3px #000;
+    margin: 10px;
+    vertical-align: top;
+    font-size: 19px;
+}
+
+.item .main-information
+{
+    margin: 5px;
+    padding: 5px;
+}
+
+.item:hover
+{
+    background: #e8ebed;
+}
+
+.name
+{
+    margin: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price
+{
+    color: #f00;
+}
+
+.price::after,
+.old-price::after
+{
+    content: 'P';
+}
+
+.old-price
+{
+    text-decoration: line-through;
+}
+
+.price,
+.old-price
+{
+    margin: 2%;
+    display: inline;
+    font-weight: 900;
+}
+
+.description,
+.category
+{
+    margin: 2%;
+}
+
+.link
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.link:hover
+{
+    text-decoration: underline;
+    color: blue;
+}
+
+.image
+{
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.image:hover
+{
+    transform: scale(1.1);
+}
+
+.list:checked ~ main .item
+{
+    max-width: 1100px;
+    text-align: left;
+    box-sizing: border-box;
+    display: block;
+    font-size: 24px;
+    height: auto;
+    margin: 1% auto;
+    width: 100%;
+}
+
+.list:checked ~ main .image
+{
+    position: static;
+    margin: auto 0;
+    height: 100%;
+}
+
+.list:checked ~ main .container
+{
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.list:checked ~ main .item .main-information
+{
+    width: 20%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.list:checked ~ main .item .description
+{
+    width: 40%;
+    vertical-align: top;
+    display: inline-block;
+}
