@@ -50,7 +50,6 @@ input[id='line']:checked ~ .container .content .description
     vertical-align: top;
     width: 32%;
     max-height: 100%;
-
 }
 
 input[id='line']:checked ~ .container .content .description
@@ -61,7 +60,7 @@ input[id='line']:checked ~ .container .content .description
 
 input[id='line']:checked ~ .container .content .soHigh
 {
-    width: 90%;
+    width: auto;
 }
 
 input[id='line']:checked ~ .container .content .img
@@ -103,7 +102,7 @@ img
     color: #86f4;
 }
 
-.olderPrice
+.older-Price
 {
     color: #f00;
     text-decoration: line-through;
@@ -125,53 +124,56 @@ body
     endColorstr='#b7deed',GradientType=1 );
 }
 
+.rating,
+label 
+{
+    margin: 0;
+    padding: 0;
+}
+
 .rating
 {
     display: inline-block;
 }
 
-.rating:not(:checked) > input
+.rating > input
 {
+    display: none;
+}
+
+.rating > label:before 
+{
+    margin: 5px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f005';
+}
+
+.rating > .half:before 
+{
+    content: '\f089';
     position: absolute;
-    top: -9999px;
-    clip: rect(0,0,0,0);
 }
 
-.rating:not(:checked) > label
+.rating > label 
 {
-    float: right;
-    width: 1em;
-    padding: 0 .1em;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-    font-size: 100%;
-    line-height: 1.2;
     color: #ddd;
-    text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em #00000080;
+    float: right;
 }
 
-.rating:not(:checked) > label:before
-{
-    content: '★ ';
-}
+/***** CSS Magic to Highlight Stars on Hover *****/
 
-.rating > input:checked ~ label
-{
-    color: #f70;
-    text-shadow: 1px 1px #c60, 2px 2px #940, .1em .1em .2em #000;
-}
-
+.rating > input:checked ~ label,
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label
 {
-    color: gold;
-    text-shadow: 1px 1px goldenrod, 2px 2px #b57340, .1em .1em .2em #000;
+    color: #ffd700;
 }
 
-.rating > label:active 
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label
 {
-    position: relative;
-    top: 2px;
-    left: 2px;
-}
+    color: #ffed85;
+} 
