@@ -127,7 +127,7 @@ main
 }
 
 .item-info h2,
-.item-info .item-info-price
+.item-info .item-price
 {
     margin: 0;
     overflow: hidden;
@@ -146,7 +146,7 @@ main
     color: #48aab9;
 }
 
-.item-info-price
+.item-price
 {
     text-align: right;
     font: bold 20px monospace;
@@ -220,7 +220,7 @@ main
     width: 45%;
 }
 
-.card-layout-switch:checked ~ main .item-info-price
+.card-layout-switch:checked ~ main .item-price
 {
     text-align: left;
 }
