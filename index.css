@@ -76,11 +76,7 @@ main
     box-shadow: 0 0 1px 0 #555;
 }
 
-.tile-layout-switch:checked ~ header label[for='tile-layout-switch']
-{
-    background: #c9f6ff;
-}
-
+.tile-layout-switch:checked ~ header label[for='tile-layout-switch'],
 .card-layout-switch:checked ~ header label[for='card-layout-switch']
 {
     background: #c9f6ff;
@@ -169,12 +165,17 @@ main
     color: #67d238;
 }
 
-.item-cat-egory
+.item-category
 {
     font-size: .8em;
 }
 
-.item-cat-egory a
+.item-category:hover
+{
+    box-shadow: 0 2px 2px 0 #ccc;
+}
+
+.item-category a
 {
     color: #48aab9;
 }
@@ -185,6 +186,7 @@ main
     width: 60%;
     height: auto;
     margin: 30px auto;
+    min-width: 700px;
 }
 
 .card-layout-switch:checked ~ main .item-picture,
@@ -197,7 +199,7 @@ main
 .card-layout-switch:checked ~ main .item-picture
 {
     width: 25%;
-    margin: 0 40px;
+    margin: 0 30px 0 0;
     max-height: 100%;
     text-align: right;
     padding-right: 30px;
@@ -220,7 +222,7 @@ main
 
 .card-layout-switch:checked ~ main .item-info-price
 {
-    display: inline-block;
+    text-align: left;
 }
 
 .rating
@@ -269,7 +271,6 @@ input[name='switch'],
     color: #48aab9;
 }
 
-.rating input:checked + label:hover,
 .rating input:checked ~ label:hover,
 .rating input:checked ~ label:hover ~ label,
 .rating label:hover ~ input:checked ~ label
