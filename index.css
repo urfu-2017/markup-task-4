@@ -52,12 +52,16 @@ h2
 
 .product-picture
 {
+    height: 400px;
+    display: table-cell;
     text-align: center;
+    vertical-align: bottom;
 }
 
 .product-info
 {
     display: inline-block;
+    height: 750px;
     vertical-align: top;
 }
 
@@ -122,13 +126,13 @@ h2
 
 .product-picture img:hover
 {
-    width: 95%;
-    border: 10px solid #9932cc;
+    -webkit-filter: brightness(145%);
 }
 
 .product:hover
 {
     border: 10px double #008000;
+    margin: 25px;
 }
 
 /* СПИСОК */
@@ -143,12 +147,16 @@ input[value='list']:checked ~ section .product-picture
 {
     display: inline-block;
     width: 30%;
+    height: auto;
+    vertical-align: middle;
 }
 
 input[value='list']:checked ~ section .product-info
 {
     width: 65%;
+    height: auto;
     display: inline-block;
+    vertical-align: middle;
 }
 
 input[value='list']:checked ~ section .product-info div
