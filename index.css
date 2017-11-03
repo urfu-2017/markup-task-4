@@ -9,9 +9,15 @@ body
     margin: 0 auto;
 }
 
+.box > div
+{
+    vertical-align: top;
+}
+
 .cards:checked ~ div > div
 {
     width: 320px;
+    display: inline-block;
 }
 
 img
@@ -31,7 +37,7 @@ img:hover
     background-color: white;
     box-shadow: 0 0 10px rgba(22, 22, 22, .5);
     margin: 8px;
-    display: inline-block;
+    display: block;
 }
 
 .card:hover
@@ -99,6 +105,7 @@ img:hover
 
 .aboutInfo
 {
+    float: right;
     width: 304px;
     padding: 8px;
     text-align: justify;
