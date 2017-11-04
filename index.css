@@ -24,11 +24,12 @@
     height: 600px;
     display: inline-block;
     margin: 20px;
+    font-size: 15px;
 }
 
 .item:hover .item-description
 {
-    font: 16px 'Bookman Old Style', serif;
+    font: 1.1em 'Bookman Old Style', serif;
 }
 
 .item-name
@@ -46,7 +47,7 @@
 
 .item-name:hover
 {
-    color: red;
+    color: #f00;
 }
 
 .item-category:hover
