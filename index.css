@@ -56,17 +56,18 @@ main
 
 .product
 {
-    width: 27em;
+    width: 26em;
+    padding: 5px;
     margin-left: 2%;
     margin-bottom: 80px;
     display: inline-block;
     vertical-align: top;
-    border: 1px solid white;
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .product:hover
 {
-    border: 1px solid black;
+    border-color: black;
 }
 
 .product-item
@@ -76,16 +77,16 @@ main
 
 .picture
 {
-    width: 27em;
+    width: 26em;
     height: 22em;
     position: relative;
-    border: 1px dashed white;
+    border: 1px dashed rgba(0, 0, 0, 0);
 }
 
 .picture img
 {
     max-height: 22em;
-    max-width: 27em;
+    max-width: 26em;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -93,7 +94,7 @@ main
 
 .picture:hover
 {
-    border: 1px dashed black;
+    border-color: black;
 }
 
 .name
