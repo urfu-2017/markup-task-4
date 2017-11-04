@@ -1,9 +1,11 @@
+
 body
 {
     margin: 0;
+    font-size: 20px;
 }
 
-body main
+.items
 {
     text-align: center;
 }
@@ -17,68 +19,86 @@ input[name='grid']
 {
     height: 50px;
     background-color: #d4d4d4;
-    padding-top: 10px;
 }
 
-.settings label
+.settings header
 {
-    font-size: 25px;
+    display: inline-block;
+}
+
+h1.header
+{
+    margin: 5px 0;
+}
+
+.settings .grid
+{
+    font-size: 1.25em;
     margin-right: 20px;
 }
 
-.settings label:hover
+.settings .grid:hover
 {
     background-color: #888;
 }
 
-input[id='list']:checked ~ main > .item
+input.list:checked ~ .items > .item
 {
-    height: 400px;
-    width: 100%;
+    width: 90%;
+    min-width: 918px;
 }
 
-input[id='list']:checked ~ main .item_card
+input.list:checked ~ .items .item_card
 {
+    display: inline-block;
     vertical-align: top;
     width: 66%;
+    padding: 10px 10px 0;
 }
 
-input[id='list']:checked ~ main .image
+input.list:checked ~ .items .image
 {
+    float: left;
     width: 33%;
 }
 
-input[id='list']:checked ~ main > .item > .image > img
+input.list:checked ~ .items .description
 {
-    max-height: 400px;
-    max-width: 600px;
+    display: inline-block;
+    width: 57%;
+    vertical-align: top;
 }
 
-input[id='grid']:checked ~ main .item_card
+input.list:checked ~ .items .title
+{
+    display: inline-block;
+    width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    hyphens: none;
+}
+
+input.grid:checked ~ .items .item_card
 {
     height: 400px;
-    vertical-align: text-top;
+    padding: 10px;
+    width: 100%;
 }
 
 .item
 {
     text-align: left;
     display: inline-block;
+    vertical-align: bottom;
     width: 380px;
     margin: 30px .5%;
     box-shadow: 0 0 5px #000;
     background: #d8d7d7;
 }
 
-.item .image
+.image img
 {
-    position: relative;
-    display: inline-block;
-    margin: 0;
-}
-
-.item img
-{
+    display: block;
     width: 100%;
 }
 
@@ -92,7 +112,7 @@ input[id='grid']:checked ~ main .item_card
     font-size: 0;
 }
 
-.rating > label
+.rating > .half_star
 {
     background-size: 10px;
     width: 10px;
@@ -105,65 +125,54 @@ input[id='grid']:checked ~ main .item_card
     display: none;
 }
 
-.rating > label:nth-of-type(odd)
+label.interactable
+{
+    cursor: pointer;
+}
+
+.rating > .half_star:nth-of-type(odd),
+.rating:hover > .half_star:nth-of-type(odd)
 {
     background-image: url('images/left_star_full.png');
 }
 
-.rating > label:nth-of-type(even)
+.rating > .half_star:nth-of-type(even),
+.rating:hover > .half_star:nth-of-type(even)
 {
     background-image: url('images/right_star_full.png');
 }
 
-.rating:hover > label:nth-of-type(odd)
-{
-    background-image: url('images/left_star_full.png');
-}
-
-.rating:hover > label:nth-of-type(even)
-{
-    background-image: url('images/right_star_full.png');
-}
-
-.rating > label:hover ~ label:nth-of-type(odd)
+.rating > .half_star:hover ~ .half_star:nth-of-type(odd),
+input:checked ~ .half_star:nth-of-type(odd)
 {
     background-image: url('images/left_star_empty.png');
 }
 
-.rating > label:hover ~ label:nth-of-type(even)
-{
-    background-image: url('images/right_star_empty.png');
-}
-
-input:checked ~ label:nth-of-type(odd)
-{
-    background-image: url('images/left_star_empty.png');
-}
-
-input:checked ~ label:nth-of-type(even)
+.rating > .half_star:hover ~ .half_star:nth-of-type(even),
+input:checked ~ .half_star:nth-of-type(even)
 {
     background-image: url('images/right_star_empty.png');
 }
 
 .item_card
 {
-    display: inline-block;
     box-sizing: border-box;
-    margin-top: -4px;
-    padding: 10px;
-    overflow: hidden;
-    width: 100%;
-    text-overflow: ellipsis;
-    font-size: 20px;
+    font-size: 1em;
 }
 
-.item_card > header > h3
+.title > section
 {
+    margin: 10px 0;
+}
+
+h2.header
+{
+    margin: 5px 0 10px; 
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.item_card > article > section
+.description p
 {
     margin: 10px 0;
 }
@@ -181,9 +190,17 @@ input:checked ~ label:nth-of-type(even)
 
 .price p.old_price
 {
-    font-size: 18px;
+    font-size: .9rem;
     color: #888;
     text-decoration: line-through;
+}
+
+.item_card a
+{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .item_card a::before
@@ -191,7 +208,7 @@ input:checked ~ label:nth-of-type(even)
     content: 'Виды котиков > ';
 }
 
-.description > header > h4
+h3.header
 {
     margin: 5px 0;
 }
