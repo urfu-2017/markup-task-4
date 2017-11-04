@@ -3,7 +3,431 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Мяндекс.Муррркет»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+    <input type="radio" id="list" name="grid" class="list">
+    <input type="radio" id="grid" name="grid" class="grid" checked>
+    <aside class="settings">
+        <header><h1 class="header">Мяндекс.Муркет</h1></header>
+        <label class="interactable grid" for="list">В виде списка</label>
+        <label class="interactable grid" for="grid">В виде таблицы</label>
+    </aside>
+    <main class="items">
+        <section class="item">
+            <section class="image"><img src="Cats/cat1.jpg" alt="Серый котик"></section>
+            <section class="item_card">
+                <section class="title">
+                    <header><h2 class="header">Кот Борис</h2></header>
+                    <nav><a href="#">серые котики</a></nav>
+                    <section class="rating">
+                        <label class="interactable half_star" for="set_1_1"></label>
+                        <input type="radio" id="set_1_1" name="1_item">
+                        <label class="interactable half_star" for="set_1_2"></label>
+                        <input type="radio" id="set_1_2" name="1_item">
+                        <label class="interactable half_star" for="set_1_3"></label>
+                        <input type="radio" id="set_1_3" name="1_item">
+                        <label class="interactable half_star" for="set_1_4"></label>
+                        <input type="radio" id="set_1_4" name="1_item">
+                        <label class="interactable half_star" for="set_1_5"></label>
+                        <input type="radio" id="set_1_5" name="1_item">
+                        <label class="interactable half_star" for="set_1_6"></label>
+                        <input type="radio" id="set_1_6" name="1_item">
+                        <label class="interactable half_star" for="set_1_7"></label>
+                        <input type="radio" id="set_1_7" name="1_item" checked>
+                        <label class="interactable half_star" for="set_1_8"></label>
+                        <input type="radio" id="set_1_8" name="1_item">
+                        <label class="interactable half_star" for="set_1_9"></label>
+                        <input type="radio" id="set_1_9" name="1_item">
+                        <label class="interactable half_star" for="set_1_10"></label>
+                        <input type="radio" id="set_1_10" name="1_item">
+                    </section>
+                    <section class="price">
+                        <p>30000</p>
+                        <p class="old_price">45000</p>
+                    </section>
+                </section>
+                <section class="description">
+                    <header><h3 class="header">Описание котика:</h3></header>
+                    <article>
+                        <p>Он всегда подставит вам свое пушистое плечо</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section class="item">
+            <section class="image"><img src="Cats/cat2.jpg" alt="Рыжий котик"></section>
+            <section class="item_card">
+                <section class="title">
+                    <header><h2 class="header">Рыжик</h2></header>
+                    <nav><a href="#">рыжие котики</a></nav>
+                    <section class="rating">
+                        <label class="interactable half_star" for="set_2_1"></label>
+                        <input type="radio" id="set_2_1" name="2_item">
+                        <label class="interactable half_star" for="set_2_2"></label>
+                        <input type="radio" id="set_2_2" name="2_item">
+                        <label class="interactable half_star" for="set_2_3"></label>
+                        <input type="radio" id="set_2_3" name="2_item">
+                        <label class="interactable half_star" for="set_2_4"></label>
+                        <input type="radio" id="set_2_4" name="2_item">
+                        <label class="interactable half_star" for="set_2_5"></label>
+                        <input type="radio" id="set_2_5" name="2_item">
+                        <label class="interactable half_star" for="set_2_6"></label>
+                        <input type="radio" id="set_2_6" name="2_item">
+                        <label class="interactable half_star" for="set_2_7"></label>
+                        <input type="radio" id="set_2_7" name="2_item" checked>
+                        <label class="interactable half_star" for="set_2_8"></label>
+                        <input type="radio" id="set_2_8" name="2_item">
+                        <label class="interactable half_star" for="set_2_9"></label>
+                        <input type="radio" id="set_2_9" name="2_item">
+                        <label class="interactable half_star" for="set_2_10"></label>
+                        <input type="radio" id="set_2_10" name="2_item">
+                    </section>
+                    <section class="price">
+                        <p>20000</p>
+                    </section>
+                </section>
+                <section class="description">
+                    <header><h3 class="header">Описание котика:</h3></header>
+                    <article>
+                        <p>Этот рыжий комок шерсти не даст вам нормально спать</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section class="item">
+            <section class="image"><img src="Cats/cat3.jpg" alt="Манул"></section>
+            <section class="item_card">
+                <section class="title">
+                    <header><h2 class="header">Манул</h2></header>
+                    <nav><a href="#">опасные котики</a></nav>
+                    <section class="rating">
+                        <label class="interactable half_star" for="set_3_1"></label>
+                        <input type="radio" id="set_3_1" name="3_item" checked>
+                        <label class="interactable half_star" for="set_3_2"></label>
+                        <input type="radio" id="set_3_2" name="3_item">
+                        <label class="interactable half_star" for="set_3_3"></label>
+                        <input type="radio" id="set_3_3" name="3_item">
+                        <label class="interactable half_star" for="set_3_4"></label>
+                        <input type="radio" id="set_3_4" name="3_item">
+                        <label class="interactable half_star" for="set_3_5"></label>
+                        <input type="radio" id="set_3_5" name="3_item">
+                        <label class="interactable half_star" for="set_3_6"></label>
+                        <input type="radio" id="set_3_6" name="3_item">
+                        <label class="interactable half_star" for="set_3_7"></label>
+                        <input type="radio" id="set_3_7" name="3_item">
+                        <label class="interactable half_star" for="set_3_8"></label>
+                        <input type="radio" id="set_3_8" name="3_item">
+                        <label class="interactable half_star" for="set_3_9"></label>
+                        <input type="radio" id="set_3_9" name="3_item">
+                        <label class="interactable half_star" for="set_3_10"></label>
+                        <input type="radio" id="set_3_10" name="3_item">
+                    </section>
+                    <section class="price">
+                        <p>5000</p>
+                        <p class="old_price">100000</p>
+                    </section>
+                </section>
+                <section class="description">
+                    <header><h3 class="header">Описание котика:</h3></header>
+                    <article>
+                        <p>Кто-нибудь заберите его, он взял меня в заложники!
+                            И заставляет меня ловить ему мышей.
+                        </p>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section class="item">
+            <section class="image"><img src="Cats/cat4.jpg" alt="Котенок"></section>
+            <section class="item_card">
+                <section class="title">
+                    <header><h2 class="header">Котенок</h2></header>
+                    <nav><a href="#">котята</a></nav>
+                    <section class="rating">
+                        <label class="interactable half_star" for="set_4_1"></label>
+                        <input type="radio" id="set_4_1" name="4_item">
+                        <label class="interactable half_star" for="set_4_2"></label>
+                        <input type="radio" id="set_4_2" name="4_item">
+                        <label class="interactable half_star" for="set_4_3"></label>
+                        <input type="radio" id="set_4_3" name="4_item">
+                        <label class="interactable half_star" for="set_4_4"></label>
+                        <input type="radio" id="set_4_4" name="4_item">
+                        <label class="interactable half_star" for="set_4_5"></label>
+                        <input type="radio" id="set_4_5" name="4_item">
+                        <label class="interactable half_star" for="set_4_6"></label>
+                        <input type="radio" id="set_4_6" name="4_item">
+                        <label class="interactable half_star" for="set_4_7"></label>
+                        <input type="radio" id="set_4_7" name="4_item">
+                        <label class="interactable half_star" for="set_4_8"></label>
+                        <input type="radio" id="set_4_8" name="4_item">
+                        <label class="interactable half_star" for="set_4_9"></label>
+                        <input type="radio" id="set_4_9" name="4_item">
+                        <label class="interactable half_star" for="set_4_10"></label>
+                        <input type="radio" id="set_4_10" name="4_item" checked>
+                    </section>
+                    <section class="price">
+                        <p>10000</p>
+                    </section>
+                </section>
+                <section class="description">
+                    <header><h3 class="header">Описание котика:</h3></header>
+                    <article>
+                        <p>Ну вы посмотрите на его мордочку, ну как его можно его не взять?</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section class="item">
+            <section class="image"><img src="Cats/cat5.jpeg" alt="Сердитый котик"></section>
+            <section class="item_card">
+                <section class="title">
+                    <header><h2 class="header">Grumpy cat</h2></header>
+                    <nav><a href="#">необычные</a></nav>
+                    <section class="rating">
+                        <label class="interactable half_star" for="set_5_1"></label>
+                        <input type="radio" id="set_5_1" name="5_item">
+                        <label class="interactable half_star" for="set_5_2"></label>
+                        <input type="radio" id="set_5_2" name="5_item">
+                        <label class="interactable half_star" for="set_5_3"></label>
+                        <input type="radio" id="set_5_3" name="5_item">
+                        <label class="interactable half_star" for="set_5_4"></label>
+                        <input type="radio" id="set_5_4" name="5_item">
+                        <label class="interactable half_star" for="set_5_5"></label>
+                        <input type="radio" id="set_5_5" name="5_item">
+                        <label class="interactable half_star" for="set_5_6"></label>
+                        <input type="radio" id="set_5_6" name="5_item">
+                        <label class="interactable half_star" for="set_5_7"></label>
+                        <input type="radio" id="set_5_7" name="5_item">
+                        <label class="interactable half_star" for="set_5_8"></label>
+                        <input type="radio" id="set_5_8" name="5_item">
+                        <label class="interactable half_star" for="set_5_9"></label>
+                        <input type="radio" id="set_5_9" name="5_item" checked>
+                        <label class="interactable half_star" for="set_5_10"></label>
+                        <input type="radio" id="set_5_10" name="5_item">
+                    </section>
+                    <section class="price">
+                        <p>100000</p>
+                    </section>
+                </section>
+                <section class="description">
+                    <header><h3 class="header">Описание котика:</h3></header>
+                    <article>
+                        <p>Прямиком из Америки. Немецкое качество.</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section class="item">
+            <section class="image"><img src="Cats/cat6.jpg" alt="Два котика"></section>
+            <section class="item_card">
+                <section class="title">
+                    <header><h2 class="header">Близняшки</h2></header>
+                    <nav><a href="#">котики по акции</a></nav>
+                    <section class="rating">
+                        <label class="interactable half_star" for="set_6_1"></label>
+                        <input type="radio" id="set_6_1" name="6_item">
+                        <label class="interactable half_star" for="set_6_2"></label>
+                        <input type="radio" id="set_6_2" name="6_item">
+                        <label class="interactable half_star" for="set_6_3"></label>
+                        <input type="radio" id="set_6_3" name="6_item">
+                        <label class="interactable half_star" for="set_6_4"></label>
+                        <input type="radio" id="set_6_4" name="6_item">
+                        <label class="interactable half_star" for="set_6_5"></label>
+                        <input type="radio" id="set_6_5" name="6_item">
+                        <label class="interactable half_star" for="set_6_6"></label>
+                        <input type="radio" id="set_6_6" name="6_item">
+                        <label class="interactable half_star" for="set_6_7"></label>
+                        <input type="radio" id="set_6_7" name="6_item">
+                        <label class="interactable half_star" for="set_6_8"></label>
+                        <input type="radio" id="set_6_8" name="6_item">
+                        <label class="interactable half_star" for="set_6_9"></label>
+                        <input type="radio" id="set_6_9" name="6_item" checked>
+                        <label class="interactable half_star" for="set_6_10"></label>
+                        <input type="radio" id="set_6_10" name="6_item">
+                    </section>
+                    <section class="price">
+                        <p>30000</p>
+                        <p class="old_price">60000</p>
+                    </section>
+                </section>
+                <section class="description">
+                    <header><h3 class="header">Описание котика:</h3></header>
+                    <article>
+                        <p>Акция! Купите 2ух котиков по цене 1.</p>
+                        <p>Может быть они выглядять по разному,
+                            но у них одниково доброе сердце.</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section class="item">
+            <section class="image"><img src="Cats/cat7.jpg" alt="Удивленный котик"></section>
+            <section class="item_card">
+                <section class="title">
+                    <header><h2 class="header">Котяра удивляка</h2></header>
+                    <nav><a href="#">необычные</a></nav>
+                    <section class="rating">
+                        <label class="interactable half_star" for="set_7_1"></label>
+                        <input type="radio" id="set_7_1" name="7_item">
+                        <label class="interactable half_star" for="set_7_2"></label>
+                        <input type="radio" id="set_7_2" name="7_item">
+                        <label class="interactable half_star" for="set_7_3"></label>
+                        <input type="radio" id="set_7_3" name="7_item">
+                        <label class="interactable half_star" for="set_7_4"></label>
+                        <input type="radio" id="set_7_4" name="7_item">
+                        <label class="interactable half_star" for="set_7_5"></label>
+                        <input type="radio" id="set_7_5" name="7_item">
+                        <label class="interactable half_star" for="set_7_6"></label>
+                        <input type="radio" id="set_7_6" name="7_item">
+                        <label class="interactable half_star" for="set_7_7"></label>
+                        <input type="radio" id="set_7_7" name="7_item">
+                        <label class="interactable half_star" for="set_7_8"></label>
+                        <input type="radio" id="set_7_8" name="7_item" checked>
+                        <label class="interactable half_star" for="set_7_9"></label>
+                        <input type="radio" id="set_7_9" name="7_item">
+                        <label class="interactable half_star" for="set_7_10"></label>
+                        <input type="radio" id="set_7_10" name="7_item">
+                    </section>
+                    <section class="price">
+                        <p>45000</p>
+                    </section>
+                </section>
+                <section class="description">
+                    <header><h3 class="header">Описание котика:</h3></header>
+                    <article>
+                        <p>Кот, котырый всегда всему удивляется. Удивительно, не правда ли?</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section class="item">
+            <section class="image"><img src="Cats/cat8.jpg" alt="Мокрый котик"></section>
+            <section class="item_card">
+                <section class="title">
+                    <header><h2 class="header">Игоооооооооооооооооооооооооооооооорь</h2></header>
+                    <nav><a href="#">рыжие котики</a></nav>
+                    <section class="rating">
+                        <label class="interactable half_star" for="set_10_1"></label>
+                        <input type="radio" id="set_10_1" name="10_item">
+                        <label class="interactable half_star" for="set_10_2"></label>
+                        <input type="radio" id="set_10_2" name="10_item">
+                        <label class="interactable half_star" for="set_10_3"></label>
+                        <input type="radio" id="set_10_3" name="10_item">
+                        <label class="interactable half_star" for="set_10_4"></label>
+                        <input type="radio" id="set_10_4" name="10_item">
+                        <label class="interactable half_star" for="set_10_5"></label>
+                        <input type="radio" id="set_10_5" name="10_item">
+                        <label class="interactable half_star" for="set_10_6"></label>
+                        <input type="radio" id="set_10_6" name="10_item">
+                        <label class="interactable half_star" for="set_10_7"></label>
+                        <input type="radio" id="set_10_7" name="10_item" checked>
+                        <label class="interactable half_star" for="set_10_8"></label>
+                        <input type="radio" id="set_10_8" name="10_item">
+                        <label class="interactable half_star" for="set_10_9"></label>
+                        <input type="radio" id="set_10_9" name="10_item">
+                        <label class="interactable half_star" for="set_10_10"></label>
+                        <input type="radio" id="set_10_10" name="10_item">
+                    </section>
+                    <section class="price">
+                        <p>20000</p>
+                        <p class="old_price">30000</p>
+                    </section>
+                </section>
+                <section class="description">
+                    <header><h3 class="header">Описание котика:</h3></header>
+                    <article>
+                        <p>Прекрасный подарок для вашей бабушки. Этот кот способен прежить
+                            все пытки и съесть любую еду. Так же он всегда рад об вас
+                            потереться.</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section class="item">
+            <section class="image"><img src="Cats/cat9.jpg" alt="Пухлый котик"></section>
+            <section class="item_card">
+                <section class="title">
+                    <header><h2 class="header">Кот каратист</h2></header>
+                    <nav><a href="#">японские котики</a></nav>
+                    <section class="rating">
+                        <label class="interactable half_star" for="set_9_1"></label>
+                        <input type="radio" id="set_9_1" name="9_item">
+                        <label class="interactable half_star" for="set_9_2"></label>
+                        <input type="radio" id="set_9_2" name="9_item">
+                        <label class="interactable half_star" for="set_9_3"></label>
+                        <input type="radio" id="set_9_3" name="9_item">
+                        <label class="interactable half_star" for="set_9_4"></label>
+                        <input type="radio" id="set_9_4" name="9_item">
+                        <label class="interactable half_star" for="set_9_5"></label>
+                        <input type="radio" id="set_9_5" name="9_item">
+                        <label class="interactable half_star" for="set_9_6"></label>
+                        <input type="radio" id="set_9_6" name="9_item">
+                        <label class="interactable half_star" for="set_9_7"></label>
+                        <input type="radio" id="set_9_7" name="9_item">
+                        <label class="interactable half_star" for="set_9_8"></label>
+                        <input type="radio" id="set_9_8" name="9_item">
+                        <label class="interactable half_star" for="set_9_9"></label>
+                        <input type="radio" id="set_9_9" name="9_item" checked>
+                        <label class="interactable half_star" for="set_9_10"></label>
+                        <input type="radio" id="set_9_10" name="9_item">
+                    </section>
+                    <section class="price">
+                        <p>55000</p>
+                    </section>
+                </section>
+                <section class="description">
+                    <header><h3 class="header">Описание котика:</h3></header>
+                    <article>
+                        <p>Котик каратист готов с вами всегда подраться. Но будте готовы к том,
+                            что у него черный пояс.</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section class="item">
+            <section class="image"><img src="Cats/cat10.jpg" alt="Лысый котик"></section>
+            <section class="item_card">
+                <section class="title">
+                    <header><h2 class="header">Кот Борис</h2></header>
+                    <nav><a href="#">необычные</a></nav>
+                    <section class="rating">
+                        <label class="interactable half_star" for="set_8_1"></label>
+                        <input type="radio" id="set_8_1" name="8_item">
+                        <label class="interactable half_star" for="set_8_2"></label>
+                        <input type="radio" id="set_8_2" name="8_item">
+                        <label class="interactable half_star" for="set_8_3"></label>
+                        <input type="radio" id="set_8_3" name="8_item">
+                        <label class="interactable half_star" for="set_8_4"></label>
+                        <input type="radio" id="set_8_4" name="8_item" checked>
+                        <label class="interactable half_star" for="set_8_5"></label>
+                        <input type="radio" id="set_8_5" name="8_item">
+                        <label class="interactable half_star" for="set_8_6"></label>
+                        <input type="radio" id="set_8_6" name="8_item">
+                        <label class="interactable half_star" for="set_8_7"></label>
+                        <input type="radio" id="set_8_7" name="8_item">
+                        <label class="interactable half_star" for="set_8_8"></label>
+                        <input type="radio" id="set_8_8" name="8_item">
+                        <label class="interactable half_star" for="set_8_9"></label>
+                        <input type="radio" id="set_8_9" name="8_item">
+                        <label class="interactable half_star" for="set_8_10"></label>
+                        <input type="radio" id="set_8_10" name="8_item">
+                    </section>
+                    <section class="price">
+                        <p>100000</p>
+                    </section>
+                </section>
+                <section class="description">
+                    <header><h3 class="header">Описание котика:</h3></header>
+                    <article>
+                        <p>Этот котик меня пугает до чертиков, но он нам обошелся
+                            в кругленькую сумма, так что я напишу что он волшебный.
+                            Он должен быть волшебным за такие деньги.
+                        </p>
+                    </article>
+                </section>
+            </section>
+        </section>
+    </main>
 </body>
 </html>

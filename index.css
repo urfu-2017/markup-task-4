@@ -1,0 +1,214 @@
+
+body
+{
+    margin: 0;
+    font-size: 20px;
+}
+
+.items
+{
+    text-align: center;
+}
+
+input[name='grid']
+{
+    display: none;
+}
+
+.settings
+{
+    height: 50px;
+    background-color: #d4d4d4;
+}
+
+.settings header
+{
+    display: inline-block;
+}
+
+h1.header
+{
+    margin: 5px 0;
+}
+
+.settings .grid
+{
+    font-size: 1.25em;
+    margin-right: 20px;
+}
+
+.settings .grid:hover
+{
+    background-color: #888;
+}
+
+input.list:checked ~ .items > .item
+{
+    width: 90%;
+    min-width: 918px;
+}
+
+input.list:checked ~ .items .item_card
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 66%;
+    padding: 10px 10px 0;
+}
+
+input.list:checked ~ .items .image
+{
+    float: left;
+    width: 33%;
+}
+
+input.list:checked ~ .items .description
+{
+    display: inline-block;
+    width: 57%;
+    vertical-align: top;
+}
+
+input.list:checked ~ .items .title
+{
+    display: inline-block;
+    width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    hyphens: none;
+}
+
+input.grid:checked ~ .items .item_card
+{
+    height: 400px;
+    padding: 10px;
+    width: 100%;
+}
+
+.item
+{
+    text-align: left;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 380px;
+    margin: 30px .5%;
+    box-shadow: 0 0 5px #000;
+    background: #d8d7d7;
+}
+
+.image img
+{
+    display: block;
+    width: 100%;
+}
+
+.item:hover
+{
+    box-shadow: 0 0 20px #000;
+}
+
+.rating
+{
+    font-size: 0;
+}
+
+.rating > .half_star
+{
+    background-size: 10px;
+    width: 10px;
+    height: 20px;
+    display: inline-block;
+}
+
+.rating > input
+{
+    display: none;
+}
+
+label.interactable
+{
+    cursor: pointer;
+}
+
+.rating > .half_star:nth-of-type(odd),
+.rating:hover > .half_star:nth-of-type(odd)
+{
+    background-image: url('images/left_star_full.png');
+}
+
+.rating > .half_star:nth-of-type(even),
+.rating:hover > .half_star:nth-of-type(even)
+{
+    background-image: url('images/right_star_full.png');
+}
+
+.rating > .half_star:hover ~ .half_star:nth-of-type(odd),
+input:checked ~ .half_star:nth-of-type(odd)
+{
+    background-image: url('images/left_star_empty.png');
+}
+
+.rating > .half_star:hover ~ .half_star:nth-of-type(even),
+input:checked ~ .half_star:nth-of-type(even)
+{
+    background-image: url('images/right_star_empty.png');
+}
+
+.item_card
+{
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.title > section
+{
+    margin: 10px 0;
+}
+
+h2.header
+{
+    margin: 5px 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description p
+{
+    margin: 10px 0;
+}
+
+.price p
+{
+    font-size: 30px;
+    display: inline;
+}
+
+.price p::after
+{
+    content: 'р';
+}
+
+.price p.old_price
+{
+    font-size: .9rem;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.item_card a
+{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item_card a::before
+{
+    content: 'Виды котиков > ';
+}
+
+h3.header
+{
+    margin: 5px 0;
+}
