@@ -15,7 +15,8 @@
     font-weight: bold;
 }
 
-.title:hover
+.title:hover,
+.category:hover
 {
     text-decoration: underline;
 }
@@ -28,11 +29,6 @@ a
 .product:hover
 {
     box-shadow: 0 0 1em gold;
-}
-
-.category:hover
-{
-    text-decoration: underline;
 }
 
 .photo
@@ -61,7 +57,7 @@ a
     color: red;
 }
 
-.text-strike
+.original-price
 {
     text-decoration: line-through;
 }
@@ -93,7 +89,7 @@ img
     width: 25%;
 }
 
-.switch-btn:checked ~ .content .product .description
+.switch-btn:checked .description
 {
     vertical-align: top;
     display: inline-block;
