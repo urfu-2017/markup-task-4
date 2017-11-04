@@ -1,18 +1,26 @@
 @font-face 
 {
     font-family: 'FontAwesome';
-    src: url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.woff');
+    src: url('fontawesome-webfont.woff');
+}
+
+@font-face 
+{
+    font-family: 'Cormorant SC', serif;
+    src: url('CormorantSC-Medium.ttf');
 }
 
 body
 {
-    font: 18px 'Import';
-    background-color: grey;
+    font: 18px 'Cormorant SC';
+    font-weight: bold;
+    background-color: rgb(189, 186, 186);
 }
 
 article
 {
     display: inline-block;
+    vertical-align: bottom;
 }
 
 main
@@ -23,51 +31,13 @@ main
 
 section
 {
-    width: 280px;
-    height: 550px;
+    text-align: center;
+    width: 350px;
     display: inline-block;
     vertical-align: top;
-    margin: 5px;
-    transition: .2s;
     background-color: rgb(243, 205, 227);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .56);
-}
-
-.star
-{
-    font-family: FontAwesome;
-    display: inline-block;
-}
-
-.star > input
-{
-    display: none;
-}
-
-.star > label
-{
-    float: right;
-    color: rgb(245, 139, 10);
-}
-
-.star > label:before
-{
-    margin: 4px;
-    display: inline-block;
-    font-size: 40px;
-    content: '\f005';
-}
-
-.star > .half:before
-{
-    content: '\f089';
-    position: absolute;
-}
-
-.star input:checked ~ label,
-.star label:hover ~ label 
-{
-    color: rgb(255, 255, 9);
+    margin: 12px;
 }
 
 section:hover
@@ -81,21 +51,15 @@ section:hover
     padding: 015px;
     text-align: left;
     color: rgb(19, 18, 18);
-    display: inline-block;
 }
 
 img
 {
-    width: 280px;
-    height: 170px;
-    transition: all .2s ease-in-out;
+    width: 350px;
+    height: 250px;
+    transition: .2s;
     opacity: .8;
-}
-
-figure
-{
     position: relative;
-    margin: 0;
 }
 
 img:hover
@@ -125,24 +89,26 @@ img:hover
     float: left;
 }
 
-figcaption
+.nickname
 {
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
-    transition: .5s;
-    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 320px;
 }
 
-figcaption a
+.nickname a
 {
     text-decoration: none;
     transition: .5s;
     color: #b30f0f;
 }
 
-figcaption:hover,
-figcaption a:hover
+.nickname:hover,
+.nickname a:hover
 {
     color: #fcd527;
 }
@@ -150,7 +116,6 @@ figcaption a:hover
 .category
 {
     padding: 0 15px;
-    transition: .5s;
     color: rgb(37, 37, 37);
 }
 
@@ -159,29 +124,64 @@ figcaption a:hover
     color: #fbff00;
 }
 
-input:checked ~ main section
+.star
 {
-    display: table;
-    width: 1000px;
-    height: 230px;
+    font-family: FontAwesome;
 }
 
-input:checked ~ section:hover
+.star > input
 {
-    transform: scale(1.07);
+    display: none;
+}
+
+.star > label
+{
+    float: right;
+    color: rgb(245, 139, 10);
+}
+
+.star > label:before
+{
+    margin: 15px;
+    display: inline-block;
+    font-size: 40px;
+    content: '\f005';
+}
+
+.star > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.star input:checked ~ label,
+.star label:hover ~ label 
+{
+    color: rgb(255, 255, 9);
+}
+
+input
+{
+    height: 30px;
+    width: 70px;
+    position: absolute;
+}
+
+input:checked ~ main section
+{
+    text-align: left;
+    display: table;
+    width: 1200px;
 }
 
 input:checked ~ main section article,
-input:checked ~ main section figure
+input:checked ~ main section .figure img
 {
     display: table-cell;
     vertical-align: top;
-    width: 500px;
 }
 
-input:checked ~ main section .information
+input:checked ~ main section article
 {
-    font-size: 100%;
-    color: #000;
+    width: 400px;
 }
-
