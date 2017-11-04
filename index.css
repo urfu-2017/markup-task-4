@@ -1,7 +1,7 @@
 @font-face 
 {
     font-family: 'FontAwesome';
-    src: url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.woff');
+    src: url('fonts/FontAwesome.eot') format('embedded-opentype'), url('fonts/FontAwesome.woff') format('woff'), url('fonts/FontAwesome.ttf') format('truetype');
 }
 
 .card
