@@ -14,8 +14,6 @@ input.view
     display: none;
 }
 
-
-
 .item
 {
     display: inline-block;
@@ -50,7 +48,7 @@ img
 
 img:hover
 {
-    opacity: 0.75;
+    opacity: .75;
 }
 
 input:checked ~ section .item
