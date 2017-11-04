@@ -1,0 +1,212 @@
+.ratingControl
+{
+    position: relative;
+    width: 175px;
+    height: 35px;
+    user-select: none;
+    margin-left: 10px;
+}
+
+.ratingControl input
+{
+    visibility: hidden;
+}
+
+.ratingControl-stars
+{
+    position: absolute;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    background-image: url('unfilledStar.jpg');
+    background-size: auto 35px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ratingControl-stars:hover,
+.ratingControl-stars:hover ~ label,
+.ratingInput:checked ~ label
+{
+    background-image: url('filledStar.jpg');
+}
+
+.ratingControl-stars--05,
+.ratingControl-stars--1
+{
+    left: 0;
+}
+
+.ratingControl-stars--15,
+.ratingControl-stars--2
+{
+    left: 45px;
+}
+
+.ratingControl-stars--25,
+.ratingControl-stars--3
+{
+    left: 90px;
+}
+
+.ratingControl-stars--35,
+.ratingControl-stars--4
+{
+    left: 135px;
+}
+
+.ratingControl-stars--45,
+.ratingControl-stars--5
+{
+    left: 180px;
+}
+
+.ratingControl-stars--half
+{
+    width: 18px;
+}
+
+label,
+input
+{
+    display: inline-block;
+}
+
+.category
+{
+    color: grey;
+    text-decoration: underline;
+}
+
+.listView:checked ~ .card::after
+{
+    vertical-align: top;
+    display: inline-block;
+    margin: 5px;
+}
+
+.listView:checked ~ .card
+{
+    width: 100%;
+    height: 270px;
+    display: block;
+}
+
+.listView:checked ~ .card .catInfo,
+.listView:checked ~ .card .catDescription
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    height: 270px;
+}
+
+.listView:checked ~ .card .picture
+{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.tilesView:checked ~ .card
+{
+    display: inline-block;
+}
+
+h1::first-letter
+{
+    color: red;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.card
+{
+    width: 270px;
+    margin: 10px;
+    vertical-align: top;
+    overflow: hidden;
+    margin-bottom: 0;
+    display: inline-block;
+    border: thin solid grey;
+}
+
+.picture
+{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+
+.picture img
+{
+    display: inline-block;
+    max-width: 250px;
+    max-height: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.catname
+{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+
+.catDescription p
+{
+    margin: 5px;
+}
+
+.catPrice
+{
+    color: red;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.oldPrice
+{
+    color: grey;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.catInfo
+{
+    margin-left: 5px;
+}
+
+.catname:hover
+{
+    color: green;
+}
+
+.category:hover
+{
+    color: black;
+}
+
+.card:hover
+{
+    box-shadow: 0 0 3px 3px gold;
+}
+
+.card img:hover
+{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+

@@ -3,7 +3,274 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Мяндекс.Муррркет»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <h1>Мяндекс.Муррркет</h1>
+    <input type="radio" class="listView" name="viewtype" id="list">
+    <label for="list">показывать списком</label>
+    <input type="radio" class="tilesView" name="viewtype" checked="checked" id="tiles">
+    <label for="tiles">показывать плитками</label>
+    <br>
+
+    <div class="card">
+        <div class="picture">
+            <img src="cat4.jpg" alt="Сердитый кот">
+        </div>
+        <div class="catInfo">
+            <a href="http://bit.ly/2ydPH5z" class="catname">Сердитый кот</a>
+            <p class="category">Кот-необычная морда</p>
+            <div class="ratingControl">
+                <input class="ratingInput" type="radio" id="1rating-5" name="rating1" value="5">
+                <label class="ratingControl-stars ratingControl-stars--5" for="1rating-5"></label>
+                <input class="ratingInput" type="radio" id="1rating-45" name="rating1" value="4.5">
+                <label class="ratingControl-stars ratingControl-stars--45 ratingControl-stars--half"
+                for="1rating-45">45</label>
+                <input class="ratingInput" type="radio" id="1rating-4" name="rating1" value="4">
+                <label class="ratingControl-stars ratingControl-stars--4" for="1rating-4">4</label>
+                <input class="ratingInput" type="radio" id="1rating-35" name="rating1" value="3.5">
+                <label class="ratingControl-stars ratingControl-stars--35 ratingControl-stars--half"
+                for="1rating-35">35</label>
+                <input class="ratingInput" type="radio" id="1rating-3" name="rating1" value="3">
+                <label class="ratingControl-stars ratingControl-stars--3" for="1rating-3">3</label>
+                <input class="ratingInput" type="radio" id="1rating-25" name="rating1" value="2.5">
+                <label class="ratingControl-stars ratingControl-stars--25 ratingControl-stars--half"
+                for="1rating-25">25</label>
+                <input class="ratingInput" type="radio" id="1rating-2" name="rating1" value="2">
+                <label class="ratingControl-stars ratingControl-stars--2" for="1rating-2">2</label>
+                <input class="ratingInput" type="radio" id="1rating-15" name="rating1" value="1.5">
+                <label class="ratingControl-stars ratingControl-stars--15 ratingControl-stars--half"
+                 for="1rating-15">15</label>
+                <input class="ratingInput" type="radio" id="1rating-1" name="rating1" value="1">
+                <label class="ratingControl-stars ratingControl-stars--1" for="1rating-1">1</label>
+                <input class="ratingInput" type="radio" id="1rating-05" name="rating1" value="0.5">
+                <label class="ratingControl-stars ratingControl-stars--05 ratingControl-stars--half"
+                for="1rating-05">05</label>
+            </div>
+            <p class="catPrice">1 000 р. <span class="oldPrice">2 000 р</span></p>
+        </div>
+
+        <div class="catDescription">
+            <p>Бело-коричневый кот с голубыми глазами и опущенными вниз уголками рта, что придает
+                его морде предельно угрюмый вид. Выражает грусть, печаль, угрюмое, унылое настроение.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="picture">
+            <img src="cuteCat.jpg" alt="кошка">
+        </div>
+        <div class="catInfo">
+            <a href="http://bit.ly/2yZUJ4F" class="catname">Кошка смузи</a>
+            <p class="category">Кошка-длинношерстные-зеленоглазые</p>
+            <div class="ratingControl">
+                <input class="ratingInput" type="radio" id="2rating-5" name="rating2" value="5">
+                <label class="ratingControl-stars ratingControl-stars--5" for="2rating-5"></label>
+                <input class="ratingInput" type="radio" id="2rating-45" name="rating2" value="4.5">
+                <label class="ratingControl-stars ratingControl-stars--45 ratingControl-stars--half"
+                for="2rating-45">45</label>
+                <input class="ratingInput" type="radio" id="2rating-4" name="rating2" value="4">
+                <label class="ratingControl-stars ratingControl-stars--4" for="2rating-4">4</label>
+                <input class="ratingInput" type="radio" id="2rating-35" name="rating2" value="3.5">
+                <label class="ratingControl-stars ratingControl-stars--35 ratingControl-stars--half"
+                for="2rating-35">35</label>
+                <input class="ratingInput" type="radio" id="2rating-3" name="rating2" value="3">
+                <label class="ratingControl-stars ratingControl-stars--3" for="2rating-3">3</label>
+                <input class="ratingInput" type="radio" id="2rating-25" name="rating2" value="2.5">
+                <label class="ratingControl-stars ratingControl-stars--25 ratingControl-stars--half"
+                for="2rating-25">25</label>
+                <input class="ratingInput" type="radio" id="2rating-2" name="rating2" value="2">
+                <label class="ratingControl-stars ratingControl-stars--2" for="2rating-2">2</label>
+                <input class="ratingInput" type="radio" id="2rating-15" name="rating2" value="1.5">
+                <label class="ratingControl-stars ratingControl-stars--15 ratingControl-stars--half"
+                for="2rating-15">15</label>
+                <input class="ratingInput" type="radio" id="2rating-1" name="rating2" value="1">
+                <label class="ratingControl-stars ratingControl-stars--1" for="2rating-1">1</label>
+                <input class="ratingInput" type="radio" id="2rating-05" name="rating2" value="0.5">
+                <label class="ratingControl-stars ratingControl-stars--05 ratingControl-stars--half"
+                for="2rating-05">05</label>
+            </div>
+            <p class="catPrice">15 000 р.</p>
+        </div>
+        <div class="catDescription">
+            <p>Кошка породы британская длинношерстная по кличке Смузи.
+                Её шерсть длинна и шелковиста, её глаза как два горящих изумруда,
+                смотрящих прямо в душу, её милота буквально разрывает Instagram...</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="picture">
+            <img src="cat3.png" alt="Зеленоглазый кот">
+        </div>
+        <div class="catInfo">
+            <a href="http://bit.ly/2zPldDf" class="catname">Зеленоглазый кот</a>
+            <p class="category">Кот-зеленоглазые</p>
+            <div class="ratingControl">
+                <input class="ratingInput" type="radio" id="3rating-5" name="3rating" value="5">
+                <label class="ratingControl-stars ratingControl-stars--5" for="3rating-5"></label>
+                <input class="ratingInput" type="radio" id="3rating-45" name="3rating" value="4.5">
+                <label class="ratingControl-stars ratingControl-stars--45 ratingControl-stars--half"
+                for="3rating-45">45</label>
+                <input class="ratingInput" type="radio" id="3rating-4" name="3rating" value="4">
+                <label class="ratingControl-stars ratingControl-stars--4" for="3rating-4">4</label>
+                <input class="ratingInput" type="radio" id="3rating-35" name="3rating" value="3.5">
+                <label class="ratingControl-stars ratingControl-stars--35 ratingControl-stars--half"
+                for="3rating-35">35</label>
+                <input class="ratingInput" type="radio" id="3rating-3" name="3rating" value="3">
+                <label class="ratingControl-stars ratingControl-stars--3" for="3rating-3">3</label>
+                <input class="ratingInput" type="radio" id="3rating-25" name="3rating" value="2.5">
+                <label class="ratingControl-stars ratingControl-stars--25 ratingControl-stars--half"
+                for="3rating-25">25</label>
+                <input class="ratingInput" type="radio" id="3rating-2" name="3rating" value="2">
+                <label class="ratingControl-stars ratingControl-stars--2" for="3rating-2">2</label>
+                <input class="ratingInput" type="radio" id="3rating-15" name="3rating" value="1.5">
+                <label class="ratingControl-stars ratingControl-stars--15 ratingControl-stars--half"
+                for="3rating-15">15</label>
+                <input class="ratingInput" type="radio" id="3rating-1" name="3rating" value="1">
+                <label class="ratingControl-stars ratingControl-stars--1" for="3rating-1">1</label>
+                <input class="ratingInput" type="radio" id="3rating-05" name="3rating" value="0.5">
+                <label class="ratingControl-stars ratingControl-stars--05 ratingControl-stars--half"
+                for="3rating-05">05</label>
+            </div>
+            <p class="catPrice">2 500 р.</p>
+        </div>
+
+        <div class="catDescription">
+            <p>Замечательный зеленоглазый кот. Спокойный по пустякам не мяукает, игривый, ласковый.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="picture">
+            <img src="cat1.jpg" alt="кот с бабочкой">
+        </div>
+        <div class="catInfo">
+            <a href="http://bit.ly/2zX2dU2" class="catname">Кот с бабочкой</a>
+            <p class="category">Кот-стильные</p>
+            <div class="ratingControl">
+                <input class="ratingInput" type="radio" id="4rating-5" name="4rating" value="5">
+                <label class="ratingControl-stars ratingControl-stars--5" for="4rating-5"></label>
+                <input class="ratingInput" type="radio" id="4rating-45" name="4rating" value="4.5">
+                <label class="ratingControl-stars ratingControl-stars--45 ratingControl-stars--half"
+                for="4rating-45">45</label>
+                <input class="ratingInput" type="radio" id="4rating-4" name="4rating" value="4">
+                <label class="ratingControl-stars ratingControl-stars--4" for="4rating-4">4</label>
+                <input class="ratingInput" type="radio" id="4rating-35" name="4rating" value="3.5">
+                <label class="ratingControl-stars ratingControl-stars--35 ratingControl-stars--half"
+                for="4rating-35">35</label>
+                <input class="ratingInput" type="radio" id="4rating-3" name="4rating" value="3">
+                <label class="ratingControl-stars ratingControl-stars--3" for="4rating-3">3</label>
+                <input class="ratingInput" type="radio" id="4rating-25" name="4rating" value="2.5">
+                <label class="ratingControl-stars ratingControl-stars--25 ratingControl-stars--half"
+                for="4rating-25">25</label>
+                <input class="ratingInput" type="radio" id="4rating-2" name="4rating" value="2">
+                <label class="ratingControl-stars ratingControl-stars--2" for="4rating-2">2</label>
+                <input class="ratingInput" type="radio" id="4rating-15" name="4rating" value="1.5">
+                <label class="ratingControl-stars ratingControl-stars--15 ratingControl-stars--half"
+                for="4rating-15">15</label>
+                <input class="ratingInput" type="radio" id="4rating-1" name="4rating" value="1">
+                <label class="ratingControl-stars ratingControl-stars--1" for="4rating-1">1</label>
+                <input class="ratingInput" type="radio" id="4rating-05" name="4rating" value="0.5">
+                <label class="ratingControl-stars ratingControl-stars--05 ratingControl-stars--half"
+                for="4rating-05">05</label>
+            </div>
+            <p class="catPrice">1 300 р.</p>
+        </div>
+        <div class="catDescription">
+            <p>Шикарное и пушистое чудо. Большой ласкун
+                    и мурлыка наполнит ваш дом теплом и нежностью!!! Он ждет
+                    своих любящих и ответственных маму и папу, которые смогут
+                    подарить ему свою любовь и ласку
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="picture">
+            <img src="cat2.jpg" alt="Полковник Мяу">
+        </div>
+        <div class="catInfo">
+            <a href="http://bit.ly/2gTtCSm" class="catname">Полковник Мяу</a>
+            <p class="category">Кот-длинношерстные-необычная морда</p>
+            <div class="ratingControl">
+                <input class="ratingInput" type="radio" id="5rating-5" name="5rating" value="5">
+                <label class="ratingControl-stars ratingControl-stars--5" for="5rating-5"></label>
+                <input class="ratingInput" type="radio" id="5rating-45" name="5rating" value="4.5">
+                <label class="ratingControl-stars ratingControl-stars--45 ratingControl-stars--half"
+                for="5rating-45">45</label>
+                <input class="ratingInput" type="radio" id="5rating-4" name="5rating" value="4">
+                <label class="ratingControl-stars ratingControl-stars--4" for="5rating-4">4</label>
+                <input class="ratingInput" type="radio" id="5rating-35" name="5rating" value="3.5">
+                <label class="ratingControl-stars ratingControl-stars--35 ratingControl-stars--half"
+                for="5rating-35">35</label>
+                <input class="ratingInput" type="radio" id="5rating-3" name="5rating" value="3">
+                <label class="ratingControl-stars ratingControl-stars--3" for="5rating-3">3</label>
+                <input class="ratingInput" type="radio" id="5rating-25" name="5rating" value="2.5">
+                <label class="ratingControl-stars ratingControl-stars--25 ratingControl-stars--half"
+                for="5rating-25">25</label>
+                <input class="ratingInput" type="radio" id="5rating-2" name="5rating" value="2">
+                <label class="ratingControl-stars ratingControl-stars--2" for="5rating-2">2</label>
+                <input class="ratingInput" type="radio" id="5rating-15" name="5rating" value="1.5">
+                <label class="ratingControl-stars ratingControl-stars--15 ratingControl-stars--half"
+for="5rating-15">15</label>
+                <input class="ratingInput" type="radio" id="5rating-1" name="5rating" value="1">
+                <label class="ratingControl-stars ratingControl-stars--1" for="5rating-1">1</label>
+                <input class="ratingInput" type="radio" id="5rating-05" name="5rating" value="0.5">
+                <label class="ratingControl-stars ratingControl-stars--05 ratingControl-stars--half"
+for="5rating-05">05</label>
+            </div>
+            <p class="catPrice">2 800 р.</p>
+        </div>
+
+        <div class="catDescription">
+            <p>Кот, помесь гималайской и персидской породы. Средняя длина меха 22,89 сантиметра</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="picture">
+            <img src="cat5.jpg" alt="обычная кошка">
+        </div>
+        <div class="catInfo">
+            <a href="http://bit.ly/2iJkb8o" class="catname">обычная кошка</a>
+            <p class="category">Кошка</p>
+            <div class="ratingControl">
+                <input class="ratingInput" type="radio" id="6rating-5" name="6rating" value="5">
+                <label class="ratingControl-stars ratingControl-stars--5" for="6rating-5"></label>
+                <input class="ratingInput" type="radio" id="6rating-45" name="6rating" value="4.5">
+                <label class="ratingControl-stars ratingControl-stars--45 ratingControl-stars--half"
+                for="6rating-45">45</label>
+                <input class="ratingInput" type="radio" id="6rating-4" name="6rating" value="4">
+                <label class="ratingControl-stars ratingControl-stars--4" for="6rating-4">4</label>
+                <input class="ratingInput" type="radio" id="6rating-35" name="6rating" value="3.5">
+                <label class="ratingControl-stars ratingControl-stars--35 ratingControl-stars--half"
+                 for="6rating-35">35</label>
+                <input class="ratingInput" type="radio" id="6rating-3" name="6rating" value="3">
+                <label class="ratingControl-stars ratingControl-stars--3" for="6rating-3">3</label>
+                <input class="ratingInput" type="radio" id="6rating-25" name="6rating" value="2.5">
+                <label class="ratingControl-stars ratingControl-stars--25 ratingControl-stars--half"
+                for="6rating-25">25</label>
+                <input class="ratingInput" type="radio" id="6rating-2" name="6rating" value="2">
+                <label class="ratingControl-stars ratingControl-stars--2" for="6rating-2">2</label>
+                <input class="ratingInput" type="radio" id="6rating-15" name="6rating" value="1.5">
+                <label class="ratingControl-stars ratingControl-stars--15 ratingControl-stars--half"
+                for="6rating-15">15</label>
+                <input class="ratingInput" type="radio" id="6rating-1" name="6rating" value="1">
+                <label class="ratingControl-stars ratingControl-stars--1" for="6rating-1">1</label>
+                <input class="ratingInput" type="radio" id="6rating-05" name="6rating" value="0.5">
+                <label class="ratingControl-stars ratingControl-stars--05 ratingControl-stars--half"
+                for="6rating-05">05</label>
+            </div>
+            <p class="catPrice">500 р.</p>
+        </div>
+
+        <div class="catDescription">
+            <p>Обаятельная кошка с прекрасным характером. Ласковая и
+                активная. Привита от вирусов. Ищет надежный дом
+            </p>
+        </div>
+    </div>
 </body>
 </html>
