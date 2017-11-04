@@ -4,7 +4,7 @@
     width: 90%;
     height: auto;
     min-height: 300px;
-    margin: 0 0;
+    margin: 0;
 }
 
 .list-view:checked ~ .items-container .img-container
@@ -37,6 +37,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     margin-top: 20px;
+}
+
+.item-name:after
+{
+    content: attr(title);
 }
 
 .item-name:hover
@@ -81,10 +86,10 @@
 {
     direction: rtl;
     text-align: left;
-    user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    user-select: none;
 }
 
 .item-rating > input 
@@ -101,7 +106,7 @@
 .item-rating > label:before
 {
     position: absolute;
-} 
+}
 
 .item-rating > input:checked ~ label:before
 {
