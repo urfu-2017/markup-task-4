@@ -5,13 +5,19 @@
 
 }
 
+html
+{
+    background-color: rgb(245,243,245);
+    font-size: 1.5em;
+}
+
 section
 {
     width: 350px;
-    overflow: hidden;
+
 }
 
-a
+.name > a
 {
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -20,20 +26,21 @@ a
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin-left: 20px;
 }
 
 article:hover
 {
-    border: 2px solid #000;
+    border: 5px solid #000;
 
 }
 
-article
+.cat
 {
     padding: 0;
-    margin: 10px 30px;
+    margin-left: 30px;
     display: inline-block;
-    border: 2px dashed #000;
+    border: 1px solid #000;
     width: 350px;
     overflow: hidden;
 
@@ -46,14 +53,14 @@ span ~ span
 
 }
 
-figure
+.picture_with_title
 {
     margin: 20px;
     padding: 0;
     overflow: hidden;
 }
 
-article label:nth-of-type(2n)
+.cat label:nth-of-type(2n)
 {
     background: url('star2.png');
 
@@ -65,7 +72,7 @@ input[type='radio']:checked ~ label
 
 }
 
-article label
+.cat label
 {
     opacity: 1;
     width: 16px;
@@ -90,13 +97,13 @@ article label
 
 }
 
-article input
+.cat input
 {
     display: none;
 
 }
 
-article label
+.cat label
 {
     padding: 3px;
 
@@ -106,6 +113,18 @@ article label
 .caption
 {
     text-align: left;
+    
+}
+
+.kind,
+.info,
+.price,
+.caption
+{
+    margin-left: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
 }
 
@@ -164,7 +183,6 @@ input[name='view']:checked + main > article
 
 input[name='view']:checked + main > article > div
 {
-    overflow: hidden;
     display: inline-block;
 
 }
@@ -172,7 +190,6 @@ input[name='view']:checked + main > article > div
 input[name='view']:checked + main > article > div.info,
 input[name='view']:checked + main > article > h2
 {
-    overflow: hidden;
     display: inline-block;
   
 }
