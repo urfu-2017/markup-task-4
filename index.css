@@ -51,7 +51,7 @@ h2
 
 .product-picture
 {
-    height: 260px;
+    height: 240px;
     display: table-cell;
     text-align: center;
     vertical-align: bottom;
@@ -68,11 +68,6 @@ h2
 {
     border: 2px solid black;
     width: 80%;
-}
-
-.big-picture
-{
-    height: 250px;
 }
 
 .cat-name
@@ -123,6 +118,7 @@ h2
 
 .product-picture img:hover
 {
+    filter: brightness(145%);
     -webkit-filter: brightness(145%);
 }
 
@@ -136,30 +132,36 @@ h2
 
 input[value='list']:checked ~ section .product
 {
+    position: relative;
     padding-top: 0;
     height: 500px;
     display: inline-block;
     width: 92%;
 }
 
+.center-alignment
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
 input[value='list']:checked ~ section .product-picture
 {
-    margin: 10% 0;
+    height: auto;
+    vertical-align: middle;
     display: inline-block;
-    width: 30%;
+    width: 400px;
+    margin-right: 50px;
 }
 
 input[value='list']:checked ~ section .product-info
 {
-    width: 65%;
     display: inline-block;
+    width: 500px;
 }
 
-input[value='list']:checked ~ section .product-info div
-{
-    text-align: left;
-}
-
+input[value='list']:checked ~ section .product-info div,
 input[value='list']:checked ~ section .cat-property
 {
     text-align: left;
