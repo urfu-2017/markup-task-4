@@ -1,10 +1,10 @@
-@font-face 
+@font-face
 {
     font-family: 'FontAwesome';
     src: url('fontawesome-webfont.woff');
 }
 
-@font-face 
+@font-face
 {
     font-family: 'Cormorant SC', serif;
     src: url('CormorantSC-Medium.ttf');
@@ -14,7 +14,7 @@ body
 {
     font: 18px 'Cormorant SC';
     font-weight: bold;
-    background-color: rgb(189, 186, 186);
+    background-color: rgb(170, 170, 165);
 }
 
 article
@@ -35,7 +35,7 @@ section
     width: 350px;
     display: inline-block;
     vertical-align: top;
-    background-color: rgb(243, 205, 227);
+    background-color: rgba(250, 201, 239, .98);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .56);
     margin: 12px;
 }
@@ -50,7 +50,7 @@ section:hover
     border: 2px;
     padding: 015px;
     text-align: left;
-    color: rgb(19, 18, 18);
+    color: rgb(5, 0, 0);
 }
 
 img
@@ -64,7 +64,6 @@ img
 
 img:hover
 {
-    filter: alpha(opacity=100);
     opacity: 1;
 }
 
@@ -92,8 +91,6 @@ img:hover
 .nickname
 {
     padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -116,7 +113,7 @@ img:hover
 .category
 {
     padding: 0 15px;
-    color: rgb(37, 37, 37);
+    color: rgb(5, 0, 0);
 }
 
 .category:hover
@@ -136,6 +133,7 @@ img:hover
 
 .star > label
 {
+    cursor: pointer;
     float: right;
     color: rgb(245, 139, 10);
 }
@@ -148,22 +146,41 @@ img:hover
     content: '\f005';
 }
 
-.star > .half:before
+.star > .half-star:before
 {
     content: '\f089';
     position: absolute;
 }
 
+article > .star input:hover ~ label,
 .star input:checked ~ label,
-.star label:hover ~ label 
+article > .star label:hover ~ label
 {
-    color: rgb(255, 255, 9);
+    color: rgb(255, 248, 59);
+}
+
+article > .star:hover > label
+{
+    color: rgb(245, 139, 10);
+}
+
+article > .star label:hover ~ label
+{
+    opacity: .6;
 }
 
 input
 {
-    height: 30px;
-    width: 70px;
+    visibility: hidden;
+}
+
+.view
+{
+    padding: 10px;
+    font-size: 10px;
+    border: 1px solid;
+    background: rgba(231, 203, 241, .83);
+    text-transform: uppercase;
     position: absolute;
 }
 
