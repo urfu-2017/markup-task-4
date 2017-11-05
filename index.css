@@ -27,8 +27,7 @@ body
 
 section
 {
-    margin: 0;
-    padding: 100px 0;
+    padding: 5px 0 0;
     background: #f5f5f5;
     width: 100%;
 }
@@ -44,15 +43,15 @@ h2
 {
     display: inline-block;
     width: 300px;
-    margin: 30px;
+    margin: 10px 30px 30px;
     background: #fff;
-    padding: 50px 20px 20px;
+    padding: 20px;
     border: 5px solid #000;
 }
 
 .product-picture
 {
-    height: 400px;
+    height: 260px;
     display: table-cell;
     text-align: center;
     vertical-align: bottom;
@@ -61,7 +60,7 @@ h2
 .product-info
 {
     display: inline-block;
-    height: 750px;
+    height: 520px;
     vertical-align: top;
 }
 
@@ -71,10 +70,15 @@ h2
     width: 80%;
 }
 
+.big-picture
+{
+    height: 250px;
+}
+
 .cat-name
 {
     font: 24px bold Comic Sans cursive;
-    max-width: 10ch;
+    max-width: 16ch;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -106,13 +110,6 @@ h2
     font-weight: 900;
 }
 
-.cat-name:hover
-{
-    max-width: none;
-    overflow: visible;
-    white-space: normal;
-}
-
 .cat-category
 {
     font: 24px bold Comic Sans cursive;
@@ -132,31 +129,30 @@ h2
 .product:hover
 {
     border: 10px double #008000;
-    margin: 25px;
+    margin: 5px 25px 25px;
 }
 
 /* СПИСОК */
 
 input[value='list']:checked ~ section .product
 {
+    padding-top: 0;
+    height: 500px;
     display: inline-block;
     width: 92%;
 }
 
 input[value='list']:checked ~ section .product-picture
 {
+    margin: 10% 0;
     display: inline-block;
     width: 30%;
-    height: auto;
-    vertical-align: middle;
 }
 
 input[value='list']:checked ~ section .product-info
 {
     width: 65%;
-    height: auto;
     display: inline-block;
-    vertical-align: middle;
 }
 
 input[value='list']:checked ~ section .product-info div
@@ -209,7 +205,6 @@ input[value='list']:checked ~ section .cat-property
     color: #ffd700;
 }
 
-.rating input:checked + label:hover,
 .rating input:checked ~ label:hover,
 .rating label:hover ~ input:checked ~ label,
 .rating input:checked ~ label:hover ~ label
