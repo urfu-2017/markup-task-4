@@ -4,8 +4,14 @@
     src: url('fonts/FontAwesome.eot') format('embedded-opentype'), url('fonts/FontAwesome.woff') format('woff'), url('fonts/FontAwesome.ttf') format('truetype');
 }
 
+.container
+{
+    text-align: center;
+}
+
 .card
 {
+    text-align: left;
     font: 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: inline-block;
     vertical-align: top;
@@ -39,11 +45,26 @@
 
 .info-name
 {
+    max-width: 300px;
+    display: inline-block;
     font-size: 1.3em;
     font-weight: 600;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.info-name > a
+{
+    color: #00e;
+    text-decoration: none;
+    box-shadow: inset 0 -2px 0 0 #00e;
+}
+
+.info-name > a:hover
+{
+    color: #009;
+    box-shadow: inset 0 -2px 0 0 #009;
 }
 
 .price
@@ -88,16 +109,23 @@
 .list-view:checked ~ .card > .card-image
 {
     width: 300px;
+    height: auto;
+}
+
+.list-view:checked ~ .card > .card-image > img
+{
+    max-height: 300px;
+    vertical-align: bottom;
 }
 
 .list-view:checked ~ .card > .card-info
 {
-    width: calc((98% - 300px)*2/3);
+    width: calc((98% - 300px)*1/3);
 }
 
 .list-view:checked ~ .card > .card-description
 {
-    width: calc((98% - 300px)/3);
+    width: calc((98% - 300px)*2/3);
 }
 
 .rate
