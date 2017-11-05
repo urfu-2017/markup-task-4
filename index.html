@@ -2,8 +2,403 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Задача «Мяндекс.Муррркет»</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
+    <title>Мяндекс Муррркет</title>
 </head>
 <body>
+    <input type="checkbox" id="view">
+    <label class="view" for="view">Переключить</label>
+    <main>
+        <section>
+            <img class="figure" src="cat(1).jpg" alt="Андрей">
+            <article>
+                <h2 class="nickname">
+                    <a href="http://www.alltaro.ru/names/men/andrey.html" target="_blank">Андрей</a>
+                </h2>
+                <p class="category">Веселый</p>
+                <div class="star">
+                    <label for="star10-1"></label>
+                    <input type="radio" name="star-1" id="star10-1">
+                    <label class="half-star" for="star9-1"></label>
+                    <input type="radio" name="star-1" id="star9-1">
+                    <label for="star8-1"></label>
+                    <input type="radio" name="star-1" id="star8-1">
+                    <label class="half-star" for="star7-1"></label>
+                    <input type="radio" name="star-1" id="star7-1">
+                    <label for="star6-1"></label>
+                    <input type="radio" name="star-1" id="star6-1">
+                    <label class="half-star" for="star5-1"></label>
+                    <input type="radio" name="star-1" id="star5-1">
+                    <label for="star4-1"></label>
+                    <input type="radio" name="star-1" id="star4-1" checked>
+                    <label class="half-star" for="star3-1"></label>
+                    <input type="radio" name="star-1" id="star3-1">
+                    <label for="star2-1"></label>
+                    <input type="radio" name="star-1" id="star2-1">
+                    <label class="half-star" for="star1-1"></label>
+                    <input type="radio" name="star-1" id="star1-1">
+                </div>
+                <div class="price">
+                    <p class="current-price">5 000 руб.</p>
+                    <p class="old-price">7 200 руб.</p>
+                </div>
+            </article>
+            <article class="information">
+                Потрясающей души котик, разве что слишком самовлюбленный и&nbsp;гадит везде.
+                Но разве это проблема? Приучабельный.
+            </article>
+        </section>
+        <section>
+            <img class="figure" src="dog.jpg" alt="Венера">
+            <article>
+                <h2 class="nickname">
+                    <a href="http://www.alltaro.ru/names/women/venera.html" target="_blank">Венера</a>
+                </h2>
+                <p class="category">Просто красиво</p>
+                <div class="star">
+                    <input type="radio" name="star-2" id="star10-2">
+                    <label for="star10-2"></label>
+                    <input type="radio" name="star-2" id="star9-2">
+                    <label class="half-star" for="star9-2"></label>
+                    <input type="radio" name="star-2" id="star8-2">
+                    <label for="star8-2"></label>
+                    <input type="radio" name="star-2" id="star7-2">
+                    <label class="half-star" for="star7-2"></label>
+                    <input type="radio" name="star-2" id="star6-2" checked>
+                    <label for="star6-2"></label>
+                    <input type="radio" name="star-2" id="star5-2">
+                    <label class="half-star" for="star5-2"></label>
+                    <input type="radio" name="star-2" id="star4-2">
+                    <label for="star4-2"></label>
+                    <input type="radio" name="star-2" id="star3-2">
+                    <label class="half-star" for="star3-2"></label>
+                    <input type="radio" name="star-2" id="star2-2">
+                    <label for="star2-2"></label>
+                    <input type="radio" name="star-2" id="star1-2">
+                    <label class="half-star" for="star1-2"></label>
+                </div>
+                <div class="price">
+                    <p class="current-price">5 000 руб.</p>
+                    <p class="old-price">7 000 руб.</p>
+                </div>
+            </article>
+            <article class="information">
+                Такую кошечку еще поискать надо.
+                Столь ласковая и&nbsp;вкуснопахнущаю, что хочется тискать ее&nbsp;без остановки.
+            </article>
+        </section>
+        <section>
+            <img class="figure" src="cat(3).jpg" alt="Маркус">
+            <article>
+                <h2 class="nickname">
+                    <a href="http://www.astromeridian.ru/imya/nem_markus.html" target="_blank">Маркус</a>
+                </h2>
+                <p class="category">Джентельмен</p>
+                <div class="star">
+                    <input type="radio" name="star-3" id="star10-3" checked>
+                    <label for="star10-3"></label>
+                    <input type="radio" name="star-3" id="star9-3">
+                    <label class="half-star" for="star9-3"></label>
+                    <input type="radio" name="star-3" id="star8-3">
+                    <label for="star8-3"></label>
+                    <input type="radio" name="star-3" id="star7-3">
+                    <label class="half-star" for="star7-3"></label>
+                    <input type="radio" name="star-3" id="star6-3">
+                    <label for="star6-3"></label>
+                    <input type="radio" name="star-3" id="star5-3">
+                    <label class="half-star" for="star5-3"></label>
+                    <input type="radio" name="star-3" id="star4-3">
+                    <label for="star4-3"></label>
+                    <input type="radio" name="star-3" id="star3-3">
+                    <label class="half-star" for="star3-3"></label>
+                    <input type="radio" name="star-3" id="star2-3">
+                    <label for="star2-3"></label>
+                    <input type="radio" name="star-3" id="star1-3">
+                    <label class="half-star" for="star1-3"></label>
+                </div>
+                <div class="price">
+                    <p class="current-price">7 800 руб.</p>
+                </div>
+            </article>
+            <article class="information">
+                Странно, что кот до&nbsp;сих пор не&nbsp;нашел добрые руки,
+                ведь уникальность его в&nbsp;том, что он&nbsp;уважает своих хозяев больше, чем себя.
+            </article>
+        </section>
+        <section>
+            <img class="figure" src="cat(4).jpg" alt="Антонио">
+            <article>
+                <h2 class="nickname">
+                    <a href="http://www.astromeridian.ru/imya/antonio.html"
+                    target="_blank" title="Граф Антонио с некоторой диковинкой в голосе">
+                    Граф Антонио с некоторой диковинкой в голосе
+                    </a>
+                </h2>
+                <p class="category">Пафосный</p>
+                <div class="star">
+                    <input type="radio" name="star-4" id="star10-4">
+                    <label for="star10-4"></label>
+                    <input type="radio" name="star-4" id="star9-4">
+                    <label class="half-star" for="star9-4"></label>
+                    <input type="radio" name="star-4" id="star8-4">
+                    <label for="star8-4"></label>
+                    <input type="radio" name="star-4" id="star7-4">
+                    <label class="half-star" for="star7-4"></label>
+                    <input type="radio" name="star-4" id="star6-4">
+                    <label for="star6-4"></label>
+                    <input type="radio" name="star-4" id="star5-4">
+                    <label class="half-star" for="star5-4"></label>
+                    <input type="radio" name="star-4" id="star4-4" checked>
+                    <label for="star4-4"></label>
+                    <input type="radio" name="star-4" id="star3-4">
+                    <label class="half-star" for="star3-4"></label>
+                    <input type="radio" name="star-4" id="star2-4">
+                    <label for="star2-4"></label>
+                </div>
+                <div class="price">
+                    <p class="current-price">9 100 руб.</p>
+                    <p class="old-price">13 300 руб.</p>
+                </div>
+            </article>
+            <article class="information">
+                Внимание! Из&nbsp;шерсти, что остается от&nbsp;этого котенка можно сделать лайтовый плед.
+                Но, как говорится, валик никто не&nbsp;отменял, а&nbsp;душа ваша будет согрета этим безумцем.
+            </article>
+        </section>
+        <section>
+            <img class="figure" src="cat(5).jpg" alt="Женя">
+            <article>
+                <h2 class="nickname">
+                    <a href="http://www.astromeridian.ru/imya/evgenij.html" target="_blank">Женя</a>
+                </h2>
+                <p class="category">Сильный и независимый</p>
+                <div class="star">
+                    <input type="radio" name="star-5" id="star10-5">
+                    <label for="star10-5"></label>
+                    <input type="radio" name="star-5" id="star9-5">
+                    <label class="half-star" for="star9-5"></label>
+                    <input type="radio" name="star-5" id="star8-5">
+                    <label for="star8-5"></label>
+                    <input type="radio" name="star-5" id="star7-5" checked>
+                    <label class="half-star" for="star7-5"></label>
+                    <input type="radio" name="star-5" id="star6-5">
+                    <label for="star6-5"></label>
+                    <input type="radio" name="star-5" id="star5-5">
+                    <label class="half-star" for="star5-5"></label>
+                    <input type="radio" name="star-5" id="star4-5">
+                    <label for="star4-5"></label>
+                    <input type="radio" name="star-5" id="star3-5">
+                    <label class="half-star" for="star3-5"></label>
+                    <input type="radio" name="star-5" id="star2-5">
+                    <label for="star2-5"></label>
+                    <input type="radio" name="star-5" id="star1-5">
+                    <label class="half-star" for="star1-5"></label>
+                </div>
+                <div class="price">
+                    <p class="current-price">5 000 руб.</p>
+                    <p class="old-price">5 100 руб.</p>
+                </div>
+            </article>
+            <article class="information">
+                На&nbsp;самом деле, это Донской сфинкс, который отчаянно хотел стать пушистым котом.
+                Упорство и&nbsp;целеустремленность&nbsp;&mdash; то, чему он научит своего хозяина.
+            </article>
+        </section>
+        <section>
+            <img class="figure" src="cat(6).jpg" alt="Дон">
+            <article>
+            <h2 class="nickname">
+                <a href="http://znachenie-tajna-imeni.ru/znachenie-imeni-Don/" target="_blank">Дон</a>
+            </h2>
+                <p class="category">Практичный философ</p>
+                <div class="star">
+                    <input type="radio" name="star-6" id="star10-6">
+                    <label for="star10-6"></label>
+                    <input type="radio" name="star-6" id="star9-6">
+                    <label class="half-star" for="star9-6"></label>
+                    <input type="radio" name="star-6" id="star8-6">
+                    <label for="star8-6"></label>
+                    <input type="radio" name="star-6" id="star7-6">
+                    <label class="half-star" for="star7-6"></label>
+                    <input type="radio" name="star-6" id="star6-6">
+                    <label for="star6-6"></label>
+                    <input type="radio" name="star-6" id="star5-6">
+                    <label class="half-star" for="star5-6"></label>
+                    <input type="radio" name="star-6" id="star4-6">
+                    <label for="star4-6"></label>
+                    <input type="radio" name="star-6" id="star3-6">
+                    <label class="half-star" for="star3-6"></label>
+                    <input type="radio" name="star-6" id="star2-6">
+                    <label for="star2-6"></label>
+                    <input type="radio" name="star-6" id="star1-6" checked>
+                    <label class="half-star" for="star1-6"></label>
+                </div>
+                <div class="price">
+                    <p class="current-price">8 300 руб.</p>
+                    <p class="old-price">8 500 руб.</p>
+                </div>
+            </article>
+            <article class="information">
+                Ловит мышей, ест мух, ложится на&nbsp;клавиатуру,
+                любит детей, управляет пёсиками, размышляет о&nbsp;жизни.
+            </article>
+        </section>
+        <section>
+            <img class="figure" src="cat(7).jpg" alt="Анатолий">
+            <article>
+                <h2 class="nickname">
+                    <a href="http://www.alltaro.ru/names/men/anatoliy.html" target="_blank">Анатолий</a>
+                </h2>
+                <p class="category">Кошка для ора</p>
+                <div class="star">
+                    <input type="radio" name="star-7" id="star10-7">
+                    <label for="star10-7"></label>
+                    <input type="radio" name="star-7" id="star9-7">
+                    <label class="half-star" for="star9-7"></label>
+                    <input type="radio" name="star-7" id="star8-7" checked>
+                    <label for="star8-7"></label>
+                    <input type="radio" name="star-7" id="star7-7">
+                    <label class="half-star" for="star7-7"></label>
+                    <input type="radio" name="star-7" id="star6-7">
+                    <label for="star6-7"></label>
+                    <input type="radio" name="star-7" id="star5-7">
+                    <label class="half-star" for="star5-7"></label>
+                    <input type="radio" name="star-7" id="star4-7">
+                    <label for="star4-7"></label>
+                    <input type="radio" name="star-7" id="star3-7">
+                    <label class="half-star" for="star3-7"></label>
+                    <input type="radio" name="star-7" id="star2-7">
+                    <label for="star2-7"></label>
+                    <input type="radio" name="star-7" id="star1-7">
+                    <label class="half-star" for="star1-7"></label>
+                </div>
+                <div class="price">
+                    <p class="current-price">4 800 руб.</p>
+                </div>
+            </article>
+            <article class="information">
+                Может промяукать &laquo;Мама&raquo;,
+                выполняет различные команды, не&nbsp;царапает стены, часто высовывает язык.
+            </article>
+        </section>
+        <section>
+
+            <img class="figure" src="cat(9).jpg" alt="Де Гранд Клео">
+            <article>
+                <h2 class="nickname">
+                    <a href="http://znachenie-tajna-imeni.ru/znachenie-imeni-Kleo/"
+                    target="_blank">Де Гранд Клео</a>
+                </h2>
+                <p class="category">Портативный</p>
+                <div class="star">
+                    <input type="radio" name="star-8" id="star10-8">
+                    <label for="star10-8"></label>
+                    <input type="radio" name="star-8" id="star9-8">
+                    <label class="half-star" for="star9-8"></label>
+                    <input type="radio" name="star-8" id="star8-8">
+                    <label for="star8-8"></label>
+                    <input type="radio" name="star-8" id="star7-8">
+                    <label class="half-star" for="star7-8"></label>
+                    <input type="radio" name="star-8" id="star6-8">
+                    <label for="star6-8"></label>
+                    <input type="radio" name="star-8" id="star5-8">
+                    <label class="half-star" for="star5-8"></label>
+                    <input type="radio" name="star-8" id="star4-8" checked>
+                    <label for="star4-8"></label>
+                    <input type="radio" name="star-8" id="star3-8">
+                    <label class="half-star" for="star3-8"></label>
+                    <input type="radio" name="star-8" id="star2-8">
+                    <label for="star2-8"></label>
+                    <input type="radio" name="star-8" id="star1-8">
+                    <label class="half-star" for="star1-8"></label>
+                </div>
+                <div class="price">
+                    <p class="current-price">11 000 руб.</p>
+                    <p class="old-price">17 500 руб.</p>
+                </div>
+            </article>
+            <article class="information">
+                Таких кошечек берут на&nbsp;светские вечеринки и&nbsp;шумные тусовки.
+            </article>
+        </section>
+        <section>
+            <img class="figure" src="cat(11).jpg" alt="Захар">
+            <article>
+                <h2 class="nickname">
+                    <a href="http://www.alltaro.ru/names/men/zahar.html" target="_blank">Захар</a>
+                </h2>
+                <p class="category">Для судентов</p>
+                <div class="star">
+                    <input type="radio" name="star-9" id="star10-9">
+                    <label for="star10-9"></label>
+                    <input type="radio" name="star-9" id="star9-9">
+                    <label class="half-star" for="star9-9"></label>
+                    <input type="radio" name="star-9" id="star8-9">
+                    <label for="star8-9"></label>
+                    <input type="radio" name="star-9" id="star7-9">
+                    <label class="half-star" for="star7-9"></label>
+                    <input type="radio" name="star-9" id="star6-9" checked>
+                    <label for="star6-9"></label>
+                    <input type="radio" name="star-9" id="star5-9">
+                    <label class="half-star" for="star5-9"></label>
+                    <input type="radio" name="star-9" id="star4-9">
+                    <label for="star4-9"></label>
+                    <input type="radio" name="star-9" id="star3-9">
+                    <label class="half-star" for="star3-9"></label>
+                    <input type="radio" name="star-9" id="star2-9">
+                    <label for="star2-9"></label>
+                    <input type="radio" name="star-9" id="star1-9">
+                    <label class="half-star" for="star1-9"></label>
+                </div>
+                <div class="price">
+                    <p class="current-price">100 руб.</p>
+                    <p class="old-price">7 000 руб.</p>
+                </div>
+            </article>
+            <article class="information">
+                    Идеальный будильник для студента:
+                    без остановки мяучит по&nbsp;будням ровно в&nbsp;8:00, дабы его погладили.
+            </article>
+        </section>
+        <section>
+            <img class="figure" src="cat(10).jpg" alt="Люда">
+            <article>
+                <h2 class="nickname">
+                    <a href="http://www.owoman.ru/names/1175.html" target="_blank">Люда</a>
+                </h2>
+                <p class="category">Попугай</p>
+                    <div class="star">
+                        <input type="radio" name="star-10" id="star10-10">
+                        <label for="star10-10"></label>
+                        <input type="radio" name="star-10" id="star9-10" checked>
+                        <label class="half-star" for="star9-10"></label>
+                        <input type="radio" name="star-10" id="star8-10">
+                        <label for="star8-10"></label>
+                        <input type="radio" name="star-10" id="star7-10">
+                        <label class="half-star" for="star7-10"></label>
+                        <input type="radio" name="star-10" id="star6-10">
+                        <label for="star6-10"></label>
+                        <input type="radio" name="star-10" id="star5-10">
+                        <label class="half-star" for="star5-10"></label>
+                        <input type="radio" name="star-10" id="star4-10">
+                        <label for="star4-10"></label>
+                        <input type="radio" name="star-10" id="star3-10">
+                        <label class="half-star" for="star3-10"></label>
+                        <input type="radio" name="star-10" id="star2-10">
+                        <label for="star2-10"></label>
+                        <input type="radio" name="star-10" id="star1-10">
+                        <label class="half-star" for="star1-10"></label>
+                    </div>
+                <div class="price">
+                    <p class="current-price">7 000 руб.</p>
+                </div>
+            </article>
+            <article class="information">
+                Топчет живот, может есть собачий корм, чихает, как взрослый мужчина.
+                Если накрыть плотной тканью, спит.
+            </article>
+        </section>
+    </main>
 </body>
 </html>
