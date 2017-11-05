@@ -56,12 +56,14 @@ main
 
 .product
 {
-    width: 26em;
-    padding: 5px;
-    margin-left: 2%;
+    width: 27.2em;
+    padding: .5em;
+    margin-left: 1%;
+    margin-right: 1%;
     margin-bottom: 80px;
     display: inline-block;
     vertical-align: top;
+    box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0);
 }
 
@@ -77,16 +79,17 @@ main
 
 .picture
 {
-    width: 26em;
-    height: 22em;
+    width: 26.2em;
+    height: 22.2em;
     position: relative;
+    box-sizing: border-box;
     border: 1px dashed rgba(0, 0, 0, 0);
 }
 
 .picture img
 {
-    max-height: 22em;
     max-width: 26em;
+    max-height: 22em;
     position: absolute;
     bottom: 0;
     left: 0;
