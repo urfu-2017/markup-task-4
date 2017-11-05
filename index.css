@@ -13,6 +13,10 @@
     padding: 15px 0;
     font-size: 16pt;
     font-weight: bold;
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .title:hover,
