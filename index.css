@@ -1,0 +1,210 @@
+html
+{
+    font-family: 'Palatino Linotype', serif;
+    background: #eee;
+}
+
+nav 
+{
+    position: relative;
+    padding: 1rem 2rem;
+    background: #ddd;
+}
+
+.market_name
+{
+    font-size: 1.5rem;
+}
+
+.red_text 
+{
+    color: red;
+}
+
+.show
+{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+}
+
+.icon
+{
+    width: 1rem;
+    cursor: pointer;
+}
+
+input[name='view']
+{
+    display: none;
+}
+
+input[id='list']:checked ~ main label[for='list'] .icon,
+input[id='blocks']:checked ~ main label[for='blocks'] .icon
+{
+    background: #aae;
+}
+
+input[id='list']:checked ~ main .item
+{
+    width: 100%;
+    box-sizing: border-box;
+    background: #ddd;
+    height: auto;
+}
+
+input[id='list']:checked ~ main .item_element 
+{
+    display: inline-block;
+    width: 33%;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+input[id='list']:checked ~ main .item .photo
+{
+    height: auto;
+}
+
+input[id='list']:checked ~ main .item .photo_src
+{
+    position: relative;
+    max-height: none;
+}
+
+.item
+{
+    display: inline-block;
+    width: 320px;
+    height: 580px;
+    margin: 1rem;
+    padding: 1rem;
+    background: #ddd;
+    vertical-align: top;
+}
+
+.item:hover
+{
+    box-shadow: 0 0 5px rgba(0,0,0, .4);
+}
+
+.photo
+{
+    position: relative;
+    width: 100%;
+    height: 225px;
+    margin: 0;
+}
+
+.photo_src
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.bucket
+{
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: .5rem 0;
+    background: rgba(0,0,0, .5);
+    text-align: center;
+    font-size: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.photo:hover .bucket
+{
+    display: block;
+}
+
+.name
+{
+    font-size: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name:hover
+{
+    color: red;
+}
+
+.category
+{
+    font-size: .75rem;
+}
+
+.category span:hover
+{
+    color: red;
+}
+
+.good_points 
+{
+    display: none;
+}
+
+.rating
+{
+    font-size: 0;
+}
+
+.rating .cat_smile:nth-of-type(2n+1),
+.rating .cat_smile:nth-of-type(2n)
+{
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-image: url(left_smile_cat.png);
+    background-size: contain;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.rating .cat_smile:nth-of-type(2n)
+{
+    background-image: url(right_smile_cat.png);
+}
+
+.rating input:checked ~ .cat_smile,
+.rating .cat_smile:hover ~ .cat_smile
+{
+    opacity: .4;
+}
+
+.price
+{
+    color: green;
+    font-size: 1.25rem;
+}
+
+.old_price
+{
+    color: black;
+    font-size: .75rem;
+    text-decoration: line-through;
+}
+
+.description p
+{
+    margin: 0;
+    padding: .5rem 0 0;
+}
+
+.description h4
+{
+    margin: 0;
+    padding: 0;
+}

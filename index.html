@@ -2,8 +2,645 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link href="index.css" rel="stylesheet">
     <title>Задача «Мяндекс.Муррркет»</title>
 </head>
 <body>
+    <input id="list" type="radio" name="view" >
+    <input id="blocks" type="radio" name="view" checked>
+
+    <main>
+        <nav>
+            <span class="market_name">
+                <span class="red_text">М</span>яндекс.<span class="red_text">М</span>уррркет
+            </span>
+            <div class="show">
+                <label for="blocks">
+                    <img class="icon" src="blocks.png" 
+                    alt="Иконка плитки" title="Блоки">
+                </label>
+                <label for="list">
+                    <img class="icon" src="list.png" 
+                    alt="Иконка списка" title="Список">
+                </label>
+            </div>
+        </nav>
+
+        <section class="shop">
+            <h2>Коты</h2>
+
+            <article class="item">
+                <figure class="item_element photo">
+                    <img class="photo_src" src="fat_cat.jpg" alt="Толстый кот">
+                    <figcaption class="bucket">Добавить в корзину!</figcaption>
+                </figure>
+                <section class="item_element info">
+                    <h3 class="name">
+                        Толстяк
+                    </h3>
+                    <p class="category">
+                        Порода: 
+                        <span>Толстая ленивая</span>
+                    </p>
+                    <p class="price">
+                        0 &#8381; <span class="old_price">500 &#8381;</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-1_1" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-1_1" name="set_1">
+
+                        <label for="set-1_2" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-1_2" name="set_1">
+
+                        <label for="set-1_3" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-1_3" name="set_1">
+
+                        <label for="set-1_4" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-1_4" name="set_1">
+
+                        <label for="set-1_5" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-1_5" name="set_1" checked>
+
+                        <label for="set-1_6" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-1_6" name="set_1">
+
+                        <label for="set-1_7" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-1_7" name="set_1">
+
+                        <label for="set-1_8" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-1_8" name="set_1">
+
+                        <label for="set-1_9" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-1_9" name="set_1">
+
+                        <label for="set-1_10" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-1_10" name="set_1">
+                    </div>
+                </section>
+                <section class="item_element description">
+                        <h4>Описание</h4>
+                        <p class="description_text">
+                            По&shy;сто&shy;ян&shy;но ест и смот&shy;рит те&shy;
+                            ле&shy;ви&shy;зор. Не смот&shy;ри&shy;те на це&shy;
+                            ну, со&shy;дер&shy;жа&shy;ние это&shy;го ко&shy;та 
+                            обой&shy;дет&shy;ся еще в ту ко&shy;пе&shy;еч&shy;ку.
+                        </p>
+                </section>
+            </article>
+
+            <article class="item">
+                <figure class="item_element photo">
+                    <img class="photo_src" src="traveler_cat.jpg" alt="Кот путешественник">
+                    <figcaption class="bucket">Добавить в корзину!</figcaption>
+                </figure>
+                <section class="item_element info">
+                    <h3 class="name">
+                        Индиана Котс
+                    </h3>
+                    <p class="category">
+                        Порода: 
+                        <span>Пропадающая непонятно где</span>
+                    </p>
+                    <p class="price">
+                        1000 &#8381;
+                    </p>
+                    <div class="rating">
+                        <label for="set-2_1" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-2_1" name="set_2">
+
+                        <label for="set-2_2" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-2_2" name="set_2">
+
+                        <label for="set-2_3" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-2_3" name="set_2">
+
+                        <label for="set-2_4" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-2_4" name="set_2" checked>
+
+                        <label for="set-2_5" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-2_5" name="set_2">
+
+                        <label for="set-2_6" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-2_6" name="set_2">
+
+                        <label for="set-2_7" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-2_7" name="set_2">
+
+                        <label for="set-2_8" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-2_8" name="set_2">
+
+                        <label for="set-2_9" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-2_9" name="set_2">
+
+                        <label for="set-2_10" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-2_10" name="set_2">
+                    </div>
+                </section>
+                <section class="item_element description">
+                        <h4>Описание</h4>
+                        <p class="description_text">
+                            По&shy;яв&shy;ля&shy;ет&shy;ся до&shy;ма раз в ме&shy;
+                            сяц. В осталь&shy;ное вре&shy;мя в отъ&shy;ез&shy;дах.
+                             Но&shy;сит шля&shy;пу, хо&shy;ро&shy;шо об&shy;ра&shy;
+                            ща&shy;ет&shy;ся с кну&shy;том. Со&shy;се&shy;ди по&shy;
+                            го&shy;ва&shy;ри&shy;ва&shy;ют, что он гра&shy;бит гроб
+                            &shy;ни&shy;цы, но это не&shy;точ&shy;но.
+                        </p>
+                </section>
+            </article>
+
+            <article class="item">
+                <figure class="item_element photo">
+                    <img class="photo_src" src="cook_cat.jpg" alt="Кот повар">
+                    <figcaption class="bucket">Добавить в корзину!</figcaption>
+                </figure>
+                <section class="item_element info">
+                    <h3 class="name">
+                        Повар
+                    </h3>
+                    <p class="category">
+                        Порода: 
+                        <span>еду готовящая</span>
+                    </p>
+                    <p class="price">
+                        750 &#8381;
+                    </p>
+                    <div class="rating">
+                        <label for="set-3_1" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-3_1" name="set_3">
+
+                        <label for="set-3_2" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-3_2" name="set_3">
+
+                        <label for="set-3_3" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-3_3" name="set_3">
+
+                        <label for="set-3_4" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-3_4" name="set_3">
+
+                        <label for="set-3_5" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-3_5" name="set_3">
+
+                        <label for="set-3_6" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-3_6" name="set_3">
+
+                        <label for="set-3_7" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-3_7" name="set_3">
+
+                        <label for="set-3_8" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-3_8" name="set_3" checked>
+
+                        <label for="set-3_9" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-3_9" name="set_3">
+
+                        <label for="set-3_10" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-3_10" name="set_3">
+                    </div>
+                </section>
+                <section class="item_element description">
+                        <h4>Описание</h4>
+                        <p class="description_text">
+                            Рань&shy;ше был шеф-по&shy;ва&shy;ром в рес&shy;
+                            то&shy;ра&shy;не. Спо&shy;со&shy;бен при&shy;го&shy;
+                            то&shy;вить об&shy;шир&shy;ный ас&shy;сор&shy;
+                            ти&shy;мент блюд. 
+                            По при&shy;хо&shy;ду до&shy;мой вас всег&shy;
+                            да бу&shy;дет ждать на сто&shy;ле го&shy;ря&shy;
+                            чий ужин.<br>P.S за услу&shy;ги мо&shy;жет по&shy;
+                            тре&shy;бо&shy;вать&shy;ся от&shy;дель&shy;ная пла&shy;та.
+                        </p>
+                </section>
+            </article>
+
+            <article class="item">
+                <figure class="item_element photo">
+                    <img class="photo_src" src="business_cat.jpg" alt="Кот бизнесмен">
+                    <figcaption class="bucket">Добавить в корзину!</figcaption>
+                </figure>
+                <section class="item_element info">
+                    <h3 class="name">
+                        Кот с Кэтс стрит
+                    </h3>
+                    <p class="category">
+                        Порода: 
+                        <span>дела решающая</span>
+                    </p>
+                    <p class="price">
+                        2000 &#8381;
+                    </p>
+                    <div class="rating">
+                        <label for="set-4_1" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-4_1" name="set_4">
+
+                        <label for="set-4_2" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-4_2" name="set_4">
+
+                        <label for="set-4_3" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-4_3" name="set_4" checked>
+
+                        <label for="set-4_4" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-4_4" name="set_4">
+
+                        <label for="set-4_5" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-4_5" name="set_4">
+
+                        <label for="set-4_6" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-4_6" name="set_4">
+
+                        <label for="set-4_7" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-4_7" name="set_4">
+
+                        <label for="set-4_8" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-4_8" name="set_4">
+
+                        <label for="set-4_9" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-4_9" name="set_4">
+
+                        <label for="set-4_10" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-4_10" name="set_4">
+                    </div>
+                </section>
+                <section class="item_element description">
+                        <h4>Описание</h4>
+                        <p class="description_text">
+                            У это&shy;го ко&shy;та, ве&shy;ро&shy;ят&shy;
+                            но, до&shy;ход боль&shy;ше, чем у вас. Дер&shy;
+                            жит за&shy;вод по про&shy;из&shy;водст&shy;
+                            ву ки&shy;ти&shy;кэ&shy;та. Кто ко&shy;го еще
+                             бу&shy;дет со&shy;дер&shy;жать...
+                        </p>
+                </section>
+            </article>
+
+            <article class="item">
+                <figure class="item_element photo">
+                    <img class="photo_src" src="dj_cat.jpg" alt="Кот dj">
+                    <figcaption class="bucket">Добавить в корзину!</figcaption>
+                </figure>
+                <section class="item_element info">
+                    <h3 class="name">
+                        DJ KiTeKaTtTtTtTtTtTtTtTtTtTtTtTtT
+                    </h3>
+                    <p class="category">
+                        Порода: 
+                        <span>толпу заводящая</span>
+                    </p>
+                    <p class="price">
+                        1500 &#8381;
+                    </p>
+                    <div class="rating">
+                        <label for="set-5_1" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-5_1" name="set_5">
+
+                        <label for="set-5_2" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-5_2" name="set_5">
+
+                        <label for="set-5_3" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-5_3" name="set_5">
+
+                        <label for="set-5_4" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-5_4" name="set_5">
+
+                        <label for="set-5_5" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-5_5" name="set_5">
+
+                        <label for="set-5_6" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-5_6" name="set_5">
+
+                        <label for="set-5_7" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-5_7" name="set_5">
+
+                        <label for="set-5_8" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-5_8" name="set_5">
+
+                        <label for="set-5_9" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-5_9" name="set_5">
+
+                        <label for="set-5_10" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-5_10" name="set_5" checked>
+                    </div>
+                </section>
+                <section class="item_element description">
+                        <h4>Описание</h4>
+                        <p class="description_text">
+                            Го&shy;во&shy;рят, это кот Ар&shy;ми&shy;на ван 
+                            Бю&shy;ре&shy;на. В его се&shy;тах есть все, от 
+                            ин&shy;ст&shy;ру&shy;мен&shy;та&shy;ла и до хар&shy;
+                            д&shy;ба&shy;са. Му&shy;зы&shy;каль&shy;ное со&shy;
+                            про&shy;вож&shy;де&shy;ние по вы&shy;ход&shy;ным вам 
+                            обес&shy;пе&shy;че&shy;но.
+                        </p>
+                </section>
+            </article>
+
+            <article class="item">
+                <figure class="item_element photo">
+                    <img class="photo_src" src="fashion_cat.jpg" alt="Кот модельер">
+                    <figcaption class="bucket">Добавить в корзину!</figcaption>
+                </figure>
+                <section class="item_element info">
+                    <h3 class="name">
+                        Юдашкин
+                    </h3>
+                    <p class="category">
+                        Порода: 
+                        <span>наряд составляющая</span>
+                    </p>
+                    <p class="price">
+                        1500 &#8381; <span class="old_price">2000 &#8381;</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-6_1" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-6_1" name="set_6">
+
+                        <label for="set-6_2" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-6_2" name="set_6">
+
+                        <label for="set-6_3" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-6_3" name="set_6">
+
+                        <label for="set-6_4" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-6_4" name="set_6">
+
+                        <label for="set-6_5" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-6_5" name="set_6">
+
+                        <label for="set-6_6" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-6_6" name="set_6">
+
+                        <label for="set-6_7" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-6_7" name="set_6" checked>
+
+                        <label for="set-6_8" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-6_8" name="set_6">
+
+                        <label for="set-6_9" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-6_9" name="set_6">
+
+                        <label for="set-6_10" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-6_10" name="set_6">
+                    </div>
+                </section>
+                <section class="item_element description">
+                        <h4>Описание</h4>
+                        <p class="description_text">
+                            Со&shy;ста&shy;вит вам мод&shy;ный лук на каж&shy;
+                            дый день не&shy;де&shy;ли. Осве&shy;жит ваш гар&shy;
+                            де&shy;роб. Не факт, что ве&shy;щи бу&shy;дут вы&shy;
+                            гля&shy;дить хо&shy;ро&shy;шо и ра&shy;зум&shy;
+                            но, но мо&shy;дель&shy;е&shy;рам луч&shy;ше знать.
+                        </p>
+                </section>
+            </article>
+
+            <article class="item">
+                <figure class="item_element photo">
+                    <img class="photo_src" src="strong_cat.jpg" alt="Кот силач">
+                    <figcaption class="bucket">Добавить в корзину!</figcaption>
+                </figure>
+                <section class="item_element info">
+                    <h3 class="name">
+                        Котгрегор
+                    </h3>
+                    <p class="category">
+                        Порода: 
+                        <span>мускулы качающая</span>
+                    </p>
+                    <p class="price">
+                        1500 &#8381;
+                    </p>
+                    <div class="rating">
+                        <label for="set-7_1" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-7_1" name="set_7" checked>
+
+                        <label for="set-7_2" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-7_2" name="set_7">
+
+                        <label for="set-7_3" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-7_3" name="set_7">
+
+                        <label for="set-7_4" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-7_4" name="set_7">
+
+                        <label for="set-7_5" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-7_5" name="set_7">
+
+                        <label for="set-7_6" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-7_6" name="set_7">
+
+                        <label for="set-7_7" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-7_7" name="set_7">
+
+                        <label for="set-7_8" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-7_8" name="set_7">
+
+                        <label for="set-7_9" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-7_9" name="set_7">
+
+                        <label for="set-7_10" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-7_10" name="set_7">
+                    </div>
+                </section>
+                <section class="item_element description">
+                        <h4>Описание</h4>
+                        <p class="description_text">
+                            Гро&shy;за со&shy;бак. Да и гра&shy;би&shy;
+                            те&shy;лей то&shy;же. Да и вас то&shy;же.. 
+                            Нуж&shy;но пе&shy;реоди&shy;чес&shy;ки за&shy;
+                            даб&shy;ри&shy;вать кор&shy;ма&shy;ми с вы&shy;
+                            со&shy;ким со&shy;дер&shy;жа&shy;ни&shy;ем бел
+                            &shy;ков и низ&shy;ким уг&shy;ле&shy;во&shy;дов. 
+                            Ско&shy;ро ему на чем&shy;пи&shy;о&shy;нат, 
+                            он на суш&shy;ке.
+                        </p>
+                </section>
+            </article>
+
+            <article class="item">
+                <figure class="item_element photo">
+                    <img class="photo_src" src="internet_cat.jpg" alt="Кот комментатор">
+                    <figcaption class="bucket">Добавить в корзину!</figcaption>
+                </figure>
+                <section class="item_element info">
+                    <h3 class="name">
+                        Юзер
+                    </h3>
+                    <p class="category">
+                        Порода: 
+                        <span>в комментариях орущая</span>
+                    </p>
+                    <p class="price">
+                        350 &#8381;
+                    </p>
+                    <div class="rating">
+                        <label for="set-8_1" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-8_1" name="set_8">
+
+                        <label for="set-8_2" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-8_2" name="set_8">
+
+                        <label for="set-8_3" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-8_3" name="set_8" checked>
+
+                        <label for="set-8_4" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-8_4" name="set_8">
+
+                        <label for="set-8_5" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-8_5" name="set_8">
+
+                        <label for="set-8_6" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-8_6" name="set_8">
+
+                        <label for="set-8_7" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-8_7" name="set_8">
+
+                        <label for="set-8_8" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-8_8" name="set_8">
+
+                        <label for="set-8_9" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-8_9" name="set_8">
+
+                        <label for="set-8_10" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-8_10" name="set_8">
+                    </div>
+                </section>
+                <section class="item_element description">
+                        <h4>Описание</h4>
+                        <p class="description_text">
+                            Ак&shy;тив&shy;ный поль&shy;зо&shy;ва&shy;
+                            тель со&shy;ци&shy;аль&shy;ных се&shy;тей. 
+                            В кур&shy;се всех со&shy;бы&shy;тий, яро об&shy;
+                            суж&shy;да&shy;ет во&shy;про&shy;сы ми&shy;
+                            ро&shy;во&shy;го мас&shy;шта&shy;ба в ком&shy;
+                            мен&shy;та&shy;ри&shy;ях групп с ме&shy;ма&shy;
+                            ми. Луч&shy;ше с ним не спо&shy;рить, а то ки
+                            &shy;нет в ЧС.
+                        </p>
+                </section>
+            </article>
+
+            <article class="item">
+                <figure class="item_element photo">
+                    <img class="photo_src" src="sad_cat.jpg" alt="Кот в печали">
+                    <figcaption class="bucket">Добавить в корзину!</figcaption>
+                </figure>
+                <section class="item_element info">
+                    <h3 class="name">
+                        sad 😫 cat
+                    </h3>
+                    <p class="category">
+                        Порода: 
+                        <span>постоянно ноющая</span>
+                    </p>
+                    <p class="price">
+                        1500 &#8381;
+                    </p>
+                    <div class="rating">
+                        <label for="set-9_1" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-9_1" name="set_9">
+
+                        <label for="set-9_2" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-9_2" name="set_9" checked>
+
+                        <label for="set-9_3" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-9_3" name="set_9">
+
+                        <label for="set-9_4" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-9_4" name="set_9">
+
+                        <label for="set-9_5" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-9_5" name="set_9">
+
+                        <label for="set-9_6" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-9_6" name="set_9">
+
+                        <label for="set-9_7" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-9_7" name="set_9">
+
+                        <label for="set-9_8" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-9_8" name="set_9">
+
+                        <label for="set-9_9" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-9_9" name="set_9">
+
+                        <label for="set-9_10" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-9_10" name="set_9">
+                    </div>
+                </section>
+                <section class="item_element description">
+                        <h4>Описание</h4>
+                        <p class="description_text">
+                            Не&shy;по&shy;нят&shy;но, что у это&shy;
+                            го ко&shy;та в го&shy;ло&shy;ве (и с шерс&shy;
+                            тью то&shy;же), но он по&shy;сто&shy;ян&shy;
+                            но про&shy;сит лас&shy;ки и уте&shy;ше&shy;ния.
+                        </p>
+                </section>
+            </article>
+
+            <article class="item">
+                <figure class="item_element photo">
+                    <img class="photo_src" src="ghost_cat.jpg" alt="Кот Призрак">
+                    <figcaption class="bucket">Добавить в корзину!</figcaption>
+                </figure>
+                <section class="item_element info">
+                    <h3 class="name">
+                        Пугало
+                    </h3>
+                    <p class="category">
+                        Порода: 
+                        <span>пугающая</span>
+                    </p>
+                    <p class="price">
+                        250 &#8381; <span class="old_price">1500 &#8381;</span>
+                    </p>
+                    <div class="rating">
+                        <label for="set-10_1" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-10_1" name="set_10">
+
+                        <label for="set-10_2" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-10_2" name="set_10">
+
+                        <label for="set-10_3" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-10_3" name="set_10">
+
+                        <label for="set-10_4" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-10_4" name="set_10">
+
+                        <label for="set-10_5" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-10_5" name="set_10">
+
+                        <label for="set-10_6" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-10_6" name="set_10">
+
+                        <label for="set-10_7" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-10_7" name="set_10" checked>
+
+                        <label for="set-10_8" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-10_8" name="set_10">
+
+                        <label for="set-10_9" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-10_9" name="set_10">
+
+                        <label for="set-10_10" class="cat_smile"></label>
+                        <input class="good_points" type="radio" id="set-10_10" name="set_10">
+                    </div>
+                </section>
+                <section class="item_element description">
+                        <h4>Описание</h4>
+                        <p class="description_text">
+                            Под&shy;жи&shy;да&shy;ет в са&shy;мых не&shy;
+                            пред&shy;ска&shy;зу&shy;е&shy;мых мес&shy;тах. 
+                            Очень лю&shy;бит не&shy;ожи&shy;дан&shy;но пу&shy;
+                            гать. Как ре&shy;зуль&shy;тат - ин&shy;фаркт у со
+                            &shy;се&shy;да. По&shy;это&shy;му и про&shy;да&shy;
+                            ем.. Если нра&shy;вят&shy;ся ост&shy;рые ощу&shy;
+                            ще&shy;ния , то это ваш вы&shy;бор!
+                        </p>
+                </section>
+            </article>
+
+        </section>
+    </main>
 </body>
 </html>
