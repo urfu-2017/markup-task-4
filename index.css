@@ -53,9 +53,7 @@ input[id='list']:checked ~ main .item
     height: auto;
 }
 
-input[id='list']:checked ~ main .item .photo,
-input[id='list']:checked ~ main .item .info,
-input[id='list']:checked ~ main .item .description
+input[id='list']:checked ~ main .item_element 
 {
     display: inline-block;
     width: 33%;
@@ -105,7 +103,7 @@ input[id='list']:checked ~ main .item .photo_src
     bottom: 0;
     left: 0;
     max-width: 100%;
-    max-height: 225px;
+    max-height: 100%;
     margin: 0 auto;
 }
 
@@ -126,7 +124,7 @@ input[id='list']:checked ~ main .item .photo_src
     cursor: pointer;
 }
 
-.photo:hover > .bucket
+.photo:hover .bucket
 {
     display: block;
 }
@@ -153,7 +151,7 @@ input[id='list']:checked ~ main .item .photo_src
     color: red;
 }
 
-input[id^='set-']
+.good_points 
 {
     display: none;
 }
@@ -169,7 +167,7 @@ input[id^='set-']
     display: inline-block;
     width: 10px;
     height: 20px;
-    background: url(left_smile_cat.png) no-repeat;
+    background-image: url(left_smile_cat.png);
     background-size: contain;
     opacity: 1;
     cursor: pointer;
@@ -177,8 +175,7 @@ input[id^='set-']
 
 .rating .cat_smile:nth-of-type(2n)
 {
-    background: url(right_smile_cat.png) no-repeat;
-    background-size: contain;
+    background-image: url(right_smile_cat.png);
 }
 
 .rating input:checked ~ .cat_smile,
