@@ -42,7 +42,6 @@ article:hover
     display: inline-block;
     border: 1px solid #000;
     width: 350px;
-    overflow: hidden;
 
 }
 
@@ -57,7 +56,7 @@ span ~ span
 {
     margin: 20px;
     padding: 0;
-    overflow: hidden;
+    
 }
 
 .cat label:nth-of-type(2n)
@@ -122,7 +121,6 @@ input[type='radio']:checked ~ label
 .caption
 {
     margin-left: 20px;
-    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 
@@ -145,18 +143,14 @@ input[name='view']:checked + main > article > section
 
 input[name='view']:checked + main > article > section.info
 {
-    margin-left: 10%;
+    margin-left: 5%;
+    width: 15%;
+
 }
 
 input[name='view']:checked + main > article > section.cat-info
 {
     margin-top: 15px;
-}
-
-input[name='view']:checked + main > article > div,
-input[name='view']:checked + main > article > h2
-{
-    margin-left: 30%;
 }
 
 input[name='view']:checked + main
@@ -177,7 +171,7 @@ input[name='view']:checked + main > article > figure > figcaption > a
 input[name='view']:checked + main > article
 {
     text-align: left;
-    width: 1300px;
+    width: 95%;
     display: inline-block;
 }
 
@@ -191,5 +185,4 @@ input[name='view']:checked + main > article > div.info,
 input[name='view']:checked + main > article > h2
 {
     display: inline-block;
-  
 }
