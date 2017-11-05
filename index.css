@@ -1,0 +1,189 @@
+@font-face
+{
+    font-family: FontAwesome;
+    src: url('./FontAwesome.otf');
+}
+
+body
+{
+    font: 10px Arial;
+}
+
+main
+{
+    padding-top: 1em;
+}
+
+.dr2:checked ~ main
+{
+    text-align: center;
+}
+
+.dr2:checked ~ main .product
+{
+    width: auto;
+    display: block;
+}
+
+.dr2:checked ~ main .product > div
+{
+    margin-bottom: 0;
+    margin-right: 3%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.dr2:checked ~ main .product .picture
+{
+    text-align: center;
+}
+
+.dr2:checked ~ main .product .picture img
+{
+    position: static;
+}
+
+.dr2:checked ~ main .product .info
+{
+    width: 20%;
+}
+
+.dr2:checked ~ main .product .description
+{
+    width: 20%;
+}
+
+.product
+{
+    width: 27.2em;
+    padding: .5em;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 80px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.product:hover
+{
+    border-color: black;
+}
+
+.product-item
+{
+    margin-bottom: 5px;
+}
+
+.picture
+{
+    width: 26.2em;
+    height: 22.2em;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px dashed rgba(0, 0, 0, 0);
+}
+
+.picture img
+{
+    max-width: 26em;
+    max-height: 22em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.picture:hover
+{
+    border-color: black;
+}
+
+.name
+{
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name a:hover
+{
+    color: red;
+}
+
+.category a
+{
+    font-size: 1.2em;
+    color: black;
+}
+
+.category a:hover
+{
+    color: red;
+}
+
+.price
+{
+    font-size: 1.8em;
+    font-weight: bold;
+    color: darkred;
+}
+
+.rating
+{
+    border: none;
+    float: left;
+}
+
+.cleaner
+{
+    clear: left;
+}
+
+.rating > input
+{
+    display: none;
+}
+
+.rating > label:before
+{
+    margin: 3px;
+    font-size: 2em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.rating > label
+{
+    color: #ddd;
+    float: right;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label
+{
+    color: #ffd700;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label
+{
+    color: #ffed85;
+}
+
+.description
+{
+    font-size: 1.4em;
+}
