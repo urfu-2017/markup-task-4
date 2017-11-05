@@ -59,6 +59,8 @@ a
 
 .original-price
 {
+    font-size: 16px;
+    color: grey;
     text-decoration: line-through;
 }
 
@@ -76,22 +78,42 @@ img
     padding: 10px 0;
 }
 
-.switch-btn:checked ~ .content .product .photo
+.switch-btn:checked ~ .content .photo
 {
     display: inline-block;
     width: 30%;
 }
 
-.switch-btn:checked ~ .content .product .options
+.switch-btn:checked ~ .content .options
 {
     vertical-align: top;
     display: inline-block;
     width: 25%;
 }
 
-.switch-btn:checked .description
+.switch-btn:checked ~ .content .description
 {
     vertical-align: top;
     display: inline-block;
     width: 35%;
+}
+
+.rating
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rating-star
+{
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    display: inline-block;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMSIgaGVpZ2h0PSIzMSIgdmlld0JveD0iMCAwIDMxIDMxIj4gIDxwb2x5Z29uIGZpbGw9IiNDRkNGQ0YiIGZpbGwtcnVsZT0iZXZlbm9kZCIgcG9pbnRzPSI0OC41IDAgNTIgMTIgNjQgMTIgNTQuNSAxOS4wNzcgNTkgMzEgNDguNSAyNCAzOCAzMSA0Mi41IDE5LjA3NyAzMyAxMiA0NSAxMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMzKSIvPjwvc3ZnPg==);
+}
+
+.rating-star-gold
+{
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMSIgaGVpZ2h0PSIzMSIgdmlld0JveD0iMCAwIDMxIDMxIj4gIDxwb2x5Z29uIGZpbGw9IiNGQUI2MDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgcG9pbnRzPSIxNS41IDAgMTkgMTIgMzEgMTIgMjEuNSAxOS4wNzcgMjYgMzEgMTUuNSAyNCA1IDMxIDkuNSAxOS4wNzcgMCAxMiAxMiAxMiIvPjwvc3ZnPg==);
 }
