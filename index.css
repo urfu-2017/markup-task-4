@@ -20,6 +20,8 @@
     overflow: hidden;
     width: 300px;
     vertical-align: top;
+    height: 800px;
+    padding: 10px;
 }
 
 .item-container:hover
@@ -52,32 +54,54 @@
     opacity: 1;
 }
 
-.info
+.info,
+.general-info
 {
     display: inline-block;
     vertical-align: top;
 }
 
-input[type='checkbox']:checked ~ section > article > .description
+input[type='checkbox']:checked ~ section article .description,
+input[type='checkbox']:checked ~ section article .general-info
 {
-    width: 40%;
+    width: 35%;
 }
 
-input[type='checkbox']:checked ~ section > article > .row-image
+input[type='checkbox']:checked ~ section article
+{
+    width: 100%;
+    height: 50%;
+}
+
+input[type='checkbox']:checked ~ section article div div .truncate
+{
+    width: 100%;
+    white-space: normal;
+}
+
+input[type='checkbox']:checked ~ section article .row-image
 {
     width: 20%;
     display: inline-block;
 }
 
-input[type='checkbox']:checked ~ section > article
+input[type='checkbox']:checked ~ section article .parent
 {
-    width: 100%;
+    display: table;
+    height: 300px;
 }
 
-input[type='checkbox']:checked ~ section > article > div > div > .truncate
+input[type='checkbox']:checked ~ section article .parent .child
 {
-    width: 100%;
-    white-space: normal;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+input[type='checkbox']:checked ~ section article .parent .child .item-image
+{
+    position: relative;
 }
 
 .category-text
@@ -126,20 +150,20 @@ input[type='checkbox']:checked ~ section > article > div > div > .truncate
     content: '$';
 }
 
-.delivery-time-item
+.series-date
 {
     display: block;
     color: #008000;
 }
 
-.delivery-time-item:before
+.series-date:before
 {
     color: #000;
     text-decoration: underline;
     content: 'Новые серии:';
 }
 
-.every-time-delivery:after
+.series-available:after
 {
     color: #008000;
     content: ' уже много лет доступны :)';
@@ -170,11 +194,6 @@ input[type='checkbox']:checked ~ section > article > div > div > .truncate
     border: none;
 }
 
-.raiting > label
-{
-    color: gray;
-}
-
 .rating > input
 {
     display: none;
@@ -188,7 +207,7 @@ input[type='checkbox']:checked ~ section > article > div > div > .truncate
 .rating > label:after,
 .rating:hover > label:after
 {
-    margin: -3.1%;
+    margin: -3%;
     display: inline-block;
     font-family: FontAwesome;
     content: '\f089';
@@ -202,7 +221,8 @@ input[type='checkbox']:checked ~ section > article > div > div > .truncate
 }
 
 .rating > .full:after,
-.rating:hover > .full:after
+.rating:hover > .full:after,
+.rating > input:checked + label:after
 {
     color: #fc0;
 }
@@ -212,9 +232,3 @@ input[type='checkbox']:checked ~ section > article > div > div > .truncate
 {
     color: #ddd;
 }
-
-.rating > input:checked + label:after
-{
-    color: #fc0;
-}
-
