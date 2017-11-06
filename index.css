@@ -1,4 +1,4 @@
-.div
+.product
 {
     display: inline-block;
     width: 23%;
@@ -8,13 +8,8 @@
 .image
 {
     width: 20px;
-    margin: -20px 0 0 15px;
+    margin: -20px 0 0 20px;
     display: block;
-}
-
-.img
-{
-    width: 100%;
 }
 
 a:hover
@@ -41,9 +36,11 @@ div img
 .old-priсe
 {
     text-decoration: line-through;
+    color: #000;
+    font-size: 20px;
 }
 
-.long-name
+.name-wrap
 {
     white-space: nowrap;
     overflow: hidden;
@@ -52,6 +49,7 @@ div img
 
 .morph
 {
+    width: 100%;
     transition: all .5s ease;
 }
 
@@ -78,9 +76,20 @@ input[type='checkbox']:checked ~ div
     display: block;
 }
 
-input[type='checkbox']:checked ~ div div.child
+input[type='checkbox']:checked ~ div div.list-product
 {
     width: 25%;
     display: inline-block;
     margin: 20px;
+}
+
+.align
+{
+    text-align: justify;
+}
+
+.div-specification
+{
+    height: 100px;
+    overflow: hidden;
 }
