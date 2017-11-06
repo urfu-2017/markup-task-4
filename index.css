@@ -24,6 +24,7 @@ header
 h1
 {
     font-size: 1.3rem;
+    vertical-align: top;
 }
 
 h1,
@@ -36,7 +37,7 @@ h1,
 .icon
 {
     font: 3.5rem BorderCats;
-    float: left;
+    display: inline-block;
 }
 
 main
@@ -97,7 +98,7 @@ h2 a:hover
     text-decoration: underline;
 }
 
-figure
+.photo
 {
     margin: 0;
     position: relative;
@@ -106,10 +107,10 @@ figure
     text-align: center;
 }
 
-figure > img
+.photo > img
 {
     position: absolute;
-    max-width: 100%;
+    max-width: 99%;
     max-height: 250px;
     bottom: 0;
     right: 0;
@@ -161,40 +162,48 @@ img:hover
     margin: 10px 0;
 }
 
-.kindness
-{
-    display: inline-block;
-    font-family: FontAwesome;
-}
-
 input
 {
     display: none;
 }
 
+.kindness
+{
+    display: inline-block;
+    font-family: FontAwesome;
+    direction: rtl;
+    text-align: center;
+    font-size: 0;
+}
+
 .kindness label:before
 {
-    content: '\f005';
+    display: inline-block;
+    content: '\f006';
+    font-family: FontAwesome, fantasy;
+    font-size: 35px;
+    width: 17px;
+    overflow: hidden;
+    color: #da5529;
 }
 
 .kindness .half-star:before
 {
-    content: '\f089';
-    position: absolute;
+    transform: scale(-1, 1);
 }
 
-.kindness label
-{
-    font-size: 2em;
-    color: #ffc2a3;
-    float: right;
-}
-
-.kindness label:hover,
-.kindness label:hover ~ label,
-.kindness input:checked ~ label
+.kindness label:hover:before,
+.kindness label:hover ~ label:before,
+.kindness input:checked ~ label:before
 {
     color: #da5529;
+    content: '\f005';
+}
+
+.kindness label:hover:before,
+.kindness label:hover ~ label:before
+{
+    color: #da7052;
 }
 
 .description
@@ -210,6 +219,14 @@ input
     display: inline-block;
 }
 
+.info
+{
+    display: inline-block;
+    padding-top: 20px;
+    vertical-align: top;
+    width: 100%;
+}
+
 label[for='list']
 {
     color: #da5529;
@@ -222,12 +239,6 @@ label[for='list']
     left: 20px;
 }
 
-input[id='list']
-{
-    top: 100px;
-    position: absolute;
-}
-
 input[id='list']:checked ~ main .item
 {
     width: 57%;
@@ -237,10 +248,8 @@ input[id='list']:checked ~ main .item
 
 input[id='list']:checked ~ main .item .photo
 {
-    position: relative;
     width: 50%;
     display: inline-block;
-    float: left;
 }
 
 input[id='list']:checked ~ main .item h2,
@@ -251,7 +260,11 @@ input[id='list']:checked ~ main .item .old-price,
 input[id='list']:checked ~ main .item .description
 {
     display: inline-block;
-    width: 48%;
-    vertical-align: top;
-    text-align: right;
+    width: 90%;
+
+}
+
+input[id='list']:checked ~ main .info
+{
+    width: 49%;
 }
