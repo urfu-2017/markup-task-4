@@ -5,7 +5,6 @@ input[id='layout-list']:checked ~ .cards-container
 
 input[id='layout-list']:checked ~ .cards-container .card
 {
-    display: inline-block;
     width: 100%;
 }
 
