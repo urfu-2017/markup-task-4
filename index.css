@@ -1,26 +1,32 @@
 .settings
 {
     display: table;
-    background: gray;
+    background: #808080;
     height: 30px;
     margin-bottom: 10px;
 }
 
-input
+.cat_info
+{
+    margin: 10px;
+}
+
+input[name='star'],
+input[name='forma']
 {
     display: none;
 }
 
 .settings label:hover 
 {
-    background: white;
+    background: #fff;
     border: 2px solid;
 }
 
 .show_table:checked ~ .settings label[for='set_table'],
 .show_list:checked ~ .settings label[for='set_list']
 {
-    background: orange;
+    background: #ffa500;
 }
 
 .settings label
@@ -38,26 +44,36 @@ main > .cat
     vertical-align: top;
     display: inline-block;
     margin-bottom: 40px;
-    width: 400px;
-    height: auto;
-
+    max-width: 400px;
 }
 
-img:hover
+img[class='cat_picture']:hover
 {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
     transform: rotate(360deg);
+}
+
+.cat > .cat_info > .name:hover
+{
+    font-size: 150%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #800080;
 }
 
 .name:hover a
 {
     font-size: 150%;
-    color: purple !important;
+    color: #800080;
+
 }
 
 .cat:hover
 {
-    border: 1px solid;
+    outline: 1px solid;
     background: rgb(231, 231, 231);
 }
 
@@ -67,12 +83,12 @@ img:hover
     font-size: 20px;
 }
 
-.cat > .cat_info > .name > a,
 .cat > .cat_info > .name
 {
+    font-size: 150%;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: blue;
+    color: #00f;
 }
 
 .cat_type:hover
@@ -80,7 +96,7 @@ img:hover
     transform: scale(-1, -1);
 }
 
-.cat figure 
+.cat .cat_photo 
 {
     position: relative;
     margin: 10px;
@@ -88,38 +104,34 @@ img:hover
     width: 380px;
 }
 
-.cat_info
-{
-    margin: 10px;
-    vertical-align: top;
-}
-
-.cat > figure > img
+.cat > .cat_photo > img
 {
     position: absolute;
     bottom: 0;
     max-height: 400px;
     height: auto;
     width: 380px;
-    -webkit-transition: -webkit-transform 3s ease-in-out;
+    -webkit-transition: 3s ease-in-out;
+    -moz-transition: 3s ease-in-out;
+    -o-transition: 3s ease-in-out;
     transition: transform 3s ease-in-out;
-    
 }
 
 main
 {
-    column-count: auto;
-    vertical-align: top;
     margin-bottom: 40px;
+}
+
+.rating
+{
+    font-size: 0;
 }
 
 .rating .star
 {
     display: inline-block;
-    width: 14px;
-    height: 28px;
-    background-size: contain;
-
+    width: 20px;
+    height: 40px;
 }
 
 .rating input
@@ -129,10 +141,8 @@ main
 
 .rating .star:nth-of-type(2n)
 {
-    margin-left: -5px;
     background: url(superstar-right.png);
     cursor: pointer;
-    opacity: 1;
 }
 
 .rating .star:nth-of-type(2n+1)
@@ -153,49 +163,41 @@ main
     opacity: .25;
 }
 
-.show_list:checked ~ main > .cat
+.show_list:checked ~ main
 {
-    display: block;
-    height: 500px;
-    width: 1500px;
-    white-space: nowrap;
+    display: table;
 }
 
-.show_list:checked ~ main > .cat > figure > img
+.show_list:checked ~ main .cat
+{
+    display: table-row;
+}
+
+.show_list:checked ~ main .cat > .cat_photo
+{
+    width: 35%;
+}
+
+.show_list:checked ~ main .cat > .cat_info
+{
+    box-sizing: border-box;
+    display: table-cell;
+    width: 65%;
+}
+
+.show_list:checked ~ main .cat > .cat_photo > img
 {
     position: relative;
-    margin: 0;
-    height: 480px;
-    width: auto;
-    max-width: 720px;
-}
-
-.show_list:checked ~ main > .cat > figure
-{
-    height: 500px;
-    width: 740px;
-    display: inline-block;
-}
-
-.show_list:checked ~ main > .cat > .cat_info
-{
-    white-space: normal;
-    display: inline-block;
     vertical-align: top;
-    height: auto;
-    width: auto;
 }
 
-.show_list:checked ~ main > .cat > .cat_info > .name > a,
-.show_list:checked ~ main > .cat > .cat_info > .name
+.show_list:checked ~ main .cat > .cat_info > .cat_type,
 {
-    width: 720px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: blue;
+    margin-top: 20px;
 }
 
-.show_list:checked ~ main > .cat > .cat_info > .description
+.old_price
 {
-    width: 720px;
+    text-decoration: line-through;
+    color: #000;
 }
