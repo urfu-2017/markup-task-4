@@ -119,9 +119,9 @@ input ~ .card > .card-image
 input:checked ~ .card
 {
     display: block;
-    width: auto;
+    width: 90%;
+    /* блок с описанием съезжает и информ. о кошке становится нечитаемой */
     min-width: 800px;
-    height: auto;
     margin: 20px 10px;
 
 }
