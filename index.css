@@ -213,18 +213,18 @@ input
     margin-top: 20px;
 }
 
-.price,
-.breed
-{
-    display: inline-block;
-}
-
 .info
 {
     display: inline-block;
     padding-top: 20px;
     vertical-align: top;
     width: 100%;
+}
+
+.price,
+.breed
+{
+    display: inline-block;
 }
 
 label[for='list']
