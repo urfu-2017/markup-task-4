@@ -209,7 +209,7 @@ input[type='checkbox']:checked ~ section article .parent .child .item-image
 {
     margin: -3%;
     display: inline-block;
-    font-family: FontAwesome;
+    font-family: FontAwesome, Arial, sans-serif;
     content: '\f089';
 }
 
@@ -220,15 +220,15 @@ input[type='checkbox']:checked ~ section article .parent .child .item-image
     transform: scaleX(-1);
 }
 
+.rating > input:checked ~ label:after,
+.rating:hover > label:hover ~ label:after
+{
+    color: #ddd;
+}
+
 .rating > .full:after,
 .rating:hover > .full:after,
 .rating > input:checked + label:after
 {
     color: #fc0;
-}
-
-.rating > input:checked ~ label:after,
-.rating:hover > label:hover ~ label:after
-{
-    color: #ddd;
 }
