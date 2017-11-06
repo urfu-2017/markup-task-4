@@ -1,0 +1,95 @@
+.product
+{
+    display: inline-block;
+    width: 23%;
+    margin: 10px;
+}
+
+.image
+{
+    width: 20px;
+    margin: -20px 0 0 20px;
+    display: block;
+}
+
+a:hover
+{
+    color: #7b68ee;
+}
+
+.category:hover
+{
+    color: #228b22;
+}
+
+div img
+{
+    width: 6%;
+}
+
+.price
+{
+    color: #f00;
+    font-size: 30px;
+}
+
+.old-priсe
+{
+    text-decoration: line-through;
+    color: #000;
+    font-size: 20px;
+}
+
+.name-wrap
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.morph
+{
+    width: 100%;
+    transition: all .5s ease;
+}
+
+.morph:hover
+{
+    border-radius: 50%;
+}
+
+.name:hover::after
+{
+    content: attr(data-title);
+    position: absolute;
+    z-index: 1;
+    background: rgba(255, 255, 230, .9);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+}
+
+input[type='checkbox']:checked ~ div
+{
+    width: 100%;
+    display: block;
+}
+
+input[type='checkbox']:checked ~ div div.list-product
+{
+    width: 25%;
+    display: inline-block;
+    margin: 20px;
+}
+
+.align
+{
+    text-align: justify;
+}
+
+.div-specification
+{
+    height: 100px;
+    overflow: hidden;
+}
