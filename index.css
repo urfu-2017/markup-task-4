@@ -1,13 +1,36 @@
 /*stylelint-disable max-line-length*/
 
-input[type='checkbox']:checked ~ .to-be-changed .block
+img
+{
+    width: 100%;
+    bottom: 0;
+    vertical-align: -179px;
+    display: inline-block;
+}
+
+input[type='checkbox']
+{
+    display: inline-block;
+}
+
+input[type='checkbox']:checked ~ main .cat-wrapper-size
+{
+    display: block;
+}
+
+input[type='checkbox']:checked ~ main a img
+{
+    height: auto !important;
+}
+
+input[type='checkbox']:checked ~ main .wrapper
 {
     float: left;
     position: inherit;
     display: -webkit-box;
 }
 
-input[type='checkbox']:checked ~ .to-be-changed
+input[type='checkbox']:checked ~ main
 {
     width: 500px;
     height: auto;
@@ -15,20 +38,20 @@ input[type='checkbox']:checked ~ .to-be-changed
     margin-right: 8px;
 }
 
-input[type='checkbox']:checked ~ .to-be-changed .block .price,
-input[type='checkbox']:checked ~ .to-be-changed .block .oldPrice
+input[type='checkbox']:checked ~ main .wrapper .price,
+input[type='checkbox']:checked ~ main .wrapper .oldPrice
 {
     margin-top: 3em;
     margin-left: 45em;
 }
 
-input[type='checkbox']:checked ~ .to-be-changed .block .newPrice
+input[type='checkbox']:checked ~ main .wrapper .newPrice
 {
     margin-top: 3em;
     margin-left: -5em;
 }
 
-input[type='checkbox']:checked ~ .to-be-changed .element
+input[type='checkbox']:checked ~ main .element
 {
     margin: 2em;
     padding-left: 8em;
@@ -41,9 +64,14 @@ body
     min-height: 172px;
 }
 
+input
+{
+    display: none;
+}
+
 span.rating
 {
-    display: inline-block;
+    display: inline-table;
 }
 
 .title
@@ -61,41 +89,47 @@ span.rating
 div
 {
     height: 10px;
-
 }
 
 div p
 {
-    margin: 5px ;
+    margin: 5px;
     text-overflow: ellipsis;
     width: 120px;
 }
 
-.block
+.wrapper
 {
-    margin: 61px 61px 13px;
-    height: 325px;
+    margin-top: 25px;
+    height: 180px;
     padding: 50px;
     text-align: left;
-    float: left;
+    display: inline-block;
+    width: 191px;
     text-overflow: ellipsis;
+    vertical-align: bottom;
 }
 
-input[type='checkbox']:not(:checked) ~ .to-be-changed .block
+input[type='checkbox']:not(:checked) ~ main .wrapper
 {
     height: 325px;
 }
 
-.block:hover
+input[type='checkbox']:checked ~ main .wrapper
 {
-    -webkit-animation: heartbeat  infinite alternate ;
-    animation: heartbeat  infinite alternate ;
+    width: fit-content;
+}
+
+.wrapper:hover
+{
+    -webkit-animation: heartbeat infinite alternate;
+    animation: heartbeat infinite alternate;
     -webkit-animation-duration: 3000ms;
     animation-duration: 3000ms;
     -webkit-transform-origin: center;
     transform-origin: center;
-    height: auto ;
-    -webkit-box-shadow: 0 14px 70px rgba(31, 93, 18, .5);
+    height: auto;
+    -webkit-box-shadow: 0 14px 70px rgba(31, 93, 13, .5);
     box-shadow: 0 14px 70px rgba(31, 93, 18, .5);
 }
 
@@ -173,25 +207,26 @@ input[type='checkbox']:not(:checked) ~ .to-be-changed .block
 .price
 {
     font-family: 'Pacifico', cursive;
-    /*position: absolute;*/
     color: #0026ff;
-    margin-top: -39px;
+    margin-top: -12px;
+    margin-left: 158px;
 }
 
 .oldPrice
 {
     text-decoration: line-through;
     color: #7d7a69;
-    margin-top: -39px;
+    margin-top: 8px;
     font-size: medium;
+    margin-left: 101px;
 }
 
 .newPrice
 {
     color: #ff0003;
     font-size: x-large;
-    margin-top: -45px;
-    margin-left: 38px;
+    margin-top: -46px;
+    margin-left: 145px;
     font-weight: bold;
 }
 
@@ -204,24 +239,22 @@ input[type='checkbox']:not(:checked) ~ .to-be-changed .block
 .about
 {
     font-family: serif;
-
 }
 
 .about:hover
 {
     color: #b36370;
-
 }
 
 @media only screen and (max-device-width: 768px)
 {
     .title
-{
+    {
         font-size: 32px;
     }
 
     div
-{
+    {
         max-width: 68%;
         height: auto;
         min-width: 349px;
@@ -232,13 +265,13 @@ input[type='checkbox']:not(:checked) ~ .to-be-changed .block
 @media only screen and (max-device-width: 480px)
 {
     .title
-{
+    {
         text-align: center;
         font-size: 100%;
     }
 
     div
-{
+    {
         max-width: 28%;
         height: auto;
     }
@@ -262,84 +295,30 @@ input[type='checkbox']:not(:checked) ~ .to-be-changed .block
     src: url('https://fonts.googleapis.com/css?family=Pacifico') ;
 }
 
-.cat1
+.cat-wrapper-size
 {
-    background: url(sadcat.jpg);
-    display: block;
     width: 196px;
     height: 186px;
 }
 
-.cat2
+.exclusive
 {
-    background: url(lovelycat.jpg);
-    display: block;
-    width: 196px;
-    height: 183px;
+    height: 93px;
 }
 
-.cat3
+a:hover img
 {
-    background: url(cinemacat.jpg);
-    display: block;
-    width: 196px;
-    height: 183px;
+    opacity: 0;
 }
 
-.cat4
+a
 {
-    background: url(confusecat.jpg);
-    display: block;
-    width: 196px;
-    height: 183px;
+    display: inline-block;
 }
 
-.cat5
+a:hover
 {
-    background: url(007cat.jpg);
-    display: block;
-    width: 196px;
-    height: 183px;
-}
-
-.cat6
-{
-    background: url(satisfiedcat.jpg);
-    display: block;
-    width: 196px;
-    height: 183px;
-}
-
-.cat7
-{
-    background: url(funnycat.jpg);
-    display: block;
-    width: 196px;
-    height: 183px;
-}
-
-.cat8
-{
-    background: url(scornfulcat.jpg);
-    display: block;
-    width: 196px;
-    height: 183px;
-}
-
-.cat9
-{
-    background: url(seekcat.jpg);
-    display: block;
-    width: 196px;
-    height: 183px;
-}
-
-.cat10
-{
-    background: url(hungrycat.jpg);
-    display: block;
-    width: 196px;
-    height: 183px;
+    background: url('test.jpg');
 }
 
 .change:hover
@@ -347,57 +326,34 @@ input[type='checkbox']:not(:checked) ~ .to-be-changed .block
     background: url(test.jpg);
 }
 
-.rating:not(:checked) > input
+.rating label
 {
-    position: absolute;
-    clip: rect(0,0,0,0);
+    display: inline-block;
+    width: 16px;
+    height: 30px;
 }
 
-.rating:not(:checked) > label
+.rating label:nth-of-type(2n)
 {
-    float: right;
-    width: 1em;
-    padding: 0 .1em;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 198%;
-    line-height: 1.2;
-    color: #ddd;
-    text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
-    cursor: pointer;
-
+    margin-right: -1px;
 }
 
-.rating:not(:checked) > label:before
+.rating label:nth-of-type(2n+1)
 {
-    content: '❤ ';
+    background: url('heartL.png');
 }
 
-.rating > input:checked ~ label
+.rating label:nth-of-type(2n)
 {
-    color: #ff0003;
-    text-shadow: 1px 1px #cc0b24, 2px 2px #99146a, .1em .1em .2em rgba(0,0,0,.5);
+    background: url('heartR.png');
 }
 
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label
+.rating input:checked ~ label
 {
-    color: #ff00a1;
-    text-shadow: 1px 1px #c76ada, 2px 2px #b590ac, .1em .1em .2em rgba(0,0,0,.5);
+    opacity: .4;
 }
 
-.rating > input:checked + label:hover,
-.rating > input:checked + label:hover ~ label,
-.rating > input:checked ~ label:hover,
-.rating > input:checked ~ label:hover ~ label,
-.rating > label:hover ~ input:checked ~ label
+.rating input:checked ~ label:hover ~ label
 {
-    color: #fc7464;
-    text-shadow: 1px 1px #da3400, 2px 2px #b50011, .1em .1em .2em rgba(0,0,0,.5);
-}
-
-.rating > label:active
-{
-    top: 2px;
-    left: 2px;
+    opacity: .2;
 }
