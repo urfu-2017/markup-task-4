@@ -80,6 +80,11 @@ input[value='table']:checked ~ .shop .description
     vertical-align: bottom;
 }
 
+input[value='table']:checked ~ .shop .cat-card > img
+{
+    width: 100%;
+}
+
 .stars img
 {
     width: 25px;
