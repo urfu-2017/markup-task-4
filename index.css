@@ -1,3 +1,7 @@
+*
+{
+    box-sizing: border-box;
+}
 
 html,
 body
@@ -9,7 +13,8 @@ body
     overflow-x: hidden;
 }
 
-input
+.full,
+.part
 {
     margin: 0;
     display: none;
@@ -60,6 +65,18 @@ a
     text-align: left;
 }
 
+.photo .img_wrapper
+{
+    position: relative;
+    padding-top: 100%;
+}
+
+.photo img
+{
+    position: absolute;
+    bottom: 0;
+}
+
 .cross-out
 {
     text-decoration: line-through;
@@ -70,7 +87,7 @@ a
 .cat
 {
     display: inline-block;
-    width: 15%;
+    width: 20%;
     vertical-align: top;
     margin-left: 50px;
     margin-top: 30px;
@@ -155,7 +172,7 @@ a:hover
 }
 
 .inline:checked ~ main,
-.inline:checked ~ main div.cat
+.inline:checked ~ main article.cat
 {
     width: 95%;
     display: inline-block;
@@ -166,11 +183,17 @@ a:hover
 
 .inline:checked ~ main .cat .photo img
 {
-    display: inline-block;
     position: relative;
     height: auto;
-    text-align: left;
     margin: 0;
+    bottom: auto;
+}
+
+.inline:checked ~ main .cat .photo .img_wrapper
+{
+    display: inline-block;
+    padding-top: 0; 
+    text-align: left;
 }
 
 .inline:checked ~ main .cat .photo
@@ -201,4 +224,5 @@ a:hover
     position: relative;
     width: 33%;
     text-align: left;
+    background-color: white;
 }
