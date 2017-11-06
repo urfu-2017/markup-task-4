@@ -1,4 +1,4 @@
-.btn
+.button
 {
     display: inline-block;
     font-size: 1.15rem;
@@ -11,25 +11,25 @@
     text-align: center;
 }
 
-.btn-primary
+.button-primary
 {
     background: #fc9021;
     border-color: #fc9021;
     color: #fffcf5;
 }
 
-.btn-lg
+.button-large
 {
     min-width: 12rem;
 }
 
-.btn:hover
+.button:hover
 {
     -webkit-filter: brightness(105%);
     filter: brightness(105%);
 }
 
-.btn:active
+.button:active
 {
     -webkit-filter: brightness(95%);
     filter: brightness(95%);
