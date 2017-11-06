@@ -1,0 +1,173 @@
+label
+{
+    display: block;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+    font: 20px Arial, sans-serif;
+}
+
+input
+{
+    display: none;
+}
+
+img
+{
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.card
+{
+    font-size: 20px;
+}
+
+.card:hover
+{
+    border: 5px solid #000;
+    
+}
+
+.card-image > img:hover
+{
+    filter: contrast(1.5);
+}
+
+.cat-name
+{
+    display: inline-block;
+    font: 20px Arial, serif;
+    color: #808080;
+    overflow: hidden;
+    max-width: 90%;
+}
+
+.cat-name:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.cat-breed
+{
+    display: inline-block;
+    text-align: center;
+    font-weight: 100;
+    overflow: hidden;
+    max-width: 90%;
+    font-size: 18px;
+}
+
+.cat-breed:hover
+{
+    color: #f00;
+}
+
+.cat-assessment                              
+{
+    text-align: center;
+}
+
+.cat-price
+{
+    font: 18px Arial, sans-serif;
+}
+
+.old-price
+{
+    font-size: 16px;
+    color: #808080;
+    text-decoration: line-through;
+}
+
+.star
+{
+    max-width: 30px;
+}
+
+.card-info
+{
+    padding: 10px;
+}
+/*=============================================================================*/
+
+input ~ .card
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 10px;
+}
+
+input ~ .card > .card-image img
+{
+    vertical-align: bottom;
+}
+
+input ~ .card > .card-image
+{
+    width: 300px;
+    height: 300px;
+    line-height: 299px;
+    text-align: center;
+}
+/*==========================================================================*/
+
+input:checked ~ .card
+{
+    display: block;
+    width: 90%;
+    /* блок с описанием съезжает и информ. о кошке становится нечитаемой */
+    min-width: 800px;
+    margin: 20px 10px;
+
+}
+
+input:checked ~ .card > .card-image img
+{
+    vertical-align: top;
+}
+
+input:checked ~ .card > .card-image
+{
+    display: inline-block;
+    height: auto;
+    vertical-align: top;
+    width: 30%;
+}
+
+input:checked ~ .card > .card-info
+{
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+    padding: 0;
+    margin-left: 30px;
+}
+
+input:checked ~ .card .cat-info
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+
+}
+
+input:checked ~ .card .cat-info > .cat-name,
+input:checked ~ .card .cat-info > .cat-breed,
+input:checked ~ .card .cat-info > .cat-assessment,
+input:checked ~ .card .cat-info > .cat-price
+{
+    text-align: left;
+    margin: 0;
+}
+
+input:checked ~ .card p
+{
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+}
