@@ -105,6 +105,7 @@ a:visited
     margin: 10px 0 0;
 }
 
+.itemPart1:hover ~ .itemPart2 .itemTitle,
 .itemTitle:hover
 {
     text-decoration: underline;
