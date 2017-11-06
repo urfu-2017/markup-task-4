@@ -3,12 +3,6 @@
     margin-bottom: 1rem;
 }
 
-.settings__group
-{
-    display: inline;
-    margin: 0 .3rem;
-}
-
 input[id='layout-grid']:checked ~ .settings label[for='layout-grid'],
 input[id='layout-list']:checked ~ .settings label[for='layout-list']
 {

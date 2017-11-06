@@ -3,8 +3,6 @@
     font-size: 1.1rem;
     display: inline-block;
     font-family: 'Roboto', Arial, sans-serif;
-    letter-spacing: normal;
-    margin: 0;
     vertical-align: top;
     box-sizing: border-box;
     padding: 2rem;
@@ -56,7 +54,7 @@
 
 .card__category
 {
-    margin: .5em auto;
+    margin: .5em 0;
     font-size: .75em;
     color: #818183;
 }
@@ -73,7 +71,7 @@
     font-size: 1.15em;
 }
 
-.card__price_old
+.card__price-old
 {
     font-size: .8em;
     text-decoration: line-through;

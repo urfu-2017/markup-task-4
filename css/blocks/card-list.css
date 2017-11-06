@@ -13,7 +13,6 @@ input[id='layout-list']:checked ~ .cards-container .card__image
 {
     width: 20%;
     float: left;
-    display: block;
     margin-right: 10%;
     height: 300px;
 }

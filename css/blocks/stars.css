@@ -5,7 +5,6 @@
     display: inline-block;
     /*Поддерживается всеми кроме IE и Opera Mini*/
     -webkit-text-stroke: 1px #a0640a;
-
 }
 
 .stars input
