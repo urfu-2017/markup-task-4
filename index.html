@@ -1,9 +1,503 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
+    <link href="index.css" rel="stylesheet">
     <title>Задача «Мяндекс.Муррркет»</title>
 </head>
 <body>
+<input id="tile-layout-switch" class="tile-layout-switch" type="radio" name="switch" checked>
+<input id="card-layout-switch" class="card-layout-switch" type="radio" name="switch">
+<header class="main-header">
+    <h1>
+        Catdex.Market
+    </h1>
+    <div class="layout-switches">
+        <label for="card-layout-switch">Карточки</label>
+        <label for="tile-layout-switch">Плитки</label>
+    </div>
+</header>
+<main>
+    <article class="market-item">
+        <div class="item-picture">
+            <img src="pictures/longcatislong.jpg" alt="Cat longcat" title="Cat photo">
+        </div>
+        <div class="item-info">
+            <h2><a href="http://knowyourmeme.com/memes/longcat" title="Longcat info">
+                Loooooooooooooooooooooooooooongcat
+            </a></h2>
+            <p class="item-price">
+                $100000000000000000000000000000000000000
+            </p>
+            <p class="item-category">
+                <em>Category:</em> <a href="real" title="See category">Real cats</a>
+            </p>
+            <p class="item-description">
+                Longcat is one of the most recognized cats on the Internet. He is known for his epic
+                length, spawning photoshops and even an entire mythology around his magnitude.
+            </p>
+            <fieldset class="rating">
+                <input type="radio" id="rate-1-10" name="rate-1" value="10" checked>
+                <label for="rate-1-10"></label>
+                <input type="radio" id="rate-1-9" name="rate-1" value="9">
+                <label for="rate-1-9"></label>
+                <input type="radio" id="rate-1-8" name="rate-1" value="8">
+                <label for="rate-1-8"></label>
+                <input type="radio" id="rate-1-7" name="rate-1" value="7">
+                <label for="rate-1-7"></label>
+                <input type="radio" id="rate-1-6" name="rate-1" value="6">
+                <label for="rate-1-6"></label>
+                <input type="radio" id="rate-1-5" name="rate-1" value="5">
+                <label for="rate-1-5"></label>
+                <input type="radio" id="rate-1-4" name="rate-1" value="4">
+                <label for="rate-1-4"></label>
+                <input type="radio" id="rate-1-3" name="rate-1" value="3">
+                <label for="rate-1-3"></label>
+                <input type="radio" id="rate-1-2" name="rate-1" value="2">
+                <label for="rate-1-2"></label>
+                <input type="radio" id="rate-1-1" name="rate-1" value="1">
+                <label for="rate-1-1"></label>
+            </fieldset>
+        </div>
+    </article>
+    <article class="market-item">
+        <div class="item-picture">
+            <img src="pictures/seriouscat.jpg" alt="Cat serious cat" title="Cat photo">
+        </div>
+        <div class="item-info">
+            <h2><a href="http://knowyourmeme.com/memes/serious-cat" title="Serious cat info">
+                Serious cat
+            </a></h2>
+            <p class="item-price">
+                <span class="item-old-price">$25.13</span>
+                <span>$25.12</span>
+            </p>
+            <p class="item-category">
+                <em>Category:</em> <a href="real" title="See category">Real cats</a>
+            </p>
+            <p class="item-description">
+                Serious Cat is a popular image macro featuring a picture of a white cat …looking
+                srsly serious. The image is typically accompanied by a caption that reads:
+            </p>
+            <blockquote><q>I Are Serious Cat. This is Serious Thread.</q></blockquote>
+            <fieldset class="rating">
+                <input type="radio" id="rate-2-10" name="rate-2" value="10">
+                <label for="rate-2-10"></label>
+                <input type="radio" id="rate-2-9" name="rate-2" value="9">
+                <label for="rate-2-9"></label>
+                <input type="radio" id="rate-2-8" name="rate-2" value="8" checked>
+                <label for="rate-2-8"></label>
+                <input type="radio" id="rate-2-7" name="rate-2" value="7">
+                <label for="rate-2-7"></label>
+                <input type="radio" id="rate-2-6" name="rate-2" value="6">
+                <label for="rate-2-6"></label>
+                <input type="radio" id="rate-2-5" name="rate-2" value="5">
+                <label for="rate-2-5"></label>
+                <input type="radio" id="rate-2-4" name="rate-2" value="4">
+                <label for="rate-2-4"></label>
+                <input type="radio" id="rate-2-3" name="rate-2" value="3">
+                <label for="rate-2-3"></label>
+                <input type="radio" id="rate-2-2" name="rate-2" value="2">
+                <label for="rate-2-2"></label>
+                <input type="radio" id="rate-2-1" name="rate-2" value="1">
+                <label for="rate-2-1"></label>
+            </fieldset>
+        </div>
+    </article>
+    <article class="market-item">
+        <div class="item-picture">
+            <img src="pictures/schrodingercat.jpg" alt="Cat or not cat" title="Cat photo">
+        </div>
+        <div class="item-info">
+            <h2><a href="https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat"
+                   title="Schrodinger cat info">
+                Schrödinger's cat
+            </a></h2>
+            <p class="item-price">
+                $????
+            </p>
+            <p class="item-category">
+                <em>Category:</em> <a href="sceince" title="See category">Science cats</a>
+            </p>
+            <p class="item-description">
+                Schrödinger's cat is a thought experiment, sometimes described as a paradox, devised
+                by Austrian physicist Erwin Schrödinger in 1935. It illustrates what he saw as
+                the problem of the Copenhagen interpretation of quantum mechanics applied to
+                everyday objects. The scenario presents a cat that may be simultaneously both alive
+                and dead, a state known as a quantum superposition, as a result
+                of being linked to a random subatomic event that may or may not occur.
+            </p>
+            <fieldset class="rating">
+                <input type="radio" id="rate-3-10" name="rate-3" value="10">
+                <label for="rate-3-1"></label>
+                <input type="radio" id="rate-3-9" name="rate-3" value="9">
+                <label for="rate-3-2"></label>
+                <input type="radio" id="rate-3-8" name="rate-3" value="8">
+                <label for="rate-3-3"></label>
+                <input type="radio" id="rate-3-7" name="rate-3" value="7">
+                <label for="rate-3-4"></label>
+                <input type="radio" id="rate-3-6" name="rate-3" value="6">
+                <label for="rate-3-5"></label>
+                <input type="radio" id="rate-3-5" name="rate-3" value="5" checked>
+                <label for="rate-3-6"></label>
+                <input type="radio" id="rate-3-4" name="rate-3" value="4">
+                <label for="rate-3-7"></label>
+                <input type="radio" id="rate-3-3" name="rate-3" value="3">
+                <label for="rate-3-8"></label>
+                <input type="radio" id="rate-3-2" name="rate-3" value="2">
+                <label for="rate-3-9"></label>
+                <input type="radio" id="rate-3-1" name="rate-3" value="1">
+                <label for="rate-3-10"></label>
+            </fieldset>
+        </div>
+    </article>
+    <article class="market-item">
+        <div class="item-picture">
+            <img src="pictures/kitler.jpg" alt="Kat kitler" title="Cat photo">
+        </div>
+        <div class="item-info">
+            <h2><a href="https://www.reddit.com/r/Kitler/" title="Kitler reddit">
+                Kitler
+            </a></h2>
+            <p class="item-price">
+                $1488
+            </p>
+            <p class="item-category">
+                <em>Category:</em> <a href="evil" title="See category">Evil cats</a>
+            </p>
+            <p class="item-description">
+                Does your cat look like Adolf Hitler? Do you wake up in a cold sweat every night
+                wondering if he's going to up and invade Poland? Does he keep putting his right paw
+                in the air while making a noise that sounds suspiciously like "Sieg Miaow"?
+            </p>
+            <fieldset class="rating">
+                <input type="radio" id="rate-4-10" name="rate-4" value="10">
+                <label for="rate-4-10"></label>
+                <input type="radio" id="rate-4-9" name="rate-4" value="9">
+                <label for="rate-4-9"></label>
+                <input type="radio" id="rate-4-8" name="rate-4" value="8">
+                <label for="rate-4-8"></label>
+                <input type="radio" id="rate-4-7" name="rate-4" value="7">
+                <label for="rate-4-7"></label>
+                <input type="radio" id="rate-4-6" name="rate-4" value="6" checked>
+                <label for="rate-4-6"></label>
+                <input type="radio" id="rate-4-5" name="rate-4" value="5">
+                <label for="rate-4-5"></label>
+                <input type="radio" id="rate-4-4" name="rate-4" value="4">
+                <label for="rate-4-4"></label>
+                <input type="radio" id="rate-4-3" name="rate-4" value="3">
+                <label for="rate-4-3"></label>
+                <input type="radio" id="rate-4-2" name="rate-4" value="2">
+                <label for="rate-4-2"></label>
+                <input type="radio" id="rate-4-1" name="rate-4" value="1">
+                <label for="rate-4-1"></label>
+            </fieldset>
+        </div>
+    </article>
+    <article class="market-item">
+        <div class="item-picture">
+            <img src="pictures/monorailcat.jpg" alt="Cat monorail cat" title="Cat photo">
+        </div>
+        <div class="item-info">
+            <h2><a href="http://knowyourmeme.com/memes/monorail-cat" title="Monorail cat">
+                Monorail cat
+            </a></h2>
+            <p class="item-price">
+                $2/ride
+            </p>
+            <p class="item-category">
+                <em>Category:</em> <a href="transport" title="See category">Transport cats</a>
+            </p>
+            <p class="item-description">
+                One of the earliest pictures of monorail cat found is from the website catmas.com’s
+                blog section, dated from November 2, 2006. The picture is of a cat flopped over a
+                metal-framed mirror, which makes the cat look like a monorail.
+            </p>
+            <fieldset class="rating">
+                <input type="radio" id="rate-5-10" name="rate-5" value="10">
+                <label for="rate-5-10"></label>
+                <input type="radio" id="rate-5-9" name="rate-5" value="9">
+                <label for="rate-5-9"></label>
+                <input type="radio" id="rate-5-8" name="rate-5" value="8">
+                <label for="rate-5-8"></label>
+                <input type="radio" id="rate-5-7" name="rate-5" value="7">
+                <label for="rate-5-7"></label>
+                <input type="radio" id="rate-5-6" name="rate-5" value="6">
+                <label for="rate-5-6"></label>
+                <input type="radio" id="rate-5-5" name="rate-5" value="5">
+                <label for="rate-5-5"></label>
+                <input type="radio" id="rate-5-4" name="rate-5" value="4">
+                <label for="rate-5-4"></label>
+                <input type="radio" id="rate-5-3" name="rate-5" value="3" checked>
+                <label for="rate-5-3"></label>
+                <input type="radio" id="rate-5-2" name="rate-5" value="2">
+                <label for="rate-5-2"></label>
+                <input type="radio" id="rate-5-1" name="rate-5" value="1">
+                <label for="rate-5-1"></label>
+            </fieldset>
+        </div>
+    </article>
+    <article class="market-item">
+        <div class="item-picture">
+            <img src="pictures/nyancat.jpg" alt="Cat nyancat" title="Cat photo">
+        </div>
+        <div class="item-info">
+            <h2><a href="http://knowyourmeme.com/memes/nyan-cat-pop-tart-cat" title="Nyancat">
+                Nyancat
+            </a></h2>
+            <p class="item-price">
+                $8
+            </p>
+            <p class="item-category">
+                <em>Category:</em> <a href="unreal" title="See category">Unreal cats</a>
+            </p>
+            <p class="item-description">
+                Nyan Cat, also known as Pop Tart Cat, is an 8-bit animation depicting a cat with the
+                body of a cherry pop tart flying through outer space. While absurd themes like
+                flying kittens and pastry cats have been around for some time, the surreal humor
+                behind this particular combination has captivated YouTubers and online art
+                communities, spawning fan illustrations as well as user-interface designs and
+                homebrew games across multiple platforms.
+            </p>
+            <fieldset class="rating">
+                <input type="radio" id="rate-6-10" name="rate-6" value="10" checked>
+                <label for="rate-6-10"></label>
+                <input type="radio" id="rate-6-9" name="rate-6" value="9">
+                <label for="rate-6-9"></label>
+                <input type="radio" id="rate-6-8" name="rate-6" value="8">
+                <label for="rate-6-8"></label>
+                <input type="radio" id="rate-6-7" name="rate-6" value="7">
+                <label for="rate-6-7"></label>
+                <input type="radio" id="rate-6-6" name="rate-6" value="6">
+                <label for="rate-6-6"></label>
+                <input type="radio" id="rate-6-5" name="rate-6" value="5">
+                <label for="rate-6-5"></label>
+                <input type="radio" id="rate-6-4" name="rate-6" value="4">
+                <label for="rate-6-4"></label>
+                <input type="radio" id="rate-6-3" name="rate-6" value="3">
+                <label for="rate-6-3"></label>
+                <input type="radio" id="rate-6-2" name="rate-6" value="2">
+                <label for="rate-6-2"></label>
+                <input type="radio" id="rate-6-1" name="rate-6" value="1">
+                <label for="rate-6-1"></label>
+            </fieldset>
+        </div>
+    </article>
+    <article class="market-item">
+        <div class="item-picture">
+            <img src="pictures/hovercat.jpg" alt="Cat hovercat" title="Cat photo">
+        </div>
+        <div class="item-info">
+            <h2><a href="http://knowyourmeme.com/memes/bullet-cat" title="Hovercat">
+                Hovercat
+            </a></h2>
+            <p class="item-price">
+                $299
+            </p>
+            <p class="item-category">
+                <em>Category:</em> <a href="transport" title="See category">Transport cats</a>
+            </p>
+            <p class="item-description">
+                ...is exploring the Universe.
+            </p>
+            <fieldset class="rating">
+                <input type="radio" id="rate-7-10" name="rate-7" value="10">
+                <label for="rate-7-10"></label>
+                <input type="radio" id="rate-7-9" name="rate-7" value="9">
+                <label for="rate-7-9"></label>
+                <input type="radio" id="rate-7-8" name="rate-7" value="8">
+                <label for="rate-7-8"></label>
+                <input type="radio" id="rate-7-7" name="rate-7" value="7">
+                <label for="rate-7-7"></label>
+                <input type="radio" id="rate-7-6" name="rate-7" value="6">
+                <label for="rate-7-6"></label>
+                <input type="radio" id="rate-7-5" name="rate-7" value="5" checked>
+                <label for="rate-7-5"></label>
+                <input type="radio" id="rate-7-4" name="rate-7" value="4">
+                <label for="rate-7-4"></label>
+                <input type="radio" id="rate-7-3" name="rate-7" value="3">
+                <label for="rate-7-3"></label>
+                <input type="radio" id="rate-7-2" name="rate-7" value="2">
+                <label for="rate-7-2"></label>
+                <input type="radio" id="rate-7-1" name="rate-7" value="1">
+                <label for="rate-7-1"></label>
+            </fieldset>
+        </div>
+    </article>
+    <article class="market-item">
+        <div class="item-picture">
+            <img src="pictures/grumpycat.jpg" alt="Cat grumpycat" title="Cat photo">
+        </div>
+        <div class="item-info">
+            <h2><a href="http://knowyourmeme.com/memes/grumpy-cat" title="Grumpycat">
+                Grumpycat
+            </a></h2>
+            <p class="item-price">
+                $10
+            </p>
+            <p class="item-category">
+                <em>Category:</em> <a href="evil" title="See category">Evil cats</a>
+            </p>
+            <p class="item-description">
+                Grumpy Cat is the nickname given to Tardar Sauce, a snowshoe cat that rose to online
+                fame after several pictures of her annoyed facial expressions were posted to Reddit
+                in late September 2012.
+            </p>
+            <fieldset class="rating">
+                <input type="radio" id="rate-8-10" name="rate-8" value="10" checked>
+                <label for="rate-8-10"></label>
+                <input type="radio" id="rate-8-9" name="rate-8" value="9">
+                <label for="rate-8-9"></label>
+                <input type="radio" id="rate-8-8" name="rate-8" value="8">
+                <label for="rate-8-8"></label>
+                <input type="radio" id="rate-8-7" name="rate-8" value="7">
+                <label for="rate-8-7"></label>
+                <input type="radio" id="rate-8-6" name="rate-8" value="6">
+                <label for="rate-8-6"></label>
+                <input type="radio" id="rate-8-5" name="rate-8" value="5">
+                <label for="rate-8-5"></label>
+                <input type="radio" id="rate-8-4" name="rate-8" value="4">
+                <label for="rate-8-4"></label>
+                <input type="radio" id="rate-8-3" name="rate-8" value="3">
+                <label for="rate-8-3"></label>
+                <input type="radio" id="rate-8-2" name="rate-8" value="2">
+                <label for="rate-8-2"></label>
+                <input type="radio" id="rate-8-1" name="rate-8" value="1">
+                <label for="rate-8-1"></label>
+            </fieldset>
+        </div>
+    </article>
+    <article class="market-item">
+        <div class="item-picture">
+            <img src="pictures/differentiatingcat.jpg" alt="Cat differentiating cat"
+                 title="Cat photo">
+        </div>
+        <div class="item-info">
+            <h2><a href="http://knowyourmeme.com/memes/chemistry-cat" title="Chemistry cat">
+                Differentiating cat
+            </a></h2>
+            <p class="item-price">
+                $e<sup>x</sup>
+            </p>
+            <p class="item-category">
+                <em>Category:</em> <a href="science" title="See category">Science cats</a>
+            </p>
+            <p class="item-description">
+                Even a kitten can be taught differentiation.
+            </p>
+            <fieldset class="rating">
+                <input type="radio" id="rate-9-10" name="rate-9" value="10">
+                <label for="rate-9-10"></label>
+                <input type="radio" id="rate-9-9" name="rate-9" value="9">
+                <label for="rate-9-9"></label>
+                <input type="radio" id="rate-9-8" name="rate-9" value="8">
+                <label for="rate-9-8"></label>
+                <input type="radio" id="rate-9-7" name="rate-9" value="7">
+                <label for="rate-9-7"></label>
+                <input type="radio" id="rate-9-6" name="rate-9" value="6">
+                <label for="rate-9-6"></label>
+                <input type="radio" id="rate-9-5" name="rate-9" value="5">
+                <label for="rate-9-5"></label>
+                <input type="radio" id="rate-9-4" name="rate-9" value="4">
+                <label for="rate-9-4"></label>
+                <input type="radio" id="rate-9-3" name="rate-9" value="3" checked>
+                <label for="rate-9-3"></label>
+                <input type="radio" id="rate-9-2" name="rate-9" value="2">
+                <label for="rate-9-2"></label>
+                <input type="radio" id="rate-9-1" name="rate-9" value="1">
+                <label for="rate-9-1"></label>
+            </fieldset>
+        </div>
+    </article>
+    <article class="market-item">
+        <div class="item-picture">
+            <img src="pictures/trashcat.jpg" alt="Trashcat" title="Cat photo">
+        </div>
+        <div class="item-info">
+            <h2><a href="http://knowyourmeme.com/memes/trashcat-is-not-amused" title="Cat trashcat">
+                Trashcat
+            </a></h2>
+            <p class="item-price">
+                $15
+            </p>
+            <p class="item-category">
+                <em>Category:</em> <a href="not_amused" title="See category">Not-amused cats</a>
+            </p>
+            <p class="item-description">
+                Trashcat is not amused is a LOLcat image macro series based on pictures of cats and
+                pop icons looking profoundly unimpressed or even displeased. Conversely, images of
+                happy cats or such are accompanied by a macro that reads “X is amused.” In similar
+                vein to DO NOT WANT, these images are typically used in discussion forums and
+                imageboards to express one’s verdict over the quality of previous post.
+            </p>
+            <fieldset class="rating">
+                <input type="radio" id="rate-10-10" name="rate-10" value="10">
+                <label for="rate-10-10"></label>
+                <input type="radio" id="rate-10-9" name="rate-10" value="9">
+                <label for="rate-10-9"></label>
+                <input type="radio" id="rate-10-8" name="rate-10" value="8">
+                <label for="rate-10-8"></label>
+                <input type="radio" id="rate-10-7" name="rate-10" value="7">
+                <label for="rate-10-7"></label>
+                <input type="radio" id="rate-10-6" name="rate-10" value="6">
+                <label for="rate-10-6"></label>
+                <input type="radio" id="rate-10-5" name="rate-10" value="5">
+                <label for="rate-10-5"></label>
+                <input type="radio" id="rate-10-4" name="rate-10" value="4">
+                <label for="rate-10-4"></label>
+                <input type="radio" id="rate-10-3" name="rate-10" value="3">
+                <label for="rate-10-3"></label>
+                <input type="radio" id="rate-10-2" name="rate-10" value="2">
+                <label for="rate-10-2"></label>
+                <input type="radio" id="rate-10-1" name="rate-10" value="1" checked>
+                <label for="rate-10-1"></label>
+            </fieldset>
+        </div>
+    </article>
+    <article class="market-item">
+        <div class="item-picture">
+            <img src="pictures/limecat.jpg" alt="Limecat" title="Cat photo">
+        </div>
+        <div class="item-info">
+            <h2><a href="http://knowyourmeme.com/memes/limecat" title="Limecat">
+                Limecat
+            </a></h2>
+            <p class="item-price">
+                $80
+            </p>
+            <p class="item-category">
+                <em>Category:</em> <a href="not_amused" title="See category">Not-amused cats</a>
+            </p>
+            <p class="item-description">
+                Limecat is the nickname given to an image of a scowling cat wearing what appears to
+                be a hat carved out of a lime. Since its emergence in the early 2000s, the image has
+                inspired a mythos portraying the cat as the sovereigns of all cats as well as a
+                LOLcat image macro series known as X is Not Amused.
+            </p>
+            <fieldset class="rating">
+                <input type="radio" id="rate-11-10" name="rate-11" value="10" checked>
+                <label for="rate-11-10"></label>
+                <input type="radio" id="rate-11-9" name="rate-11" value="9">
+                <label for="rate-11-9"></label>
+                <input type="radio" id="rate-11-8" name="rate-11" value="8">
+                <label for="rate-11-8"></label>
+                <input type="radio" id="rate-11-7" name="rate-11" value="7">
+                <label for="rate-11-7"></label>
+                <input type="radio" id="rate-11-6" name="rate-11" value="6">
+                <label for="rate-11-6"></label>
+                <input type="radio" id="rate-11-5" name="rate-11" value="5">
+                <label for="rate-11-5"></label>
+                <input type="radio" id="rate-11-4" name="rate-11" value="4">
+                <label for="rate-11-4"></label>
+                <input type="radio" id="rate-11-3" name="rate-11" value="3">
+                <label for="rate-11-3"></label>
+                <input type="radio" id="rate-11-2" name="rate-11" value="2">
+                <label for="rate-11-2"></label>
+                <input type="radio" id="rate-11-1" name="rate-11" value="1">
+                <label for="rate-11-1"></label>
+            </fieldset>
+        </div>
+    </article>
+</main>
 </body>
 </html>
