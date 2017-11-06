@@ -1,0 +1,172 @@
+@font-face 
+{
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.svg
+{
+    font: normal normal 30px FontAwesome;
+    color: #000;
+    padding-right: .5em;
+    top: 10px;
+    left: 0;
+    cursor: pointer;
+}
+
+.svg.rows::after 
+{
+    content: '\f00b';
+}
+
+.svg.columns::after
+{
+    content: '\f00a';
+}
+
+.project-name::first-letter
+{
+    color: #f30c0c;
+}
+
+.card
+{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 600px;
+    padding: 10px;
+    margin: 0 10px 10px;
+    vertical-align: top;
+    position: relative;
+}
+
+.cat-image,
+.cat-info
+{
+    display: inline-block;
+    width: 580px;
+}
+
+.cat-image
+{
+    margin: 0 auto;
+    height: 400px;
+    position: relative;
+}
+
+.cat-name-block
+{
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat-name:link 
+{
+    color: #6698ff;
+    text-decoration: none;
+    font-size: 30px;
+    max-width: 50px;
+}
+
+.cat-name:visited 
+{
+    color: #98ff66;
+}
+
+.cat-name:hover 
+{
+    color: #ff6698;
+}
+
+.cat-category:link 
+{
+    color: #5b5c5e;
+    text-decoration: none;
+}
+
+.cat-category:visited 
+{
+    color: #b3b3b3;
+}
+
+.cat-category:hover 
+{
+    color: #a166ff;
+}
+
+.price
+{
+    font-size: 20px;
+    color: #ee1616;
+    font-weight: bold;
+}
+
+.cat-image img
+{
+    position: absolute;
+    bottom: 0;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.cat-image:hover img
+{
+    box-shadow: 0 1px 4px rgba(255, 238, 0, .97)
+        , -23px 0 20px -23px rgba(255, 238, 0, .97)
+        , 23px 0 20px -23px rgba(255, 238, 0, .97)
+        , 0 1px 4px rgba(255, 238, 0, .97);
+}
+
+.card:hover 
+{
+    box-shadow: 0 1px 4px rgba(161, 128, 128, .3)
+        , -23px 0 20px -23px rgba(0, 0, 0, .8)
+        , 23px 0 20px -23px rgba(0, 0, 0, .8)
+        , 0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+.stars
+{
+    display: inline-block;
+}
+
+.stars input,
+input[name='view']
+{
+    display: none;
+}
+
+.img-star
+{
+    width: 20px;
+    height: 40px;
+}
+
+.stars label
+{
+    opacity: .5;
+    float: right;
+}
+
+.stars label:hover ~ label,
+.stars input:checked ~ label
+{
+    opacity: 1;
+}
+
+.rows-class:checked ~ main .card
+{
+    display: block;
+    width: 100%;
+}
+
+input:checked ~ main .card .cat-description,
+input:checked ~ main .card .cat-info
+{
+    display: inline-block;
+    width: 300px;
+}
