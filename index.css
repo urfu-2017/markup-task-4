@@ -38,7 +38,7 @@ input
     margin: 10px 0;
 }
 
-.list:checked ~ div .item-img
+.list:checked ~ div .item-image-container
 {
     width: 30%;
 }
@@ -74,7 +74,7 @@ input
     box-shadow: 0 0 15px rgb(77, 122, 22);
 }
 
-.item-img
+.item-image-container
 {
     width: 100%;
     height: 300px;
@@ -91,6 +91,11 @@ input
     bottom: 0;
 }
 
+.item-image:hover
+{
+    box-shadow: 0 0 5px;
+}
+
 .item-body
 {
     display: inline-block;
@@ -101,9 +106,16 @@ input
 
 .item-name
 {
+    text-overflow: ellipsis;
+    overflow: hidden;
     white-space: nowrap;
     font: 2em sans-serif;
     margin: 5px 0 3px;
+}
+
+.item-name:hover
+{
+    color: orange;
 }
 
 .item-category
@@ -112,6 +124,13 @@ input
     font-style: italic;
     color: #484848;
     text-decoration: underline;
+}
+
+.item-category:hover
+{
+    color: #000;
+    font-style: normal;
+    text-decoration: none;
 }
 
 .item-price::before
