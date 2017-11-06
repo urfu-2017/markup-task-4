@@ -26,10 +26,9 @@ body
 .viewLabel
 {
     display: inline-block;
-    width: 26px;
-    height: 26px;
+    width: 16px;
+    height: 16px;
     padding: 5px;
-    box-sizing: border-box;
 }
 
 .viewImg
@@ -54,6 +53,13 @@ main
 input
 {
     display: none;
+}
+
+a,
+a:visited
+{
+    text-decoration: none;
+    color: unset;
 }
 
 .item
