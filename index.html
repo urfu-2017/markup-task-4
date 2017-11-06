@@ -2,8 +2,255 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «Мяндекс.Муррркет»</title>
 </head>
 <body>
+<main>
+    <input type="radio" class="display-control tiles" name="display" id="tiles" value="tiles" checked>
+    <label for="tiles"><img src="images/tiles.png" alt="tiles" class="display-control-img"></label>
+    <input type="radio" class="display-control list" name="display" id="list" value="list">
+    <label for="list"><img src="images/list.png" alt="list" class="display-control-img"></label>
+    <div class="marketplace">
+        <div class="item">
+            <div class="item-image-container">
+                <img src="images/flying-squirrel.jpg" alt="Белка летяга" class="item-image">
+            </div>
+            <div class="item-body">
+                <h3 class="item-name">Белка летяга</h3>
+                <div class="item-category">Дикий</div>
+                <div class="item-rating">
+                    <label for="r1_05"></label><input type="radio" name="rating1" id="r1_05" class="half">
+                    <label for="r1_10"></label><input type="radio" name="rating1" id="r1_10" class="full">
+                    <label for="r1_15"></label><input type="radio" name="rating1" id="r1_15" class="half">
+                    <label for="r1_20"></label><input type="radio" name="rating1" id="r1_20" class="full">
+                    <label for="r1_25"></label><input type="radio" name="rating1" id="r1_25" class="half"
+                                                      checked>
+                    <label for="r1_30"></label><input type="radio" name="rating1" id="r1_30" class="full">
+                    <label for="r1_35"></label><input type="radio" name="rating1" id="r1_35" class="half">
+                    <label for="r1_40"></label><input type="radio" name="rating1" id="r1_40" class="full">
+                    <label for="r1_45"></label><input type="radio" name="rating1" id="r1_45" class="half">
+                    <label for="r1_50"></label><input type="radio" name="rating1" id="r1_50" class="full">
+                </div>
+                <div class="item-price">100</div>
+            </div>
+            <p class="item-body description">Вырос в обществе белок и думает, что умеет летать</p>
+        </div>
+        <div class="item">
+            <div class="item-image-container">
+                <img src="images/ninja.jpg" alt="Ниндзя" class="item-image">
+            </div>
+            <div class="item-body">
+                <h3 class="item-name">Ниндзя</h3>
+                <div class="item-category">Как люди</div>
+                <div class="item-rating">
+                    <label for="r2_05"></label><input type="radio" name="rating2" id="r2_05" class="half">
+                    <label for="r2_10"></label><input type="radio" name="rating2" id="r2_10" class="full">
+                    <label for="r2_15"></label><input type="radio" name="rating2" id="r2_15" class="half">
+                    <label for="r2_20"></label><input type="radio" name="rating2" id="r2_20" class="full">
+                    <label for="r2_25"></label><input type="radio" name="rating2" id="r2_25" class="half">
+                    <label for="r2_30"></label><input type="radio" name="rating2" id="r2_30" class="full">
+                    <label for="r2_35"></label><input type="radio" name="rating2" id="r2_35" class="half"
+                                                      checked>
+                    <label for="r2_40"></label><input type="radio" name="rating2" id="r2_40" class="full">
+                    <label for="r2_45"></label><input type="radio" name="rating2" id="r2_45" class="half">
+                    <label for="r2_50"></label><input type="radio" name="rating2" id="r2_50" class="full">
+                </div>
+                <div class="item-price">1000</div>
+            </div>
+            <p class="item-body description">
+                Домик в глyши.<br>
+                Кошкy и тy пpижигают моксой.<br>
+                Втоpая лyна.<br>
+            </p>
+        </div>
+        <div class="item">
+            <div class="item-image-container"><img src="images/boss.jpg" alt="Босс" class="item-image"></div>
+            <div class="item-body">
+                <h3 class="item-name">Босс</h3>
+                <div class="item-category">Как люди</div>
+                <div class="item-rating">
+                    <label for="r3_05"></label><input type="radio" name="rating3" id="r3_05" class="half">
+                    <label for="r3_10"></label><input type="radio" name="rating3" id="r3_10" class="full">
+                    <label for="r3_15"></label><input type="radio" name="rating3" id="r3_15" class="half">
+                    <label for="r3_20"></label><input type="radio" name="rating3" id="r3_20" class="full">
+                    <label for="r3_25"></label><input type="radio" name="rating3" id="r3_25" class="half">
+                    <label for="r3_30"></label><input type="radio" name="rating3" id="r3_30" class="full">
+                    <label for="r3_35"></label><input type="radio" name="rating3" id="r3_35" class="half">
+                    <label for="r3_40"></label><input type="radio" name="rating3" id="r3_40" class="full"
+                                                      checked>
+                    <label for="r3_45"></label><input type="radio" name="rating3" id="r3_45" class="half">
+                    <label for="r3_50"></label><input type="radio" name="rating3" id="r3_50" class="full">
+                </div>
+                <div class="item-price">3500</div>
+            </div>
+            <p class="item-body description">Готов управлять вашим стартапом и заработать первый миллион</p>
+        </div>
+        <div class="item">
+            <div class="item-image-container"><img src="images/for_tree.jpg" alt="Лесные" class="item-image">
+            </div>
+            <div class="item-body">
+                <h3 class="item-name">Лесные</h3>
+                <div class="item-category">Дикий</div>
+                <div class="item-rating">
+                    <label for="r4_05"></label><input type="radio" name="rating4" id="r4_05" class="half">
+                    <label for="r4_10"></label><input type="radio" name="rating4" id="r4_10" class="full">
+                    <label for="r4_15"></label><input type="radio" name="rating4" id="r4_15" class="half">
+                    <label for="r4_20"></label><input type="radio" name="rating4" id="r4_20" class="full">
+                    <label for="r4_25"></label><input type="radio" name="rating4" id="r4_25" class="half">
+                    <label for="r4_30"></label><input type="radio" name="rating4" id="r4_30" class="full">
+                    <label for="r4_35"></label><input type="radio" name="rating4" id="r4_35" class="half">
+                    <label for="r4_40"></label><input type="radio" name="rating4" id="r4_40" class="full">
+                    <label for="r4_45"></label><input type="radio" name="rating4" id="r4_45" class="half"
+                                                      checked>
+                    <label for="r4_50"></label><input type="radio" name="rating4" id="r4_50" class="full">
+                </div>
+                <div class="item-price">10</div>
+            </div>
+            <p class="item-body description">Не несем никакой отвественности за их поведение<br>
+                (All your stamp are belong to us)</p>
+        </div>
+        <div class="item">
+            <div class="item-image-container"><img src="images/from_behind.jpg" alt="Вид сзади"
+                                                   class="item-image"></div>
+            <div class="item-body">
+                <h3 class="item-name">Вид сзади</h3>
+                <div class="item-category">Дикий</div>
+                <div class="item-rating">
+                    <label for="r5_05"></label><input type="radio" name="rating5" id="r5_05" class="half">
+                    <label for="r5_10"></label><input type="radio" name="rating5" id="r5_10" class="full">
+                    <label for="r5_15"></label><input type="radio" name="rating5" id="r5_15" class="half">
+                    <label for="r5_20"></label><input type="radio" name="rating5" id="r5_20" class="full">
+                    <label for="r5_25"></label><input type="radio" name="rating5" id="r5_25" class="half"
+                                                      checked>
+                    <label for="r5_30"></label><input type="radio" name="rating5" id="r5_30" class="full">
+                    <label for="r5_35"></label><input type="radio" name="rating5" id="r5_35" class="half">
+                    <label for="r5_40"></label><input type="radio" name="rating5" id="r5_40" class="full">
+                    <label for="r5_45"></label><input type="radio" name="rating5" id="r5_45" class="half">
+                    <label for="r5_50"></label><input type="radio" name="rating5" id="r5_50" class="full">
+                </div>
+                <div class="item-price">1232</div>
+            </div>
+            <p class="item-body description">Никто никогда не видел его морды, может и к лучшему</p>
+        </div>
+        <div class="item">
+            <div class="item-image-container"><img src="images/grumpy.jpg" alt="Угрюмый" class="item-image">
+            </div>
+            <div class="item-body">
+                <h3 class="item-name">Угрюмый</h3>
+                <div class="item-category">Известный</div>
+                <div class="item-rating">
+                    <label for="r6_05"></label><input type="radio" name="rating6" id="r6_05" class="half">
+                    <label for="r6_10"></label><input type="radio" name="rating6" id="r6_10" class="full">
+                    <label for="r6_15"></label><input type="radio" name="rating6" id="r6_15" class="half">
+                    <label for="r6_20"></label><input type="radio" name="rating6" id="r6_20" class="full">
+                    <label for="r6_25"></label><input type="radio" name="rating6" id="r6_25" class="half">
+                    <label for="r6_30"></label><input type="radio" name="rating6" id="r6_30" class="full">
+                    <label for="r6_35"></label><input type="radio" name="rating6" id="r6_35" class="half">
+                    <label for="r6_40"></label><input type="radio" name="rating6" id="r6_40" class="full">
+                    <label for="r6_45"></label><input type="radio" name="rating6" id="r6_45" class="half">
+                    <label for="r6_50"></label><input type="radio" name="rating6" id="r6_50" class="full"
+                                                      checked>
+                </div>
+                <div class="item-price">100500</div>
+            </div>
+            <p class="item-body description">Устал от своей популярности и смотрит на все как на ...</p>
+        </div>
+        <div class="item">
+            <div class="item-image-container"><img src="images/half_head.jpg" alt="Двуликий"
+                                                   class="item-image"></div>
+            <div class="item-body">
+                <h3 class="item-name">Двуликий</h3>
+                <div class="item-category">Известный</div>
+                <div class="item-rating">
+                    <label for="r7_05"></label><input type="radio" name="rating7" id="r7_05" class="half">
+                    <label for="r7_10"></label><input type="radio" name="rating7" id="r7_10" class="full">
+                    <label for="r7_15"></label><input type="radio" name="rating7" id="r7_15" class="half">
+                    <label for="r7_20"></label><input type="radio" name="rating7" id="r7_20" class="full"
+                                                      checked>
+                    <label for="r7_25"></label><input type="radio" name="rating7" id="r7_25" class="half">
+                    <label for="r7_30"></label><input type="radio" name="rating7" id="r7_30" class="full">
+                    <label for="r7_35"></label><input type="radio" name="rating7" id="r7_35" class="half">
+                    <label for="r7_40"></label><input type="radio" name="rating7" id="r7_40" class="full">
+                    <label for="r7_45"></label><input type="radio" name="rating7" id="r7_45" class="half">
+                    <label for="r7_50"></label><input type="radio" name="rating7" id="r7_50" class="full">
+                </div>
+                <div class="item-price">5000</div>
+            </div>
+            <p class="item-body description">Пробовался на роль в фильме про Бэтмэна, но котов туда не
+                берут</p>
+        </div>
+        <div class="item">
+            <div class="item-image-container"><img src="images/kebab.jpg" alt="Кот в лаваше"
+                                                   class="item-image"></div>
+            <div class="item-body">
+                <h3 class="item-name">Кот в лаваше</h3>
+                <div class="item-category">Еда?</div>
+                <div class="item-rating">
+                    <label for="r8_05"></label><input type="radio" name="rating8" id="r8_05" class="half">
+                    <label for="r8_10"></label><input type="radio" name="rating8" id="r8_10" class="full">
+                    <label for="r8_15"></label><input type="radio" name="rating8" id="r8_15" class="half">
+                    <label for="r8_20"></label><input type="radio" name="rating8" id="r8_20" class="full">
+                    <label for="r8_25"></label><input type="radio" name="rating8" id="r8_25" class="half"
+                                                      checked>
+                    <label for="r8_30"></label><input type="radio" name="rating8" id="r8_30" class="full">
+                    <label for="r8_35"></label><input type="radio" name="rating8" id="r8_35" class="half">
+                    <label for="r8_40"></label><input type="radio" name="rating8" id="r8_40" class="full">
+                    <label for="r8_45"></label><input type="radio" name="rating8" id="r8_45" class="half">
+                    <label for="r8_50"></label><input type="radio" name="rating8" id="r8_50" class="full">
+                </div>
+                <div class="item-price">5000</div>
+            </div>
+            <p class="item-body description">Еш или нееш?</p>
+        </div>
+        <div class="item">
+            <div class="item-image-container"><img src="images/on_grass.jpeg" alt="На траве"
+                                                   class="item-image"></div>
+            <div class="item-body">
+                <h3 class="item-name">На траве</h3>
+                <div class="item-category">Дикий</div>
+                <div class="item-rating">
+                    <label for="r9_05"></label><input type="radio" name="rating9" id="r9_05" class="half">
+                    <label for="r9_10"></label><input type="radio" name="rating9" id="r9_10" class="full">
+                    <label for="r9_15"></label><input type="radio" name="rating9" id="r9_15" class="half">
+                    <label for="r9_20"></label><input type="radio" name="rating9" id="r9_20" class="full">
+                    <label for="r9_25"></label><input type="radio" name="rating9" id="r9_25" class="half">
+                    <label for="r9_30"></label><input type="radio" name="rating9" id="r9_30" class="full"
+                                                      checked>
+                    <label for="r9_35"></label><input type="radio" name="rating9" id="r9_35" class="half">
+                    <label for="r9_40"></label><input type="radio" name="rating9" id="r9_40" class="full">
+                    <label for="r9_45"></label><input type="radio" name="rating9" id="r9_45" class="half">
+                    <label for="r9_50"></label><input type="radio" name="rating9" id="r9_50" class="full">
+                </div>
+                <div class="item-price">5000</div>
+            </div>
+            <p class="item-body description">Особая порода луговых котов, гарцует пуще лошади
+                Пржевальского</p>
+        </div>
+        <div class="item">
+            <div class="item-image-container"><img src="images/wow.jpg" alt="Удивленный" class="item-image">
+            </div>
+            <div class="item-body">
+                <h3 class="item-name">Это кот с очень длинным именем не смотрите на него так</h3>
+                <div class="item-category">Известный</div>
+                <div class="item-rating">
+                    <label for="r10_05"></label><input type="radio" name="rating13" id="r10_05" class="half">
+                    <label for="r10_10"></label><input type="radio" name="rating10" id="r10_10" class="full">
+                    <label for="r10_15"></label><input type="radio" name="rating10" id="r10_15" class="half"
+                                                       checked>
+                    <label for="r10_20"></label><input type="radio" name="rating10" id="r10_20" class="full">
+                    <label for="r10_25"></label><input type="radio" name="rating10" id="r10_25" class="half">
+                    <label for="r10_30"></label><input type="radio" name="rating10" id="r10_30" class="full">
+                    <label for="r10_35"></label><input type="radio" name="rating10" id="r10_35" class="half">
+                    <label for="r10_40"></label><input type="radio" name="rating10" id="r10_40" class="full">
+                    <label for="r10_45"></label><input type="radio" name="rating10" id="r10_45" class="half">
+                    <label for="r10_50"></label><input type="radio" name="rating10" id="r10_50" class="full">
+                </div>
+                <div class="item-price">0.1</div>
+            </div>
+            <p class="item-body description">А как бы вы выглядели, узнав что вас продают?</p>
+        </div>
+    </div>
+</main>
 </body>
 </html>
