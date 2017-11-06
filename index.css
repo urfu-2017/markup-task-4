@@ -105,11 +105,14 @@ a:visited
     margin: 10px 0 0;
 }
 
-.itemPart1:hover ~ .itemPart2 .itemTitle,
-.itemTitle:hover
+.item > a:hover .itemTitle
 {
     text-decoration: underline;
-    cursor: pointer;
+}
+
+.item > a:hover .closerButton
+{
+    display: block;
 }
 
 .itemPart
@@ -195,11 +198,6 @@ a:visited
     cursor: pointer;
 }
 
-.itemPart1:hover .closerButton
-{
-    display: block;
-}
-
 input[value='tiles']:checked ~ label[for='tiles']
 {
     background: #ff6661;
@@ -223,7 +221,8 @@ input[value='list']:checked ~ div .item
     padding: 10px;
 }
 
-input[value='list']:checked ~ div .itemPart
+input[value='list']:checked ~ div .itemPart:not(:first-child),
+input[value='list']:checked ~ div .item > a
 {
     display: inline-block;
     width: 33%;
