@@ -1,0 +1,359 @@
+/*stylelint-disable max-line-length*/
+
+img
+{
+    width: 100%;
+    bottom: 0;
+    vertical-align: -179px;
+    display: inline-block;
+}
+
+input[type='checkbox']
+{
+    display: inline-block;
+}
+
+input[type='checkbox']:checked ~ main .cat-wrapper-size
+{
+    display: block;
+}
+
+input[type='checkbox']:checked ~ main a img
+{
+    height: auto !important;
+}
+
+input[type='checkbox']:checked ~ main .wrapper
+{
+    float: left;
+    position: inherit;
+    display: -webkit-box;
+}
+
+input[type='checkbox']:checked ~ main
+{
+    width: 500px;
+    height: auto;
+    text-align: left;
+    margin-right: 8px;
+}
+
+input[type='checkbox']:checked ~ main .wrapper .price,
+input[type='checkbox']:checked ~ main .wrapper .oldPrice
+{
+    margin-top: 3em;
+    margin-left: 45em;
+}
+
+input[type='checkbox']:checked ~ main .wrapper .newPrice
+{
+    margin-top: 3em;
+    margin-left: -5em;
+}
+
+input[type='checkbox']:checked ~ main .element
+{
+    margin: 2em;
+    padding-left: 8em;
+    position: absolute;
+}
+
+body
+{
+    min-width: 349px;
+    min-height: 172px;
+}
+
+input
+{
+    display: none;
+}
+
+span.rating
+{
+    display: inline-table;
+}
+
+.title
+{
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+}
+
+.title::first-letter
+{
+    color: #f00;
+}
+
+div
+{
+    height: 10px;
+}
+
+div p
+{
+    margin: 5px;
+    text-overflow: ellipsis;
+    width: 120px;
+}
+
+.wrapper
+{
+    margin-top: 25px;
+    height: 180px;
+    padding: 50px;
+    text-align: left;
+    display: inline-block;
+    width: 191px;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+}
+
+input[type='checkbox']:not(:checked) ~ main .wrapper
+{
+    height: 325px;
+}
+
+input[type='checkbox']:checked ~ main .wrapper
+{
+    width: fit-content;
+}
+
+.wrapper:hover
+{
+    -webkit-animation: heartbeat infinite alternate;
+    animation: heartbeat infinite alternate;
+    -webkit-animation-duration: 3000ms;
+    animation-duration: 3000ms;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    height: auto;
+    -webkit-box-shadow: 0 14px 70px rgba(31, 93, 13, .5);
+    box-shadow: 0 14px 70px rgba(31, 93, 18, .5);
+}
+
+@-webkit-keyframes heartbeat
+{
+    50%
+    {
+        -webkit-animation-duration: 11ms;
+        animation-duration: 11ms;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100%
+    {
+        -webkit-transform: rotate(360deg) scale(1.1);
+        transform: rotate(360deg) scale(1.1);
+        -webkit-animation-duration: 14ms;
+        animation-duration: 14ms;
+    }
+}
+
+@keyframes heartbeat
+{
+    50%
+    {
+        -webkit-animation-duration: 11ms;
+        animation-duration: 11ms;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100%
+    {
+        -webkit-transform: rotate(360deg) scale(1.1);
+        transform: rotate(360deg) scale(1.1);
+        -webkit-animation-duration: 14ms;
+        animation-duration: 14ms;
+    }
+}
+
+.name
+{
+    font-family: sans-serif;
+    font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name:hover
+{
+    color: #9a84ff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.category
+{
+    font-family: 'Poiret One', cursive;
+    font-style: oblique;
+}
+
+.category:hover
+{
+    color: #b38c62;
+    font-style: normal;
+}
+
+.mark
+{
+    font-size: larger;
+
+}
+
+.price
+{
+    font-family: 'Pacifico', cursive;
+    color: #0026ff;
+    margin-top: -12px;
+    margin-left: 158px;
+}
+
+.oldPrice
+{
+    text-decoration: line-through;
+    color: #7d7a69;
+    margin-top: 8px;
+    font-size: medium;
+    margin-left: 101px;
+}
+
+.newPrice
+{
+    color: #ff0003;
+    font-size: x-large;
+    margin-top: -46px;
+    margin-left: 145px;
+    font-weight: bold;
+}
+
+.price:hover,
+.newPrice:hover
+{
+    color: #92b379;
+}
+
+.about
+{
+    font-family: serif;
+}
+
+.about:hover
+{
+    color: #b36370;
+}
+
+@media only screen and (max-device-width: 768px)
+{
+    .title
+    {
+        font-size: 32px;
+    }
+
+    div
+    {
+        max-width: 68%;
+        height: auto;
+        min-width: 349px;
+        min-height: 172px;
+    }
+}
+
+@media only screen and (max-device-width: 480px)
+{
+    .title
+    {
+        text-align: center;
+        font-size: 100%;
+    }
+
+    div
+    {
+        max-width: 28%;
+        height: auto;
+    }
+}
+
+@font-face
+{
+    font-family: 'Poiret One', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic');
+}
+
+@font-face
+{
+    font-family: 'Indie Flower', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Indie+');
+}
+
+@font-face
+{
+    font-family: 'Pacifico', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Pacifico') ;
+}
+
+.cat-wrapper-size
+{
+    width: 196px;
+    height: 186px;
+}
+
+.exclusive
+{
+    height: 93px;
+}
+
+a:hover img
+{
+    opacity: 0;
+}
+
+a
+{
+    display: inline-block;
+}
+
+a:hover
+{
+    background: url('test.jpg');
+}
+
+.change:hover
+{
+    background: url(test.jpg);
+}
+
+.rating label
+{
+    display: inline-block;
+    width: 16px;
+    height: 30px;
+}
+
+.rating label:nth-of-type(2n)
+{
+    margin-right: -1px;
+}
+
+.rating label:nth-of-type(2n+1)
+{
+    background: url('heartL.png');
+}
+
+.rating label:nth-of-type(2n)
+{
+    background: url('heartR.png');
+}
+
+.rating input:checked ~ label
+{
+    opacity: .4;
+}
+
+.rating input:checked ~ label:hover ~ label
+{
+    opacity: .2;
+}
