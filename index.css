@@ -1,14 +1,191 @@
-img
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
+
+div input
 {
-    width: 100%;
-    bottom: 0;
+    display: none;
 }
 
 section
 {
-    padding: 30px;
+    padding: 15px;
+}
+
+img:hover
+{
+    transition-duration: .7s;
+    transform: translateY(-5%) scale(1.1);
+}
+
+label.list::before
+{
+    display: inline-block;
+    padding: 10px;
+}
+
+input.list:checked ~ main header
+{
+    width: 300px;
+}
+
+input.list:checked ~ main section
+{
+    margin-top: 40px;
+    width: 100%;
+    display: block;
+}
+
+input.list:checked ~ main article,
+footer
+{
+    height: inherit;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+}
+
+input.list:checked ~ main footer
+{
+    word-wrap: break-word;
+    max-width: 33%;
+    float: right;
+    padding-top: 10px;
+    display: block;
+}
+
+input.list:checked ~ main section
+{
+
+    padding: 0;
+}
+
+input.list:checked ~ main img
+{
+    max-width: 300px;
+    display: inline-block;
+}
+
+label.bar::before
+{
+    display: inline-block;
+    padding: 10px;
+    content: url(gallery.png);
+}
+
+input.bar:checked ~ main section
+{
+    box-shadow: 2px 2px 5px #888;
+    vertical-align: top;
+    height: inherit;
+    position: relative;
+    text-align: center;
     width: 250px;
     display: inline-block;
-    vertical-align: bottom;
-    overflow: hidden;
 }
+
+input.bar:checked ~ main img
+{
+    width: 100%;
+    display: block;
+}
+
+.stars
+{
+    display: inline-block;
+    border: 0;
+}
+
+.stars label
+{
+    float: right;
+}
+
+.stars label:before
+{
+    display: inline-block;
+    font-size: 24px;
+    padding: 5px;
+    margin: 0;
+    font-family: FontAwesome;
+    content: '\f005';
+}
+
+.stars .half:before
+{
+    content: '\f089';
+    position: absolute;
+    padding-right: 0;
+}
+
+div input:checked ~ label,
+div label:hover,
+div label:hover ~ label
+{
+    color: #fe7;
+}
+
+footer
+{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a,
+footer
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+}
+
+.bar:checked ~ main section:hover
+{
+    transition-duration: .7s;
+    transform: translateY(-10%) scale(1.1);
+}
+
+input.list:checked ~ main section:hover
+{
+    border: 3px solid #ff0;
+    box-shadow: 0 0 5px 5px #ddd;
+    text-shadow: 1px 1px 2px;
+    transition-duration: .5s;
+    transform: translateY(30px);
+    padding-bottom: 30px;
+}
+
+section
+{
+    border: 2px solid #5d4037;
+    margin-bottom: 5px;
+}
+
+input.bar:checked ~ main section
+{
+    display: inline-block;
+    width: 260px;
+    margin: 10px;
+}
+
+input.list:checked ~ main section
+{
+    display: block;
+}
+
+.old-price
+{
+    font-size: 24px;
+    color: #757575;
+    text-decoration: line-through;
+}
+
+.now-price
+{
+    font-size: 36px;
+}
+
+img
+{
+    text-align: center;
+    height: 250px;
+}
+
