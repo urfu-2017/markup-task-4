@@ -11,14 +11,14 @@
     text-align: center;
 }
 
-.button-primary
+.button_primary
 {
     background: #fc9021;
     border-color: #fc9021;
     color: #fffcf5;
 }
 
-.button-large
+.button_large
 {
     min-width: 12rem;
 }
