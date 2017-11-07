@@ -203,7 +203,8 @@ input
 .kindness label:hover:before,
 .kindness label:hover ~ label:before
 {
-    color: #da7052;
+    color: #da5529;
+    opacity: .7;
 }
 
 .description
