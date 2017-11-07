@@ -1,0 +1,10 @@
+.settings
+{
+    margin-bottom: 1rem;
+}
+
+input[id='layout-grid']:checked ~ .settings label[for='layout-grid'],
+input[id='layout-list']:checked ~ .settings label[for='layout-list']
+{
+    display: none;
+}

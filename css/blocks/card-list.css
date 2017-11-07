@@ -1,0 +1,33 @@
+input[id='layout-list']:checked ~ .cards-container
+{
+    margin: 1rem 7rem;
+}
+
+input[id='layout-list']:checked ~ .cards-container .card
+{
+    width: 100%;
+    display: table;
+}
+
+input[id='layout-list']:checked ~ .cards-container .card__image
+{
+    width: 65%;
+    display: table-cell;
+    vertical-align: top;
+    height: 300px;
+}
+
+input[id='layout-list']:checked ~ .cards-container .card__content
+{
+    display: table-cell;
+    vertical-align: top;
+}
+
+input[id='layout-list']:checked ~ .cards-container .card__description
+{
+    padding-left: 2rem;
+    width: 25%;
+    display: table-cell;
+    vertical-align: top;
+}
+
