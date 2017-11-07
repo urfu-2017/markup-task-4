@@ -1,3 +1,13 @@
+body
+{
+    width: 99%;
+}
+
+div
+{
+    text-align: center;
+}
+
 .tile
 {
     display: inline-block;
@@ -11,39 +21,32 @@
     border: dotted 4px #1022ff;
 }
 
-.image_container
-{
-    height: 300px;
-    margin: 0 0 20px;
-    position: relative;
-}
-
 .image
 {
-    width: 100%;
-    margin: 0 0 -20px 0;
     position: absolute;
     bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
-.image_container:hover
+.image_container .image:hover
 {
-    width: 110%;
+    box-shadow: 0 0 20px #000;
+}
+
+.image_container
+{
+    position: relative;
+    height: 320px;
 }
 
 .name
 {
-    text-align: center;
     font-size: 24px;
     margin: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre;
-}
-
-.category
-{
-    text-align: center;
 }
 
 .category:hover
@@ -54,12 +57,7 @@
 
 .price
 {
-    text-align: center;
-}
-
-.price > p
-{
-    display: inline-block;
+    margin: 10px;
 }
 
 .curr_price
@@ -112,38 +110,26 @@ a:hover
 input:checked ~ .tile
 {
     display: block;
-    width: 100%;
+    width: 99%;
+    margin: 10px;
 }
 
-input:checked ~ .tile > header,
-input:checked ~ .tile > main,
-input:checked ~ .tile > footer
+input:checked ~ .tile > .parts
 {
     display: inline-block;
+    vertical-align: top;
+    height: auto;
     width: 33%;
 }
 
-input:checked ~ .tile > main,
-input:checked ~ .tile > footer
-{
-    vertical-align: top;
-}
-
-input:checked ~ .tile > header
-{
-    height: auto;
-}
-
-input:checked ~ .tile > header > .image
+input:checked ~ .tile > div > .image
 {
     position: relative;
-    margin: 20px;
 }
 
 .rating
 {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 175px;
     height: 35px;
 }
