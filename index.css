@@ -19,7 +19,8 @@ section
 
 .name > a
 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     width: 350px;
@@ -31,13 +32,12 @@ section
 
 article:hover
 {
-    border: 5px solid #000;
-
+    outline: 5px solid #000;
 }
 
 .cat
 {
-    padding: 0;
+    margin-bottom: 75px;
     margin-left: 30px;
     display: inline-block;
     border: 1px solid #000;
@@ -82,12 +82,12 @@ input[type='radio']:checked ~ label
 .cat label
 {
     opacity: 1;
-    width: 16px;
+    width: 14px;
     height: 32px;
     display: inline-block;
     background: url('star1.png');
     cursor: pointer;
-    margin-left: 0;
+    margin-left: -2px;
 
 }
 
@@ -129,9 +129,9 @@ input[type='radio']:checked ~ label
 .caption
 {
     margin-left: 6px;
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
 
 }
 
@@ -152,14 +152,9 @@ input[name='view']:checked + main > article > section
 
 input[name='view']:checked + main > article > section.info
 {
-    margin-left: 5%;
-    width: 15%;
-
-}
-
-input[name='view']:checked + main > article > section.cat-info
-{
-    margin-top: 15px;
+    margin-left: 10px;
+    width: 250px;
+    margin-top: -30px;
 }
 
 input[name='view']:checked + main
