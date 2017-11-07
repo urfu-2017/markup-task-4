@@ -1,0 +1,197 @@
+@font-face 
+{
+    font-family: karton;
+    src: url(karton.woff);
+
+}
+
+html
+{
+    background-color: rgb(245,243,245);
+    font-size: 1.5em;
+}
+
+section
+{
+    width: 350px;
+
+}
+
+.name > a
+{
+    font-size: 1.5rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+article:hover
+{
+    outline: 5px solid #000;
+}
+
+.cat
+{
+    margin-bottom: 75px;
+    margin-left: 30px;
+    display: inline-block;
+    border: 1px solid #000;
+    width: 350px;
+    background-color: white;
+
+}
+
+span ~ span
+{
+    display: inline;
+    text-decoration: line-through;
+
+}
+
+.picture_with_title
+{
+    margin: 20px;
+    padding: 0;
+    max-width: 70%;
+    
+}
+
+.picture_with_title > img
+{
+    width: 100%;
+    max-height: 225px;
+}
+
+.cat label:nth-of-type(2n)
+{
+    background: url('star2.png');
+
+}
+
+input[type='radio']:checked ~ label
+{
+    opacity: .25;
+
+}
+
+.cat label
+{
+    opacity: 1;
+    width: 15px;
+    height: 34px;
+    display: inline-block;
+    background: url('star1.png');
+    cursor: pointer;
+
+}
+
+.kind
+{
+    font-size: 0;
+
+}
+
+.kind::before
+{
+    content: 'Доброта: ';
+    font-size: 1rem;
+
+}
+
+.cat input
+{
+    display: none;
+
+}
+
+.cat label
+{
+    padding: 3px;
+
+}
+
+.price,
+.caption
+{
+    text-align: left;
+    
+}
+
+.kind,
+.info,
+.price,
+.caption
+{
+    margin-left: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.price:hover,
+.caption:hover,
+.info:hover,
+figcaption:hover
+{
+    font-style: italic;
+
+}
+
+input[name='view']:checked + main > article > section
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+input[name='view']:checked + main > article > .cat-info
+{
+    margin-left: -70px;
+}
+
+input[name='view']:checked + main > article > .info
+{
+    margin-left: 10px;
+    margin-top: -30px;
+    white-space: normal;
+    overflow: auto;
+    width: auto;
+}
+
+input[name='view']:checked + main
+{
+    text-align: center;
+    display: block;
+
+}
+
+input[name='view']:checked + main > article > figure > figcaption > a
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+input[name='view']:checked + main > article
+{
+    text-align: left;
+    width: 90%;
+    display: inline-block;
+}
+
+input[name='view']:checked + main > article > div
+{
+    display: inline-block;
+
+}
+
+input[name='view']:checked + main > article > div.info,
+input[name='view']:checked + main > article > h2
+{
+    display: inline-block;
+}
