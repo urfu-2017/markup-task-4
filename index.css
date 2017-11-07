@@ -134,7 +134,7 @@ input:checked ~ label,
 label:hover,
 label:hover ~ label 
 {
-    color: #ffd500f6;
+    color: #ffd500;
 }
 
 input:checked + label:hover,
@@ -143,5 +143,4 @@ input:checked ~ label:hover ~ label,
 label:hover ~ input:checked ~ label
 {
     color: #fe0;
-} 
-
+}
