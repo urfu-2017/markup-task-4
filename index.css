@@ -10,6 +10,11 @@ main
     margin: 0 auto;
 }
 
+p
+{
+    margin-top: 0;
+}
+
 .tile + label,
 .list + label
 {
@@ -46,26 +51,63 @@ main
 
 .tile:checked ~ section
 {
-    display: inline-table;
     width: 240px;
+    display: inline-table;
+}
+
+.tile:checked ~ section .name
+{
+    padding: 3px;
 }
 
 .list:checked ~ section
 {
     width: 100%;
+    position: relative;
+    margin-bottom: 10px;
 }
 
-.list:checked ~ section > img,
+.list:checked ~ section::before,
+.list:checked ~ section::after
+{
+    content: '';
+    display: table;
+}
+
+.list:checked ~ section::after
+{
+    clear: both;
+}
+
+.list:checked ~ section > div,
+.list:checked ~ section .name
+{
+    max-width: 33%;
+}
+
+.list:checked ~ section .name,
+.list:checked ~ section .characteristics
+{
+    min-width: 33%;
+}
+
+.list:checked ~ section .characteristics
+{
+    margin-top: 40px;
+}
+
+.list:checked ~ section .name h2
+{
+    position: absolute;
+    top: 0;
+    left: 33%;
+    max-width: 33%;
+}
+
+.list:checked ~ section .name,
 .list:checked ~ section > div
 {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-}
-
-.list:checked ~ section .photo + div + div
-{
-    width: 40%;
+    float: left;
 }
 
 .photo + div
@@ -90,11 +132,17 @@ section > div > a,
     max-height: 300px;
     display: block;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
-.photo:hover
+.photo
 {
-    border: 3px inset #0000b3;
+    margin: 0 auto;
+}
+
+.name:hover .photo
+{
+    outline: 3px inset #0000b3;
 }
 
 .name
@@ -103,10 +151,19 @@ section > div > a,
     max-width: 240px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
     font-size: 150%;
+    padding: 3px 0;
     font-weight: bold;
     color: #0000b3;
+}
+
+.name h2
+{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .name:visited
@@ -116,28 +173,32 @@ section > div > a,
 
 .name:hover
 {
-    white-space: normal;
     color: #93c;
 }
 
-.category
+.categories
 {
     width: 100%;
-    color: #aaa;
     float: left;
 }
 
-.category:visited
+.categories a
+{
+    color: #aaa;
+    margin: 0 3px;
+}
+
+.categories a:visited
 {
     color: #555;
 }
 
-.category:hover
+.categories a:hover
 {
     color: black;
 }
 
-.category:active,
+.categories a:active,
 .name:active
 {
     color: red;
@@ -177,6 +238,8 @@ section > div > a,
     height: 1em;
     font-size: 200%;
     float: left;
+    overflow: hidden;
+    margin-left: 0;
 }
 
 .rating label
