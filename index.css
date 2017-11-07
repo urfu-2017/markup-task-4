@@ -83,11 +83,11 @@ input[type='radio']:checked ~ label
 {
     opacity: 1;
     width: 14px;
-    height: 32px;
+    height: 34px;
     display: inline-block;
     background: url('star1.png');
     cursor: pointer;
-    margin-left: -2px;
+    margin-left: 0px;
 
 }
 
