@@ -1,4 +1,4 @@
-.cat-card
+section
 {
     width: 250px;
     padding: 20px;
@@ -6,32 +6,32 @@
     vertical-align: top;
 }
 
-#show-list:checked ~ .cat-cards
+#show-list:checked ~ main
 {
     width: 70%;
     margin: auto;
 }
 
-#show-list:checked ~ .cat-cards .cat-photo
+#show-list:checked ~ main .cat-photo
 {
     position: relative;
     max-height: 100%;
     max-width: 100%;
 }
 
-#show-list:checked ~ .cat-cards .photo-block
+#show-list:checked ~ main .photo-block
 {
     height: 100%;
     padding: 10px;
 }
 
-#show-list:checked ~ .cat-cards .cat-card
+#show-list:checked ~ main section
 {
     width: 100%;
     padding: 20px;
 }
 
-#show-list:checked ~ .cat-cards .cat-card-item
+#show-list:checked ~ main .cat-card-item
 {
     width: 30%;
     display: inline-block;
@@ -58,7 +58,7 @@
     max-width: 100%;
 }
 
-.cat-card:hover
+section:hover
 {
     box-shadow: 0 0 30px;
 }
