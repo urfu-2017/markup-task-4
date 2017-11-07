@@ -1,0 +1,205 @@
+.settings
+{
+    display: table;
+    background: #808080;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.cat_info
+{
+    margin: 10px;
+}
+
+input[name='star'],
+input[name='form']
+{
+    display: none;
+}
+
+.settings label:hover 
+{
+    background: #fff;
+    border: 2px solid;
+}
+
+.show_table:checked ~ .settings label[for='set_table'],
+.show_list:checked ~ .settings label[for='set_list']
+{
+    background: #ffa500;
+}
+
+.settings label
+{
+    display: table-cell;
+    padding: 5px;
+    text-align: center;
+    background: rgb(216, 216, 216);
+    border: 1px solid;
+}
+
+main > .cat
+{
+    margin-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+    margin-bottom: 40px;
+    max-width: 400px;
+}
+
+.cat_picture:hover
+{
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.name:hover,
+.name:hover a
+{
+    font-size: 150%;
+    color: #800080;
+}
+
+.name:hover
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat:hover
+{
+    outline: 1px solid;
+    background: rgb(231, 231, 231);
+}
+
+.price
+{
+    color: rgb(200, 0, 0);
+    font-size: 20px;
+}
+
+.name
+{
+    font-size: 150%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #00f;
+}
+
+.cat_type:hover
+{
+    transform: scale(-1, -1);
+}
+
+.cat_photo 
+{
+    position: relative;
+    margin: 10px;
+    height: 400px;
+    width: 380px;
+}
+
+.cat_photo > img
+{
+    position: absolute;
+    bottom: 0;
+    max-height: 400px;
+    height: auto;
+    width: 380px;
+    -webkit-transition: 3s ease-in-out;
+    -moz-transition: 3s ease-in-out;
+    -o-transition: 3s ease-in-out;
+    transition: transform 3s ease-in-out;
+}
+
+main
+{
+    margin-bottom: 40px;
+}
+
+.rating
+{
+    font-size: 0;
+}
+
+.rating .star
+{
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+}
+
+.rating input
+{
+    display: none;
+}
+
+.rating .star:nth-of-type(2n)
+{
+    background: url(superstar-right.png);
+    cursor: pointer;
+}
+
+.rating .star:nth-of-type(2n+1)
+{
+    background: url(superstar-left.png);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.rating input:checked ~ .star
+{
+    opacity: .5;
+}
+
+.rating input:checked ~ .star:hover ~ .star,
+.rating .star:hover ~ .star 
+{
+    opacity: .25;
+}
+
+.show_list:checked ~ main
+{
+    display: table;
+}
+
+.show_list:checked ~ main .cat
+{
+    display: table-row;
+}
+
+.show_list:checked ~ main .cat_photo
+{
+    height: auto;
+    float: left;
+    display: table-cell;
+    width: 35%;
+}
+
+.show_list:checked ~ main .cat_info
+{
+    vertical-align: top;
+    display: table-cell;
+    width: 65%;
+}
+
+.show_list:checked ~ main .cat_photo > img
+{
+    width: auto;
+    position: relative;
+    vertical-align: top;
+}
+
+.show_list:checked ~ main .cat_info > .cat_type,
+{
+    margin-top: 20px;
+}
+
+.old_price
+{
+    text-decoration: line-through;
+    color: #000;
+}
