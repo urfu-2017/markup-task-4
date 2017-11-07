@@ -52,11 +52,6 @@ input[id='line']:checked ~ .container .description
     max-height: 100%;
 }
 
-input[id='line']:checked ~ .container .description
-{
-    overflow: hidden;
-}
-
 input[id='line']:checked ~ .container .img
 {
     display: inline-block;
@@ -132,20 +127,6 @@ input[name*='rating']
     margin-top: 5px;
 }
 
-.rating label:hover ~ label:nth-of-type(2n+1),
-.rating input:checked + label ~ label:nth-of-type(2n+1)
-
-{
-    background: url(cat12.png);
-}
-
-.rating label:hover ~ label:nth-of-type(2n),
-.rating input:checked + label ~ label:nth-of-type(2n)
-
-{
-    background: url(cat22.png);
-}
-
 .rating label:nth-of-type(2n+1)
 {
     background: url(cat1.png);
@@ -155,4 +136,16 @@ input[name*='rating']
 .rating label:nth-of-type(2n)
 {
     background: url(cat2.png);
+}
+
+.rating:not(:hover) input:checked ~ label:nth-of-type(2n+1),
+.rating label:hover ~ label:nth-of-type(2n+1)
+{
+    background: url(cat12.png);
+}
+
+.rating:not(:hover) input:checked ~ label:nth-of-type(2n),
+.rating label:hover ~ label:nth-of-type(2n)
+{
+    background: url(cat22.png);
 }
