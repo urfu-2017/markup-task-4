@@ -11,74 +11,73 @@
 
 <body>
     <main>
-        <input class="show_page-list" type="radio" name="show">
-        <img class="show_page-list" src="images/list.png" alt="Иконка - показ списком"
-            title="Список">
-        <input class="show_page-tile" type="radio" name="show" checked>
-        <img class="show_page-list" src="images/plate.png" alt="Иконка - показ плиткой"
-            title="Плитка">
-
+        <input class="show_page-list" id="list" type="radio" name="show">
+        <label for="list">
+            <img class="list_page" src="images/list.png" alt="Иконка - показ списком"
+                title="Список">
+        </label>
+        <input class="show_page-tile" id="tile" type="radio" name="show" checked>
+        <label for="tile">
+            <img class="tile_page" src="images/plate.png" alt="Иконка - показ плиткой"
+                title="Плитка">
+        </label>
         <h1>Мяндекс.Муррркет</h1>
-        <article class="cat">
-            <div class="photo_cat">
+        <section class="cat">
+            <div class="photo_cat show-list">
                 <img class="photo_source" src="images/1.jpg" alt="Фото котика">
             </div>
-
-            <section class="cat_info">
+            <section class="cat_info show-list">
                 <h2 class="name">
                     <a href="https://ru.wikipedia.org/wiki" target="_blank" title="Имя котика">Бета</a>
                 </h2>
-
                 <p class="breed">Порода: Американский керл</p>
-
                 <div class="kindness">
                     <input type="radio" id="smile5" name="kind1">
-                    <label for="smile5" title="Доброта 5"><img class="rating"
-                        src="images/rightSmile.png" alt="smile"></label>
-
+                    <label for="smile5" title="Доброта 5">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
                     <input type="radio" id="smile4.5" name="kind1">
-                    <label for="smile4.5" class="half-smile" title="Доброта 4.5"><img class="rating"
-                        src="images/leftSmile.png" alt="smile"></label>
- 
+                    <label for="smile4.5" class="half-smile" title="Доброта 4.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
                     <input type="radio" id="smile4" name="kind1">
-                    <label for="smile4" title="Доброта 4"><img class="rating"
-                        src="images/rightSmile.png" alt="smile"></label>
-
+                    <label for="smile4" title="Доброта 4">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
                     <input type="radio" id="smile3.5" name="kind1">
-                    <label for="smile3.5" class="half-smile" title="Доброта 3.5"><img class="rating"
-                        src="images/leftSmile.png" alt="smile"></label>
-
+                    <label for="smile3.5" class="half-smile" title="Доброта 3.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
                     <input type="radio" id="smile3" name="kind1">
-                    <label for="smile3" title="Доброта 3"><img class="rating"
-                        src="images/rightSmile.png" alt="smile"></label>
-
+                    <label for="smile3" title="Доброта 3">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
                     <input type="radio" id="smile2.5" name="kind1" checked>
-                    <label for="smile2.5" class="half-smile" title="Доброта 2.5"><img class="rating"
-                        src="images/leftSmile.png" alt="smile"></label>
-    
+                    <label for="smile2.5" class="half-smile" title="Доброта 2.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
                     <input type="radio" id="smile2" name="kind1">
-                    <label for="smile2" title="Доброта 2"><img class="rating"
-                        src="images/rightSmile.png" alt="smile"></label>    
-
+                    <label for="smile2" title="Доброта 2">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
                     <input type="radio" id="smile1.5" name="kind1">
-                    <label for="smile1.5" class="half-smile" title="Доброта 1.5"><img class="rating"
-                        src="images/leftSmile.png" alt="smile"></label>
-    
+                    <label for="smile1.5" class="half-smile" title="Доброта 1.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
                     <input type="radio" id="smile1" name="kind1">
-                    <label for="smile1" title="Доброта 1"><img class="rating"
-                        src="images/rightSmile.png" alt="smile"></label>
-
+                    <label for="smile1" title="Доброта 1">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
                     <input type="radio" id="smile0.5" name="kind1">
-                    <label for="smile0.5" class="half-smile" title="Доброта 0.5"><img class="rating"
-                        src="images/leftSmile.png" alt="smile"></label>
+                    <label for="smile0.5" class="half-smile" title="Доброта 0.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
                 </div>
-
-                <p class="price">7000 &#8399;
+                <span class="price">7000 &#8399;
                     <span class="old_price">10000 &#8399;</span>
-                </p>
+                </span>
             </section>
-
-            <section class="description">
+            <section class="description show-list">
                 <h4>Описание котика:</h4>
                 <p class="description_cat">Ес&shy;ли срав&shy;нить по&shy;пу&shy;ляр&shy;ные по&shy;ро&shy;ды
                     ко&shy;шек с фо&shy;то&shy;гра&shy;фи&shy;я&shy;ми
@@ -93,68 +92,72 @@
                     не с мо&shy;мен&shy;та рож&shy;де&shy;ния, а толь&shy;ко
                     к 4-ме&shy;сяч&shy;но&shy;му воз&shy;рас&shy;ту.</p>
             </section>
-        </article>
-
-        <article class="cat">
-            <div class="photo_cat">
+        </section>
+        <section class="cat">
+            <div class="photo_cat show-list">
                 <img class="photo_source" src="images/2.jpg" alt="Фото котика">
             </div>
-
-            <section class="cat_info">
+            <section class="cat_info show-list">
                 <h2 class="name">
                     <a href="https://ru.wikipedia.org/wiki" target="_blank" title="Имя котика">Гайси</a>
                 </h2>
-
                 <p class="breed">Порода: Анатолийская кошка</p>
-
                 <div class="kindness">
-                        <input type="radio" id="smile5_2" name="kind2">
-                        <label for="smile5_2" title="Доброта 5"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile4.5_2" name="kind2">
-                        <label for="smile4.5_2" class="half-smile" title="Доброта 4.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-     
-                        <input type="radio" id="smile4_2" name="kind2">
-                        <label for="smile4_2" title="Доброта 4"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3.5_2" name="kind2">
-                        <label for="smile3.5_2" class="half-smile" title="Доброта 3.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3_2" name="kind2">
-                        <label for="smile3_2" title="Доброта 3"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile2.5_2" name="kind2">
-                        <label for="smile2.5_2" class="half-smile" title="Доброта 2.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile2_2" name="kind2">
-                        <label for="smile2_2" title="Доброта 2"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>    
-    
-                        <input type="radio" id="smile1.5_2" name="kind2" checked>
-                        <label for="smile1.5_2" class="half-smile" title="Доброта 1.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile1_2" name="kind2">
-                        <label for="smile1_2" title="Доброта 1"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile0.5_2" name="kind2">
-                        <label for="smile0.5_2" class="half-smile" title="Доброта 0.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-                    </div>
+                    <input type="radio" id="smile5_2" name="kind2">
+                    <label for="smile5_2" title="Доброта 5">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
 
-                <p class="price">5000 &#8399;
+                    <input type="radio" id="smile4.5_2" name="kind2">
+                    <label for="smile4.5_2" class="half-smile" title="Доброта 4.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile4_2" name="kind2">
+                    <label for="smile4_2" title="Доброта 4">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3.5_2" name="kind2">
+                    <label for="smile3.5_2" class="half-smile" title="Доброта 3.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3_2" name="kind2">
+                    <label for="smile3_2" title="Доброта 3">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2.5_2" name="kind2">
+                    <label for="smile2.5_2" class="half-smile" title="Доброта 2.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2_2" name="kind2">
+                    <label for="smile2_2" title="Доброта 2">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1.5_2" name="kind2" checked>
+                    <label for="smile1.5_2" class="half-smile" title="Доброта 1.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1_2" name="kind2">
+                    <label for="smile1_2" title="Доброта 1">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile0.5_2" name="kind2">
+                    <label for="smile0.5_2" class="half-smile" title="Доброта 0.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+                </div>
+                <span class="price">5000 &#8399;
                     <span class="old_price">9000 &#8399;</span>
-                </p>
+                </span>
             </section>
-
-            <section class="description">
+            <section class="description show-list">
                 <h4>Описание котика:</h4>
                 <p class="description_cat">До&shy;маш&shy;няя кош&shy;ка ана&shy;то&shy;лий&shy;ской
                     по&shy;ро&shy;ды бли&shy;же все&shy;го к ге&shy;но&shy;ти&shy;пу
@@ -167,137 +170,144 @@
                     кош&shy;ка&shy;ми.
                 </p>
             </section>
-        </article>
-
-        <article class="cat">
-            <div class="photo_cat">
+        </section>
+        <section class="cat">
+            <div class="photo_cat show-list">
                 <img class="photo_source" src="images/3.jpg" alt="Фото котика">
             </div>
-
-            <section class="cat_info">
+            <section class="cat_info show-list">
                 <h2 class="name">
                     <a href="https://ru.wikipedia.org/wiki" target="_blank" title="Имя котика">Пуша</a>
                 </h2>
-
                 <p class="breed">Порода: Бенгальская кошка</p>
-
                 <div class="kindness">
-                        <input type="radio" id="smile5_3" name="kind3">
-                        <label for="smile5_3" title="Доброта 5"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile4.5_3" name="kind3">
-                        <label for="smile4.5_3" class="half-smile" title="Доброта 4.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-     
-                        <input type="radio" id="smile4_3" name="kind3">
-                        <label for="smile4_3" title="Доброта 4"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3.5_3" name="kind3">
-                        <label for="smile3.5_3" class="half-smile" title="Доброта 3.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3_3" name="kind3">
-                        <label for="smile3_3" title="Доброта 3"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile2.5_3" name="kind3">
-                        <label for="smile2.5_3" class="half-smile" title="Доброта 2.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile2_3" name="kind3">
-                        <label for="smile2_3" title="Доброта 2"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>    
-    
-                        <input type="radio" id="smile1.5_3" name="kind3">
-                        <label for="smile1.5_3" class="half-smile" title="Доброта 1.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile1_3" name="kind3" checked>
-                        <label for="smile1_3" title="Доброта 1"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile0.5_3" name="kind3">
-                        <label for="smile0.5_3" class="half-smile" title="Доброта 0.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-                    </div>
+                    <input type="radio" id="smile5_3" name="kind3">
+                    <label for="smile5_3" title="Доброта 5">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
 
-                <p class="price">6000 &#8399;
+                    <input type="radio" id="smile4.5_3" name="kind3">
+                    <label for="smile4.5_3" class="half-smile" title="Доброта 4.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile4_3" name="kind3">
+                    <label for="smile4_3" title="Доброта 4">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3.5_3" name="kind3">
+                    <label for="smile3.5_3" class="half-smile" title="Доброта 3.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3_3" name="kind3">
+                    <label for="smile3_3" title="Доброта 3">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2.5_3" name="kind3">
+                    <label for="smile2.5_3" class="half-smile" title="Доброта 2.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2_3" name="kind3">
+                    <label for="smile2_3" title="Доброта 2">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1.5_3" name="kind3">
+                    <label for="smile1.5_3" class="half-smile" title="Доброта 1.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1_3" name="kind3" checked>
+                    <label for="smile1_3" title="Доброта 1">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile0.5_3" name="kind3">
+                    <label for="smile0.5_3" class="half-smile" title="Доброта 0.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+                </div>
+                <span class="price">6000 &#8399;
                     <span class="old_price">9000 &#8399;</span>
-                </p>
+                </span>
             </section>
-
-            <section class="description">
+            <section class="description show-list">
                 <h4>Описание котика:</h4>
                 <p class="description_cat">Опи&shy;са&shy;ние бен&shy;га&shy;лок по&shy;хо&shy;же
                     на опи&shy; са&shy;ние ягу&shy;а&shy;ра – та же хищ&shy;ная
                     окрас&shy;ка, тот же ди&shy;кий нрав.</p>
             </section>
-        </article>
-
-        <article class="cat">
-            <div class="photo_cat">
+        </section>
+        <section class="cat">
+            <div class="photo_cat show-list">
                 <img class="photo_source" src="images/4.jpg" alt="Фото котика">
             </div>
-
-            <section class="cat_info">
+            <section class="cat_info show-list">
                 <h2 class="name">
-                    <a href="https://ru.wikipedia.org/wiki" target="_blank"
-                    title="Гайси - Британская короткошерстная кошка">Гайси - Британская короткошерстная
-                    кошка</a>
+                    <a href="https://ru.wikipedia.org/wiki" target="_blank" title="Гайси - Британская короткошерстная кошка">Гайси - Британская короткошерстная кошка
+                    </a>
                 </h2>
-
                 <p class="breed">Порода: Британская короткошерстная</p>
-
                 <div class="kindness">
-                        <input type="radio" id="smile5_4" name="kind4">
-                        <label for="smile5_4" title="Доброта 5"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile4.5_4" name="kind4">
-                        <label for="smile4.5_4" class="half-smile" title="Доброта 4.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-     
-                        <input type="radio" id="smile4_4" name="kind4">
-                        <label for="smile4_4" title="Доброта 4"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3.5_4" name="kind4">
-                        <label for="smile3.5_4" class="half-smile" title="Доброта 3.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3_4" name="kind4">
-                        <label for="smile3_4" title="Доброта 3"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile2.5_4" name="kind4" checked>
-                        <label for="smile2.5_4" class="half-smile" title="Доброта 2.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile2_4" name="kind4">
-                        <label for="smile2_4" title="Доброта 2"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>    
-    
-                        <input type="radio" id="smile1.5_4" name="kind4">
-                        <label for="smile1.5_4" class="half-smile" title="Доброта 1.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile1_4" name="kind4">
-                        <label for="smile1_4" title="Доброта 1"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile0.5_4" name="kind4">
-                        <label for="smile0.5_4" class="half-smile" title="Доброта 0.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-                    </div>
+                    <input type="radio" id="smile5_4" name="kind4">
+                    <label for="smile5_4" title="Доброта 5">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
 
-                <p class="price">6000 &#8399;
+                    <input type="radio" id="smile4.5_4" name="kind4">
+                    <label for="smile4.5_4" class="half-smile" title="Доброта 4.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile4_4" name="kind4">
+                    <label for="smile4_4" title="Доброта 4">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3.5_4" name="kind4">
+                    <label for="smile3.5_4" class="half-smile" title="Доброта 3.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3_4" name="kind4">
+                    <label for="smile3_4" title="Доброта 3">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2.5_4" name="kind4" checked>
+                    <label for="smile2.5_4" class="half-smile" title="Доброта 2.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2_4" name="kind4">
+                    <label for="smile2_4" title="Доброта 2">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1.5_4" name="kind4">
+                    <label for="smile1.5_4" class="half-smile" title="Доброта 1.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1_4" name="kind4">
+                    <label for="smile1_4" title="Доброта 1">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile0.5_4" name="kind4">
+                    <label for="smile0.5_4" class="half-smile" title="Доброта 0.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+                </div>
+                <span class="price">6000 &#8399;
                     <span class="old_price">12000 &#8399;</span>
-                </p>
+                </span>
             </section>
-
-            <section class="description">
+            <section class="description show-list">
                 <h4>Описание котика:</h4>
                 <p class="description_cat">Ес&shy;ли вы мно&shy;го ра&shy;бо&shy;та&shy;е&shy;те,
                     ес&shy;ли ваш день на&shy;чи&shy;на&shy;ет&shy;ся с
@@ -312,67 +322,72 @@
                     по&shy;лов!
                 </p>
             </section>
-        </article>
-
-        <article class="cat">
-            <div class="photo_cat">
+        </section>
+        <section class="cat">
+            <div class="photo_cat show-list">
                 <img class="photo_source" src="images/5.jpg" alt="Фото котика">
             </div>
-
-            <section class="cat_info">
+            <section class="cat_info show-list">
                 <h2 class="name">
                     <a href="https://ru.wikipedia.org/wiki" target="_blank" title="Имя котика">Бусинка</a>
                 </h2>
-
                 <p class="breed">Порода: Сингапура</p>
                 <div class="kindness">
-                        <input type="radio" id="smile5_5" name="kind5">
-                        <label for="smile5_5" title="Доброта 5"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile4.5_5" name="kind5" checked>
-                        <label for="smile4.5_5" class="half-smile" title="Доброта 4.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-     
-                        <input type="radio" id="smile4_5" name="kind5">
-                        <label for="smile4_5" title="Доброта 4"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3.5_5" name="kind5">
-                        <label for="smile3.5_5" class="half-smile" title="Доброта 3.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3_5" name="kind5">
-                        <label for="smile3_5" title="Доброта 3"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile2.5_5" name="kind5">
-                        <label for="smile2.5_5" class="half-smile" title="Доброта 2.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile2_5" name="kind5">
-                        <label for="smile2_5" title="Доброта 2"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>    
-    
-                        <input type="radio" id="smile1.5_5" name="kind5">
-                        <label for="smile1.5_5" class="half-smile" title="Доброта 1.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile1_5" name="kind5">
-                        <label for="smile1_5" title="Доброта 1"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile0.5_5" name="kind5">
-                        <label for="smile0.5_5" class="half-smile" title="Доброта 0.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-                    </div>
+                    <input type="radio" id="smile5_5" name="kind5">
+                    <label for="smile5_5" title="Доброта 5">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
 
-                <p class="price">11000 &#8399;
+                    <input type="radio" id="smile4.5_5" name="kind5" checked>
+                    <label for="smile4.5_5" class="half-smile" title="Доброта 4.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile4_5" name="kind5">
+                    <label for="smile4_5" title="Доброта 4">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3.5_5" name="kind5">
+                    <label for="smile3.5_5" class="half-smile" title="Доброта 3.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3_5" name="kind5">
+                    <label for="smile3_5" title="Доброта 3">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2.5_5" name="kind5">
+                    <label for="smile2.5_5" class="half-smile" title="Доброта 2.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2_5" name="kind5">
+                    <label for="smile2_5" title="Доброта 2">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1.5_5" name="kind5">
+                    <label for="smile1.5_5" class="half-smile" title="Доброта 1.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1_5" name="kind5">
+                    <label for="smile1_5" title="Доброта 1">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile0.5_5" name="kind5">
+                    <label for="smile0.5_5" class="half-smile" title="Доброта 0.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+                </div>
+                <span class="price">11000 &#8399;
                     <span class="old_price">15000 &#8399;</span>
-                </p>
+                </span>
             </section>
-
-            <section class="description">
+            <section class="description show-list">
                 <h4>Описание котика:</h4>
                 <p class="description_cat">Как кош&shy;ка двор&shy;няж&shy;ка ста&shy;ла кош&shy;кой
                     ари&shy; сто&shy;крат&shy;кой? Эле&shy;мен&shy;тар&shy;но,
@@ -388,68 +403,72 @@
                     сло&shy;но&shy;вая кость.
                 </p>
             </section>
-        </article>
-
-        <article class="cat">
-            <div class="photo_cat">
+        </section>
+        <section class="cat">
+            <div class="photo_cat show-list">
                 <img class="photo_source" src="images/6.jpg" alt="Фото котика">
             </div>
-
-            <section class="cat_info">
+            <section class="cat_info show-list">
                 <h2 class="name">
                     <a href="https://ru.wikipedia.org/wiki" target="_blank" title="Имя котика">Дайтон</a>
                 </h2>
-
                 <p class="breed">Порода: Тойгер</p>
-
                 <div class="kindness">
-                        <input type="radio" id="smile5_6" name="kind6">
-                        <label for="smile5_6" title="Доброта 5"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile4.5_6" name="kind6">
-                        <label for="smile4.5_6" class="half-smile" title="Доброта 4.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-     
-                        <input type="radio" id="smile4_6" name="kind6">
-                        <label for="smile4_6" title="Доброта 4"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3.5_6" name="kind6">
-                        <label for="smile3.5_6" class="half-smile" title="Доброта 3.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3_6" name="kind6">
-                        <label for="smile3_6" title="Доброта 3"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile2.5_6" name="kind6" checked>
-                        <label for="smile2.5_6" class="half-smile" title="Доброта 2.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile2_6" name="kind6">
-                        <label for="smile2_6" title="Доброта 2"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>    
-    
-                        <input type="radio" id="smile1.5_6" name="kind6">
-                        <label for="smile1.5_6" class="half-smile" title="Доброта 1.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile1_6" name="kind6">
-                        <label for="smile1_6" title="Доброта 1"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile0.5_6" name="kind6">
-                        <label for="smile0.5_6" class="half-smile" title="Доброта 0.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-                    </div>
+                    <input type="radio" id="smile5_6" name="kind6">
+                    <label for="smile5_6" title="Доброта 5">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
 
-                <p class="price">18000 &#8399;
+                    <input type="radio" id="smile4.5_6" name="kind6">
+                    <label for="smile4.5_6" class="half-smile" title="Доброта 4.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile4_6" name="kind6">
+                    <label for="smile4_6" title="Доброта 4">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3.5_6" name="kind6">
+                    <label for="smile3.5_6" class="half-smile" title="Доброта 3.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3_6" name="kind6">
+                    <label for="smile3_6" title="Доброта 3">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2.5_6" name="kind6" checked>
+                    <label for="smile2.5_6" class="half-smile" title="Доброта 2.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2_6" name="kind6">
+                    <label for="smile2_6" title="Доброта 2">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1.5_6" name="kind6">
+                    <label for="smile1.5_6" class="half-smile" title="Доброта 1.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1_6" name="kind6">
+                    <label for="smile1_6" title="Доброта 1">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile0.5_6" name="kind6">
+                    <label for="smile0.5_6" class="half-smile" title="Доброта 0.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+                </div>
+                <span class="price">18000 &#8399;
                     <span class="old_price">20000 &#8399;</span>
-                </p>
+                </span>
             </section>
-
-            <section class="description">
+            <section class="description show-list">
                 <h4>Описание котика:</h4>
                 <p class="description_cat">Той&shy;гер – чи&shy;сто ди&shy;зай&shy;нер&shy;ский про&shy;ект.
                     Так при&shy;ят&shy;но ви&shy;деть в ин&shy;те&shy;рье&shy;ре
@@ -464,68 +483,72 @@
                     кош&shy;ка&shy;ми.
                 </p>
             </section>
-        </article>
-
-        <article class="cat">
-            <div class="photo_cat">
+        </section>
+        <section class="cat">
+            <div class="photo_cat show-list">
                 <img class="photo_source" src="images/7.jpg" alt="Фото котика">
             </div>
-
-            <section class="cat_info">
+            <section class="cat_info show-list">
                 <h2 class="name">
                     <a href="https://ru.wikipedia.org/wiki" target="_blank" title="Имя котика">Гаврюша</a>
                 </h2>
-
                 <p class="breed">Порода: Шартрез</p>
-
                 <div class="kindness">
-                        <input type="radio" id="smile5_7" name="kind7" checked>
-                        <label for="smile5_7" title="Доброта 5"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile4.5_7" name="kind7">
-                        <label for="smile4.5_7" class="half-smile" title="Доброта 4.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-     
-                        <input type="radio" id="smile4_7" name="kind7">
-                        <label for="smile4_7" title="Доброта 4"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3.5_7" name="kind7">
-                        <label for="smile3.5_7" class="half-smile" title="Доброта 3.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3_7" name="kind7">
-                        <label for="smile3_7" title="Доброта 3"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile2.5_7" name="kind7" checked>
-                        <label for="smile2.5_7" class="half-smile" title="Доброта 2.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile2_7" name="kind7">
-                        <label for="smile2_7" title="Доброта 2"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>    
-    
-                        <input type="radio" id="smile1.5_7" name="kind7">
-                        <label for="smile1.5_7" class="half-smile" title="Доброта 1.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile1_7" name="kind7">
-                        <label for="smile1_7" title="Доброта 1"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile0.5_7" name="kind7">
-                        <label for="smile0.5_7" class="half-smile" title="Доброта 0.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-                    </div>
+                    <input type="radio" id="smile5_7" name="kind7" checked>
+                    <label for="smile5_7" title="Доброта 5">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
 
-                <p class="price">9000 &#8399;
+                    <input type="radio" id="smile4.5_7" name="kind7">
+                    <label for="smile4.5_7" class="half-smile" title="Доброта 4.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile4_7" name="kind7">
+                    <label for="smile4_7" title="Доброта 4">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3.5_7" name="kind7">
+                    <label for="smile3.5_7" class="half-smile" title="Доброта 3.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3_7" name="kind7">
+                    <label for="smile3_7" title="Доброта 3">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2.5_7" name="kind7" checked>
+                    <label for="smile2.5_7" class="half-smile" title="Доброта 2.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2_7" name="kind7">
+                    <label for="smile2_7" title="Доброта 2">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1.5_7" name="kind7">
+                    <label for="smile1.5_7" class="half-smile" title="Доброта 1.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1_7" name="kind7">
+                    <label for="smile1_7" title="Доброта 1">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile0.5_7" name="kind7">
+                    <label for="smile0.5_7" class="half-smile" title="Доброта 0.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+                </div>
+                <span class="price">9000 &#8399;
                     <span class="old_price">10000 &#8399;</span>
-                </p>
+                </span>
             </section>
-
-            <section class="description">
+            <section class="description show-list">
                 <h4>Описание котика:</h4>
                 <p class="description_cat">Го&shy;во&shy;рят, что Фран&shy;ция – это стра&shy;на эми&shy;
                     гран&shy;тов. Это утвер&shy;жде&shy;ние ка&shy;са&shy;ет&shy;ся
@@ -539,68 +562,72 @@
                     гла&shy;за&shy;ми.
                 </p>
             </section>
-        </article>
-
-        <article class="cat">
-            <div class="photo_cat">
+        </section>
+        <section class="cat">
+            <div class="photo_cat show-list">
                 <img class="photo_source" src="images/8.jpg" alt="Фото котика">
             </div>
-
-            <section class="cat_info">
+            <section class="cat_info show-list">
                 <h2 class="name">
                     <a href="https://ru.wikipedia.org/wiki" target="_blank" title="Имя котика">Ежевичка</a>
                 </h2>
-
                 <p class="breed">Порода: Курильский бобтейл</p>
-
                 <div class="kindness">
-                        <input type="radio" id="smile5_8" name="kind8">
-                        <label for="smile5_8" title="Доброта 5"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile4.5_8" name="kind8">
-                        <label for="smile4.5_8" class="half-smile" title="Доброта 4.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-     
-                        <input type="radio" id="smile4_8" name="kind8">
-                        <label for="smile4_8" title="Доброта 4"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3.5_8" name="kind8">
-                        <label for="smile3.5_8" class="half-smile" title="Доброта 3.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3_8" name="kind8">
-                        <label for="smile3_8" title="Доброта 3"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile2.5_8" name="kind8" checked>
-                        <label for="smile2.5_8" class="half-smile" title="Доброта 2.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile2_8" name="kind8">
-                        <label for="smile2_8" title="Доброта 2"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>    
-    
-                        <input type="radio" id="smile1.5_8" name="kind8">
-                        <label for="smile1.5_8" class="half-smile" title="Доброта 1.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile1_8" name="kind8">
-                        <label for="smile1_8" title="Доброта 1"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile0.5_8" name="kind8">
-                        <label for="smile0.5_8" class="half-smile" title="Доброта 0.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-                    </div>
+                    <input type="radio" id="smile5_8" name="kind8">
+                    <label for="smile5_8" title="Доброта 5">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
 
-                <p class="price">5000 &#8399;
+                    <input type="radio" id="smile4.5_8" name="kind8">
+                    <label for="smile4.5_8" class="half-smile" title="Доброта 4.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile4_8" name="kind8">
+                    <label for="smile4_8" title="Доброта 4">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3.5_8" name="kind8">
+                    <label for="smile3.5_8" class="half-smile" title="Доброта 3.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3_8" name="kind8">
+                    <label for="smile3_8" title="Доброта 3">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2.5_8" name="kind8" checked>
+                    <label for="smile2.5_8" class="half-smile" title="Доброта 2.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2_8" name="kind8">
+                    <label for="smile2_8" title="Доброта 2">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1.5_8" name="kind8">
+                    <label for="smile1.5_8" class="half-smile" title="Доброта 1.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1_8" name="kind8">
+                    <label for="smile1_8" title="Доброта 1">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile0.5_8" name="kind8">
+                    <label for="smile0.5_8" class="half-smile" title="Доброта 0.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+                </div>
+                <span class="price">5000 &#8399;
                     <span class="old_price">10000 &#8399;</span>
-                </p>
+                </span>
             </section>
-
-            <section class="description">
+            <section class="description show-list">
                 <h4>Описание котика:</h4>
                 <p class="description_cat">Это — рос&shy;сий&shy;ская вер&shy;сия ко&shy;рот&shy;ко&shy;
                     хво&shy;стой кош&shy;ки. Хвост-пом&shy;пон, мо&shy;ро&shy;зо&shy;стой&shy;кость
@@ -614,68 +641,72 @@
                     ци&shy;он&shy;ный при&shy;знак.
                 </p>
             </section>
-        </article>
-
-        <article class="cat">
-            <div class="photo_cat">
+        </section>
+        <section class="cat">
+            <div class="photo_cat show-list">
                 <img class="photo_source" src="images/9.jpg" alt="Фото котика">
             </div>
-
-            <section class="cat_info">
+            <section class="cat_info show-list">
                 <h2 class="name">
                     <a href="https://ru.wikipedia.org/wiki" target="_blank" title="Имя котика">Дуся</a>
                 </h2>
-
                 <p class="breed">Порода: Гималаи</p>
-
                 <div class="kindness">
-                        <input type="radio" id="smile5_9" name="kind9">
-                        <label for="smile5_9" title="Доброта 5"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile4.5_9" name="kind9">
-                        <label for="smile4.5_9" class="half-smile" title="Доброта 4.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-     
-                        <input type="radio" id="smile4_9" name="kind9">
-                        <label for="smile4_9" title="Доброта 4"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3.5_9" name="kind9">
-                        <label for="smile3.5_9" class="half-smile" title="Доброта 3.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3_9" name="kind9">
-                        <label for="smile3_9" title="Доброта 3"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile2.5_9" name="kind9">
-                        <label for="smile2.5_9" class="half-smile" title="Доброта 2.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile2_9" name="kind9">
-                        <label for="smile2_9" title="Доброта 2"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>    
-    
-                        <input type="radio" id="smile1.5_9" name="kind9">
-                        <label for="smile1.5_9" class="half-smile" title="Доброта 1.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile1_9" name="kind9">
-                        <label for="smile1_9" title="Доброта 1"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile0.5_9" name="kind9" checked>
-                        <label for="smile0.5_9" class="half-smile" title="Доброта 0.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-                    </div>
+                    <input type="radio" id="smile5_9" name="kind9">
+                    <label for="smile5_9" title="Доброта 5">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
 
-                <p class="price">7000 &#8399;
+                    <input type="radio" id="smile4.5_9" name="kind9">
+                    <label for="smile4.5_9" class="half-smile" title="Доброта 4.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile4_9" name="kind9">
+                    <label for="smile4_9" title="Доброта 4">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3.5_9" name="kind9">
+                    <label for="smile3.5_9" class="half-smile" title="Доброта 3.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3_9" name="kind9">
+                    <label for="smile3_9" title="Доброта 3">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2.5_9" name="kind9">
+                    <label for="smile2.5_9" class="half-smile" title="Доброта 2.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2_9" name="kind9">
+                    <label for="smile2_9" title="Доброта 2">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1.5_9" name="kind9">
+                    <label for="smile1.5_9" class="half-smile" title="Доброта 1.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1_9" name="kind9">
+                    <label for="smile1_9" title="Доброта 1">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile0.5_9" name="kind9" checked>
+                    <label for="smile0.5_9" class="half-smile" title="Доброта 0.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+                </div>
+                <span class="price">7000 &#8399;
                     <span class="old_price">10000 &#8399;</span>
-                </p>
+                </span>
             </section>
-
-            <section class="description">
+            <section class="description show-list">
                 <h4>Описание котика:</h4>
                 <p class="description_cat">Ги&shy;ма&shy;лай&shy;ский ко&shy;лор-пойнт очень по&shy;хож
                     на пер&shy;сид&shy;скую кош&shy;ку, но по&shy;след&shy;няя
@@ -688,75 +719,79 @@
                     за сол&shy;неч&shy;ным зай&shy;чи&shy;ком.
                 </p>
             </section>
-        </article>
-
-        <article class="cat">
-            <div class="photo_cat">
+        </section>
+        <section class="cat">
+            <div class="photo_cat show-list">
                 <img class="photo_source" src="images/10.jpg" alt="Фото котика">
             </div>
-
-            <section class="cat_info">
+            <section class="cat_info show-list">
                 <h2 class="name">
                     <a href="https://ru.wikipedia.org/wiki" target="_blank" title="Имя котика">Пуся</a>
                 </h2>
-
                 <p class="breed">Порода: Персидская</p>
-
                 <div class="kindness">
-                        <input type="radio" id="smile5_10" name="kind10">
-                        <label for="smile5_10" title="Доброта 5"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile4.5_10" name="kind10">
-                        <label for="smile4.5_10" class="half-smile" title="Доброта 4.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-     
-                        <input type="radio" id="smile4_10" name="kind10">
-                        <label for="smile4_10" title="Доброта 4"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3.5_10" name="kind10">
-                        <label for="smile3.5_10" class="half-smile" title="Доброта 3.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile3_10" name="kind10">
-                        <label for="smile3_10" title="Доброта 3"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile2.5_10" name="kind10" checked>
-                        <label for="smile2.5_10" class="half-smile" title="Доброта 2.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile2_10" name="kind10">
-                        <label for="smile2_10" title="Доброта 2"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>    
-    
-                        <input type="radio" id="smile1.5_10" name="kind10">
-                        <label for="smile1.5_10" class="half-smile" title="Доброта 1.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-        
-                        <input type="radio" id="smile1_10" name="kind10">
-                        <label for="smile1_10" title="Доброта 1"><img class="rating"
-                            src="images/rightSmile.png" alt="smile"></label>
-    
-                        <input type="radio" id="smile0.5_10" name="kind10">
-                        <label for="smile0.5_10" class="half-smile" title="Доброта 0.5"><img class="rating"
-                            src="images/leftSmile.png" alt="smile"></label>
-                    </div>
+                    <input type="radio" id="smile5_10" name="kind10">
+                    <label for="smile5_10" title="Доброта 5">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
 
-                <p class="price">7000 &#8399;
+                    <input type="radio" id="smile4.5_10" name="kind10">
+                    <label for="smile4.5_10" class="half-smile" title="Доброта 4.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile4_10" name="kind10">
+                    <label for="smile4_10" title="Доброта 4">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3.5_10" name="kind10">
+                    <label for="smile3.5_10" class="half-smile" title="Доброта 3.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile3_10" name="kind10">
+                    <label for="smile3_10" title="Доброта 3">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2.5_10" name="kind10" checked>
+                    <label for="smile2.5_10" class="half-smile" title="Доброта 2.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile2_10" name="kind10">
+                    <label for="smile2_10" title="Доброта 2">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1.5_10" name="kind10">
+                    <label for="smile1.5_10" class="half-smile" title="Доброта 1.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile1_10" name="kind10">
+                    <label for="smile1_10" title="Доброта 1">
+                        <img class="rating" src="images/rightSmile.png" alt="smile">
+                    </label>
+
+                    <input type="radio" id="smile0.5_10" name="kind10">
+                    <label for="smile0.5_10" class="half-smile" title="Доброта 0.5">
+                        <img class="rating" src="images/leftSmile.png" alt="smile">
+                    </label>
+                </div>
+                <span class="price">7000 &#8399;
                     <span class="old_price">8000 &#8399;</span>
-                </p>
+                </span>
             </section>
-
-            <section class="description">
+            <section class="description show-list">
                 <h4>Описание котика:</h4>
                 <p class="description_cat">Пер&shy;сид&shy;ская кош&shy;ка — это од&shy;на из кра&shy;си&shy;
                     вей&shy;ших и са&shy;мых по&shy;пу&shy;ляр&shy;ных
                     по&shy;род ко&shy;шек в ми&shy;ре.
                 </p>
             </section>
-        </article>
+        </section>
     </main>
 </body>
 

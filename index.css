@@ -6,7 +6,20 @@ html
 .show_page-list,
 .show_page-tile
 {
+    display: none;
+}
+
+.list_page,
+.tile_page
+{
     float: right;
+    opacity: .7;
+}
+
+.list_page:hover,
+.tile_page:hover
+{
+    opacity: 1;
 }
 
 .show_page-list:checked ~ .cat
@@ -16,14 +29,13 @@ html
     background: inherit;
 }
 
-.show_page-list:checked ~ .cat .photo_cat,
-.show_page-list:checked ~ .cat .cat_info,
-.show_page-list:checked ~ .cat .description
+.show_page-list:checked ~ .cat .show-list
 {
-    display: inline-block;
+    display: block;
+    float: left;
+    overflow: hidden;
     position: relative;
     width: 33%;
-    vertical-align: top;
     margin: 0;
     padding: 0;
 }
@@ -31,7 +43,8 @@ html
 .show_page-list:checked ~ .cat .photo_cat
 {
     width: 25%;
-    margin: 1rem;
+    margin: 10px;
+    position: relative;
 }
 
 .show_page-list:checked ~ .cat .photo_source
@@ -55,8 +68,8 @@ h1
     width: 270px;
     height: 100%;
     display: inline-block;
-    margin: .5rem;
-    padding: 1rem;
+    margin: 5px;
+    padding: 10px;
     background: #eee;
     vertical-align: top;
 }
@@ -69,7 +82,7 @@ h1
 p
 {
     height: 30px;
-    margin-bottom: .1em;
+    margin-bottom: 5px;
     hyphens: manual;
 }
 
@@ -116,21 +129,27 @@ p
     float: right;
 }
 
+.kindness label:hover,
 .kindness label:hover ~ label,
 .kindness input:checked ~ label
 {
     opacity: 1;
 }
 
+.price
+{
+    display: block;
+}
+
 .price .old_price
 {
     text-decoration: line-through;
-    margin-left: 1em;
+    margin-left: 20px;
 }
 
 h4
 {
-    margin: .1em 0;
+    margin: 5px 0;
 }
 
 .description_cat
