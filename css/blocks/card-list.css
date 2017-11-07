@@ -6,11 +6,12 @@ input[id='layout-list']:checked ~ .cards-container
 input[id='layout-list']:checked ~ .cards-container .card
 {
     width: 100%;
+    display: table;
 }
 
 input[id='layout-list']:checked ~ .cards-container .card__image
 {
-    width: 20%;
+    width: 27%;
     float: left;
     margin-right: 10%;
     height: 300px;
@@ -18,8 +19,7 @@ input[id='layout-list']:checked ~ .cards-container .card__image
 
 input[id='layout-list']:checked ~ .cards-container .card__description
 {
-    float: right;
     width: 25%;
-    margin-top: -100px;
+    display: table-cell;
 }
 
