@@ -26,21 +26,20 @@
 
 .card-image
 {
+    position: relative;
     height: 300px;
-    text-align: center;
-}
-
-.card-image::before
-{
-    content: ' ';
-    display: inline-block;
-    height: 100%;
 }
 
 .card-image > img
 {
-    max-width: 98%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
     max-height: 100%;
+    margin: auto auto 0;
 }
 
 .info-name
@@ -101,9 +100,11 @@
     vertical-align: top;
 }
 
-.list-view:checked ~ .card > .card-image::before
+.list-view:checked ~ .card > .card-image,
+.list-view:checked ~ .card > .card-image > img
 {
-    content: none;
+    position: initial;
+    text-align: center;
 }
 
 .list-view:checked ~ .card > .card-image
