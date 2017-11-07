@@ -1,0 +1,91 @@
+:root
+{
+    --list-icon: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWw6c3BhY2U9InByZXNlcnZlIiB2ZXJzaW9uPSIxLjEiIHk9IjBweCIgeD0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIj4KCQk8cGF0aCBkPSJtMSAxNmgxOHYtNmgtMTh2NnptMC0xM3Y2aDE4di02aC0xOHoiLz4KPC9zdmc+Cg==);
+    --tiles-icon: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWw6c3BhY2U9InByZXNlcnZlIiB2ZXJzaW9uPSIxLjEiIHk9IjBweCIgeD0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIj4KCTxyZWN0IHk9IjMiIHdpZHRoPSI2IiBoZWlnaHQ9IjE0Ii8+Cgk8cmVjdCB5PSIzIiB4PSI3IiB3aWR0aD0iNiIgaGVpZ2h0PSI1Ii8+Cgk8cmVjdCB5PSI5IiB4PSI3IiB3aWR0aD0iNiIgaGVpZ2h0PSI4Ii8+Cgk8cmVjdCB5PSIxMyIgeD0iMTQiIHdpZHRoPSI2IiBoZWlnaHQ9IjQiLz4KCTxyZWN0IHk9IjMiIHg9IjE0IiB3aWR0aD0iNiIgaGVpZ2h0PSI5Ii8+Cjwvc3ZnPgo=);
+}
+
+.settings
+{
+    float: right;
+    display: inline-block;
+}
+
+.settings__view
+{
+    padding: 0;
+    margin: 5px;
+    width: 40px;
+    height: 30px;
+    opacity: .8;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.settings__view:hover
+{
+    background-color: #d3d3d3;
+}
+
+.list-icon
+{
+    background: var(--list-icon) no-repeat 50% 50%;
+}
+
+.tiles-icon
+{
+    background: var(--tiles-icon) no-repeat 50% 50%;
+}
+
+.input-view-list:checked ~ header .list-icon,
+.input-view-tiles:checked ~ header .tiles-icon
+{
+    background-color: #d3d3d3;
+}
+
+.input-view-list:checked ~ main .cat
+{
+    width: 75%;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.input-view-list:checked ~ main .cat__photo
+{
+    object-fit: scale-down;
+}
+
+.input-view-list:checked ~ main .cat__info,
+.input-view-list:checked ~ main .cat__photo-container
+{
+    width: 30%;
+    height: 90%;
+    float: left;
+}
+
+.input-view-tiles:checked ~ main .cat
+{
+    width: 300px;
+    height: 450px;
+    margin: 15px;
+    float: left;
+}
+
+@media (max-width: 680px)
+{
+    .input-view-tiles:checked ~ main .cat
+    {
+        width: 90%;
+    }
+}
+
+.input-view-tiles:checked ~ main .cat__info,
+.input-view-tiles:checked ~ main .cat__photo-container
+{
+    margin: 10px;
+}
+
+.input-view-tiles:checked ~ main .cat__photo-container
+{
+    height: 40%;
+    margin-bottom: 20px;
+}

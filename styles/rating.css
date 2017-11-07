@@ -1,0 +1,58 @@
+@font-face
+{
+    font-family: 'Font Awesome';
+    src: url('../fonts/fontawesome-webfont.woff2');
+}
+
+:root
+{
+    --empty-star: '\f006';
+    --full-star: '\f005';
+    --half-star: '\f089';
+}
+
+.rating
+{
+    display: inline-block;
+}
+
+.rating__input
+{
+    display: none;
+}
+
+.rating__label
+{
+    float: right;
+}
+
+.rating__label:before
+{
+    color: #ccc;
+    font-family: 'Font Awesome', sans-serif;
+}
+
+.rating__label:before
+{
+    content: var(--full-star);
+}
+
+.rating__label.half-star:before
+{
+    padding-top: 1px;
+    position: absolute;
+    content: var(--half-star);
+}
+
+.rating__label:hover:before,
+.rating__label:hover ~ .rating__label:before,
+.rating__input:checked ~ .rating__label:hover:before,
+.rating__input:checked ~ .rating__label:hover ~ .rating__label:before
+{
+    color: #fed289;
+}
+
+.rating__input:checked ~ .rating__label:before
+{
+    color: #fecd0b;
+}
