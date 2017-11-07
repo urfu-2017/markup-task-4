@@ -148,11 +148,11 @@ footer
     left: 0;
     right: 0;
     bottom: 0;
-    width: auto;
     height: 100%;
     margin: auto;
     max-width: 85%;
     position: absolute;
+    object-fit: scale-down;
 }
 
 .cat__name
