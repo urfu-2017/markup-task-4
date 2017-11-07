@@ -1,0 +1,219 @@
+.header
+{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.cat:hover
+{
+    background-color: rgba(0, 255, 0, .5);
+}
+
+.view,
+.star
+{
+    display: none;
+}
+
+.header ~ .view + label
+{
+    opacity: .5;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+}
+
+.view:checked + label
+{
+    opacity: 1;
+}
+
+.price,
+.rating
+{
+    width: 100%;
+    display: inline-block;
+}
+
+.grid + label
+{
+    background: url('icons/grid.png');
+}
+
+.list + label
+{
+    background: url('icons/list.png');
+}
+
+.content > .cat
+{
+    padding: 10px;
+    height: 500px;
+    vertical-align: top;
+}
+
+.grid:checked ~ .content > .cat
+{
+    width: 250px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.list:checked ~ .content > .cat
+{
+    height: 350px;
+    max-width: 1000px;
+    display: block;
+    margin: 30px auto;
+}
+
+.grid:checked ~ .content .cat .container
+{
+    line-height: 286px;
+}
+
+.list:checked ~ .content .cat .container
+{
+    line-height: 350px;
+    width: 33%;
+    height: 100%;
+}
+
+.grid:checked ~ .content .cat .image
+{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.list:checked ~ .content .cat .image
+{
+    vertical-align: middle;
+    width: 100%;
+}
+
+.grid:checked ~ .content .rateprice
+{
+    text-align: center;
+}
+
+.price
+{
+    font-size: 20px;
+}
+
+.grid:checked ~ .content .description
+{
+    margin: 15px;
+}
+
+.star + label
+{
+    display: inline-block;
+    width: 15px;
+    height: 30px;
+    background: url('icons/star.png');
+    background-size: 30px;
+}
+
+.list:checked ~ .content .container,
+.list:checked ~ .content .rateprice,
+.list:checked ~ .content .description
+{
+    vertical-align: middle;
+    display: inline-block;
+    width: 30%;
+}
+
+.list:checked ~ .content .container
+{
+    max-width: 300px;
+}
+
+.even + label
+{
+    margin: 0 -4px;
+    background-position: right;
+}
+
+.list:checked ~ .content .rateprice
+{
+    margin: 0 10px;
+}
+
+.list:checked ~ .content .title
+{
+    overflow: initial;
+    white-space: initial;
+    text-align: left;
+}
+
+.description
+{
+    font-size: 18px;
+}
+
+.star
+{
+    display: none;
+}
+
+.star + label
+{
+    opacity: .3;
+}
+
+.star:checked ~ label
+{
+    opacity: 1;
+}
+
+.rating
+{
+    direction: rtl;
+}
+
+.list:checked ~ .content .rating
+{
+    text-align: left;
+}
+
+.star + label:hover ~ label
+{
+    opacity: .6;
+}
+
+.star + label:hover
+{
+    opacity: .6;
+}
+
+.title
+{
+    margin: 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title a:visited,
+.title a:hover,
+.title a:active,
+.title a
+{
+    font: bold italic 24px serif;
+    color: #550;
+    text-decoration: unset;
+}
+
+.image
+{
+    filter: grayscale(100%);
+}
+
+.image:hover
+{
+    filter: grayscale(0%);
+}
