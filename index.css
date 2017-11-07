@@ -82,7 +82,7 @@ input[type='radio']:checked ~ label
 .cat label
 {
     opacity: 1;
-    width: 14px;
+    width: 15px;
     height: 34px;
     display: inline-block;
     background: url('star1.png');
@@ -149,11 +149,18 @@ input[name='view']:checked + main > article > section
     vertical-align: top;
 }
 
-input[name='view']:checked + main > article > section.info
+input[name='view']:checked + main > article > .cat-info
+{
+    margin-left: -70px;
+}
+
+input[name='view']:checked + main > article > .info
 {
     margin-left: 10px;
-    width: 250px;
     margin-top: -30px;
+    white-space: normal;
+    overflow: auto;
+    width: auto;
 }
 
 input[name='view']:checked + main
@@ -165,7 +172,6 @@ input[name='view']:checked + main
 
 input[name='view']:checked + main > article > figure > figcaption > a
 {
-    margin-left: 500;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -174,7 +180,7 @@ input[name='view']:checked + main > article > figure > figcaption > a
 input[name='view']:checked + main > article
 {
     text-align: left;
-    width: 95%;
+    width: 90%;
     display: inline-block;
 }
 
