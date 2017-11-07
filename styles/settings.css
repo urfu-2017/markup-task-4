@@ -49,6 +49,11 @@
     margin: 20px auto;
 }
 
+.input-view-list:checked ~ main .cat__photo
+{
+    object-fit: scale-down;
+}
+
 .input-view-list:checked ~ main .cat__info,
 .input-view-list:checked ~ main .cat__photo-container
 {
