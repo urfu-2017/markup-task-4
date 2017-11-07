@@ -12,7 +12,7 @@
 }
 
 input[name='star'],
-input[name='forma']
+input[name='form']
 {
     display: none;
 }
@@ -47,7 +47,7 @@ main > .cat
     max-width: 400px;
 }
 
-img[class='cat_picture']:hover
+.cat_picture:hover
 {
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -56,19 +56,17 @@ img[class='cat_picture']:hover
     transform: rotate(360deg);
 }
 
-.cat > .cat_info > .name:hover
-{
-    font-size: 150%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #800080;
-}
-
+.name:hover,
 .name:hover a
 {
     font-size: 150%;
     color: #800080;
+}
 
+.name:hover
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .cat:hover
@@ -77,13 +75,13 @@ img[class='cat_picture']:hover
     background: rgb(231, 231, 231);
 }
 
-.cat .price
+.price
 {
     color: rgb(200, 0, 0);
     font-size: 20px;
 }
 
-.cat > .cat_info > .name
+.name
 {
     font-size: 150%;
     overflow: hidden;
@@ -96,7 +94,7 @@ img[class='cat_picture']:hover
     transform: scale(-1, -1);
 }
 
-.cat .cat_photo 
+.cat_photo 
 {
     position: relative;
     margin: 10px;
@@ -104,7 +102,7 @@ img[class='cat_picture']:hover
     width: 380px;
 }
 
-.cat > .cat_photo > img
+.cat_photo > img
 {
     position: absolute;
     bottom: 0;
@@ -173,25 +171,29 @@ main
     display: table-row;
 }
 
-.show_list:checked ~ main .cat > .cat_photo
+.show_list:checked ~ main .cat_photo
 {
+    height: auto;
+    float: left;
+    display: table-cell;
     width: 35%;
 }
 
-.show_list:checked ~ main .cat > .cat_info
+.show_list:checked ~ main .cat_info
 {
-    box-sizing: border-box;
+    vertical-align: top;
     display: table-cell;
     width: 65%;
 }
 
-.show_list:checked ~ main .cat > .cat_photo > img
+.show_list:checked ~ main .cat_photo > img
 {
+    width: auto;
     position: relative;
     vertical-align: top;
 }
 
-.show_list:checked ~ main .cat > .cat_info > .cat_type,
+.show_list:checked ~ main .cat_info > .cat_type,
 {
     margin-top: 20px;
 }
