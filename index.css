@@ -95,7 +95,7 @@ section:hover
 }
 
 .cat-stars:not(:hover) input:checked + label ~ label,
-label:hover ~ label
+main label:hover ~ label
 {
     opacity: .5;
 }
