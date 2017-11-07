@@ -1,9 +1,464 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>Задача «Мяндекс.Муррркет»</title>
+    <meta charset="UTF-8">
+    <link href="index.css" rel="stylesheet">
+    <title>Мяндекс.Муррркет</title>
 </head>
 <body>
+<header>
+    <h1>Интернет-магазин</h1>
+</header>
+<main>
+    <input id="list-view" class="list-view" type="checkbox">
+    <label for="list-view">Отобразить в виде списка</label>
+    <section class="items-container">
+        <h2>Смартфоны</h2>
+        <article class="item">
+            <div class="img-container">
+                <img
+                    src="images/samsung-galaxy-a5.jpg"
+                    title="Samsung Galaxy A5, White"
+                    alt="Samsung Galaxy A5, White">
+                </div>
+            <a href="#" class="item-name"
+               title="Samsung SM-A510F Galaxy A5, Whiteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee">
+            </a>
+            <div class="item-category">Смартфоны - Электротехника</div>
+            <fieldset class="item-rating">
+                <input type="radio" id="rating10-1" name="rating1" value="10">
+                <label for="rating10-1"></label>
+                <input type="radio" id="rating9-1" name="rating1" value="9">
+                <label class="half" for="rating9-1"></label>
+                <input type="radio" id="rating8-1" name="rating1" value="8" checked>
+                <label for="rating8-1"></label>
+                <input type="radio" id="rating7-1" name="rating1" value="7">
+                <label class="half" for="rating7-1"></label>
+                <input type="radio" id="rating6-1" name="rating1" value="6">
+                <label for="rating6-1"></label>
+                <input type="radio" id="rating5-1" name="rating1" value="5">
+                <label class="half" for="rating5-1"></label>
+                <input type="radio" id="rating4-1" name="rating1" value="4">
+                <label for="rating4-1"></label>
+                <input type="radio" id="rating3-1" name="rating1" value="3">
+                <label class="half" for="rating3-1"></label>
+                <input type="radio" id="rating2-1" name="rating1" value="2">
+                <label for="rating2-1"></label>
+                <input type="radio" id="rating1-1" name="rating1" value="1">
+                <label class="half" for="rating1-1"></label>
+                <input type="radio" id="rating0-1" name="rating1" value="0">
+                <label for="rating0-1"></label>
+            </fieldset>
+            <div class="item-price">21 990 &#8381;</div>
+            <div class="item-description">
+                <h3>Описание</h3>
+                <p>
+                    Samsung SM-A510F Galaxy A5 - стильный и мощный смартфон из стекла и металла,
+                    который сделает вашу жизнь комфортнее благодаря эргономичному дизайну, мощному
+                    аккумулятору, поддержке быстрой зарядки, усовершенствованной камере, улучшенному
+                    процессору и поддержке LTE
+                </p>
+            </div>
+        </article>
+        <article class="item">
+            <div class="img-container">
+                <img
+                    src="images/htc-one-a9.jpg"
+                    title="HTC One A9, Opal Silver"
+                    alt="HTC One A9, Opal Silver">
+            </div>
+            <a href="#" class="item-name" title="HTC One A9, Opal Silver"></a>
+            <div class="item-category">Смартфоны - Электротехника</div>
+            <fieldset class="item-rating">
+                <input type="radio" id="rating10-2" name="rating2" value="10">
+                <label for="rating10-2"></label>
+                <input type="radio" id="rating9-2" name="rating2" value="9">
+                <label class="half" for="rating9-2"></label>
+                <input type="radio" id="rating8-2" name="rating2" value="8">
+                <label for="rating8-2"></label>
+                <input type="radio" id="rating7-2" name="rating2" value="7" checked>
+                <label class="half" for="rating7-2"></label>
+                <input type="radio" id="rating6-2" name="rating2" value="6">
+                <label for="rating6-2"></label>
+                <input type="radio" id="rating5-2" name="rating2" value="5">
+                <label class="half" for="rating5-2"></label>
+                <input type="radio" id="rating4-2" name="rating2" value="4">
+                <label for="rating4-2"></label>
+                <input type="radio" id="rating3-2" name="rating2" value="3">
+                <label class="half" for="rating3-2"></label>
+                <input type="radio" id="rating2-2" name="rating2" value="2">
+                <label for="rating2-2"></label>
+                <input type="radio" id="rating1-2" name="rating2" value="1">
+                <label class="half" for="rating1-2"></label>
+                <input type="radio" id="rating0-2" name="rating2" value="0">
+                <label for="rating0-2"></label>
+            </fieldset>
+            <div class="item-price">28 685 &#8381; <span class="item-old-price">35 860 &#8381;</span></div>
+            <div class="item-description">
+                <h3>Описание</h3>
+                <p>
+                    HTC One A9 — это тонкий металлический корпус, элегантная отделка и лицевая сторона,
+                    полностью защищенная Corning Gorilla Glass. Смартфон представлен в нескольких потрясающих
+                    цветах.
+                </p>
+            </div>
+        </article>
+        <article class="item">
+            <div class="img-container">
+                <img
+                    src="images/sony-xperia-xa.jpg"
+                    title="Sony Xperia XA Ultra dual, White"
+                    height="250"
+                    alt="Sony Xperia XA Ultra dual, White">
+            </div>
+            <a href="#" class="item-name" title="Sony Xperia XA Ultra dual, White"></a>
+            <div class="item-category">Смартфоны - Электротехника</div>
+            <fieldset class="item-rating">
+                <input type="radio" id="rating10-3" name="rating3" value="10">
+                <label for="rating10-3"></label>
+                <input type="radio" id="rating9-3" name="rating3" value="9" checked>
+                <label class="half" for="rating9-3"></label>
+                <input type="radio" id="rating8-3" name="rating3" value="8">
+                <label for="rating8-3"></label>
+                <input type="radio" id="rating7-3" name="rating3" value="7">
+                <label class="half" for="rating7-3"></label>
+                <input type="radio" id="rating6-3" name="rating3" value="6">
+                <label for="rating6-3"></label>
+                <input type="radio" id="rating5-3" name="rating3" value="5">
+                <label class="half" for="rating5-3"></label>
+                <input type="radio" id="rating4-3" name="rating3" value="4">
+                <label for="rating4-3"></label>
+                <input type="radio" id="rating3-3" name="rating3" value="3">
+                <label class="half" for="rating3-3"></label>
+                <input type="radio" id="rating2-3" name="rating3" value="2">
+                <label for="rating2-3"></label>
+                <input type="radio" id="rating1-3" name="rating3" value="1">
+                <label class="half" for="rating1-3"></label>
+                <input type="radio" id="rating0-3" name="rating3" value="0">
+                <label for="rating0-3"></label>
+            </fieldset>
+            <div class="item-price">25 990 &#8381; <span class="item-old-price">27 000 &#8381;</span></div>
+            <div class="item-description">
+                <h3>Описание</h3>
+                <p>
+                    Смартфон — та вещь, которую вы всегда берете с собой. Поэтому Xperia XA Ultra dual
+                    спроектирован так, чтобы гармонично вписаться в вашу жизнь. Его дисплей занимает всю
+                    переднюю панель, края закруглены, а размер как раз такой, чтобы комфортно лежать в руке.
+                </p>
+            </div>
+        </article>
+        <article class="item">
+            <div class="img-container">
+                <img
+                    src="images/bq-aquaris-m5.jpg"
+                    title="BQ Aquaris M5 16+2GB, Black"
+                    alt="BQ Aquaris M5 16+2GB, Black">
+            </div>
+            <a href="#" class="item-name" title="BQ Aquaris M5 16+2GB, Black"></a>
+            <div class="item-category">Смартфоны - Электротехника</div>
+            <fieldset class="item-rating">
+                <input type="radio" id="rating10-4" name="rating4" value="10">
+                <label for="rating10-4"></label>
+                <input type="radio" id="rating9-4" name="rating4" value="9">
+                <label class="half" for="rating9-4"></label>
+                <input type="radio" id="rating8-4" name="rating4" value="8">
+                <label for="rating8-4"></label>
+                <input type="radio" id="rating7-4" name="rating4" value="7" checked>
+                <label class="half" for="rating7-4"></label>
+                <input type="radio" id="rating6-4" name="rating4" value="6">
+                <label for="rating6-4"></label>
+                <input type="radio" id="rating5-4" name="rating4" value="5">
+                <label class="half" for="rating5-4"></label>
+                <input type="radio" id="rating4-4" name="rating4" value="4">
+                <label for="rating4-4"></label>
+                <input type="radio" id="rating3-4" name="rating4" value="3">
+                <label class="half" for="rating3-4"></label>
+                <input type="radio" id="rating2-4" name="rating4" value="2">
+                <label for="rating2-4"></label>
+                <input type="radio" id="rating1-4" name="rating4" value="1">
+                <label class="half" for="rating1-4"></label>
+                <input type="radio" id="rating0-4" name="rating4" value="0">
+                <label for="rating0-4"></label>
+            </fieldset>
+            <div class="item-price">16 190 &#8381;</div>
+            <div class="item-description">
+                <h3>Описание</h3>
+                <p>
+                    Производительный смартфон BQ Aquaris M5 оснащен 8-ядерным процессором Qualcomm
+                    615 с частотой 1.5 ГГц. Он работает под управлением Android 5.1 Lollipop и поддерживает
+                    высокоскоростной стандарт сотовой связи 4G. Два слота для micro-SIM карт позволяют
+                    пользоваться услугами двух разных операторов мобильной связи.
+                </p>
+            </div>
+        </article>
+        <article class="item">
+            <div class="img-container">
+                <img
+                    src="images/zte-axon-mini.jpg"
+                    title="ZTE Axon Mini, Silver"
+                    alt="ZTE Axon Mini, Silver">
+            </div>
+            <a href="#" class="item-name" title="ZTE Axon Mini, Silver"></a>
+            <div class="item-category">Смартфоны - Электротехника</div>
+            <fieldset class="item-rating">
+                <input type="radio" id="rating10-5" name="rating5" value="10">
+                <label for="rating10-5"></label>
+                <input type="radio" id="rating9-5" name="rating5" value="9">
+                <label class="half" for="rating9-5"></label>
+                <input type="radio" id="rating8-5" name="rating5" value="8" checked>
+                <label for="rating8-5"></label>
+                <input type="radio" id="rating7-5" name="rating5" value="7">
+                <label class="half" for="rating7-5"></label>
+                <input type="radio" id="rating6-5" name="rating5" value="6">
+                <label for="rating6-5"></label>
+                <input type="radio" id="rating5-5" name="rating5" value="5">
+                <label class="half" for="rating5-5"></label>
+                <input type="radio" id="rating4-5" name="rating5" value="4">
+                <label for="rating4-5"></label>
+                <input type="radio" id="rating3-5" name="rating5" value="3">
+                <label class="half" for="rating3-5"></label>
+                <input type="radio" id="rating2-5" name="rating5" value="2">
+                <label for="rating2-5"></label>
+                <input type="radio" id="rating1-5" name="rating5" value="1">
+                <label class="half" for="rating1-5"></label>
+                <input type="radio" id="rating0-5" name="rating5" value="0">
+                <label for="rating0-5"></label>
+            </fieldset>
+            <div class="item-price">24 590 &#8381; <span class="item-old-price">26 090 &#8381;</span></div>
+            <div class="item-description">
+                <h3>Описание</h3>
+                <p>
+                    Защитить свой смартфон от несанкционированного доступа еще никогда не было так просто и
+                    надежно! ZTE Axon Mini обладает тремя способами биометрической идентификации – датчик
+                    отпечатка пальца, датчик распознавания голоса и датчик распознавания сетчатки глаза.
+                </p>
+            </div>
+        </article>
+        <article class="item">
+            <div class="img-container">
+                <img
+                    src="images/philips-xenium-v787.jpg"
+                    title="Philips Xenium V787, Black"
+                    alt="Philips Xenium V787, Black">
+            </div>
+            <a href="#" class="item-name" title="Philips Xenium V787, Black"></a>
+            <div class="item-category">Смартфоны - Электротехника</div>
+            <fieldset class="item-rating">
+                <input type="radio" id="rating10-6" name="rating6" value="10">
+                <label for="rating10-6"></label>
+                <input type="radio" id="rating9-6" name="rating6" value="9">
+                <label class="half" for="rating9-6"></label>
+                <input type="radio" id="rating8-6" name="rating6" value="8">
+                <label for="rating8-6"></label>
+                <input type="radio" id="rating7-6" name="rating6" value="7">
+                <label class="half" for="rating7-6"></label>
+                <input type="radio" id="rating6-6" name="rating6" value="6" checked>
+                <label for="rating6-6"></label>
+                <input type="radio" id="rating5-6" name="rating6" value="5">
+                <label class="half" for="rating5-6"></label>
+                <input type="radio" id="rating4-6" name="rating6" value="4">
+                <label for="rating4-6"></label>
+                <input type="radio" id="rating3-6" name="rating6" value="3">
+                <label class="half" for="rating3-6"></label>
+                <input type="radio" id="rating2-6" name="rating6" value="2">
+                <label for="rating2-6"></label>
+                <input type="radio" id="rating1-6" name="rating6" value="1">
+                <label class="half" for="rating1-6"></label>
+                <input type="radio" id="rating0-6" name="rating6" value="0">
+                <label for="rating0-6"></label>
+            </fieldset>
+            <div class="item-price">19 990 &#8381;</div>
+            <div class="item-description">
+                <h3>Описание</h3>
+                <p>
+                    Смартфон Philips Xenium V787 3-го поколения отличается долгим сроком работы в режиме
+                    ожидания. Устройство оснащено технологией SoftBlue, которая защищает зрение и обеспечивает
+                    превосходное яркое изображение, и 5-дюймовым экраном Full HD. Всегда оставайтесь на связи
+                    с родными и близкими.
+                </p>
+            </div>
+        </article>
+        <article class="item">
+            <div class="img-container">
+                <img
+                    src="images/asus-zenfone-2.jpg"
+                    title="Asus ZenFone 2 Laser ZE601KL, Silver"
+                    alt="Asus ZenFone 2 Laser ZE601KL, Silver">
+            </div>
+            <a href="#" class="item-name" title="Asus ZenFone 2 Laser ZE601KL"></a>
+            <div class="item-category">Смартфоны - Электротехника</div>
+            <fieldset class="item-rating">
+                <input type="radio" id="rating10-7" name="rating7" value="10" checked>
+                <label for="rating10-7"></label>
+                <input type="radio" id="rating9-7" name="rating7" value="9">
+                <label class="half" for="rating9-7"></label>
+                <input type="radio" id="rating8-7" name="rating7" value="8">
+                <label for="rating8-7"></label>
+                <input type="radio" id="rating7-7" name="rating7" value="7">
+                <label class="half" for="rating7-7"></label>
+                <input type="radio" id="rating6-7" name="rating7" value="6">
+                <label for="rating6-7"></label>
+                <input type="radio" id="rating5-7" name="rating7" value="5">
+                <label class="half" for="rating5-7"></label>
+                <input type="radio" id="rating4-7" name="rating7" value="4">
+                <label for="rating4-7"></label>
+                <input type="radio" id="rating3-7" name="rating7" value="3">
+                <label class="half" for="rating3-7"></label>
+                <input type="radio" id="rating2-7" name="rating7" value="2">
+                <label for="rating2-7"></label>
+                <input type="radio" id="rating1-7" name="rating7" value="1">
+                <label class="half" for="rating1-7"></label>
+                <input type="radio" id="rating0-7" name="rating7" value="0">
+                <label for="rating0-7"></label>
+            </fieldset>
+            <div class="item-price">21 090 &#8381; <span class="item-old-price">22 990 &#8381;</span></div>
+            <div class="item-description">
+                <h3>Описание</h3>
+                <p>
+                    Смартфон ZenFone 2 Laser (ZE601KL) выполнен в изящном корпусе, толщина боковых граней
+                    которого составляет всего 3,9 мм. Обладая эргономичной формой, он украшен традиционным для
+                    мобильных устройств ASUS узором из концентрических окружностей с углублениями размером
+                    лишь 0,13 мм.
+                </p>
+            </div>
+        </article>
+        <article class="item">
+            <div class="img-container">
+                <img
+                    src="images/highscreen-boost-3-pro.jpg"
+                    title="Highscreen Boost 3 Pro, Black"
+                    alt="Highscreen Boost 3 Pro, Black">
+            </div>
+            <a href="#" class="item-name" title="Highscreen Boost 3 Pro, Black"></a>
+            <div class="item-category">Смартфоны - Электротехника</div>
+            <fieldset class="item-rating">
+                <input type="radio" id="rating10-8" name="rating8" value="10">
+                <label for="rating10-8"></label>
+                <input type="radio" id="rating9-8" name="rating8" value="9">
+                <label class="half" for="rating9-8"></label>
+                <input type="radio" id="rating8-8" name="rating8" value="8">
+                <label for="rating8-8"></label>
+                <input type="radio" id="rating7-8" name="rating8" value="7">
+                <label class="half" for="rating7-8"></label>
+                <input type="radio" id="rating6-8" name="rating8" value="6" checked>
+                <label for="rating6-8"></label>
+                <input type="radio" id="rating5-8" name="rating8" value="5">
+                <label class="half" for="rating5-8"></label>
+                <input type="radio" id="rating4-8" name="rating8" value="4">
+                <label for="rating4-8"></label>
+                <input type="radio" id="rating3-8" name="rating8" value="3">
+                <label class="half" for="rating3-8"></label>
+                <input type="radio" id="rating2-8" name="rating8" value="2">
+                <label for="rating2-8"></label>
+                <input type="radio" id="rating1-8" name="rating8" value="1">
+                <label class="half" for="rating1-8"></label>
+                <input type="radio" id="rating0-8" name="rating8" value="0">
+                <label for="rating0-8"></label>
+            </fieldset>
+            <div class="item-price">17 090 &#8381; <span class="item-old-price">17 990 &#8381;</span></div>
+            <div class="item-description">
+                <h3>Описание</h3>
+                <p>
+                    Отечественная компания представляет улучшенную версию музыкального смартфона Boost 3.
+                    Новинка Highscreen Boost 3 Pro получила 3 ГБ оперативной памяти, что на 1 ГБ превышает
+                    показатели предыдущей модели. Это значительно увеличивает потенциал смартфона и
+                    существенно ускоряет работу устройства в условиях многозадачности.
+                </p>
+            </div>
+        </article>
+        <article class="item">
+            <div class="img-container">
+                <img
+                    src="images/lg-h961s.jpg"
+                    title="LG V10 H961S, Black"
+                    alt="LG V10 H961S, Black">
+            </div>
+            <a href="#" class="item-name" title="LG V10 H961S, Black Уцененный товар"></a>
+            <div class="item-category">Смартфоны - Электротехника</div>
+            <fieldset class="item-rating">
+                <input type="radio" id="rating10-9" name="rating9" value="10">
+                <label for="rating10-9"></label>
+                <input type="radio" id="rating9-9" name="rating9" value="9">
+                <label class="half" for="rating9-9"></label>
+                <input type="radio" id="rating8-9" name="rating9" value="8">
+                <label for="rating8-9"></label>
+                <input type="radio" id="rating7-9" name="rating9" value="7" checked>
+                <label class="half" for="rating7-9"></label>
+                <input type="radio" id="rating6-9" name="rating9" value="6">
+                <label for="rating6-9"></label>
+                <input type="radio" id="rating5-9" name="rating9" value="5">
+                <label class="half" for="rating5-9"></label>
+                <input type="radio" id="rating4-9" name="rating9" value="4">
+                <label for="rating4-9"></label>
+                <input type="radio" id="rating3-9" name="rating9" value="3">
+                <label class="half" for="rating3-9"></label>
+                <input type="radio" id="rating2-9" name="rating9" value="2">
+                <label for="rating2-9"></label>
+                <input type="radio" id="rating1-9" name="rating9" value="1">
+                <label class="half" for="rating1-9"></label>
+                <input type="radio" id="rating0-9" name="rating9" value="0">
+                <label for="rating0-9"></label>
+            </fieldset>
+            <div class="item-price">52 712 &#8381;</div>
+            <div class="item-description">
+                <h3>Описание</h3>
+                <p>
+                    Премиальный смартфон должен выглядеть именно так. Блестящий корпус из нержавеющей стали
+                    316L, которую обычно используют марки часов класса люкс, и прочное силиконовое покрытие
+                    создают уникальный облик и обеспечивают максимальную защиту от повреждений. Это
+                    идеальное сочетание дополняет дисплей IPS Quantum, передающий потрясающее богатство
+                    цветов и оттенков реалистичных изображений. LG V10 H961S превзойдет самые высокие
+                    ожидания и подарит вам действительно уникальный опыт.
+                </p>
+            </div>
+        </article>
+        <article class="item">
+            <div class="img-container">
+                <img
+                    src="images/ruggear-rg-500.jpg"
+                    title="RugGear RG 500 Swift Pro"
+                    alt="RugGear RG 500 Swift Pro">
+            </div>
+            <a href="#" class="item-name" title="RugGear RG 500 Swift Pro"></a>
+            <div class="item-category">Смартфоны - Электротехника</div>
+            <fieldset class="item-rating">
+                <input type="radio" id="rating10-10" name="rating10" value="10">
+                <label for="rating10-10"></label>
+                <input type="radio" id="rating9-10" name="rating10" value="9">
+                <label class="half" for="rating9-10"></label>
+                <input type="radio" id="rating8-10" name="rating10" value="8">
+                <label for="rating8-10"></label>
+                <input type="radio" id="rating7-10" name="rating10" value="7">
+                <label class="half" for="rating7-10"></label>
+                <input type="radio" id="rating6-10" name="rating10" value="6">
+                <label for="rating6-10"></label>
+                <input type="radio" id="rating5-10" name="rating10" value="5">
+                <label class="half" for="rating5-10"></label>
+                <input type="radio" id="rating4-10" name="rating10" value="4">
+                <label for="rating4-10"></label>
+                <input type="radio" id="rating3-10" name="rating10" value="3" checked>
+                <label class="half" for="rating3-10"></label>
+                <input type="radio" id="rating2-10" name="rating10" value="2">
+                <label for="rating2-10"></label>
+                <input type="radio" id="rating1-10" name="rating10" value="1">
+                <label class="half" for="rating1-10"></label>
+                <input type="radio" id="rating0-10" name="rating10" value="0">
+                <label for="rating0-10"></label>
+            </fieldset>
+            <div class="item-price">14 990 &#8381; <span class="item-old-price">15 990 &#8381;</span></div>
+            <div class="item-description">
+                <h3>Описание</h3>
+                <p>
+                    Первоклассный сверхзащищенный смартфон RG500 Swift Pro создан для тех, кто не хочет делать
+                    выбор между компактностью, надежностью и мощной «начинкой». Мужественный противоударный
+                    корпус выполнен из прочного пластика и усилен прорезиненным вставками. При этом смартфон
+                    легко умещается в ладони и весит всего 206 граммов. RG500 защищен по международным
+                    стандартам IP-68 от влаги и микрочастиц, гарантирующие безопасное погружение смартфона
+                    на глубину более 1 метра и 100% защиты от вибрации, грязи, пыли и микрочастиц.
+                </p>
+            </div>
+        </article>
+    </section>
+</main>
 </body>
 </html>

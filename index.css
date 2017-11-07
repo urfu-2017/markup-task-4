@@ -1,0 +1,146 @@
+/* Base setup */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+.list-view:checked ~ .items-container .item
+{
+    display: block;
+    width: 90%;
+    height: auto;
+    min-height: 300px;
+    margin: 0;
+}
+
+.list-view:checked ~ .items-container .img-container
+{
+    float: left;
+    width: 200px;
+}
+
+.list-view:checked ~ .items-container .item img
+{
+    height: 200px;
+}
+
+.item
+{
+    width: 300px;
+    height: 600px;
+    display: inline-block;
+    margin: 20px;
+    font-size: 15px;
+}
+
+.item:hover .item-description
+{
+    font: 1.1em 'Bookman Old Style', serif;
+}
+
+.item-name
+{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+}
+
+.item-name:after
+{
+    content: attr(title);
+}
+
+.item-name:hover
+{
+    color: #f00;
+}
+
+.item-category:hover
+{
+    text-decoration: underline;
+}
+
+.item img
+{
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.item img:hover
+{
+    opacity: .7;
+}
+
+.item-description
+{
+    display: table;
+}
+
+.item-price
+{
+    color: #f00;
+}
+
+.item-old-price
+{
+    text-decoration: line-through;
+    color: #000;
+}
+
+h1,
+h2
+{
+    text-align: center;
+}
+
+.item-rating
+{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.item-rating > input
+{
+    display: none;
+}
+
+.item-rating > label
+{
+    float: right;
+}
+
+.item-rating > label:before
+{
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: '\f005';
+}
+
+.item-rating > label:last-child:before
+{
+    content: '\f006 ';
+}
+
+.item-rating .half:before
+{
+    content: '\f089 ';
+    position: absolute;
+}
+
+input:checked ~ label,
+label:hover,
+label:hover ~ label 
+{
+    color: #ffd500;
+}
+
+input:checked + label:hover,
+input:checked ~ label:hover,
+input:checked ~ label:hover ~ label,
+label:hover ~ input:checked ~ label
+{
+    color: #fe0;
+}
