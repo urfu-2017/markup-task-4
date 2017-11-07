@@ -1,0 +1,151 @@
+.cat
+{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 10px;
+}
+
+[href*='yandex']
+{
+    color: #eb736b;
+}
+
+.name
+{
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 200px;
+    white-space: nowrap;
+}
+
+input[id='line']:checked ~ .container .name
+{
+    white-space: normal;
+}
+
+.type
+{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.price
+{
+    font-size: 25px;
+    color: #ffd700;
+}
+
+input[id='line']:checked ~ .container .cat
+{
+    padding-top: 20px;
+    width: 100%;
+}
+
+input[id='line']:checked ~ .container .middle,
+input[id='line']:checked ~ .container .description
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    max-height: 100%;
+}
+
+input[id='line']:checked ~ .container .img
+{
+    display: inline-block;
+    width: 33%;
+}
+
+.img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img
+{
+    display: inline-block;
+    height: 200px;
+    max-width: 100%;
+}
+
+img:hover
+{
+    transform: scale(1.6);
+}
+
+.container
+{
+    margin: 40px;
+}
+
+.centr
+{
+    font-size: 30px;
+    text-align: center;
+    color: #86f4;
+}
+
+.older-price
+{
+    color: #f00;
+    text-decoration: line-through;
+}
+
+.description
+{
+    text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em #00000080;
+    color: #f8ec3e;
+}
+
+body
+{
+    background: linear-gradient(45deg, #b7deed 0%,#3764bd 28%,
+    #a848f2 60%,#b7deed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed',
+    endColorstr='#b7deed',GradientType=1 );
+}
+
+.rating label
+{
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+}
+
+input[name*='rating']
+{
+    display: none;
+}
+
+.rating
+{
+    font-size: 0;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.rating label:nth-of-type(2n+1)
+{
+    background: url(cat1.png);
+    margin-right: 0;
+}
+
+.rating label:nth-of-type(2n)
+{
+    background: url(cat2.png);
+}
+
+.rating:not(:hover) input:checked ~ label:nth-of-type(2n+1),
+.rating label:hover ~ label:nth-of-type(2n+1)
+{
+    background: url(cat12.png);
+}
+
+.rating:not(:hover) input:checked ~ label:nth-of-type(2n),
+.rating label:hover ~ label:nth-of-type(2n)
+{
+    background: url(cat22.png);
+}
