@@ -2,8 +2,295 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./index.css">
     <title>Задача «Мяндекс.Муррркет»</title>
 </head>
 <body>
+    <input type="radio" name="show-type" id="show-blocks">
+    <label for="show-blocks">Плиткой</label>
+    <input type="radio" name="show-type" id="show-list" checked>
+    <label for="show-list">Списком</label>
+    <main>
+        <section>
+            <div class="cat-card-item photo-block">
+                <img class="cat-photo" src="./images/cat1.jpg" alt="Рыська">
+            </div>
+            <div class="cat-card-item cat-info">
+                <div class="cat-name"><a href="#">Рыська</a></div>
+                <a class="cat-category" href="#">Дикие коты</a>
+                <div class="cat-stars">
+                    <input type="radio" name="stars1" class="left-half-star" id="left-1-1">
+                    <label for="left-1-1"></label>
+                    <input type="radio" name="stars1" class="right-half-star" id="right-1-1">
+                    <label for="right-1-1"></label>
+                    <input type="radio" name="stars1" class="left-half-star" id="left-1-2">
+                    <label for="left-1-2"></label>
+                    <input type="radio" name="stars1" class="right-half-star" id="right-1-2">
+                    <label for="right-1-2"></label>
+                    <input type="radio" name="stars1" class="left-half-star" id="left-1-3">
+                    <label for="left-1-3"></label>
+                    <input type="radio" name="stars1" class="right-half-star" id="right-1-3">
+                    <label for="right-1-3"></label>
+                    <input type="radio" name="stars1" class="left-half-star" id="left-1-4">
+                    <label for="left-1-4"></label>
+                    <input type="radio" name="stars1" class="right-half-star" id="right-1-4">
+                    <label for="right-1-4"></label>
+                    <input type="radio" name="stars1" class="left-half-star" id="left-1-5">
+                    <label for="left-1-5"></label>
+                    <input type="radio" name="stars1" class="right-half-star" id="right-1-5">
+                    <label for="right-1-5"></label>
+                </div>
+                <div class="cat-card-item cat-price">10 000 р.</div> <div class="old-price">500 000 р.</div>
+            </div>
+            <div class="cat-card-item cat-description">
+                Прикольный кот, похож на рысь. Только чего-то он грустный.
+            </div>
+        </section>
+        <section>
+            <div class="cat-card-item photo-block">
+                <img class="cat-photo" src="./images/cat2.jpg" alt="Петя">
+            </div>
+            <div class="cat-card-item cat-info">
+                <div class="cat-name"><a href="#">Петя</a></div>
+                <a class="cat-category" href="#">Домашние коты</a>
+                <div class="cat-stars">
+                    <input type="radio" name="stars2" class="left-half-star" id="left-2-1">
+                    <label for="left-2-1"></label>
+                    <input type="radio" name="stars2" class="right-half-star" id="right-2-1">
+                    <label for="right-2-1"></label>
+                    <input type="radio" name="stars2" class="left-half-star" id="left-2-2">
+                    <label for="left-2-2"></label>
+                    <input type="radio" name="stars2" class="right-half-star" id="right-2-2">
+                    <label for="right-2-2"></label>
+                    <input type="radio" name="stars2" class="left-half-star" id="left-2-3">
+                    <label for="left-2-3"></label>
+                    <input type="radio" name="stars2" class="right-half-star" id="right-2-3" checked>
+                    <label for="right-2-3"></label>
+                    <input type="radio" name="stars2" class="left-half-star" id="left-2-4">
+                    <label for="left-2-4"></label>
+                    <input type="radio" name="stars2" class="right-half-star" id="right-2-4">
+                    <label for="right-2-4"></label>
+                    <input type="radio" name="stars2" class="left-half-star" id="left-2-5">
+                    <label for="left-2-5"></label>
+                    <input type="radio" name="stars2" class="right-half-star" id="right-2-5">
+                    <label for="right-2-5"></label>
+                </div>
+                <div class="cat-card-item cat-price">20 000 р.</div>
+            </div>
+            <div class="cat-card-item cat-description">
+                Загадочный котёнок, кажется, что он хочет что-то украсть.
+            </div>
+        </section>
+        <section>
+                <div class="cat-card-item photo-block">
+                    <img class="cat-photo" src="./images/cat3.jpg" alt="Кот с длинным именем на траве">
+                </div>
+                <div class="cat-card-item cat-info">
+                    <div class="cat-name"><a href="#">Кот с длинным именем на траве</a></div>
+                    <a class="cat-category" href="#">Дикие коты</a>
+                    <div class="cat-stars">
+                        <input type="radio" name="stars3" class="left-half-star" id="left-3-1">
+                        <label for="left-3-1"></label>
+                        <input type="radio" name="stars3" class="right-half-star" id="right-3-1">
+                        <label for="right-3-1"></label>
+                        <input type="radio" name="stars3" class="left-half-star" id="left-3-2">
+                        <label for="left-3-2"></label>
+                        <input type="radio" name="stars3" class="right-half-star" id="right-3-2">
+                        <label for="right-3-2"></label>
+                        <input type="radio" name="stars3" class="left-half-star" id="left-3-3">
+                        <label for="left-3-3"></label>
+                        <input type="radio" name="stars3" class="right-half-star" id="right-3-3">
+                        <label for="right-3-3"></label>
+                        <input type="radio" name="stars3" class="left-half-star" id="left-3-4">
+                        <label for="left-3-4"></label>
+                        <input type="radio" name="stars3" class="right-half-star" id="right-3-4">
+                        <label for="right-3-4"></label>
+                        <input type="radio" name="stars3" class="left-half-star" id="left-3-5">
+                        <label for="left-3-5"></label>
+                        <input type="radio" name="stars3" class="right-half-star" id="right-3-5">
+                        <label for="right-3-5"></label>
+                    </div>
+                    <div class="cat-card-item cat-price">1500 р.</div>
+                </div>
+                <div class="cat-card-item cat-description">
+                    Кот на траве.
+                </div>
+        </section>
+        <section>
+            <div class="cat-card-item photo-block">
+                <img class="cat-photo" src="./images/cat4.jpg" alt="Дегай">
+            </div>
+            <div class="cat-card-item cat-info">
+                <div class="cat-name"><a href="#">Дегай</a></div>
+                <a class="cat-category" href="#">Домашние коты</a>
+                <div class="cat-stars">
+                    <input type="radio" name="stars4" class="left-half-star" id="left-4-1">
+                    <label for="left-4-1"></label>
+                    <input type="radio" name="stars4" class="right-half-star" id="right-4-1">
+                    <label for="right-4-1"></label>
+                    <input type="radio" name="stars4" class="left-half-star" id="left-4-2">
+                    <label for="left-4-2"></label>
+                    <input type="radio" name="stars4" class="right-half-star" id="right-4-2">
+                    <label for="right-4-2"></label>
+                    <input type="radio" name="stars4" class="left-half-star" id="left-4-3">
+                    <label for="left-4-3"></label>
+                    <input type="radio" name="stars4" class="right-half-star" id="right-4-3">
+                    <label for="right-4-3"></label>
+                    <input type="radio" name="stars4" class="left-half-star" id="left-4-4">
+                    <label for="left-4-4"></label>
+                    <input type="radio" name="stars4" class="right-half-star" id="right-4-4">
+                    <label for="right-4-4"></label>
+                    <input type="radio" name="stars4" class="left-half-star" id="left-4-5">
+                    <label for="left-4-5"></label>
+                    <input type="radio" name="stars4" class="right-half-star" id="right-4-5">
+                    <label for="right-4-5"></label>
+                </div>
+                <div class="cat-card-item cat-price">13 000 р.</div>
+            </div>
+            <div class="cat-card-item cat-description">
+                Кот с голубыми глазами на кровати.
+            </div>
+        </section>
+        <section>
+            <div class="cat-card-item photo-block">
+                <img class="cat-photo" src="./images/cat5.jpg" alt="Крэд">
+            </div>
+            <div class="cat-card-item cat-info">
+                <div class="cat-name"><a href="#">Крэд</a></div>
+                <a class="cat-category" href="#">Домашние коты</a>
+                <div class="cat-stars">
+                    <input type="radio" name="stars5" class="left-half-star" id="left-5-1">
+                    <label for="left-5-1"></label>
+                    <input type="radio" name="stars5" class="right-half-star" id="right-5-1">
+                    <label for="right-5-1"></label>
+                    <input type="radio" name="stars5" class="left-half-star" id="left-5-2">
+                    <label for="left-5-2"></label>
+                    <input type="radio" name="stars5" class="right-half-star" id="right-5-2">
+                    <label for="right-5-2"></label>
+                    <input type="radio" name="stars5" class="left-half-star" id="left-5-3">
+                    <label for="left-5-3"></label>
+                    <input type="radio" name="stars5" class="right-half-star" id="right-5-3">
+                    <label for="right-5-3"></label>
+                    <input type="radio" name="stars5" class="left-half-star" id="left-5-4">
+                    <label for="left-5-4"></label>
+                    <input type="radio" name="stars5" class="right-half-star" id="right-5-4">
+                    <label for="right-5-4"></label>
+                    <input type="radio" name="stars5" class="left-half-star" id="left-5-5">
+                    <label for="left-5-5"></label>
+                    <input type="radio" name="stars5" class="right-half-star" id="right-5-5">
+                    <label for="right-5-5"></label>
+                </div>
+                <div class="cat-card-item cat-price">1500 р.</div>
+            </div>
+            <div class="cat-card-item cat-description">
+                Серьезный кот, у которого много шерсти.
+            </div>
+        </section>
+        <section>
+            <div class="cat-card-item photo-block">
+                <img class="cat-photo" src="./images/cat6.jpg" alt="Некк">
+            </div>
+            <div class="cat-card-item cat-info">
+                <div class="cat-name"><a href="#">Некк</a></div>
+                <a class="cat-category" href="#">Домашние коты</a>
+                <div class="cat-stars">
+                    <input type="radio" name="stars6" class="left-half-star" id="left-6-1">
+                    <label for="left-6-1"></label>
+                    <input type="radio" name="stars6" class="right-half-star" id="right-6-1">
+                    <label for="right-6-1"></label>
+                    <input type="radio" name="stars6" class="left-half-star" id="left-6-2">
+                    <label for="left-6-2"></label>
+                    <input type="radio" name="stars6" class="right-half-star" id="right-6-2">
+                    <label for="right-6-2"></label>
+                    <input type="radio" name="stars6" class="left-half-star" id="left-6-3">
+                    <label for="left-6-3"></label>
+                    <input type="radio" name="stars6" class="right-half-star" id="right-6-3">
+                    <label for="right-6-3"></label>
+                    <input type="radio" name="stars6" class="left-half-star" id="left-6-4">
+                    <label for="left-6-4"></label>
+                    <input type="radio" name="stars6" class="right-half-star" id="right-6-4">
+                    <label for="right-6-4"></label>
+                    <input type="radio" name="stars6" class="left-half-star" id="left-6-5">
+                    <label for="left-6-5"></label>
+                    <input type="radio" name="stars6" class="right-half-star" id="right-6-5">
+                    <label for="right-6-5"></label>
+                </div>
+                <div class="cat-card-item cat-price">1 000 р.</div>
+            </div>
+            <div class="cat-card-item cat-description">
+                У этого тоже много шерсти, зачем-то смотрит вверх, наверное там еда.
+            </div>
+        </section>
+        <section>
+            <div class="cat-card-item photo-block">
+                <img class="cat-photo" src="./images/cat7.jpg" alt="Рий">
+            </div>
+            <div class="cat-card-item cat-info">
+                <div class="cat-name"><a href="#">Рий</a></div>
+                <a class="cat-category" href="#">Домашние коты</a>
+                <div class="cat-stars">
+                    <input type="radio" name="stars7" class="left-half-star" id="left-7-1">
+                    <label for="left-7-1"></label>
+                    <input type="radio" name="stars7" class="right-half-star" id="right-7-1">
+                    <label for="right-7-1"></label>
+                    <input type="radio" name="stars7" class="left-half-star" id="left-7-2">
+                    <label for="left-7-2"></label>
+                    <input type="radio" name="stars7" class="right-half-star" id="right-7-2">
+                    <label for="right-7-2"></label>
+                    <input type="radio" name="stars7" class="left-half-star" id="left-7-3">
+                    <label for="left-7-3"></label>
+                    <input type="radio" name="stars7" class="right-half-star" id="right-7-3">
+                    <label for="right-7-3"></label>
+                    <input type="radio" name="stars7" class="left-half-star" id="left-7-4">
+                    <label for="left-7-4"></label>
+                    <input type="radio" name="stars7" class="right-half-star" id="right-7-4">
+                    <label for="right-7-4"></label>
+                    <input type="radio" name="stars7" class="left-half-star" id="left-7-5">
+                    <label for="left-7-5"></label>
+                    <input type="radio" name="stars7" class="right-half-star" id="right-7-5">
+                    <label for="right-7-5"></label>
+                </div>
+                <div class="cat-card-item cat-price">35 000 р.</div>
+            </div>
+            <div class="cat-card-item cat-description">
+                Кошка с разноцветными глазами! Невероятно!
+            </div>
+        </section>
+        <section>
+            <div class="cat-card-item photo-block">
+                <img class="cat-photo" src="./images/cat8.jpg" alt="Суран">
+            </div>
+            <div class="cat-card-item cat-info">
+                <div class="cat-name"><a href="#">Суран</a></div>
+                <a class="cat-category" href="#">Домашние коты</a>
+                <div class="cat-stars">
+                    <input type="radio" name="stars8" class="left-half-star" id="left-8-1">
+                    <label for="left-8-1"></label>
+                    <input type="radio" name="stars8" class="right-half-star" id="right-8-1">
+                    <label for="right-8-1"></label>
+                    <input type="radio" name="stars8" class="left-half-star" id="left-8-2">
+                    <label for="left-8-2"></label>
+                    <input type="radio" name="stars8" class="right-half-star" id="right-8-2">
+                    <label for="right-8-2"></label>
+                    <input type="radio" name="stars8" class="left-half-star" id="left-8-3">
+                    <label for="left-8-3"></label>
+                    <input type="radio" name="stars8" class="right-half-star" id="right-8-3">
+                    <label for="right-8-3"></label>
+                    <input type="radio" name="stars8" class="left-half-star" id="left-8-4">
+                    <label for="left-8-4"></label>
+                    <input type="radio" name="stars8" class="right-half-star" id="right-8-4">
+                    <label for="right-8-4"></label>
+                    <input type="radio" name="stars8" class="left-half-star" id="left-8-5">
+                    <label for="left-8-5"></label>
+                    <input type="radio" name="stars8" class="right-half-star" id="right-8-5">
+                    <label for="right-8-5"></label>
+                </div>
+                <div class="cat-card-item cat-price">99 000 р.</div>
+            </div>
+            <div class="cat-card-item cat-description">
+                Крайне богатый кот
+            </div>
+        </section>
+    </main>
 </body>
 </html>

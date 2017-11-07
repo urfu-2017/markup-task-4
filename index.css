@@ -1,0 +1,136 @@
+section
+{
+    width: 250px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#show-list:checked ~ main
+{
+    width: 70%;
+    margin: auto;
+}
+
+#show-list:checked ~ main .cat-photo
+{
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#show-list:checked ~ main .photo-block
+{
+    height: 100%;
+    padding: 10px;
+}
+
+#show-list:checked ~ main section
+{
+    width: 100%;
+    padding: 20px;
+}
+
+#show-list:checked ~ main .cat-card-item
+{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.photo-block
+{
+    height: 300px;
+    position: relative;
+}
+
+.cat-photo
+{
+    position: absolute;
+    max-height: 95%;
+    max-width: 95%;
+    bottom: 5px;
+}
+
+.cat-photo:hover
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+section:hover
+{
+    box-shadow: 0 0 30px;
+}
+
+.cat-stars
+{
+    font-size: 0;
+}
+
+.cat-stars input
+{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cat-stars label
+{
+    width: 16px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.cat-stars label:nth-last-of-type(2n)
+{
+    background-image: url('./images/left-full.png');
+}
+
+.cat-stars label:nth-last-of-type(2n + 1)
+{
+    background-image: url('./images/right-full.png');
+}
+
+.cat-stars:not(:hover) input:checked + label ~ label,
+main label:hover ~ label
+{
+    opacity: .5;
+}
+
+.cat-name
+{
+    font-size: 1.4em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat-category
+{
+    font-size: .75em;
+    color: gray;
+}
+
+.cat-price
+{
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: darkred;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.old-price
+{
+    display: inline-block;
+    text-decoration: line-through;
+}
+
+.cat-description
+{
+    font-size: .9em;
+}
