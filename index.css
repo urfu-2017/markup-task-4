@@ -2,6 +2,7 @@ body
 {
     font-family: Arial, sans-serif;
     max-width: 1800px;
+    text-align: center;
 }
 
 main
@@ -72,9 +73,12 @@ img
     width: 100%;
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
-img:hover
+main > section:hover img
 {
     border-radius: 70%;
 }
@@ -84,6 +88,7 @@ img:hover
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: left;
 }
 
 .name a
@@ -107,6 +112,7 @@ img:hover
     font-size: medium;
     color: #a9a9a9;
     opacity: .7;
+    text-align: left;
 }
 
 .category:hover
@@ -133,6 +139,11 @@ img:hover
 {
     text-decoration: line-through;
     color: #808080;
+}
+
+.description
+{
+    text-align: justify;
 }
 
 label
