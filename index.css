@@ -12,7 +12,11 @@ section
 
 img:hover
 {
+    -webkit-transition-duration: .7s;
+    -o-transition-duration: .7s;
     transition-duration: .7s;
+    -webkit-transform: translateY(-5%) scale(1.1);
+    -ms-transform: translateY(-5%) scale(1.1);
     transform: translateY(-5%) scale(1.1);
 }
 
@@ -24,6 +28,7 @@ label.list::before
 
 input.list:checked ~ main header
 {
+    display: inline-block;
     width: 300px;
 }
 
@@ -46,10 +51,8 @@ footer
 input.list:checked ~ main footer
 {
     word-wrap: break-word;
-    max-width: 33%;
-    float: right;
     padding-top: 10px;
-    display: block;
+    display: inline-block;
 }
 
 input.list:checked ~ main section
@@ -73,6 +76,7 @@ label.bar::before
 
 input.bar:checked ~ main section
 {
+    -webkit-box-shadow: 2px 2px 5px #888;
     box-shadow: 2px 2px 5px #888;
     vertical-align: top;
     height: inherit;
@@ -127,6 +131,7 @@ footer
 {
     display: block;
     overflow: hidden;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
 }
 
@@ -139,16 +144,25 @@ footer
 
 .bar:checked ~ main section:hover
 {
+    -webkit-transition-duration: .7s;
+    -o-transition-duration: .7s;
     transition-duration: .7s;
+    -webkit-transform: translateY(-10%) scale(1.1);
+    -ms-transform: translateY(-10%) scale(1.1);
     transform: translateY(-10%) scale(1.1);
 }
 
 input.list:checked ~ main section:hover
 {
     border: 3px solid #ff0;
+    -webkit-box-shadow: 0 0 5px 5px #ddd;
     box-shadow: 0 0 5px 5px #ddd;
     text-shadow: 1px 1px 2px;
+    -webkit-transition-duration: .5s;
+    -o-transition-duration: .5s;
     transition-duration: .5s;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
     transform: translateY(30px);
     padding-bottom: 30px;
 }
@@ -188,4 +202,3 @@ img
     text-align: center;
     height: 250px;
 }
-
