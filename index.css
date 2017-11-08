@@ -1,0 +1,193 @@
+body,
+.market_title
+{
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    width: 100%;
+    color: #613c28;
+    margin-bottom: 10px;
+}
+
+.market_title
+{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.market_card
+{
+    width: 250px;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    font: 16px Arial serif;
+    margin: 10px 0 0 10px;
+}
+
+.market_card a
+{
+    color: #613c28;
+    text-decoration: none;
+}
+
+.market_card:hover
+{
+    box-shadow: 0 0 10px;
+}
+
+.image_wrapper
+{
+    float: left;
+    width: 100%;
+    position: relative;
+    height: 250px;
+}
+
+.market_card_img
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.market_photo_card:hover
+{
+    filter: opacity(85%);
+    -webkit-filter: opacity(85%);
+}
+
+.cat_name:hover
+{
+    filter: none;
+    -webkit-filter: none;
+}
+
+.market_photo_card,
+.market_information_card,
+.market_description_card
+{
+    position: relative;
+}
+
+.cat_name
+{
+    padding: 5px 10px;
+    font: bold 25px serif;
+    margin: 0;
+    width: 100%;
+}
+
+.cat_breed
+{
+    font: italic 15px serif;
+    padding: 0 0 3px 10px;
+}
+
+.cat_name,
+.cat_breed
+{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price
+{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.old_price
+{
+    font-size: 14px;
+}
+
+.rating
+{
+    border: none;
+}
+
+.rating_input
+{
+    display: none;
+}
+
+.rating_label:before
+{
+    font-size: 24px;
+    font-family: FontAwesome;
+    content: '\f005';
+}
+
+.half_star:before
+{
+    content: '\f089';
+    position: absolute;
+    left: 4px;
+}
+
+.half_star:last-child
+{
+    left: -4px;
+}
+
+.rating_label
+{
+    color: #ccc;
+    unicode-bidi: embed;
+    direction: rtl;
+    position: relative;
+}
+
+.text_market_card
+{
+    padding: 0 10px;
+}
+
+.rating_input:checked ~ .rating_label,
+.rating:not(:checked) .rating_label:hover,
+.rating:not(:checked) .rating_label:hover ~ .rating_label
+{
+    color: #946b54;
+}
+
+.list:checked ~ .market_card
+{
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    margin-bottom: 20px;
+}
+
+.list:checked ~ .market_card .market_photo_card,
+.list:checked ~ .market_card .market_information_card,
+.list:checked ~ .market_card .market_description_card
+{
+    width: 300px;
+    margin-left: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.list:checked ~ .market_card .market_information_card
+{
+    margin-top: 50px;
+}
+
+.list:checked ~ .market_card .market_card_img
+{
+    top: 10px;
+}
+
+.list:checked ~ .market_card .cat_name
+{
+    position: absolute;
+    left: 100%;
+    margin-left: 40px;
+    margin-top: 10px;
+}
