@@ -1,0 +1,174 @@
+img
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.element
+{
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2px;
+    background: rgba(255, 250, 240, .6);
+    transition: all .25s ease 0s;
+}
+
+.imgHolder
+{
+    position: relative;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+
+body
+{
+    background: url(img/background.jpg);
+    color: rgb(75, 75, 75);
+}
+
+.name
+{
+    font: normal 18px sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price
+{
+    font: normal 18px sans-serif;
+}
+
+.price::after
+{
+    content: ' руб.';
+}
+
+.category
+{
+    text-decoration: underline;
+}
+
+.category:before
+{
+    content: '/';
+}
+
+.name,
+.price,
+.category
+{
+    margin-bottom: 10px;
+}
+
+.element:hover
+{
+    background: rgb(255, 250, 240);
+    box-shadow: 3px 3px 10px rgba(0,0,0,.5);
+}
+
+.element:hover .name
+{
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+
+}
+
+.viewType:checked ~ .container .element
+{
+    display: block;
+    margin: 15px auto;
+    width: 85%;
+    height: 350px;
+    padding-top: 30px;
+}
+
+.viewType:checked ~ .container .element .imgHolder
+{
+    display: block;
+    float: left;
+    width: 200px;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.viewType:checked ~ .container .element .imgHolder img
+{
+    position: static;
+}
+
+.viewType:checked ~ .container .element .shortDesc,
+.viewType:checked ~ .container .element .fullDesc
+{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.viewType:checked ~ .container .element .shortDesc
+{
+    width: 300px;
+    height: 100%;
+    margin-right: 50px;
+    vertical-align: top;
+}
+
+.viewType:checked ~ .container .element .shortDesc .mark
+{
+    text-align: left;
+}
+
+.mark input
+{
+    display: none;
+}
+
+.mark
+{
+    font-size: 0;
+    direction: rtl;
+}
+
+.mark label
+{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    opacity: .15;
+}
+
+.mark .half
+{
+    background: url(img/rigth.png) no-repeat;
+    background-size: contain;
+}
+
+.mark .full
+{
+    background: url(img/left.png) no-repeat;
+    background-size: contain;
+}
+
+.mark label:hover ~ label,
+.mark label:hover,
+.mark input:checked ~ label
+{
+    opacity: 1;
+}
+
+.name:hover,
+.imgHolder:hover
+{
+    cursor: pointer;
+}
