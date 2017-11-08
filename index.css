@@ -1,0 +1,168 @@
+div
+{
+    text-align: center;
+}
+
+.tile
+{
+    display: inline-block;
+    width: 380px;
+    vertical-align: top;
+    margin: 20px;
+}
+
+.tile:hover
+{
+    border: dotted 4px #1022ff;
+}
+
+.image
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.image_container .image:hover
+{
+    box-shadow: 0 0 20px #000;
+}
+
+.image_container
+{
+    position: relative;
+    height: 320px;
+}
+
+.name
+{
+    font-size: 24px;
+    margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+}
+
+.category:hover
+{
+    color: #8064ff;
+    text-decoration: underline;
+}
+
+.price
+{
+    margin: 10px;
+}
+
+.curr_price
+{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff010f;
+}
+
+.old_price
+{
+    font-size: 18px;
+    color: #bdff00;
+    text-decoration: line-through;
+}
+
+.curr_price:after
+{
+    content: 'руб.';
+}
+
+.old_price:after
+{
+    content: 'руб.';
+}
+
+a
+{
+    color: #1022ff;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: #1022ff;
+}
+
+a:active
+{
+    color: #ff010f;
+    font-size: 25px;
+}
+
+a:hover
+{
+    color: #ff010f;
+    font-size: 25px;
+}
+
+input:checked ~ .tile
+{
+    min-width: 800px;
+    display: block;
+    width: 99%;
+    margin: 10px;
+}
+
+input:checked ~ .tile > .parts
+{
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    width: 33%;
+}
+
+input:checked ~ .tile > div > .image
+{
+    position: relative;
+}
+
+.rating
+{
+    margin: 0 auto;
+    width: 175px;
+    height: 35px;
+}
+
+.rating > input
+{
+    display: none;
+}
+
+.rating > label
+{
+    display: inline-block;
+    height: 35px;
+    width: 17px;
+    float: right;
+    opacity: .3;
+    cursor: pointer;
+}
+
+.rating > label.left_star
+{
+    background: url('img/left_star.png');
+}
+
+.rating > label.right_star
+{
+    background: url('img/right_star.png');
+}
+
+.rating input:checked ~ label
+{
+    opacity: 1;
+}
+
+.rating label:hover,
+.rating label:hover ~ label
+{
+    box-shadow: 0 0 10px #bfff00;
+    opacity: 1;
+}
