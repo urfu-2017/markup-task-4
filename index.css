@@ -211,7 +211,7 @@ img:hover
 .cat-card__price::after,
 .cat-card__old-price::after
 {
-    content: "\20BD";
+    content: '\20BD';
 }
 
 .cat-card__old-price
