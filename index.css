@@ -8,7 +8,6 @@ img
     max-height: 100%;
     margin: auto;
     border-radius: 5px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,.5);
 }
 
 .element
@@ -19,8 +18,8 @@ img
     padding: 10px;
     margin: 10px;
     border-radius: 2px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,.5);
     background: rgba(255, 250, 240, .6);
+    transition: all .25s ease 0s;
 }
 
 .imgHolder
@@ -75,10 +74,8 @@ body
 
 .element:hover
 {
-    padding: 5px;
-    cursor: pointer;
-    transform: scale(1.1,1.1);
     background: rgb(255, 250, 240);
+    box-shadow: 3px 3px 10px rgba(0,0,0,.5);
 }
 
 .element:hover .name
@@ -168,4 +165,10 @@ body
 .mark input:checked ~ label
 {
     opacity: 1;
+}
+
+.name:hover,
+.imgHolder:hover
+{
+    cursor: pointer;
 }
