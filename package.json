@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "test": "npm run lint && mocha ./node_modules/html-tests/task-stub/test",
-    "lint": "stylelint *.css **/*.css && html-validator --file index.html --verbose && htmllint *.html"
+    "lint": "stylelint *.css **/*.css && html-validator --file index.html --verbose && htmllint *.html",
+    "optimize": "rm -rf icons-minified && mkdir icons-minified && svgo -f icons -o icons-minified"
   },
   "dependencies": {
     "html-tests": "1.0.2",
@@ -12,5 +13,8 @@
     "should": "11.1.0",
     "stylelint": "7.3.1",
     "stylelint-config-hrundel": "1.0.3"
+  },
+  "devDependencies": {
+    "svgo": "1.0.2"
   }
 }

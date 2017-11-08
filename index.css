@@ -12,9 +12,7 @@ body
 
 .header
 {
-    position: relative;
     padding: 20px;
-    box-sizing: border-box;
 }
 
 .header-name
@@ -33,12 +31,11 @@ body
 label
 {
     filter: grayscale(100%);
+    cursor: pointer;
 }
 
-.radio-button__icon_inline::before,
-.radio-button__icon_block::before
+.radio-button__icon
 {
-    content: '';
     height: 30px;
     width: 30px;
     background-size: cover;
@@ -48,31 +45,43 @@ label
     top: 10px;
 }
 
-.radio-button__icon_inline::before
+.list
 {
-    background-image: url(icons/list.svg);
-    left: 40px;
+    background-image: url(icons-minified/list.svg);
+    margin-left: 40px;
 }
 
-.radio-button__icon_block::before
+.block
 {
-    background-image: url(icons/block.svg);
-    left: 80px;
+    background-image: url(icons-minified/block.svg);
 }
 
 input[value='list']:checked ~ .cat-card
 {
-    display: inline-block;
+    display: block;
     width: 99%;
     margin: 10px;
 }
 
-input[value='list']:checked ~ .cat-card .cat-card__image,
-input[value='list']:checked ~ .cat-card .cat-card__cell
+input[value='list']:checked ~ .cat-card .cat-card__column
 {
     display: inline-block;
+    margin: 0 10px 20px;
+}
+
+input[value='list']:checked ~ .cat-card .column-one
+{
     width: 30%;
-    margin: 0 10px;
+}
+
+input[value='list']:checked ~ .cat-card .column-two
+{
+    width: 20%;
+}
+
+input[value='list']:checked ~ .cat-card .column-three
+{
+    width: 40%;
 }
 
 input[value='block']:checked ~ .cat-card
@@ -81,11 +90,9 @@ input[value='block']:checked ~ .cat-card
     width: 33%;
 }
 
-input[value='block']:checked ~ .cat-card .cat-card__image,
-input[value='block']:checked ~ .cat-card .cat-card__cell
+input[value='block']:checked ~ .cat-card .cat-card__column
 {
     display: block;
-    margin: 0 10px;
 }
 
 input:checked + label
@@ -101,15 +108,46 @@ input:checked + label
     box-sizing: border-box;
 }
 
-@media (min-width: 480px)
+@media (max-width: 480px)
 {
-    .cat-card
+    .header
     {
-        font-size: .9rem;
-        color: #202020;
-        width: auto;
-        transition: transform 300ms ease-in;
+        padding: 20px 10px;
     }
+
+    .header-name
+    {
+        font-size: 2rem;
+    }
+
+    input[value='block']:checked ~ .cat-card
+    {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    input[value='list']:checked ~ .cat-card .column-one
+    {
+        display: inline-block;
+        object-fit: contain;
+        width: 45%;
+        height: 100%;
+    }
+
+    input[value='list']:checked ~ .cat-card .column-two
+    {
+        display: inline-block;
+        width: 40%;
+        vertical-align: middle;
+    }
+
+    input[value='list']:checked ~ .cat-card .column-three
+    {
+        display: block;
+        width: 100%;
+    }
+
 }
 
 .cat-card:hover
@@ -117,25 +155,25 @@ input:checked + label
     transform: scale(1.05);
 }
 
-.cat-card__image
+.column-one
 {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-.cat-card__image:hover
+img:hover
 {
     filter: opacity(.7);
 }
 
-.cat-card__cell
+.cat-card__column
 {
     width: 100%;
     vertical-align: top;
 }
 
-.cat-card__cell span
+.cat-card__column span
 {
     padding: 5px 0;
 }
@@ -145,7 +183,7 @@ input:checked + label
     color: #006df0;
     font-size: 1.3rem;
     text-decoration: underline;
-    display: block;
+    overflow-x: hidden;
 }
 
 .cat-card__name:hover
@@ -156,7 +194,7 @@ input:checked + label
 .cat-card__category
 {
     text-decoration: underline;
-    display: block;
+    font-size: .8rem;
 }
 
 .cat-card__category:hover
@@ -170,6 +208,12 @@ input:checked + label
     font-weight: 700;
 }
 
+.cat-card__price::after,
+.cat-card__old-price::after
+{
+    content: "\20BD";
+}
+
 .cat-card__old-price
 {
     text-decoration: line-through;
@@ -177,7 +221,7 @@ input:checked + label
 
 .cat-card__raiting
 {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .cat-card__icon
@@ -190,23 +234,27 @@ input:checked + label
 
 .cat-card__icon_full
 {
-    background-image: url(icons/full.svg);
+    background-image: url(icons-minified/full.svg);
 }
 
 .cat-card__icon_half
 {
-    background-image: url(icons/half.svg);
+    background-image: url(icons-minified/half.svg);
 }
 
 .cat-card__icon_empty
 {
-    background-image: url(icons/empty.svg);
+    background-image: url(icons-minified/empty.svg);
 }
 
 .cat-card__title-description
 {
     font-weight: 600;
-    display: block;
+}
+
+.cat-card__description
+{
+    font-size: .9rem;
 }
 
 .footer
