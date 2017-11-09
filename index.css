@@ -71,10 +71,10 @@ label.bar::before
 }
 
 input.bar:checked ~ main section
-{ 
+{
     -o-box-shadow: 2px 2px 5px #888;
     -ms-box-shadow: 2px 2px 5px #888;
-    -webkit-box-shadow: 2px 2px 5px #888;    
+    -webkit-box-shadow: 2px 2px 5px #888;
     box-shadow: 2px 2px 5px #888;
     vertical-align: top;
     height: inherit;
@@ -129,7 +129,7 @@ footer
 {
     display: block;
     overflow: hidden;
-    -ms-text-overflow: ellipsis; 
+    -ms-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
 }
