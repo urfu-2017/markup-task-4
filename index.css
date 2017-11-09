@@ -1,6 +1,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
 
-div input
+.stars input
 {
     display: none;
 }
@@ -14,9 +14,11 @@ img:hover
 {
     -webkit-transition-duration: .7s;
     -o-transition-duration: .7s;
+    -ms-transition-duration: .7s;
     transition-duration: .7s;
     -webkit-transform: translateY(-5%) scale(1.1);
     -ms-transform: translateY(-5%) scale(1.1);
+    -o-transform: translateY(-5%) scale(1.1);
     transform: translateY(-5%) scale(1.1);
 }
 
@@ -55,12 +57,6 @@ input.list:checked ~ main footer
     display: inline-block;
 }
 
-input.list:checked ~ main section
-{
-
-    padding: 0;
-}
-
 input.list:checked ~ main img
 {
     max-width: 300px;
@@ -75,8 +71,10 @@ label.bar::before
 }
 
 input.bar:checked ~ main section
-{
-    -webkit-box-shadow: 2px 2px 5px #888;
+{ 
+    -o-box-shadow: 2px 2px 5px #888;
+    -ms-box-shadow: 2px 2px 5px #888;
+    -webkit-box-shadow: 2px 2px 5px #888;    
     box-shadow: 2px 2px 5px #888;
     vertical-align: top;
     height: inherit;
@@ -131,6 +129,7 @@ footer
 {
     display: block;
     overflow: hidden;
+    -ms-text-overflow: ellipsis; 
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
 }
