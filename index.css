@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script|Russo+One|Vollkorn');
+
+.market-header
+{
+    font: 20px 'Russo One', sans-serif;
+    text-align: center;
+}
+
+.cats-list
+{
+    padding: 15px 30px;
+}
+
+.cat-card
+{
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    padding: 10px;
+    margin: 5px 1%;
+    box-shadow: 0 0 5px grey;
+    vertical-align: top;
+}
+
+.cat-image-wrapper
+{
+    position: relative;
+    display: block;
+    height: 300px;
+    
+}
+
+.cat-image
+{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.cat-name
+{
+    font: 30px 'Russo One', sans-serif;
+    margin-bottom: 0;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat-category
+{
+    font: 20px 'Marck Script', cursive;
+    color: grey;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cat-kindness-level
+{
+    text-align: center;
+}
+
+.cat-kindness-level::before
+{
+    font: 20px 'Marck Script', cursive;
+    width: 50%;
+    content: 'Уровень доброты: ';
+    vertical-align: top;
+}
+
+.cat-kindness-level-image
+{
+    display: inline-block;
+    max-width: 50%;
+}
+
+.price-info
+{
+    text-align: center;
+}
+
+.actual-price::before
+{
+    content: 'Цена: ';
+    font: 25px 'Marck Script', cursive;
+}
+
+.actual-price
+{
+    font: bold 25px 'Vollkorn', cursive;
+    margin: 0 auto;
+    display: inline;
+}
+
+.old-price
+{
+    font: bold 20px 'Vollkorn', cursive;
+    text-decoration: line-through;
+    color: grey;
+    display: inline;
+}
+
+.cat-desription
+{
+    font: 15px 'Vollkorn', serif;
+    margin: 5px 20px;
+    text-align: justify;
+    height: 20%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.cat-card:hover
+{
+    box-shadow: 0 0 70px grey;
+}
+
+.cat-name:hover
+{
+    text-shadow: 1px 1px 1px black;
+}
+
+.cat-category:hover
+{
+    text-shadow: 1px 1px 1px grey;
+}
+
+.cat-image:hover
+{
+    border-radius: 5%;
+}
+
+.set-list:checked ~ .cats-list .cat-card
+{
+    display: block;
+    text-align: center;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.set-list:checked ~ .cats-list .cat-card .cat-image-wrapper
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    max-height: 300px;
+}
+
+.set-list:checked ~ .cats-list .cat-card .cat-image
+{
+    display: block;
+    top: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.set-list:checked ~ .cats-list .cat-card .cat-info
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+}
+
+.set-list:checked ~ .cats-list .cat-card .cat-desription
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    max-height: 300px;
+}
+
+.level_of_kindndess
+{
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.star-input
+{
+    display: none;
+}
+
+.star-label
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.star-label:nth-of-type(2n)
+{
+    margin-right: -8px;
+    background: url('images/star-right.png');
+}
+
+.star-label:nth-of-type(2n + 1)
+{
+    margin-left: -8px;
+    background: url('images/star-left.png');
+}
+
+.star-input:checked + label ~ label,
+.star-label:hover ~ label
+{
+    opacity: .5;
+}
