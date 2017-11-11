@@ -1,11 +1,10 @@
 section
 {
     display: inline-block;
-    width: 300px;
+    width: 280px;
     position: inherit;
-    margin: 10px;
+    margin: 20px;
     vertical-align: top;
-    border: solid 1px black;
     height: auto;
 }
 
@@ -25,9 +24,8 @@ img
 .pic
 {
     height: 300px;
-    border: solid 1px black;
     vertical-align: bottom;
-    display: inline-block;
+    display: table-cell;
 }
 
 .category
