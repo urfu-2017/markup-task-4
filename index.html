@@ -3,7 +3,249 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Мяндекс.Муррркет»</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet"> 
 </head>
 <body>
+    <h1 class="header">Мяндекс.Муррркет</h1>
+    <input type="checkbox" id="switch-rows">
+    <label class="switch-rows" for="switch-rows">Список</label>
+    <div class="market">
+        <article class="market-el">
+            <img class="el-photo" src="images/1.jpg" alt="Фото" title="Фото">
+            <div class="el-info">
+                <h3 class="el-name">Матроскин</h3>
+                <p class="el-kind">
+                    Деревенский
+                </p>
+                <div class="el-stars">
+                    ⭐️⭐️⭐️⭐️⭐️
+                </div>
+                <p class="el-price">
+                    500&#8381; <span class="el-old-price">1000&#8381;</span>
+                </p>
+            </div>
+            <div class="el-desc">
+                <h4 class="el-desc-name">Описание</h4>
+                <p class="el-desc-body">
+                    Кот Мат&shy;рос&shy;кин — по&shy;ло&shy;са&shy;тый го&shy;во&shy;ря&shy;щий кот.
+                    Скло&shy;нен к ра&shy;ци&shy;о&shy;наль&shy;но&shy;му мыш&shy;ле&shy;нию:
+                    пред&shy;по&shy;чи&shy;та&shy;ет из все&shy;го из&shy;вле&shy;кать
+                    ма&shy;те&shy;ри&shy;аль&shy;ную поль&shy;зу. Пе&shy;ри&shy;о&shy;ди&shy;че&shy;ски
+                    на&shy;по&shy;ми&shy;на&shy;ет о том,
+                    что его клич&shy;ка - это «фа&shy;ми&shy;лия та&shy;кая».
+                </p>
+            </div>
+        </article>
+        <article class="market-el">
+            <img class="el-photo" src="images/2.jpg" alt="Фото" title="Фото">
+            <div class="el-info">
+                <h3 class="el-name">Котенок Гав</h3>
+                <p class="el-kind">
+                    Дворовый
+                </p>
+                <div class="el-stars">
+                    ⭐️⭐️⭐️⭐️
+                </div>
+                <p class="el-price">
+                    300&#8381;
+                </p>
+            </div>
+            <div class="el-desc">
+                <h4 class="el-desc-name">Описание</h4>
+                <p class="el-desc-body">
+                    Ко&shy;те&shy;нок с не&shy;обыч&shy;ным име&shy;нем Гав.
+                    Он смот&shy;рит на мир сво&shy;и&shy;ми боль&shy;ши&shy;ми си&shy;ни&shy;ми
+                    гла&shy;за&shy;ми, дру&shy;жит со щен&shy;ком и во&shy;об&shy;ще ве&shy;дет
+                    се&shy;бя стран&shy;но и не по-ко&shy;ша&shy;чьи.
+                </p>
+            </div>
+        </article>
+        <article class="market-el">
+            <img class="el-photo" src="images/3.jpg" alt="Фото" title="Фото">
+            <div class="el-info">
+                <h3 class="el-name">Кот Леопольд</h3>
+                <p class="el-kind">
+                    Интеллигент
+                </p>
+                <div class="el-stars">
+                    ⭐️⭐️⭐️⭐️⭐️
+                </div>
+                <p class="el-price">
+                    600&#8381; <span class="el-old-price">800&#8381;</span>
+                </p>
+            </div>
+            <div class="el-desc">
+                <h4 class="el-desc-name">Описание</h4>
+                <p class="el-desc-body">
+                    Лео&shy;польд – ин&shy;тел&shy;ли&shy;гент и па&shy;ци&shy;фист,
+                    ста&shy;ра&shy;ет&shy;ся ни&shy;ко&shy;му не де&shy;лать зла.
+                    Он хо&shy;чет дру&shy;жить с каж&shy;дым из вас!
+                </p>
+            </div>
+        </article>
+        <article class="market-el">
+            <img class="el-photo" src="images/4.jpg" alt="Фото" title="Фото">
+            <div class="el-info">
+                <h3 class="el-name">Чучело-Мяучело</h3>
+                <p class="el-kind">
+                    Бешеный
+                </p>
+                <div class="el-stars">
+                    ⭐️⭐️⭐️
+                </div>
+                <p class="el-price">
+                    200&#8381;
+                </p>
+            </div>
+            <div class="el-desc">
+                <h4 class="el-desc-name">Описание</h4>
+                <p class="el-desc-body">
+                    Бе&shy;ше&shy;ный кот, ко&shy;то&shy;рый хо&shy;чет спеть всем свою пес&shy;ню.
+                </p>
+            </div>
+        </article>
+        <article class="market-el">
+            <img class="el-photo" src="images/5.jpg" alt="Фото" title="Фото">
+            <div class="el-info">
+                <h3 class="el-name">Котенок с улицы Лизюкова</h3>
+                <p class="el-kind">
+                    Бегун
+                </p>
+                <div class="el-stars">
+                    ⭐️⭐️⭐️⭐️
+                </div>
+                <p class="el-price">
+                    900&#8381;
+                </p>
+            </div>
+            <div class="el-desc">
+                <h4 class="el-desc-name">Описание</h4>
+                <p class="el-desc-body">
+                    Ко&shy;те&shy;нок Ва&shy;си&shy;лий жи&shy;вет в
+                    Во&shy;ро&shy;не&shy;же на ули&shy;це Ли&shy;зю&shy;ко&shy;ва
+                    и по&shy;сто&shy;ян&shy;но убе&shy;га&shy;ет от щен&shy;ка.
+                    Та&shy;кая жизнь Ва&shy;си&shy;лию не нра&shy;вит&shy;ся, и он
+                    меч&shy;та&shy;ет пре&shy;вра&shy;тить&shy;ся в боль&shy;шо&shy;го
+                    и страш&shy;но&shy;го зве&shy;ря.
+                </p>
+            </div>
+        </article>
+        <article class="market-el">
+            <img class="el-photo" src="images/6.jpg" alt="Фото" title="Фото">
+            <div class="el-info">
+                <h3 class="el-name">Толстый рыжий кот (Возвращение блудного попугая)</h3>
+                <p class="el-kind">
+                    Толстяк
+                </p>
+                <div class="el-stars">
+                    ⭐️⭐️
+                </div>
+                <p class="el-price">
+                    100&#8381; <span class="el-old-price">200&#8381;</span>
+                </p>
+            </div>
+            <div class="el-desc">
+                <h4 class="el-desc-name">Описание</h4>
+                <p class="el-desc-body">
+                    Тол&shy;стый кот, очень мно&shy;го ест и
+                    ни&shy;че&shy;го не де&shy;ла&shy;ет!
+                </p>
+            </div>
+        </article>
+        <article class="market-el">
+            <img class="el-photo" src="images/7.jpg" alt="Фото" title="Фото">
+            <div class="el-info">
+                <h3 class="el-name">Кошка с домом</h3>
+                <p class="el-kind">
+                    Богатая
+                </p>
+                <div class="el-stars">
+                    ⭐️⭐️⭐️⭐️
+                </div>
+                <p class="el-price">
+                    2000&#8381; <span class="el-old-price">2500&#8381;</span>
+                </p>
+            </div>
+            <div class="el-desc">
+                <h4 class="el-desc-name">Описание</h4>
+                <p class="el-desc-body">
+                    Со&shy;сто&shy;я&shy;тель&shy;ная кош&shy;ка с боль&shy;шим
+                    до&shy;мом и двор&shy;ни&shy;ком в при&shy;да&shy;чу.
+                </p>
+            </div>
+        </article>
+        <article class="market-el">
+            <img class="el-photo" src="images/8.jpg" alt="Фото" title="Фото">
+            <div class="el-info">
+                <h3 class="el-name">Кот Котофеевич</h3>
+                <p class="el-kind">
+                    Старый
+                </p>
+                <div class="el-stars">
+                    ⭐️⭐️⭐️
+                </div>
+                <p class="el-price">
+                    400&#8381;
+                </p>
+            </div>
+            <div class="el-desc">
+                <h4 class="el-desc-name">Описание</h4>
+                <p class="el-desc-body">
+                    Вы&shy;гна&shy;ли Ко&shy;та из до&shy;му из-за то&shy;го
+                    что со&shy;ста&shy;рил&shy;ся и мы&shy;шей ло&shy;вить
+                    пе&shy;ре&shy;стал. По&shy;пав в лес, он по&shy;зна&shy;ко&shy;мил&shy;ся
+                    с ли&shy;сой Ли&shy;за&shy;ве&shy;той Ива&shy;нов&shy;ной.
+                    Ей пред&shy;ста&shy;вил&shy;ся Тиг&shy;ром.
+                </p>
+            </div>
+        </article>
+        <article class="market-el">
+            <img class="el-photo" src="images/9.jpg" alt="Фото" title="Фото">
+            <div class="el-info">
+                <h3 class="el-name">Бременский кот</h3>
+                <p class="el-kind">
+                    Музыкант
+                </p>
+                <div class="el-stars">
+                    ⭐️⭐️⭐️⭐️⭐️
+                </div>
+                <p class="el-price">
+                    1500&#8381;
+                </p>
+            </div>
+            <div class="el-desc">
+                <h4 class="el-desc-name">Описание</h4>
+                <p class="el-desc-body">
+                    От&shy;лич&shy;ный му&shy;зы&shy;кант и фо&shy;кус&shy;ник!
+                </p>
+            </div>
+        </article>
+        <article class="market-el">
+            <img class="el-photo" src="images/10.jpg" alt="Фото" title="Фото">
+            <div class="el-info">
+                <h3 class="el-name">Кот-рыболов</h3>
+                <p class="el-kind">
+                    Рыбак
+                </p>
+                <div class="el-stars">
+                    ⭐️⭐️⭐️⭐️
+                </div>
+                <p class="el-price">
+                    1400&#8381;
+                </p>
+            </div>
+            <div class="el-desc">
+                <h4 class="el-desc-name">Описание</h4>
+                <p class="el-desc-body">
+                    По&shy;го&shy;жим днем Кот ре&shy;шил на&shy;ло&shy;вить рыб&shy;ки.
+                    На&shy;встре&shy;чу ему по&shy;па&shy;лись Ли&shy;са, Волк, и
+                    Мед&shy;ведь, ко&shy;то&shy;рые то&shy;же не прочь по&shy;про&shy;бо&shy;вать
+                    ры&shy;бёш&shy;ки. Каж&shy;до&shy;му из них Кот обе&shy;щал по рыб&shy;ке.
+                </p>
+            </div>
+        </article>
+    </div>
 </body>
 </html>
