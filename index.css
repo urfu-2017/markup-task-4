@@ -13,7 +13,7 @@
 .rating > span:hover:before,
 .rating > span:hover ~ span:before
 {
-    content: '\2605';
+    content: "\2605";
     position: absolute;
 }
 
@@ -24,28 +24,33 @@
 
 .container > div
 {
+    margin: 5px;
     vertical-align: middle;
     display: inline-block;
     width: 400px;
-    min-width: 33%;
+    min-width: 30%;
     text-align: center;
 }
 
 a
 {
+    max-width: 31%;
     font-family: Calibri;
     font-size: 120%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .price
 {
     color: green;
     font-weight: bold;
-    font-family: 'Arial Narrow';
+    font-family: "Arial Narrow";
 }
 
 .disc
 {
+    break-inside: avoid;
     text-align: left;
     font-family: Calibri;
     font-size: 85%;
@@ -54,7 +59,149 @@ a
 .switch:checked ~ .container > div
 {
     display: block;
+    column-count: 3;
+    column-gap: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+
+.more1
+{
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+
+.more2
+{
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+
+.more3
+{
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+
+.more4
+{
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+
+.more5
+{
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+
+.more6
+{
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+
+.more7
+{
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+
+.more8
+{
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+
+.more9
+{
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+
+.more10
+{
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+
+.shortHaired:hover ~ .more1
+{
+    display: inline-block;
+    background: lightblue;
+}
+
+.shortHaired:hover ~ .more2
+{
+    display: inline-block;
+    background: lightblue;
+}
+
+.noHaired:hover ~ .more3
+{
+    display: inline-block;
+    background: lightgreen;
+}
+
+.longHaired:hover ~ .more4
+{
+    display: inline-block;
+    background: lightcoral;
+}
+
+.shortHaired:hover ~ .more5
+{
+    display: inline-block;
+    background: lightblue;
+}
+
+.shortHaired:hover ~ .more6
+{
+    display: inline-block;
+    background: lightblue;
+}
+
+.longHaired:hover ~ .more7
+{
+    display: inline-block;
+    background: lightcoral;
+}
+
+.longHaired:hover ~ .more8
+{
+    display: inline-block;
+    background: lightcoral;
+}
+
+.longHaired:hover ~ .more9
+{
+    display: inline-block;
+    background: lightcoral;
+}
+
+.longHaired:hover ~ .more10
+{
+    display: inline-block;
+    background: lightcoral;
+}
+
+img:hover
+{
+    -webkit-transform: scale(1.4);
+}
+
+.switch:checked  ~ .container > div > img:hover
+{
+    -webkit-transform: scale(1);
 }
