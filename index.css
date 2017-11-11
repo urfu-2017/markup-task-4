@@ -1,0 +1,16 @@
+section
+{
+    display: inline-block;
+    width: 22%;
+    margin: 10px;
+}
+
+main
+{
+    white-space: normal;
+}
+
+img
+{
+    width: 100%;
+}
