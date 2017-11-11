@@ -31,13 +31,14 @@ img
 .category
 {
     overflow: hidden;
-    color: #cbff2e;
+    color: #9eb9ff;
     font-size: 14pt;
 }
 
 .cap
 {
-    color: #c836ff;
+    color: #ff8321;
+    font-weight: 600;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -58,7 +59,24 @@ img
     color: black;
 }
 
+.price::after,
+.old-price::after
+{
+    content: 'Р';
+}
+
 .card
 {
     vertical-align: bottom;
+    display: block;
+}
+
+.score
+{
+    display: inline;
+}
+
+.star
+{
+    width: 22px;
 }
