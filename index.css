@@ -13,7 +13,7 @@
 .rating > span:hover:before,
 .rating > span:hover ~ span:before
 {
-    content: "\2605";
+    content: '\2605';
     position: absolute;
 }
 
@@ -45,7 +45,7 @@ a
 {
     color: green;
     font-weight: bold;
-    font-family: "Arial Narrow";
+    font-family: 'Arial Narrow';
 }
 
 .disc
@@ -201,7 +201,7 @@ img:hover
     -webkit-transform: scale(1.4);
 }
 
-.switch:checked  ~ .container > div > img:hover
+.switch:checked ~ .container > div > img:hover
 {
     -webkit-transform: scale(1);
 }
