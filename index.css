@@ -1,8 +1,12 @@
 section
 {
     display: inline-block;
-    width: 22%;
+    width: 300px;
+    position: inherit;
     margin: 10px;
+    vertical-align: top;
+    border: solid 1px black;
+    height: auto;
 }
 
 main
@@ -13,4 +17,50 @@ main
 img
 {
     width: 100%;
+    position: relative;
+    vertical-align: bottom;
+    display: inline;
+}
+
+.pic
+{
+    height: 300px;
+    border: solid 1px black;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.category
+{
+    overflow: hidden;
+    color: #cbff2e;
+    font-size: 14pt;
+}
+
+.cap
+{
+    color: #c836ff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.price
+{
+    color: green;
+    font-size: 18pt;
+    font-weight: 300;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+    font-size: 16pt;
+    font-weight: 400;
+    color: black;
+}
+
+.card
+{
+    vertical-align: bottom;
 }
