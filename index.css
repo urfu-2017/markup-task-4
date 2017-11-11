@@ -13,12 +13,43 @@ main
     white-space: normal;
 }
 
-img
+img[class='list']
+{
+    width: 20px;
+}
+
+div > img
 {
     width: 100%;
     position: relative;
     vertical-align: bottom;
     display: inline;
+}
+
+input[type='checkbox']
+{
+    display: none;
+}
+
+input[type='checkbox']:checked ~ section
+{
+    display: table;
+    border: red 1px solid;
+    width: 90%;
+}
+
+input[type='checkbox']:checked ~ section div
+{
+    width: 30%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+input[type='checkbox']:checked ~ section div p
+{
+    white-space: normal;
+    text-align: center;
 }
 
 .pic
@@ -62,7 +93,7 @@ img
 .price::after,
 .old-price::after
 {
-    content: 'Р';
+    content: 'RUB';
 }
 
 .card
