@@ -229,6 +229,11 @@ input[value='list']:checked ~ div .item > a
     vertical-align: top;
 }
 
+input[value='list']:checked ~ div .item > a
+{
+    padding-left: 33%;
+}
+
 input[value='list']:checked ~ div .itemImg
 {
     position: static;
@@ -240,9 +245,21 @@ input[value='list']:checked ~ div .closerButton
     width: 90%;
 }
 
-input[value='list']:checked ~ div .itemPart:first-child
+input[value='list']:checked ~ div .itemPart1
 {
-    margin-left: 0;
+    margin-left: -100%;
+    float: left;
+}
+
+input[value='list']:checked ~ div .itemPart2
+{
+    margin: 2% 0 0 -33.3%;
+    min-height: 200px;
+}
+
+input[value='list']:checked ~ div .itemTitle
+{
+    margin: 0;
 }
 
 input[value='list']:checked ~ div .itemPart:last-child
