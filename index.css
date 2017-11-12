@@ -28,12 +28,6 @@ body
     display: none;
 }
 
-label
-{
-    filter: grayscale(100%);
-    cursor: pointer;
-}
-
 .radio-button__icon
 {
     height: 30px;
@@ -43,6 +37,8 @@ label
     display: inline-block;
     position: absolute;
     top: 10px;
+    filter: grayscale(100%);
+    cursor: pointer;
 }
 
 .list
@@ -95,7 +91,7 @@ input[value='block']:checked ~ .cat-card .cat-card__column
     display: block;
 }
 
-input:checked + label
+input:checked + .radio-button__icon
 {
     filter: none;
 }
@@ -219,32 +215,41 @@ img:hover
     text-decoration: line-through;
 }
 
-.cat-card__raiting
+.cat-card__rating
 {
-    padding: 5px 0;
+    margin: 5px 0;
+    height: 20px;
+    direction: rtl;
+    width: calc((20px + 2px) * 5);
 }
 
-.cat-card__icon
+input[name^='rating']
 {
-    background-repeat: no-repeat;
+    display: none;
+}
+
+.rating
+{
+    cursor: pointer;
+    background-image: url(icons-minified/empty.svg);
+    background-size: cover;
     height: 20px;
-    width: 20px;
+    width: 10px;
     display: inline-block;
 }
 
-.cat-card__icon_full
+.rating:nth-of-type(odd)
+{
+    background-position-x: -10px;
+    padding-right: 2px;
+    background-repeat: no-repeat;
+}
+
+.rating:hover,
+.rating:hover ~ .rating,
+.cat-card__rating:not(:hover) > input[name^='rating']:checked ~ .rating
 {
     background-image: url(icons-minified/full.svg);
-}
-
-.cat-card__icon_half
-{
-    background-image: url(icons-minified/half.svg);
-}
-
-.cat-card__icon_empty
-{
-    background-image: url(icons-minified/empty.svg);
 }
 
 .cat-card__title-description
