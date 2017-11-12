@@ -1,0 +1,274 @@
+header
+{
+    height: 50px;
+    width: 100%;
+    background: rgba(19, 19, 19, .62);
+    position: fixed;
+    z-index: 5;
+    color: rgb(253, 255, 209);
+    font-size: 30px;
+    font-family: 'Lobster', sans-serif;
+    padding-left: 5.5%;
+    line-height: 1.5;
+}
+
+body
+{
+    margin: 0;
+    background: rgba(240, 240, 240, .58);
+}
+
+.content
+{
+    margin-top: 20px;
+}
+
+.viewLabel
+{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding: 5px;
+}
+
+.viewImg
+{
+    width: 16px;
+}
+
+.viewLabel:first-of-type
+{
+    margin-left: 10px;
+}
+
+main
+{
+    font-size: 16px;
+    font-family: Calibri, sans-serif;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+input
+{
+    display: none;
+}
+
+a,
+a:visited
+{
+    text-decoration: none;
+    color: unset;
+}
+
+.item
+{
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 0 4px 0 #565656;
+    padding: 10px;
+}
+
+.item:hover
+{
+    transform: scale(1.15);
+    box-shadow: 0 0 10px 0 #565656;
+}
+
+.itemTitle,
+.itemCategory,
+.itemRating,
+.itemPrice
+{
+    display: block;
+    text-align: left;
+}
+
+.itemDescription
+{
+    display: inline;
+    width: 100%;
+}
+
+.itemTitle
+{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: blue;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+.item > a:hover .itemTitle
+{
+    text-decoration: underline;
+}
+
+.item > a:hover .closerButton
+{
+    display: block;
+}
+
+.itemPart
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.itemPart1
+{
+    position: relative;
+}
+
+.itemCategory
+{
+    color: #58585a;
+    font-size: .8em;
+}
+
+.categoryPoint
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.itemPrice
+{
+    color: #96070a;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.oldPrice
+{
+    color: #58585a;
+    font-size: .9em;
+    text-decoration: line-through;
+}
+
+.star
+{
+    width: 12px;
+}
+
+.starLabel
+{
+    display: table-cell;
+    opacity: 1;
+}
+
+.itemRating input:checked ~ .starLabel
+{
+    opacity: .5;
+}
+
+.itemRating input:hover ~ .starLabel
+{
+    opacity: .3;
+}
+
+.itemDescription
+{
+    color: #3a3a3c;
+}
+
+.itemImg
+{
+    width: 250px;
+    display: block;
+}
+
+.closerButton
+{
+    color: rgba(255, 255, 255, .63);
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    background: rgba(25, 25, 25, .7);
+    position: absolute;
+    bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+input[value='tiles']:checked ~ label[for='tiles']
+{
+    background: #ff6661;
+}
+
+input[value='list']:checked ~ label[for='list']
+{
+    background: #ff6661;
+}
+
+input[value='list']:checked ~ div .item
+{
+    display: block;
+}
+
+input[value='list']:checked ~ div .item
+{
+    width: 100%;
+    min-width: 800px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+input[value='list']:checked ~ div .itemPart:not(:first-child),
+input[value='list']:checked ~ div .item > a
+{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+input[value='list']:checked ~ div .item > a
+{
+    padding-left: 33%;
+}
+
+input[value='list']:checked ~ div .itemImg
+{
+    position: static;
+    width: 90%;
+}
+
+input[value='list']:checked ~ div .closerButton
+{
+    width: 90%;
+}
+
+input[value='list']:checked ~ div .itemPart1
+{
+    margin-left: -100%;
+    float: left;
+}
+
+input[value='list']:checked ~ div .itemPart2
+{
+    margin: 2% 0 0 -33.3%;
+    min-height: 200px;
+}
+
+input[value='list']:checked ~ div .itemTitle
+{
+    margin: 0;
+}
+
+input[value='list']:checked ~ div .itemPart:last-child
+{
+    margin-right: 0;
+}
+
+input[value='list']:checked ~ div .item:hover
+{
+    transform: scale(1.05);
+}
+
