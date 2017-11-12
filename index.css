@@ -1,9 +1,9 @@
-div.description::before
+.description::before
 {
     content: 'Описание товара: ';
 }
 
-div.kindness::before
+.kindness::before
 {
     content: 'Доброта: ';
 }
@@ -13,6 +13,7 @@ input
     margin-right: auto;
     display: none;
 }
+
 .display + label
 {
     border: .5px solid #c9bebe;
@@ -32,7 +33,7 @@ input
 input[id='list']:checked ~ .card
 {
     column-count: 2;
-    width: 100%;
+    width: 98%;
     max-height: 350px;
 }
 
