@@ -1,0 +1,73 @@
+.description::before
+{
+    content: 'Описание товара: ';
+}
+
+.kindness::before
+{
+    content: 'Доброта: ';
+}
+
+input
+{
+    margin-right: auto;
+    display: none;
+}
+
+.display + label
+{
+    border: .5px solid #c9bebe;
+    box-shadow: 0 0 10px #c9bebe;
+    width: 50px;
+    height: 20px;
+    margin-right: 2px;
+    padding: 15px;
+    float: right;
+}
+
+.display:checked + label
+{
+    border-color: #000;
+}
+
+input[id='list']:checked ~ .card
+{
+    column-count: 2;
+    width: 98%;
+    max-height: 350px;
+}
+
+.card
+{
+    background-color: #fbfceca6;
+    width: 300px;
+    display: inline-block;
+    box-shadow: 0 0 15px black;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+
+.card:hover
+{
+    box-shadow: 0 0 35px pink;
+}
+
+figure
+{
+    width: 100%;
+    max-height: 300px;
+    position: relative;
+    margin: 0;
+    display: inline-block;
+}
+
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+}
+
