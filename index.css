@@ -1,0 +1,109 @@
+.rating
+{
+    direction: rtl;
+}
+
+.rating > span
+{
+    display: inline-block;
+    position: relative;
+    width: 20px;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before
+{
+    content: '\2605';
+    position: absolute;
+}
+
+.container .cat
+{
+    margin: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 400px;
+    min-width: 30%;
+    text-align: center;
+}
+
+a
+{
+    max-width: 31%;
+    font-family: Calibri;
+    font-size: 120%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.price
+{
+    color: green;
+    font-weight: bold;
+    font-family: 'Arial Narrow';
+}
+
+.disc
+{
+    text-align: left;
+    font-family: Calibri;
+    font-size: 85%;
+}
+
+.switch:checked ~ .container .cat
+{
+    display: block;
+    min-width: 100%;
+}
+
+.switch:checked ~ .container img,
+.switch:checked ~ .container .disc,
+.switch:checked ~ .container .cat-info
+{
+    display: inline-block;
+    width: 30%;
+}
+
+.more
+{
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+
+.short-haired:hover ~ .more1,
+.short-haired:hover ~ .more2,
+.short-haired:hover ~ .more5,
+.short-haired:hover ~ .more6
+{
+    display: inline-block;
+    background: lightblue;
+}
+
+.no-haired:hover ~ .more3
+{
+    display: inline-block;
+    background: lightgreen;
+}
+
+.long-haired:hover ~ .more4,
+.long-haired:hover ~ .more7,
+.long-haired:hover ~ .more8,
+.long-haired:hover ~ .more9,
+.long-haired:hover ~ .more10
+{
+    display: inline-block;
+    background: lightcoral;
+}
+
+img:hover
+{
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.switch:checked ~ .container .cat > img:hover
+{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
