@@ -50,7 +50,7 @@ a
 
 .disc
 {
-    break-inside: avoid;
+    break-before: column;
     text-align: left;
     font-family: Calibri;
     font-size: 85%;
@@ -58,7 +58,6 @@ a
 
 .switch:checked ~ .container > div
 {
-    display: block;
     column-count: 3;
     column-gap: 20px;
     margin-left: auto;
@@ -66,70 +65,7 @@ a
     width: 80%;
 }
 
-.more1
-{
-    z-index: 10;
-    position: absolute;
-    display: none;
-}
-
-.more2
-{
-    z-index: 10;
-    position: absolute;
-    display: none;
-}
-
-.more3
-{
-    z-index: 10;
-    position: absolute;
-    display: none;
-}
-
-.more4
-{
-    z-index: 10;
-    position: absolute;
-    display: none;
-}
-
-.more5
-{
-    z-index: 10;
-    position: absolute;
-    display: none;
-}
-
-.more6
-{
-    z-index: 10;
-    position: absolute;
-    display: none;
-}
-
-.more7
-{
-    z-index: 10;
-    position: absolute;
-    display: none;
-}
-
-.more8
-{
-    position: absolute;
-    z-index: 10;
-    display: none;
-}
-
-.more9
-{
-    z-index: 10;
-    position: absolute;
-    display: none;
-}
-
-.more10
+.more
 {
     z-index: 10;
     position: absolute;
@@ -199,9 +135,11 @@ a
 img:hover
 {
     -webkit-transform: scale(1.4);
+    transform: scale(1.4);
 }
 
 .switch:checked ~ .container > div > img:hover
 {
-    -webkit-transform: scale(1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
