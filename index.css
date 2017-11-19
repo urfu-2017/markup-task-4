@@ -10,11 +10,6 @@ input.bar:checked ~ main
     padding: 10px;
 }
 
-section
-{
-    padding: 15px;
-}
-
 img:hover
 {
     -webkit-transition-duration: .7s;
@@ -42,7 +37,7 @@ input.list:checked ~ main header
 input.list:checked ~ main section
 {
     margin-top: 40px;
-    width: 98%;
+    width: 100%;
     display: block;
 }
 
