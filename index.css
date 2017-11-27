@@ -1,3 +1,5 @@
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
 article
 {
     box-sizing: border-box;
@@ -69,11 +71,16 @@ img:hover
 
 .inline:checked ~ article section
 {
-    width: 30%;
+    width: 20%;
     height: 220px;
     vertical-align: top;
     bottom: 5%;
     margin: 10px;
+}
+
+.inline:checked ~ article section.description
+{
+    width: 40%;
 }
 
 .inline:checked ~ article section.info
@@ -90,7 +97,46 @@ img:hover
 
 .inline:checked ~ article section img
 {
-    height: 250px;
-    width: 90%;
-    bottom: 12%;
+    height: 210px;
+    width: 200px;
+    bottom: 20%;
+    left: 10%;
+}
+
+.rating
+{
+    display: inline-block;
+    font-family: FontAwesome;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rating > input
+{
+    display: none;
+}
+
+.rating > label
+{
+    float: right;
+}
+
+.rating > label:before
+{
+    font-size: 25px;
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.rating > input:checked ~ label,
+.rating > label:hover,
+.rating > label:hover ~ label 
+{
+    color: #ee0;
 }
