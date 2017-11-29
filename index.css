@@ -2,10 +2,10 @@ img
 {
     width: 90%;
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
+    left: 0;
     right: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
 }
 
 section
@@ -37,14 +37,7 @@ section > header
 
 section > header:hover
 {
-    transform: scale(1.1);
-}
-
-.nameContainer
-{
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    transform: scale(1.2);
 }
 
 main
@@ -123,6 +116,13 @@ h1
     font-size: 20pt;
 }
 
+.nameContainer
+{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .category
 {
     font-size: 10pt;
@@ -159,16 +159,18 @@ h1
 
 .displayList
 {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0 20px 20px;
+}
+
+.displayList:checked ~ main
+{
+    min-width: 1000px;
 }
 
 .displayList:checked ~ main section
 {
     display: block;
     width: auto;
-    min-width: 1000px;
     border: 0;
 }
 
@@ -180,6 +182,7 @@ h1
     display: inline-block;
     vertical-align: top;
     margin: 0;
+
 }
 
 .displayList:checked ~ main section header
@@ -197,7 +200,6 @@ h1
 .displayList:checked ~ main section article
 {
     width: 15%;
-    margin-top: 1%;
     min-width: 160px;
 }
 
@@ -205,3 +207,9 @@ h1
 {
     width: 54%;
 }
+
+.displayList:checked ~ main .description
+{
+    margin: 0;
+}
+
