@@ -2,8 +2,440 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Задача «Мяндекс.Муррркет»</title>
+    <title>Мяндекс.Муррркет</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <h1>Мяндекс.Муррркет</h1>
+    <input id="checkBoxList" class="displayList" type="checkbox">
+    <label for="checkBoxList">Включить отображение списком</label>
+    <main>
+        <section>
+            <header>
+                <img src="cat1.jpg" alt="Котик">
+            </header>
+            <article>
+                <div class="nameContainer">
+                    <a class="name" href="cat1.jpg">Василий Иванович</a>
+                </div>
+                <a href="cat1.jpg" class="category">Непоседы</a>
+                <div class="stars">
+                <!--input завязан с label по id для того,
+                    чтобы можно было через оператор ~ обращаться к соседним label-ам и input-ам -->
+                    <input id="star10" name="star0" type="radio">
+                    <label for="star10"></label>
+                    <input id="star11" name="star0" type="radio">
+                    <label for="star11"></label>
+                    <input id="star12" name="star0" type="radio">
+                    <label for="star12"></label>
+                    <input id="star13" name="star0" type="radio">
+                    <label for="star13"></label>
+                    <input id="star14" name="star0" type="radio">
+                    <label for="star14"></label>
+                    <input id="star15" name="star0" type="radio">
+                    <label for="star15"></label>
+                    <input id="star16" name="star0" type="radio">
+                    <label for="star16"></label>
+                    <input id="star17" name="star0" type="radio">
+                    <label for="star17"></label>
+                    <input id="star18" name="star0" type="radio">
+                    <label for="star18"></label>
+                    <input id="star19" name="star0" type="radio">
+                    <label for="star19"></label>
+                </div>
+                <div class="price">
+                    <span class="currentPrice">5000 р</span>
+                </div>
+            </article>
+            <footer>
+                <p class="description">Порода "Бенгальская кошка". Чертами схож с ягуаром – та
+                    же хищная окраска, тот же дикий нрав.</p>
+            </footer>
+        </section>
+        <section>
+            <header>
+                <img src="cat2.jpg" alt="Котик">
+            </header>
+            <article>
+                <div class="nameContainer">
+                    <a class="name" href="cat2.jpg">Пушистик</a>
+                </div>
+                <a href="cat2.jpg" class="category">Большие котики</a>
+                <div class="stars">
+                    <input id="star20" name="star1" type="radio">
+                    <label for="star20"></label>
+                    <input id="star21" name="star1" type="radio">
+                    <label for="star21"></label>
+                    <input id="star22" name="star1" type="radio">
+                    <label for="star22"></label>
+                    <input id="star23" name="star1" type="radio">
+                    <label for="star23"></label>
+                    <input id="star24" name="star1" type="radio">
+                    <label for="star24"></label>
+                    <input id="star25" name="star1" type="radio">
+                    <label for="star25"></label>
+                    <input id="star26" name="star1" type="radio">
+                    <label for="star26"></label>
+                    <input id="star27" name="star1" type="radio">
+                    <label for="star27"></label>
+                    <input id="star28" name="star1" type="radio">
+                    <label for="star28"></label>
+                    <input id="star29" name="star1" type="radio">
+                    <label for="star29"></label>
+                </div>
+                <div class="price">
+                    <span class="currentPrice">5000 р</span>
+                    <span class="oldPrice">10000 р</span>
+                </div>
+            </article>
+            <footer>
+                <p>Порода "Корат". Размерами и окрасом эта порода напоминает русскую голубую кошку,
+                    однако предки этой породы не из России, а из Таилнда, откуда были
+                    завезены в США в 1959 году.</p>
+            </footer>
+        </section>
+        <section>
+            <header>
+                <img src="cat3.jpg" alt="Котик">
+            </header>
+            <article>
+                <div class="nameContainer">
+                    <a class="name" href="cat3.jpg">Полосатик</a>
+                </div>
+                <a href="cat3.jpg" class="category">Большие котики</a>
+                <div class="stars">
+                    <input id="star30" name="star2" type="radio">
+                    <label for="star30"></label>
+                    <input id="star31" name="star2" type="radio">
+                    <label for="star31"></label>
+                    <input id="star32" name="star2" type="radio">
+                    <label for="star32"></label>
+                    <input id="star33" name="star2" type="radio">
+                    <label for="star33"></label>
+                    <input id="star34" name="star2" type="radio">
+                    <label for="star34"></label>
+                    <input id="star35" name="star2" type="radio">
+                    <label for="star35"></label>
+                    <input id="star36" name="star2" type="radio">
+                    <label for="star36"></label>
+                    <input id="star37" name="star2" type="radio">
+                    <label for="star37"></label>
+                    <input id="star38" name="star2" type="radio">
+                    <label for="star38"></label>
+                    <input id="star39" name="star2" type="radio">
+                    <label for="star39"></label>
+                </div>
+                <div class="price">
+                    <span class="currentPrice">12000 р</span>
+                    <span class="oldPrice">15000 р</span>
+                </div>
+            </article>
+            <footer>
+                <p>Порода "Тонкинская кошка". Является гибридом сиамской и
+                    бурманской кошки американского типа.</p>
+            </footer>
+        </section>
+        <section>
+            <header>
+                <img src="cat4.jpg" alt="Котик">
+            </header>
+            <article>
+                <div class="nameContainer">
+                    <a class="name" href="cat4.jpg">Снежинка</a>
+                </div>
+                <a href="cat4.jpg" class="category">Кошечки для дома</a>
+                <div class="stars">
+                    <input id="star40" name="star3" type="radio">
+                    <label for="star40"></label>
+                    <input id="star41" name="star3" type="radio">
+                    <label for="star41"></label>
+                    <input id="star42" name="star3" type="radio">
+                    <label for="star42"></label>
+                    <input id="star43" name="star3" type="radio">
+                    <label for="star43"></label>
+                    <input id="star44" name="star3" type="radio">
+                    <label for="star44"></label>
+                    <input id="star45" name="star3" type="radio">
+                    <label for="star45"></label>
+                    <input id="star46" name="star3" type="radio">
+                    <label for="star46"></label>
+                    <input id="star47" name="star3" type="radio">
+                    <label for="star47"></label>
+                    <input id="star48" name="star3" type="radio">
+                    <label for="star48"></label>
+                    <input id="star49" name="star3" type="radio">
+                    <label for="star49"></label>
+                </div>
+                <div class="price">
+                    <span class="currentPrice">20000 р</span>
+                </div>
+            </article>
+            <footer>
+                <p>Порода "Турецкая ангора". Одна из наиболее древних пород длинношерстных
+                    кошек, родиной которой является Турция. Её часто путают с персидской. Живые,
+                    смышленные, общительные. Обладают спокойным, ровным нравом.
+                    Турецкие ангоры умны и преданны, хорошо адаптируются к
+                    различным условиям жизни.</p>
+            </footer>
+        </section>
+        <section>
+            <header>
+                <img src="cat5.jpg" alt="Котик">
+            </header>
+            <article>
+                <div class="nameContainer">
+                    <a class="name" href="cat5.jpg">Амур</a>
+                </div>
+                <a href="cat5.jpg" class="category">Кошечки для дома</a>
+                <div class="stars">
+                    <input id="star50" name="star4" type="radio">
+                    <label for="star50"></label>
+                    <input id="star51" name="star4" type="radio">
+                    <label for="star51"></label>
+                    <input id="star52" name="star4" type="radio">
+                    <label for="star52"></label>
+                    <input id="star53" name="star4" type="radio">
+                    <label for="star53"></label>
+                    <input id="star54" name="star4" type="radio">
+                    <label for="star54"></label>
+                    <input id="star55" name="star4" type="radio">
+                    <label for="star55"></label>
+                    <input id="star56" name="star4" type="radio">
+                    <label for="star56"></label>
+                    <input id="star57" name="star4" type="radio">
+                    <label for="star57"></label>
+                    <input id="star58" name="star4" type="radio">
+                    <label for="star58"></label>
+                    <input id="star59" name="star4" type="radio">
+                    <label for="star59"></label>
+                </div>
+                <div class="price">
+                    <span class="currentPrice">5000 р</span>
+                    <span class="oldPrice">10000 р</span>
+                </div>
+            </article>
+            <footer>
+                <p>Порода "Ориентальная кошка". Короткошерстная кошка ориентальной породы,
+                    скорее всего, не вызовет у хозяина аллергию, а вот безмерную любовь
+                    – запросто. В ответ она поразит вас сообразительностью и очень
+                    покладистым характером.</p>
+            </footer>
+        </section>
+        <section>
+            <header>
+                <img src="cat6.jpg" alt="Котик">
+            </header>
+            <article>
+                <div class="nameContainer">
+                    <a class="name" href="cat6.jpg">Литл</a>
+                </div>
+                <a href="cat6.jpg" class="category">Коротколапки</a>
+                <div class="stars">
+                    <input id="star60" name="star5" type="radio">
+                    <label for="star60"></label>
+                    <input id="star61" name="star5" type="radio">
+                    <label for="star61"></label>
+                    <input id="star62" name="star5" type="radio">
+                    <label for="star62"></label>
+                    <input id="star63" name="star5" type="radio">
+                    <label for="star63"></label>
+                    <input id="star64" name="star5" type="radio">
+                    <label for="star64"></label>
+                    <input id="star65" name="star5" type="radio">
+                    <label for="star65"></label>
+                    <input id="star66" name="star5" type="radio">
+                    <label for="star66"></label>
+                    <input id="star67" name="star5" type="radio">
+                    <label for="star67"></label>
+                    <input id="star68" name="star5" type="radio">
+                    <label for="star68"></label>
+                    <input id="star69" name="star5" type="radio">
+                    <label for="star69"></label>
+                </div>
+                <div class="price">
+                    <span class="currentPrice">10000 р</span>
+                </div>
+            </article>
+            <footer>
+                <p>Порода "Манчкин". Представители породы достаточно ловкие и шустрые.
+                    Они очень любят хозяйничать, поэтому владельцам не стоит
+                    раскидывать вещи.
+                    Владельцам манчкинов стоит внимательно относиться к их здоровью.
+                    Питомцы часто страдают заболеваниями позвоночника, болезнями легких и сердца.</p>
+            </footer>
+        </section>
+        <section>
+            <header>
+                <img src="cat7.jpg" alt="Котик">
+            </header>
+            <article>
+                <div class="nameContainer">
+                    <a class="name" href="cat7.jpg">Малыш</a>
+                </div>
+                <a href="cat7.jpg" class="category">Котята</a>
+                <div class="stars">
+                    <input id="star70" name="star6" type="radio">
+                    <label for="star70"></label>
+                    <input id="star71" name="star6" type="radio">
+                    <label for="star71"></label>
+                    <input id="star72" name="star6" type="radio">
+                    <label for="star72"></label>
+                    <input id="star73" name="star6" type="radio">
+                    <label for="star73"></label>
+                    <input id="star74" name="star6" type="radio">
+                    <label for="star74"></label>
+                    <input id="star75" name="star6" type="radio">
+                    <label for="star75"></label>
+                    <input id="star76" name="star6" type="radio">
+                    <label for="star76"></label>
+                    <input id="star77" name="star6" type="radio">
+                    <label for="star77"></label>
+                    <input id="star78" name="star6" type="radio">
+                    <label for="star78"></label>
+                    <input id="star79" name="star6" type="radio">
+                    <label for="star79"></label>
+                </div>
+                <div class="price">
+                    <span class="currentPrice">35000 р</span>
+                </div>
+            </article>
+            <footer>
+                <p>Порода "Персидская кошка". Наиболее популярная порода длинношерстных кошек с
+                    коренастой плотной фигурой, широкой головой и привлекательными
+                    круглыми глазами они по-видимому появились почти одновременно в
+                    отдаленных гористых районах таких стран, как Персия, Турция и Китай.</p>
+            </footer>
+        </section>
+        <section>
+            <header>
+                <img src="cat8.jpg" alt="Котик">
+            </header>
+            <article>
+                <div class="nameContainer">
+                    <a class="name" href="cat8.jpg">Соня</a>
+                </div>
+                <a href="cat8.jpg" class="category">Кошечки для дома</a>
+                <div class="stars">
+                    <input id="star80" name="star7" type="radio">
+                    <label for="star80"></label>
+                    <input id="star81" name="star7" type="radio">
+                    <label for="star81"></label>
+                    <input id="star82" name="star7" type="radio">
+                    <label for="star82"></label>
+                    <input id="star83" name="star7" type="radio">
+                    <label for="star83"></label>
+                    <input id="star84" name="star7" type="radio">
+                    <label for="star84"></label>
+                    <input id="star85" name="star7" type="radio">
+                    <label for="star85"></label>
+                    <input id="star86" name="star7" type="radio">
+                    <label for="star86"></label>
+                    <input id="star87" name="star7" type="radio">
+                    <label for="star87"></label>
+                    <input id="star88" name="star7" type="radio">
+                    <label for="star88"></label>
+                    <input id="star89" name="star7" type="radio">
+                    <label for="star89"></label>
+                </div>
+                <div class="price">
+                    <span class="currentPrice">6000 р</span>
+                </div>
+            </article>
+            <footer>
+                <p>Порода "Бирманская кошка". Кошка производит впечатление очень элегантного и
+                    гармоничного животного. Шерсть мягкая и шелковистая,
+                    средней длины на теле и удлиненная на шее, штанишках и хвосте, подшерстка мало.
+                    Бирманские кошки обладают замечательным характером: они общительны, интеллигентны,
+                    умны, очень нежны и ласковы.</p>
+            </footer>
+        </section>
+        <section>
+            <header>
+                <img src="cat9.jpg" alt="Котик">
+            </header>
+            <article>
+                <div class="nameContainer">
+                    <a class="name" href="cat9.jpg">Снежок</a>
+                </div>
+                <a href="cat9.jpg" class="category">Большие котики</a>
+                <div class="stars">
+                    <input id="star90" name="star8" type="radio">
+                    <label for="star90"></label>
+                    <input id="star91" name="star8" type="radio">
+                    <label for="star91"></label>
+                    <input id="star92" name="star8" type="radio">
+                    <label for="star92"></label>
+                    <input id="star93" name="star8" type="radio">
+                    <label for="star93"></label>
+                    <input id="star94" name="star8" type="radio">
+                    <label for="star94"></label>
+                    <input id="star95" name="star8" type="radio">
+                    <label for="star95"></label>
+                    <input id="star96" name="star8" type="radio">
+                    <label for="star96"></label>
+                    <input id="star97" name="star8" type="radio">
+                    <label for="star97"></label>
+                    <input id="star98" name="star8" type="radio">
+                    <label for="star98"></label>
+                    <input id="star99" name="star8" type="radio">
+                    <label for="star99"></label>
+                </div>
+                <div class="price">
+                    <span class="currentPrice">21000 р</span>
+                </div>
+            </article>
+            <footer>
+                <p>Порода "Сибирская кошка". Мощное коренастое тело с довольно развитой
+                    мускулатурой делает этих котов величественными. Происхождение кошки даёт о себе знать.
+                    Сибирская кошка – отличный охотник. Так же в ней сочетаются такие качества
+                    как: бесстрашие, обучаемость, ум и рассудительность. Имеют здоровье
+                    и иммунитет гораздо крепче, чем у их собратьев.</p>
+            </footer>
+        </section>
+        <section>
+            <header>
+                <img src="cat10.jpg" alt="Котик">
+            </header>
+            <article>
+                <div class="nameContainer">
+                    <a class="name" href="cat10.jpg">Ролул Апофиус Второй Король Король Котов</a>
+                </div>
+                <a href="cat10.jpg" class="category">Король котов</a>
+                <div class="stars">
+                    <input id="star100" name="star9" type="radio">
+                    <label for="star100"></label>
+                    <input id="star101" name="star9" type="radio">
+                    <label for="star101"></label>
+                    <input id="star102" name="star9" type="radio">
+                    <label for="star102"></label>
+                    <input id="star103" name="star9" type="radio">
+                    <label for="star103"></label>
+                    <input id="star104" name="star9" type="radio">
+                    <label for="star104"></label>
+                    <input id="star105" name="star9" type="radio">
+                    <label for="star105"></label>
+                    <input id="star106" name="star9" type="radio">
+                    <label for="star106"></label>
+                    <input id="star107" name="star9" type="radio">
+                    <label for="star107"></label>
+                    <input id="star108" name="star9" type="radio">
+                    <label for="star108"></label>
+                    <input id="star109" name="star9" type="radio">
+                    <label for="star109"></label>
+                </div>
+                <div class="price">
+                    <span class="currentPrice">7000 р</span>
+                </div>
+            </article>
+            <footer>
+                <p>Порода "Бурманская кошка". Бурманская кошка имеет компактное, плотное,
+                    мускулистое туловище средних размеров. Это животное отличается мирным
+                    доброжелательным нравом и практически никогда не проявляет агрессию.
+                    Подружиться с бурмой не составит труда. Для этого достаточно поиграть
+                    с ней и проявить немного ласки.
+                    Кошка легко идет на контакт, по типу поведения энергична и активна.</p>
+            </footer>
+        </section>
+    </main>
 </body>
 </html>
