@@ -59,6 +59,7 @@ img:hover
     display: inline-block;
     width: 95%;
     min-height: 300px;
+    min-width: 1000px;
 }
 
 .inline:checked ~ article section,
