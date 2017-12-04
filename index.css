@@ -56,9 +56,9 @@ img:hover
 
 .inline:checked ~ article
 {
-    display: block;
+    display: inline-block;
     width: 95%;
-    height: 300px;
+    min-height: 300px;
 }
 
 .inline:checked ~ article section,
@@ -97,10 +97,9 @@ img:hover
 
 .inline:checked ~ article section img
 {
-    height: 210px;
-    width: 200px;
-    bottom: 20%;
-    left: 10%;
+    max-height: 90%;
+    max-width: 90%;
+    bottom: 15%;
 }
 
 .rating
