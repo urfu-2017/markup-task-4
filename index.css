@@ -1,0 +1,142 @@
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+article
+{
+    box-sizing: border-box;
+    margin: 1%;
+    width: 300px;
+    display: inline-block;
+    border: 4px double black;
+    vertical-align: top;
+    padding: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+section
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+section:first-child
+{
+    min-height: 290px;
+}
+
+img
+{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.info
+{
+    height: 160px;
+    display: inline-block;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+}
+
+article:hover
+{
+    box-shadow: 0 0 40px gray;
+    transition: box-shadow ease-in-out .2s;
+}
+
+img:hover
+{
+    transform: scale(1.05);
+}
+
+.inline:checked ~ article
+{
+    display: inline-block;
+    width: 95%;
+    min-height: 300px;
+    min-width: 1400px;
+}
+
+.inline:checked ~ article section,
+.inline:checked ~ article section img,
+.inline:checked ~ article section a,
+.inline:checked ~ article section p
+{
+    display: inline-block;
+}
+
+.inline:checked ~ article section
+{
+    width: 20%;
+    height: 220px;
+    vertical-align: top;
+    bottom: 5%;
+    margin: 10px;
+}
+
+.inline:checked ~ article section.description
+{
+    width: 40%;
+}
+
+.inline:checked ~ article section.info
+{
+    display: inline-block;
+    position: relative;
+}
+
+.inline:checked ~ article section.info a,
+.inline:checked ~ article section.info p
+{
+    display: block;
+}
+
+.inline:checked ~ article section img
+{
+    height: 90%;
+    width: 90%;
+    bottom: 15%;
+}
+
+.rating
+{
+    display: inline-block;
+    font-family: FontAwesome;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rating > input
+{
+    display: none;
+}
+
+.rating > label
+{
+    float: right;
+}
+
+.rating > label:before
+{
+    font-size: 25px;
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.rating > input:checked ~ label,
+.rating > label:hover,
+.rating > label:hover ~ label 
+{
+    color: #ee0;
+}
