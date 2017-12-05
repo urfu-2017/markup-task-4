@@ -59,7 +59,7 @@ img:hover
     display: inline-block;
     width: 95%;
     min-height: 300px;
-    min-width: 1000px;
+    min-width: 1400px;
 }
 
 .inline:checked ~ article section,
@@ -98,8 +98,8 @@ img:hover
 
 .inline:checked ~ article section img
 {
-    max-height: 90%;
-    max-width: 90%;
+    height: 90%;
+    width: 90%;
     bottom: 15%;
 }
 
