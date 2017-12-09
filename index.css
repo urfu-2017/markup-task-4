@@ -1,0 +1,117 @@
+section.item
+{
+    display: inline-block;
+    width: 280px;
+    margin: 20px;
+    vertical-align: top;
+    white-space: normal;
+}
+
+.desc
+{
+    width: 100%;
+}
+
+main
+{
+    white-space: normal;
+}
+
+img[class='list']
+{
+    width: 20px;
+}
+
+input[type='checkbox']
+{
+    display: none;
+}
+
+input[type='checkbox']:checked ~ main section.item
+{
+    width: 90%;
+    white-space: nowrap;
+    display: block;
+}
+
+input[type='checkbox']:checked ~ main section.item div.pic,
+input[type='checkbox']:checked ~ main section.item article.card,
+input[type='checkbox']:checked ~ main section.item p.desc
+{
+    display: inline-block;
+    width: 30%;
+}
+
+input[type='checkbox']:checked ~ main section.item div.pic img
+{
+    width: 90%;
+}
+
+input[type='checkbox']:checked ~ main section.item p.desc
+{
+    white-space: normal;
+}
+
+.pic > img
+{
+    width: 100%;
+}
+
+.category
+{
+    overflow: hidden;
+    color: #9eb9ff;
+    font-size: 14pt;
+}
+
+.cap
+{
+    color: #ff8321;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.price
+{
+    color: green;
+    font-size: 18pt;
+    font-weight: 300;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+    font-size: 16pt;
+    font-weight: 400;
+    color: black;
+}
+
+.price::after,
+.old-price::after
+{
+    content: 'RUB';
+}
+
+.card
+{
+    vertical-align: bottom;
+    display: block;
+    width: 100%;
+}
+
+section:hover
+{
+    box-shadow: 5px 5px 10px 3px;
+}
+
+.star
+{
+    width: 22px;
+}
+
+p
+{
+    width: 100%;
+}
