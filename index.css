@@ -101,6 +101,11 @@ input[type='checkbox']:checked ~ section div p
     display: block;
 }
 
+section:hover
+{
+    box-shadow: 5px 5px 10px 3px;
+}
+
 .score
 {
     display: inline;
