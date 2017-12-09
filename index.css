@@ -34,7 +34,6 @@ input[type='checkbox']
 input[type='checkbox']:checked ~ section
 {
     display: table;
-    border: red 1px solid;
     width: 90%;
 }
 
